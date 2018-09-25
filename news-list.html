@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>资讯列表</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+		<link rel="stylesheet" href="css/mui.min.css">
+		<link rel="stylesheet" type="text/css" href="css/app.css" />
+		<style>
+			.mui-pull-top-tips.mui-transitioning {
+				-webkit-transition-duration: 200ms;
+				transition-duration: 200ms;
+			}
+
+			.mui-pull-bottom-tips {
+				text-align: center;
+				background-color: #efeff4;
+				font-size: 15px;
+				line-height: 40px;
+				color: #777;
+			}
+			
+			.mui-scroll-wrapper {
+				height: 100%;
+				overflow-y: auto;
+			}
+			.new-time{
+				position: absolute;top: 50px;font-size: 14px;display: block;width: 53px;text-align: right;color: #8f8f94;
+			}
+			.mui-table-view-cell .fow{
+				position: absolute!important;
+				bottom: 20px;
+				right:10px;
+			}
+			.mui-table-view-cell .follow{
+				/*position: absolute;*/
+				bottom: 20px;
+				font-size: 28px;
+				display: block;
+				width: 53px;
+				text-align: center;
+				right: 10px;
+			}
+			.mui-table-view-cell .follow1{
+				font-size: 26px;
+				float: left;
+				display: block;
+				width: 9%;
+			}
+			.yq-ul li a {
+				width: 90%;
+				padding-left: 0;
+				}
+			.mui-table-view-cell-news {
+				position: relative;
+				padding: 11px 15px;
+				}
+			.mui-table-view-cell-news a {
+				color: #000000;
+				}
+			
+			.mui-table-view-cell-news .follow1 {
+				font-size: 26px;
+				float: left;
+				display: block;
+				width: 7%;
+				position: absolute;
+				right: 10px;
+				bottom: 5px;
+				}
+			.yq-ul li a {
+			width: 97%;
+			}
+			.variety li {
+				position: relative;
+				}
+
+			/*2018-25增加新闻样式*/
+			.news_con_style {
+				display: table;
+				width: 100%;
+				background-color: #fff;
+				margin-bottom: 1px;
+			}
+			.news_left_tit,.news_right_con {
+				display:table-cell;
+			}
+			.news_left_tit {
+				width: 56px;
+				padding: 10px;
+				color: #1d8fe1;
+				font-size: 14px;
+				font-weight:bold;
+				vertical-align: top;
+			}
+			.news_txt_tit {
+				width: 100%;
+				font-size: 14px;
+				line-height: 18px;
+			}
+			.news_right_con {
+				padding:10px 0;
+				padding-left: 0;
+			}
+			.news_txt_tips {
+				line-height: 13px;
+				font-size: 13px;
+				margin-top: 12px;
+			}
+			.mr10 {
+				margin-right: 10px;
+			}
+			.tips_time {
+				color: #999999;
+			}
+			.tips_cname,.tips_pagenum {
+				color: #666;
+			}
+		</style>
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav">
+			<h1 class="mui-title">资讯</h1>
+			<!--<a class="mui-icon mui-icon-search mui-pull-right" style="color: #fff;"></a>-->
+		</header>
+		<div class="mui-content">
+			<div id="slider" class="mui-slider mui-fullscreen">
+				<div id="sliderSegmentedControl" class="mui-scroll-wrapper mui-slider-indicator mui-segmented-control mui-segmented-control-inverted">
+					<div class="mui-scroll">
+						<a class="mui-control-item mui-active noLink" href="#item1mobile">
+							财经直播
+						</a>
+						<a class="mui-control-item noLink" href="#item2mobile">
+							公告
+						</a>
+						<a class="mui-control-item noLink" href="#item3mobile">
+							研报
+						</a>
+						<a class="mui-control-item noLink" href="#item4mobile">
+							自选
+						</a>				
+					</div>
+				</div>
+				<div class="mui-slider-group">
+					<div id="item1mobile" class="mui-slider-item mui-control-content">
+						<div class="mui-scroll-wrapper">
+							<div class="mui-scroll">
+								<a class="news_con_style">
+									<div class="news_left_tit"><span>公司研究</span></div>
+									<div class="news_right_con">
+										<div class="news_txt_tit">
+											海伦钢琴（300329.SZ）：公司艺术培训项目整合再次启动
+										</div>
+										<div class="news_txt_tips">
+											<span class="tips_time mr10">01-16</span>
+											<span class="tips_cname mr10">招商证券</span>
+											<span class="tips_pagenum">4页</span>
+										</div>
+									</div>
+								</a>
+								<a class="news_con_style">
+									<div class="news_left_tit"><span>公司研究</span></div>
+									<div class="news_right_con">
+										<div class="news_txt_tit">
+											海伦钢琴（300329.SZ）：公司艺术培训项目整合再次启动
+										</div>
+										<div class="news_txt_tips">
+											<span class="tips_time mr10">01-16</span>
+											<span class="tips_cname mr10">招商证券</span>
+											<span class="tips_pagenum">4页</span>
+										</div>
+									</div>
+								</a>
+							</div>
+						</div>
+					</div>
+					<div id="item2mobile" class="mui-slider-item mui-control-content">
+						<div class="mui-scroll-wrapper">
+							<div class="mui-scroll">
+								<div class="newslistbigBox">
+									<div class="newsDay">
+										<span class="dyaLabel">今日</span>
+									</div>
+									<ul class="newListbox">
+										<li>
+											<a href="news-details.html" class="newslistABox">
+												<span class="leftTimeSpan fl">
+													15:45
+												</span>
+
+												<span class="rightTxtSpan fl">
+													【明动软件】关于做好2011年分类评价工作的通知分类评价
+												</span>
+											</a>
+										</li>
+										<li>
+											<a href="news-details.html" class="newslistABox">
+												<span class="leftTimeSpan fl">
+													15:21
+												</span>
+												<span class="rightTxtSpan fl">
+													【明动软件】关于做好2011年分类评价工作的通知分类评价
+												</span>
+											</a>
+										</li>
+										<li>
+											<a href="news-details.html" class="newslistABox">
+												<span class="leftTimeSpan fl">
+													15:00
+												</span>
+												<span class="rightTxtSpan fl">
+													【明动软件】关于做好2011年分类评价工作的通知分类评价
+												</span>
+											</a>
+										</li>
+										<li>
+											<a href="news-details.html" class="newslistABox">
+												<span class="leftTimeSpan fl">
+													14:45
+												</span>
+												<span class="rightTxtSpan fl">
+													【明动软件】关于做好2011年分类评价工作的通知分类评价
+												</span>
+											</a>
+										</li>
+									</ul>
+								</div>
+								<div class="newslistbigBox">
+									<div class="newsDay">
+										<span class="dyaLabel">昨日</span>
+									</div>
+									<ul class="newListbox">
+										<li>
+											<a href="news-details.html" class="newslistABox">
+												<span class="leftTimeSpan fl">
+													15:45
+												</span>
+												<span class="rightTxtSpan fl">
+													【明动软件】关于做好2011年分类评价工作的通知分类评价
+												</span>
+											</a>
+										</li>
+										<li>
+											<a href="news-details.html" class="newslistABox">
+												<span class="leftTimeSpan fl">
+													15:21
+												</span>
+												<span class="rightTxtSpan fl">
+													【明动软件】关于做好2011年分类评价工作的通知分类评价
+												</span>
+											</a>
+										</li>
+										<li>
+											<a href="news-details.html" class="newslistABox">
+												<span class="leftTimeSpan fl">
+													15:00
+												</span>
+												<span class="rightTxtSpan fl">
+													【明动软件】关于做好2011年分类评价工作的通知分类评价
+												</span>
+											</a>
+										</li>
+										<li>
+											<a href="news-details.html" class="newslistABox">
+												<span class="leftTimeSpan fl">
+													14:45
+												</span>
+												<span class="rightTxtSpan fl">
+													【明动软件】关于做好2011年分类评价工作的通知分类评价
+												</span>
+											</a>
+										</li>
+									</ul>
+								</div>
+								<div class="newslistbigBox">
+									<div class="newsDay">
+										<span class="dyaLabel">2017-11-5</span>
+									</div>
+									<ul class="newListbox">
+										<li>
+											<a href="news-details.html" class="newslistABox">
+												<span class="leftTimeSpan fl">
+													15:45
+												</span>
+												<span class="rightTxtSpan fl">
+													【明动软件】关于做好2011年分类评价工作的通知分类评价
+												</span>
+											</a>
+										</li>
+										<li>
+											<a href="news-details.html" class="newslistABox">
+												<span class="leftTimeSpan fl">
+													15:21
+												</span>
+												<span class="rightTxtSpan fl">
+													【明动软件】关于做好2011年分类评价工作的通知分类评价
+												</span>
+											</a>
+										</li>
+										<li>
+											<a href="news-details.html" class="newslistABox">
+												<span class="leftTimeSpan fl">
+													15:00
+												</span>
+												<span class="rightTxtSpan fl">
+													【明动软件】关于做好2011年分类评价工作的通知分类评价
+												</span>
+											</a>
+										</li>
+										<li>
+											<a href="news-details.html" class="newslistABox">
+												<span class="leftTimeSpan fl">
+													14:45
+												</span>
+												<span class="rightTxtSpan fl">
+													【明动软件】关于做好2011年分类评价工作的通知分类评价
+												</span>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div id="item3mobile" class="mui-slider-item mui-control-content">
+						<div class="mui-scroll-wrapper">
+							<div class="mui-scroll">
+								<div class="newslistbigBox">
+									<div class="newsDay">
+										<span class="dyaLabel">今日</span>
+									</div>
+									<ul class="newListbox">
+										<li>
+											<a href="news-details.html" class="newslistABox">
+												<span class="leftTimeSpan fl">
+													15:45
+												</span>
+												<span class="rightTxtSpan fl">
+														<span style="color: orange;float: left;">【舆情】</span>
+													【明动软件】关于做好2011年分类评价工作的通知分类评价
+												</span>
+											</a>
+										</li>
+										<li>
+											<a href="news-details.html" class="newslistABox">
+												<span class="leftTimeSpan fl">
+													15:21
+												</span>
+												<span class="rightTxtSpan fl">
+													【明动软件】关于做好2011年分类评价工作的通知分类评价
+												</span>
+											</a>
+										</li>
+										<li>
+											<a href="news-details.html" class="newslistABox">
+												<span class="leftTimeSpan fl">
+													15:00
+												</span>
+												<span class="rightTxtSpan fl">
+													【明动软件】关于做好2011年分类评价工作的通知分类评价
+												</span>
+											</a>
+										</li>
+										<li>
+											<a href="news-details.html" class="newslistABox">
+												<span class="leftTimeSpan fl">
+													14:45
+												</span>
+												<span class="rightTxtSpan fl">
+													【明动软件】关于做好2011年分类评价工作的通知分类评价
+												</span>
+											</a>
+										</li>
+									</ul>
+								</div>
+								<div class="newslistbigBox">
+									<div class="newsDay">
+										<span class="dyaLabel">昨日</span>
+									</div>
+									<ul class="newListbox">
+										<li>
+											<a href="news-details.html" class="newslistABox">
+												<span class="leftTimeSpan fl">
+													15:45
+												</span>
+												<span class="rightTxtSpan fl">
+													【明动软件】关于做好2011年分类评价工作的通知分类评价
+												</span>
+											</a>
+										</li>
+										<li>
+											<a href="news-details.html" class="newslistABox">
+												<span class="leftTimeSpan fl">
+													15:21
+												</span>
+												<span class="rightTxtSpan fl">
+													【明动软件】关于做好2011年分类评价工作的通知分类评价
+												</span>
+											</a>
+										</li>
+										<li>
+											<a href="news-details.html" class="newslistABox">
+												<span class="leftTimeSpan fl">
+													15:00
+												</span>
+												<span class="rightTxtSpan fl">
+													【明动软件】关于做好2011年分类评价工作的通知分类评价
+												</span>
+											</a>
+										</li>
+										<li>
+											<a href="news-details.html" class="newslistABox">
+												<span class="leftTimeSpan fl">
+													14:45
+												</span>
+												<span class="rightTxtSpan fl">
+													【明动软件】关于做好2011年分类评价工作的通知分类评价
+												</span>
+											</a>
+										</li>
+									</ul>
+								</div>
+								<div class="newslistbigBox">
+									<div class="newsDay">
+										<span class="dyaLabel">2017-11-5</span>
+									</div>
+									<ul class="newListbox">
+										<li>
+											<a href="news-details.html" class="newslistABox">
+												<span class="leftTimeSpan fl">
+													15:45
+												</span>
+												<span class="rightTxtSpan fl">
+													【明动软件】关于做好2011年分类评价工作的通知分类评价
+												</span>
+											</a>
+										</li>
+										<li>
+											<a href="news-details.html" class="newslistABox">
+												<span class="leftTimeSpan fl">
+													15:21
+												</span>
+												<span class="rightTxtSpan fl">
+													【明动软件】关于做好2011年分类评价工作的通知分类评价
+												</span>
+											</a>
+										</li>
+										<li>
+											<a href="news-details.html" class="newslistABox">
+												<span class="leftTimeSpan fl">
+													15:00
+												</span>
+												<span class="rightTxtSpan fl">
+													【明动软件】关于做好2011年分类评价工作的通知分类评价
+												</span>
+											</a>
+										</li>
+										<li>
+											<a href="news-details.html" class="newslistABox">
+												<span class="leftTimeSpan fl">
+													14:45
+												</span>
+												<span class="rightTxtSpan fl">
+													【明动软件】关于做好2011年分类评价工作的通知分类评价
+												</span>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div id="item4mobile" class="mui-slider-item mui-control-content">
+						<div class="mui-scroll-wrapper">
+							<div class="mui-scroll">
+								<div class="newslistbigBox">
+									<div class="newsDay">
+										<span class="dyaLabel">今日</span>
+									</div>
+									<ul class="newListbox">
+										<li>
+											<a href="news-details.html" class="newslistABox">
+												<span class="leftTimeSpan fl">
+													15:45
+												</span>
+												<span class="rightTxtSpan fl">
+													【明动软件】关于做好2011年分类评价工作的通知分类评价
+												</span>
+											</a>
+										</li>
+										<li>
+											<a href="news-details.html" class="newslistABox">
+												<span class="leftTimeSpan fl">
+													15:21
+												</span>
+												<span class="rightTxtSpan fl">
+													【明动软件】关于做好2011年分类评价工作的通知分类评价
+												</span>
+											</a>
+										</li>
+										<li>
+											<a href="news-details.html" class="newslistABox">
+												<span class="leftTimeSpan fl">
+													15:00
+												</span>
+												<span class="rightTxtSpan fl">
+													【明动软件】关于做好2011年分类评价工作的通知分类评价
+												</span>
+											</a>
+										</li>
+										<li>
+											<a href="news-details.html" class="newslistABox">
+												<span class="leftTimeSpan fl">
+													14:45
+												</span>
+												<span class="rightTxtSpan fl">
+													【明动软件】关于做好2011年分类评价工作的通知分类评价
+												</span>
+											</a>
+										</li>
+									</ul>
+								</div>
+								<div class="newslistbigBox">
+									<div class="newsDay">
+										<span class="dyaLabel">昨日</span>
+									</div>
+									<ul class="newListbox">
+										<li>
+											<a href="news-details.html" class="newslistABox">
+												<span class="leftTimeSpan fl">
+													15:45
+												</span>
+												<span class="rightTxtSpan fl">
+													【明动软件】关于做好2011年分类评价工作的通知分类评价
+												</span>
+											</a>
+										</li>
+										<li>
+											<a href="news-details.html" class="newslistABox">
+												<span class="leftTimeSpan fl">
+													15:21
+												</span>
+												<span class="rightTxtSpan fl">
+													【明动软件】关于做好2011年分类评价工作的通知分类评价
+												</span>
+											</a>
+										</li>
+										<li>
+											<a href="news-details.html" class="newslistABox">
+												<span class="leftTimeSpan fl">
+													15:00
+												</span>
+												<span class="rightTxtSpan fl">
+													【明动软件】关于做好2011年分类评价工作的通知分类评价
+												</span>
+											</a>
+										</li>
+										<li>
+											<a href="news-details.html" class="newslistABox">
+												<span class="leftTimeSpan fl">
+													14:45
+												</span>
+												<span class="rightTxtSpan fl">
+													【明动软件】关于做好2011年分类评价工作的通知分类评价
+												</span>
+											</a>
+										</li>
+									</ul>
+								</div>
+								<div class="newslistbigBox">
+									<div class="newsDay">
+										<span class="dyaLabel">2017-11-5</span>
+									</div>
+									<ul class="newListbox">
+										<li>
+											<a href="news-details.html" class="newslistABox">
+												<span class="leftTimeSpan fl">
+													15:45
+												</span>
+												<span class="rightTxtSpan fl">
+													【明动软件】关于做好2011年分类评价工作的通知分类评价
+												</span>
+											</a>
+										</li>
+										<li>
+											<a href="news-details.html" class="newslistABox">
+												<span class="leftTimeSpan fl">
+													15:21
+												</span>
+												<span class="rightTxtSpan fl">
+													【明动软件】关于做好2011年分类评价工作的通知分类评价
+												</span>
+											</a>
+										</li>
+										<li>
+											<a href="news-details.html" class="newslistABox">
+												<span class="leftTimeSpan fl">
+													15:00
+												</span>
+												<span class="rightTxtSpan fl">
+													【明动软件】关于做好2011年分类评价工作的通知分类评价
+												</span>
+											</a>
+										</li>
+										<li>
+											<a href="news-details.html" class="newslistABox">
+												<span class="leftTimeSpan fl">
+													14:45
+												</span>
+												<span class="rightTxtSpan fl">
+													【明动软件】关于做好2011年分类评价工作的通知分类评价
+												</span>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="js/mui.min.js"></script>
+		<script src="js/app.js"></script>
+		<script>
+			mui.init();
+			(function($) {
+				//阻尼系数
+				var deceleration = mui.os.ios ? 0.003 : 0.0009;
+				$('.mui-scroll-wrapper').scroll({
+					bounce: false,
+					indicators: true, //是否显示滚动条
+					deceleration: deceleration
+				});
+				$.ready(function() {
+					//循环初始化所有下拉刷新，上拉加载。
+					$.each(document.querySelectorAll('.mui-slider-group .mui-scroll'), function(index, pullRefreshEl) {
+//						$(pullRefreshEl).pullToRefresh({
+//							down: {
+//								callback: function() {
+//									var self = this;
+//									setTimeout(function() {
+//										var ul = self.element.querySelector('.mui-table-view');
+//										ul.insertBefore(createFragment(ul, index, 10, true), ul.firstChild);
+//										self.endPullDownToRefresh();
+//									}, 1000);
+//								}
+//							},
+//							up: {
+//								callback: function() {
+//									var self = this;
+//									setTimeout(function() {
+//										var ul = self.element.querySelector('.mui-table-view');
+//										ul.appendChild(createFragment(ul, index, 5));
+//										self.endPullUpToRefresh();
+//									}, 1000);
+//								}
+//							}
+//						});
+					});
+					var createFragment = function(ul, index, count, reverse) {
+						var length = ul.querySelectorAll('li').length;
+						var fragment = document.createDocumentFragment();
+						var li;
+						for(var i = 0; i < count; i++) {
+							li = document.createElement('li');
+							li.className = 'mui-table-view-cell';
+							li.innerHTML = '第' + (index + 1) + '个选项卡子项-' + (length + (reverse ? (count - i) : (i + 1)));
+							fragment.appendChild(li);
+						}
+						return fragment;
+					};
+				});
+			})(mui);
+		</script>
+	</body>
+
+</html>

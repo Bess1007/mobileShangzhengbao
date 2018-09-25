@@ -1,0 +1,1127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="ff3b67d7-b356-4832-931b-5968fa18eeff" name="Default" comment="上证报手机端9-25">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/company/font-awesome-4.7.0/fonts/FontAwesome.otf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/company/font-awesome-4.7.0/fonts/fontawesome-webfont.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/company/font-awesome-4.7.0/fonts/fontawesome-webfont.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/company/font-awesome-4.7.0/fonts/fontawesome-webfont.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/company/font-awesome-4.7.0/fonts/fontawesome-webfont.woff2" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dongcha/dc-company/font-awesome-4.7.0/fonts/FontAwesome.otf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dongcha/dc-company/font-awesome-4.7.0/fonts/fontawesome-webfont.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dongcha/dc-company/font-awesome-4.7.0/fonts/fontawesome-webfont.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dongcha/dc-company/font-awesome-4.7.0/fonts/fontawesome-webfont.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dongcha/dc-company/font-awesome-4.7.0/fonts/fontawesome-webfont.woff2" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fonts/iconfont.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fonts/mui-icons-extra.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fonts/mui.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/iconfont/iconfont.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/iconfont/iconfont.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/iconfont/iconfont.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/1024-748.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/1024-768.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/1080-1882.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/1242-2208.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/1536-2008.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/1536-2048.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/2048-1496.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/2048-1536.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/2208-1242.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/404-1040.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/404.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/480-762.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/640-1136.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/640-960.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/720-1242.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/750-1334.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/768-1004.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/768-1024.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/allicons.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/bc-ico.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/bc-ico2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/bc-ico3.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/bc-ico4.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/bc-ico5.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/dc-bcg.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/dc-logo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/dc-tit-txt.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/default.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/failureproject-wm.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/glgx.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/index-bg3.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/loding-img.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/logo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/navbcgimg.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/no-network.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/noMs.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/pause.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/playing.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/relationship-ico.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/shzqbsmallLogo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/upgrade-hd.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/whiteicologo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/ylyc-bgimg.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/zupu.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/basicInfor.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/bgbl.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/bgyl.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/bing.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/bingg.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/cbd.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/comy-bg.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/comy-bg1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/default.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/down (1).png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/down.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/fxbg.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/green.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/gu.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/hu.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/icon07.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/iocn (1).png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/iocn (2).png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/iocn (3).png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/iocn (4).png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/iocn (5).png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/iocn (6).png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/ipo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/ipoo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/levelDesc.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/line04.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/logo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/more.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/muwu.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/red-s.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/shi.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/shuijiao.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/underLoan_fenshutiao.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/xiantu1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/ya.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/yuantiao.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/zheng.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/zong.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/layui.layim-v3.7.2/dist/css/modules/layer/default/icon-ext.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/layui.layim-v3.7.2/dist/css/modules/layer/default/icon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/layui.layim-v3.7.2/dist/css/modules/layer/default/loading-0.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/layui.layim-v3.7.2/dist/css/modules/layer/default/loading-1.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/layui.layim-v3.7.2/dist/css/modules/layer/default/loading-2.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/layui.layim-v3.7.2/dist/css/modules/layim/skin/1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/layui.layim-v3.7.2/dist/css/modules/layim/skin/2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/layui.layim-v3.7.2/dist/css/modules/layim/skin/3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/layui.layim-v3.7.2/dist/css/modules/layim/skin/4.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/layui.layim-v3.7.2/dist/css/modules/layim/skin/5.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/layui.layim-v3.7.2/dist/css/modules/layim/skin/logo.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/layui.layim-v3.7.2/dist/css/modules/layim/voice/default.mp3" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/layui.layim-v3.7.2/dist/font/iconfont.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/layui.layim-v3.7.2/dist/font/iconfont.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/layui.layim-v3.7.2/dist/font/iconfont.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/layui.layim-v3.7.2/dist/images/face/0.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/layui.layim-v3.7.2/dist/images/face/1.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/layui.layim-v3.7.2/dist/images/face/10.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/layui.layim-v3.7.2/dist/images/face/11.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/layui.layim-v3.7.2/dist/images/face/12.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/layui.layim-v3.7.2/dist/images/face/13.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/layui.layim-v3.7.2/dist/images/face/14.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/layui.layim-v3.7.2/dist/images/face/15.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/layui.layim-v3.7.2/dist/images/face/16.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/layui.layim-v3.7.2/dist/images/face/17.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/layui.layim-v3.7.2/dist/images/face/18.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/layui.layim-v3.7.2/dist/images/face/19.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/layui.layim-v3.7.2/dist/images/face/2.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/layui.layim-v3.7.2/dist/images/face/20.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/layui.layim-v3.7.2/dist/images/face/21.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/layui.layim-v3.7.2/dist/images/face/22.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/layui.layim-v3.7.2/dist/images/face/23.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/layui.layim-v3.7.2/dist/images/face/24.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/layui.layim-v3.7.2/dist/images/face/25.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/layui.layim-v3.7.2/dist/images/face/26.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/layui.layim-v3.7.2/dist/images/face/27.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/layui.layim-v3.7.2/dist/images/face/28.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/layui.layim-v3.7.2/dist/images/face/29.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/layui.layim-v3.7.2/dist/images/face/3.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/layui.layim-v3.7.2/dist/images/face/30.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/layui.layim-v3.7.2/dist/images/face/31.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/layui.layim-v3.7.2/dist/images/face/32.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/layui.layim-v3.7.2/dist/images/face/33.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/layui.layim-v3.7.2/dist/images/face/34.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/layui.layim-v3.7.2/dist/images/face/35.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/layui.layim-v3.7.2/dist/images/face/36.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/layui.layim-v3.7.2/dist/images/face/37.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/layui.layim-v3.7.2/dist/images/face/38.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/layui.layim-v3.7.2/dist/images/face/39.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/layui.layim-v3.7.2/dist/images/face/4.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/layui.layim-v3.7.2/dist/images/face/40.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/layui.layim-v3.7.2/dist/images/face/41.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/layui.layim-v3.7.2/dist/images/face/42.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/layui.layim-v3.7.2/dist/images/face/43.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/layui.layim-v3.7.2/dist/images/face/44.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/layui.layim-v3.7.2/dist/images/face/45.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/layui.layim-v3.7.2/dist/images/face/46.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/layui.layim-v3.7.2/dist/images/face/47.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/layui.layim-v3.7.2/dist/images/face/48.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/layui.layim-v3.7.2/dist/images/face/49.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/layui.layim-v3.7.2/dist/images/face/5.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/layui.layim-v3.7.2/dist/images/face/50.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/layui.layim-v3.7.2/dist/images/face/51.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/layui.layim-v3.7.2/dist/images/face/52.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/layui.layim-v3.7.2/dist/images/face/53.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/layui.layim-v3.7.2/dist/images/face/54.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/layui.layim-v3.7.2/dist/images/face/55.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/layui.layim-v3.7.2/dist/images/face/56.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/layui.layim-v3.7.2/dist/images/face/57.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/layui.layim-v3.7.2/dist/images/face/58.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/layui.layim-v3.7.2/dist/images/face/59.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/layui.layim-v3.7.2/dist/images/face/6.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/layui.layim-v3.7.2/dist/images/face/60.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/layui.layim-v3.7.2/dist/images/face/61.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/layui.layim-v3.7.2/dist/images/face/62.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/layui.layim-v3.7.2/dist/images/face/63.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/layui.layim-v3.7.2/dist/images/face/64.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/layui.layim-v3.7.2/dist/images/face/65.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/layui.layim-v3.7.2/dist/images/face/66.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/layui.layim-v3.7.2/dist/images/face/67.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/layui.layim-v3.7.2/dist/images/face/68.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/layui.layim-v3.7.2/dist/images/face/69.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/layui.layim-v3.7.2/dist/images/face/7.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/layui.layim-v3.7.2/dist/images/face/70.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/layui.layim-v3.7.2/dist/images/face/71.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/layui.layim-v3.7.2/dist/images/face/8.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/layui.layim-v3.7.2/dist/images/face/9.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/layui.layim-v3.7.2/src/css/modules/layer/default/icon-ext.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/layui.layim-v3.7.2/src/css/modules/layer/default/icon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/layui.layim-v3.7.2/src/css/modules/layer/default/loading-0.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/layui.layim-v3.7.2/src/css/modules/layer/default/loading-1.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/layui.layim-v3.7.2/src/css/modules/layer/default/loading-2.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/layui.layim-v3.7.2/src/css/modules/layim/skin/1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/layui.layim-v3.7.2/src/css/modules/layim/skin/2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/layui.layim-v3.7.2/src/css/modules/layim/skin/3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/layui.layim-v3.7.2/src/css/modules/layim/skin/4.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/layui.layim-v3.7.2/src/css/modules/layim/skin/5.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/layui.layim-v3.7.2/src/css/modules/layim/skin/logo.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/layui.layim-v3.7.2/src/css/modules/layim/voice/default.mp3" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/layui.layim-v3.7.2/src/font/iconfont.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/layui.layim-v3.7.2/src/font/iconfont.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/layui.layim-v3.7.2/src/font/iconfont.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/layui.layim-v3.7.2/src/images/face/0.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/layui.layim-v3.7.2/src/images/face/1.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/layui.layim-v3.7.2/src/images/face/10.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/layui.layim-v3.7.2/src/images/face/11.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/layui.layim-v3.7.2/src/images/face/12.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/layui.layim-v3.7.2/src/images/face/13.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/layui.layim-v3.7.2/src/images/face/14.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/layui.layim-v3.7.2/src/images/face/15.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/layui.layim-v3.7.2/src/images/face/16.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/layui.layim-v3.7.2/src/images/face/17.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/layui.layim-v3.7.2/src/images/face/18.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/layui.layim-v3.7.2/src/images/face/19.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/layui.layim-v3.7.2/src/images/face/2.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/layui.layim-v3.7.2/src/images/face/20.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/layui.layim-v3.7.2/src/images/face/21.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/layui.layim-v3.7.2/src/images/face/22.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/layui.layim-v3.7.2/src/images/face/23.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/layui.layim-v3.7.2/src/images/face/24.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/layui.layim-v3.7.2/src/images/face/25.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/layui.layim-v3.7.2/src/images/face/26.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/layui.layim-v3.7.2/src/images/face/27.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/layui.layim-v3.7.2/src/images/face/28.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/layui.layim-v3.7.2/src/images/face/29.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/layui.layim-v3.7.2/src/images/face/3.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/layui.layim-v3.7.2/src/images/face/30.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/layui.layim-v3.7.2/src/images/face/31.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/layui.layim-v3.7.2/src/images/face/32.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/layui.layim-v3.7.2/src/images/face/33.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/layui.layim-v3.7.2/src/images/face/34.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/layui.layim-v3.7.2/src/images/face/35.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/layui.layim-v3.7.2/src/images/face/36.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/layui.layim-v3.7.2/src/images/face/37.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/layui.layim-v3.7.2/src/images/face/38.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/layui.layim-v3.7.2/src/images/face/39.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/layui.layim-v3.7.2/src/images/face/4.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/layui.layim-v3.7.2/src/images/face/40.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/layui.layim-v3.7.2/src/images/face/41.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/layui.layim-v3.7.2/src/images/face/42.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/layui.layim-v3.7.2/src/images/face/43.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/layui.layim-v3.7.2/src/images/face/44.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/layui.layim-v3.7.2/src/images/face/45.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/layui.layim-v3.7.2/src/images/face/46.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/layui.layim-v3.7.2/src/images/face/47.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/layui.layim-v3.7.2/src/images/face/48.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/layui.layim-v3.7.2/src/images/face/49.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/layui.layim-v3.7.2/src/images/face/5.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/layui.layim-v3.7.2/src/images/face/50.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/layui.layim-v3.7.2/src/images/face/51.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/layui.layim-v3.7.2/src/images/face/52.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/layui.layim-v3.7.2/src/images/face/53.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/layui.layim-v3.7.2/src/images/face/54.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/layui.layim-v3.7.2/src/images/face/55.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/layui.layim-v3.7.2/src/images/face/56.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/layui.layim-v3.7.2/src/images/face/57.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/layui.layim-v3.7.2/src/images/face/58.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/layui.layim-v3.7.2/src/images/face/59.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/layui.layim-v3.7.2/src/images/face/6.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/layui.layim-v3.7.2/src/images/face/60.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/layui.layim-v3.7.2/src/images/face/61.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/layui.layim-v3.7.2/src/images/face/62.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/layui.layim-v3.7.2/src/images/face/63.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/layui.layim-v3.7.2/src/images/face/64.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/layui.layim-v3.7.2/src/images/face/65.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/layui.layim-v3.7.2/src/images/face/66.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/layui.layim-v3.7.2/src/images/face/67.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/layui.layim-v3.7.2/src/images/face/68.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/layui.layim-v3.7.2/src/images/face/69.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/layui.layim-v3.7.2/src/images/face/7.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/layui.layim-v3.7.2/src/images/face/70.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/layui.layim-v3.7.2/src/images/face/71.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/layui.layim-v3.7.2/src/images/face/8.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/layui.layim-v3.7.2/src/images/face/9.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mobileCompany/company/font-awesome-4.7.0/fonts/FontAwesome.otf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mobileCompany/company/font-awesome-4.7.0/fonts/fontawesome-webfont.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mobileCompany/company/font-awesome-4.7.0/fonts/fontawesome-webfont.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mobileCompany/company/font-awesome-4.7.0/fonts/fontawesome-webfont.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mobileCompany/company/font-awesome-4.7.0/fonts/fontawesome-webfont.woff2" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mobileCompany/fonts/iconfont.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mobileCompany/fonts/mui-icons-extra.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mobileCompany/fonts/mui.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mobileCompany/iconfont/iconfont.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mobileCompany/iconfont/iconfont.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mobileCompany/iconfont/iconfont.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mobileCompany/images/default.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sharing12-21/fonts/iconfont.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sharing12-21/fonts/mui-icons-extra.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sharing12-21/fonts/mui.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sharing12-21/img/dqmarkIcon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sharing12-21/img/fxbg.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/unpackage/res/icons/100x100.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/unpackage/res/icons/1024x1024.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/unpackage/res/icons/108x108.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/unpackage/res/icons/114x114.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/unpackage/res/icons/120x120.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/unpackage/res/icons/144x144.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/unpackage/res/icons/152x152.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/unpackage/res/icons/180x180.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/unpackage/res/icons/192x192.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/unpackage/res/icons/256x256 - 副本.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/unpackage/res/icons/256x256 - 副本1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/unpackage/res/icons/256x256 - 副本1.psd" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/unpackage/res/icons/256x256 - 副本2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/unpackage/res/icons/256x256 - 副本2.psd" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/unpackage/res/icons/256x256 - 副本3.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/unpackage/res/icons/256x256 - 副本4.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/unpackage/res/icons/256x256 - 副本5.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/unpackage/res/icons/256x256 - 副本6.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/unpackage/res/icons/256x256.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/unpackage/res/icons/28x28.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/unpackage/res/icons/29x29.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/unpackage/res/icons/40x40.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/unpackage/res/icons/48x48.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/unpackage/res/icons/50x50.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/unpackage/res/icons/57x57.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/unpackage/res/icons/58x58.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/unpackage/res/icons/72x72.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/unpackage/res/icons/76x76.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/unpackage/res/icons/80x80.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/unpackage/res/icons/87x87.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/unpackage/res/icons/96x96.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/404.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Personal-Information.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/addAndDelLabel.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/addContacts.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/addNewSchedule.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/allproject.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bgbuyf-bj4.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bgbuyf-ck4.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bgbuyf-list.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bgmf-bj3.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bgmf-ck3.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bgmf-list.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/calendar.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/calendar/addNewSchedule.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/calendar/addNewSchedulev0.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/calendar/calendar.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/calendar/contactDetails.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/calendar/contactDetails2.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/calendar/css/calendarindex.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/calendar/css/canlendarCommon.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/calendar/css/schedule.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/calendar/css/swiper-3.3.1.min.css.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/calendar/editSchedule.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/calendar/forwardInterview.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/calendar/interview-notice.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/calendar/interview-obj-edit.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/calendar/interview-obj-newadd.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/calendar/js/common.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/calendar/js/jquery-1.11.0.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/calendar/js/swiper-3.3.1.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/calendar/manuscript.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/calendar/manuscriptAddinfo.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/calendar/manuscriptEdit.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/calendar/manuscriptEdit0.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/calendar/mymanuscript.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/calendar/mymanuscriptv0.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/calendar/newInterviewee.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/calendar/receivemanuscript.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/calendar/scheduleDetails.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/calendar/scheduleDetails2.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/calendar/scheduleDetails3.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/calendar/select-interview.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/changePassword.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ckyd.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/company-search.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/company-search2.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/company.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/company/attentionCompany.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/company/baseInfoCompanyIntroduce.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/company/baseinfoInvestInfo.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/company/baseinfoInvestInfo1.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/company/baseinfoInvestInfo2.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/company/baseinfoInvestInfo3.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/company/baseinfoInvestInfo4.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/company/baseinfoInvestInfo5.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/company/companyBaseInfo1.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/company/companyBaseInfo2.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/company/companyBaseInfo3.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/company/companyBaseInfo4.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/company/companyBaseInfo5.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/company/companyBaseInfo6.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/company/companyBaseInfo7.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/company/companyDetails.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/company/companyDynamic1.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/company/companyDynamic2.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/company/companyDynamic3.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/company/companyDynamic4.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/company/companyDynamic5.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/company/companyDynamic6.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/company/companyDynamic7.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/company/companyDynamic8.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/company/companyEvaluate1.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/company/companyEvaluate2.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/company/companyEvaluate3.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/company/companyEvaluate4.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/company/companyEvaluate5.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/company/companyEvaluate6.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/company/companyEvaluate7.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/company/companyExecutive1.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/company/companyExecutiveResume.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/company/companyFinanceInfo1.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/company/companyFinanceInfo2.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/company/companyFten1.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/company/companyFten10.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/company/companyFten2.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/company/companyFten3.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/company/companyFten4.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/company/companyFten5.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/company/companyFten6.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/company/companyFten7.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/company/companyFten8.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/company/companyFten9.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/company/companyRiskInfo1.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/company/companyRiskInfo10.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/company/companyRiskInfo11.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/company/companyRiskInfo12.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/company/companyRiskInfo13.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/company/companyRiskInfo14.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/company/companyRiskInfo2.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/company/companyRiskInfo3.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/company/companyRiskInfo4.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/company/companyRiskInfo5.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/company/companyRiskInfo6.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/company/companyRiskInfo7.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/company/companyRiskInfo8.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/company/companyRiskInfo9.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/company/companySurvey1.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/company/companySurvey2.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/company/companySurvey3.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/company/companySurvey4.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/company/font-awesome-4.7.0/HELP-US-OUT.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/company/font-awesome-4.7.0/css/font-awesome.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/company/font-awesome-4.7.0/css/font-awesome.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/company/font-awesome-4.7.0/fonts/fontawesome-webfont.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/company/font-awesome-4.7.0/less/animated.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/company/font-awesome-4.7.0/less/bordered-pulled.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/company/font-awesome-4.7.0/less/core.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/company/font-awesome-4.7.0/less/fixed-width.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/company/font-awesome-4.7.0/less/font-awesome.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/company/font-awesome-4.7.0/less/icons.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/company/font-awesome-4.7.0/less/larger.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/company/font-awesome-4.7.0/less/list.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/company/font-awesome-4.7.0/less/mixins.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/company/font-awesome-4.7.0/less/path.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/company/font-awesome-4.7.0/less/rotated-flipped.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/company/font-awesome-4.7.0/less/screen-reader.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/company/font-awesome-4.7.0/less/stacked.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/company/font-awesome-4.7.0/less/variables.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/company/font-awesome-4.7.0/scss/_animated.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/company/font-awesome-4.7.0/scss/_bordered-pulled.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/company/font-awesome-4.7.0/scss/_core.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/company/font-awesome-4.7.0/scss/_fixed-width.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/company/font-awesome-4.7.0/scss/_icons.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/company/font-awesome-4.7.0/scss/_larger.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/company/font-awesome-4.7.0/scss/_list.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/company/font-awesome-4.7.0/scss/_mixins.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/company/font-awesome-4.7.0/scss/_path.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/company/font-awesome-4.7.0/scss/_rotated-flipped.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/company/font-awesome-4.7.0/scss/_screen-reader.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/company/font-awesome-4.7.0/scss/_stacked.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/company/font-awesome-4.7.0/scss/_variables.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/company/font-awesome-4.7.0/scss/font-awesome.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/company/investmentAbroadDetail.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/app.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/app1-11备份.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/calendarindex.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/canlendarCommon.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/company.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/dongcha.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/feedback.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/icons-extra.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/interview.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/interview_search.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/menudown.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/mui.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/mui.imageviewer.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/mui.indexedlist.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/mui.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/mui.picker.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/mui.picker.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/mui.poppicker.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/record.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/schedule.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/set.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/style.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/swiper-3.3.1.min.css.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/wx-audio.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/xiangmu.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cybgjj-bj7.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cybgjj-ck7.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cybgjj-list.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/d3Test/d3Test.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/d3Test/relationship.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dongcha/cgx-search-c-details.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dongcha/dc-cgx-search.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dongcha/dc-company.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dongcha/dc-company/baseInfoCompanyIntroduce.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dongcha/dc-company/companyBaseInfo1.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dongcha/dc-company/companyBaseInfo2.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dongcha/dc-company/companyBaseInfo3.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dongcha/dc-company/companyBaseInfo4.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dongcha/dc-company/companyBaseInfo5.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dongcha/dc-company/companyBaseInfo6.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dongcha/dc-company/companyDynamic1.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dongcha/dc-company/companyDynamic5.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dongcha/dc-company/companyRiskInfo1.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dongcha/dc-company/companyRiskInfo10.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dongcha/dc-company/companyRiskInfo11.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dongcha/dc-company/companyRiskInfo12.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dongcha/dc-company/companyRiskInfo13.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dongcha/dc-company/companyRiskInfo14.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dongcha/dc-company/companyRiskInfo2.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dongcha/dc-company/companyRiskInfo3.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dongcha/dc-company/companyRiskInfo4.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dongcha/dc-company/companyRiskInfo5.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dongcha/dc-company/companyRiskInfo6.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dongcha/dc-company/companyRiskInfo7.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dongcha/dc-company/companyRiskInfo8.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dongcha/dc-company/companyRiskInfo9.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dongcha/dc-company/css/dc-company.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dongcha/dc-company/font-awesome-4.7.0/HELP-US-OUT.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dongcha/dc-company/font-awesome-4.7.0/css/font-awesome.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dongcha/dc-company/font-awesome-4.7.0/css/font-awesome.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dongcha/dc-company/font-awesome-4.7.0/fonts/fontawesome-webfont.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dongcha/dc-company/font-awesome-4.7.0/less/animated.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dongcha/dc-company/font-awesome-4.7.0/less/bordered-pulled.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dongcha/dc-company/font-awesome-4.7.0/less/core.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dongcha/dc-company/font-awesome-4.7.0/less/fixed-width.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dongcha/dc-company/font-awesome-4.7.0/less/font-awesome.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dongcha/dc-company/font-awesome-4.7.0/less/icons.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dongcha/dc-company/font-awesome-4.7.0/less/larger.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dongcha/dc-company/font-awesome-4.7.0/less/list.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dongcha/dc-company/font-awesome-4.7.0/less/mixins.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dongcha/dc-company/font-awesome-4.7.0/less/path.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dongcha/dc-company/font-awesome-4.7.0/less/rotated-flipped.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dongcha/dc-company/font-awesome-4.7.0/less/screen-reader.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dongcha/dc-company/font-awesome-4.7.0/less/stacked.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dongcha/dc-company/font-awesome-4.7.0/less/variables.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dongcha/dc-company/font-awesome-4.7.0/scss/_animated.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dongcha/dc-company/font-awesome-4.7.0/scss/_bordered-pulled.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dongcha/dc-company/font-awesome-4.7.0/scss/_core.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dongcha/dc-company/font-awesome-4.7.0/scss/_fixed-width.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dongcha/dc-company/font-awesome-4.7.0/scss/_icons.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dongcha/dc-company/font-awesome-4.7.0/scss/_larger.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dongcha/dc-company/font-awesome-4.7.0/scss/_list.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dongcha/dc-company/font-awesome-4.7.0/scss/_mixins.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dongcha/dc-company/font-awesome-4.7.0/scss/_path.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dongcha/dc-company/font-awesome-4.7.0/scss/_rotated-flipped.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dongcha/dc-company/font-awesome-4.7.0/scss/_screen-reader.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dongcha/dc-company/font-awesome-4.7.0/scss/_stacked.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dongcha/dc-company/font-awesome-4.7.0/scss/_variables.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dongcha/dc-company/font-awesome-4.7.0/scss/font-awesome.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dongcha/dc-company/investmentAbroadDetail.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dongcha/dc-company/js/companyCommon.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dongcha/dc-company/news-details.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dongcha/dc-relationship.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dongcha/dc-search-company.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dongcha/dongcha-index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dongcha/fnine/fnine-cwsj.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dongcha/fnine/fnine-djg-xq.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dongcha/fnine/fnine-djg.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dongcha/fnine/fnine-dzjy.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dongcha/fnine/fnine-fhsz.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dongcha/fnine/fnine-gbjg.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dongcha/fnine/fnine-gdxq-xsjj.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dongcha/fnine/fnine-gdxq.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dongcha/fnine/fnine-gqzy.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dongcha/fnine/fnine-hyfx.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dongcha/fnine/fnine-lhb.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dongcha/fnine/fnine-rzrq.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dongcha/fnine/fnine-ssylmztj.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dongcha/fnine/fnine-ylyc.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dongcha/fnine/fnine-zygdzjc.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dongcha/top-tab-scroll-example.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dongcha/xmxs-jcypl.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dongcha/xmxs-xsjj.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dongcha/xmxs-zydq.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/editSchedule.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/focus-list.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gqjl-bj6.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gqjl-ck6.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gqjl-list.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gqzy-bj2.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gqzy-ck2.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gqzy-list.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/guide.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gzdc-list-bj.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gzdc-list-ck.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gzdc-list-ddqk-bj.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gzdc-list-ddqk.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gzdc.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/historyRecord.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/iconfont/demo.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/iconfont/demo_fontclass.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/iconfont/demo_symbol.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/iconfont/demo_unicode.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/iconfont/iconfont.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/iconfont/iconfont.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/iconfont/iconfont.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interview.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interviewAudiodemo.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interviewAudiodemo2.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interviewAudiodemo3.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interviewAudiodemov1.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interviewInfo.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interviewSearch-716.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interview_detail.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interview_detail2.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interview_search.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interview_searchv0.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ipo-bj1.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ipo-ck1.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ipo-list.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jqqd.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/app.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/app2.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/arttmpl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/city.data.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/common.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/echarts.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/feedback.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/input.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/jquery-1.11.0.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/jquery-1.11.3.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/label1.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/macarons.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/menudown.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/mui.imageViewer.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/mui.indexedlist.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/mui.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/mui.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/mui.picker.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/mui.picker.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/mui.poppicker.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/mui.previewimage.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/mui.view.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/mui.zoom.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/swiper-3.3.1.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/vue.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/wx-audio.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/labelManagement.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/layui.layim-v3.7.2/.idea/dictionaries/Administrator.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/layui.layim-v3.7.2/.idea/layui.layim-v3.7.2.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/layui.layim-v3.7.2/.idea/misc.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/layui.layim-v3.7.2/.idea/modules.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/layui.layim-v3.7.2/.idea/workspace.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/layui.layim-v3.7.2/Updatelog.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/layui.layim-v3.7.2/caption.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/layui.layim-v3.7.2/dist/css/layui.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/layui.layim-v3.7.2/dist/css/layui.mobile.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/layui.layim-v3.7.2/dist/css/modules/code.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/layui.layim-v3.7.2/dist/css/modules/laydate/default/laydate.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/layui.layim-v3.7.2/dist/css/modules/layer/default/layer.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/layui.layim-v3.7.2/dist/css/modules/layim/html/chatlog.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/layui.layim-v3.7.2/dist/css/modules/layim/html/find.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/layui.layim-v3.7.2/dist/css/modules/layim/html/getmsg.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/layui.layim-v3.7.2/dist/css/modules/layim/html/msgbox.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/layui.layim-v3.7.2/dist/css/modules/layim/layim.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/layui.layim-v3.7.2/dist/css/modules/layim/mobile/layim.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/layui.layim-v3.7.2/dist/font/iconfont.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/layui.layim-v3.7.2/dist/lay/modules/carousel.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/layui.layim-v3.7.2/dist/lay/modules/code.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/layui.layim-v3.7.2/dist/lay/modules/element.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/layui.layim-v3.7.2/dist/lay/modules/flow.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/layui.layim-v3.7.2/dist/lay/modules/form.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/layui.layim-v3.7.2/dist/lay/modules/jquery.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/layui.layim-v3.7.2/dist/lay/modules/laydate.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/layui.layim-v3.7.2/dist/lay/modules/layedit.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/layui.layim-v3.7.2/dist/lay/modules/layer.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/layui.layim-v3.7.2/dist/lay/modules/layim.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/layui.layim-v3.7.2/dist/lay/modules/laypage.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/layui.layim-v3.7.2/dist/lay/modules/laytpl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/layui.layim-v3.7.2/dist/lay/modules/mobile.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/layui.layim-v3.7.2/dist/lay/modules/table.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/layui.layim-v3.7.2/dist/lay/modules/tree.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/layui.layim-v3.7.2/dist/lay/modules/upload.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/layui.layim-v3.7.2/dist/lay/modules/util.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/layui.layim-v3.7.2/dist/layui.all.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/layui.layim-v3.7.2/dist/layui.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/layui.layim-v3.7.2/example/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/layui.layim-v3.7.2/example/json/getList.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/layui.layim-v3.7.2/example/json/getMembers.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/layui.layim-v3.7.2/example/mobile.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/layui.layim-v3.7.2/officialwebsite.url" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/layui.layim-v3.7.2/src/css/layui.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/layui.layim-v3.7.2/src/css/layui.mobile.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/layui.layim-v3.7.2/src/css/modules/code.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/layui.layim-v3.7.2/src/css/modules/laydate/default/font.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/layui.layim-v3.7.2/src/css/modules/laydate/default/laydate.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/layui.layim-v3.7.2/src/css/modules/layer/default/layer.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/layui.layim-v3.7.2/src/css/modules/layim/html/chatlog.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/layui.layim-v3.7.2/src/css/modules/layim/html/find.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/layui.layim-v3.7.2/src/css/modules/layim/html/getmsg.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/layui.layim-v3.7.2/src/css/modules/layim/html/msgbox.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/layui.layim-v3.7.2/src/css/modules/layim/layim.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/layui.layim-v3.7.2/src/css/modules/layim/mobile/layim.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/layui.layim-v3.7.2/src/font/iconfont.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/layui.layim-v3.7.2/src/lay/all-mobile.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/layui.layim-v3.7.2/src/lay/all.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/layui.layim-v3.7.2/src/lay/modules/carousel.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/layui.layim-v3.7.2/src/lay/modules/code.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/layui.layim-v3.7.2/src/lay/modules/element.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/layui.layim-v3.7.2/src/lay/modules/flow.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/layui.layim-v3.7.2/src/lay/modules/form.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/layui.layim-v3.7.2/src/lay/modules/jquery.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/layui.layim-v3.7.2/src/lay/modules/laydate.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/layui.layim-v3.7.2/src/lay/modules/layedit.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/layui.layim-v3.7.2/src/lay/modules/layer.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/layui.layim-v3.7.2/src/lay/modules/layim.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/layui.layim-v3.7.2/src/lay/modules/laypage.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/layui.layim-v3.7.2/src/lay/modules/laytpl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/layui.layim-v3.7.2/src/lay/modules/mobile.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/layui.layim-v3.7.2/src/lay/modules/mobile/layer-mobile.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/layui.layim-v3.7.2/src/lay/modules/mobile/layim-mobile-open.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/layui.layim-v3.7.2/src/lay/modules/mobile/layim-mobile.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/layui.layim-v3.7.2/src/lay/modules/mobile/upload-mobile.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/layui.layim-v3.7.2/src/lay/modules/mobile/zepto.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/layui.layim-v3.7.2/src/lay/modules/table.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/layui.layim-v3.7.2/src/lay/modules/tree.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/layui.layim-v3.7.2/src/lay/modules/upload.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/layui.layim-v3.7.2/src/lay/modules/util.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/layui.layim-v3.7.2/src/layui.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/load-animation.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mobileCompany/.idea/misc.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mobileCompany/.idea/mobileCompany.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mobileCompany/.idea/modules.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mobileCompany/.idea/vcs.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mobileCompany/.idea/workspace.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mobileCompany/company/attentionCompany.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mobileCompany/company/baseInfoCompanyIntroduce.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mobileCompany/company/baseinfoInvestInfo.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mobileCompany/company/baseinfoInvestInfo1.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mobileCompany/company/baseinfoInvestInfo2.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mobileCompany/company/baseinfoInvestInfo3.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mobileCompany/company/baseinfoInvestInfo4.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mobileCompany/company/baseinfoInvestInfo5.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mobileCompany/company/companyBaseInfo1.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mobileCompany/company/companyBaseInfo2.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mobileCompany/company/companyBaseInfo3.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mobileCompany/company/companyBaseInfo4.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mobileCompany/company/companyBaseInfo5.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mobileCompany/company/companyBaseInfo6.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mobileCompany/company/companyBaseInfo7.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mobileCompany/company/companyDetails.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mobileCompany/company/companyDynamic1.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mobileCompany/company/companyDynamic2.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mobileCompany/company/companyDynamic3.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mobileCompany/company/companyDynamic4.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mobileCompany/company/companyExecutive1.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mobileCompany/company/companyExecutiveResume.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mobileCompany/company/companyRiskInfo1.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mobileCompany/company/companyRiskInfo10.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mobileCompany/company/companyRiskInfo2.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mobileCompany/company/companyRiskInfo3.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mobileCompany/company/companyRiskInfo4.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mobileCompany/company/companyRiskInfo5.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mobileCompany/company/companyRiskInfo6.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mobileCompany/company/companyRiskInfo7.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mobileCompany/company/companyRiskInfo8.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mobileCompany/company/companyRiskInfo9.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mobileCompany/company/companySurvey1.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mobileCompany/company/companySurvey2.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mobileCompany/company/companySurvey3.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mobileCompany/company/executiveInfoDetail.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mobileCompany/company/font-awesome-4.7.0/HELP-US-OUT.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mobileCompany/company/font-awesome-4.7.0/css/font-awesome.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mobileCompany/company/font-awesome-4.7.0/css/font-awesome.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mobileCompany/company/font-awesome-4.7.0/fonts/fontawesome-webfont.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mobileCompany/company/font-awesome-4.7.0/less/animated.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mobileCompany/company/font-awesome-4.7.0/less/bordered-pulled.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mobileCompany/company/font-awesome-4.7.0/less/core.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mobileCompany/company/font-awesome-4.7.0/less/fixed-width.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mobileCompany/company/font-awesome-4.7.0/less/font-awesome.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mobileCompany/company/font-awesome-4.7.0/less/icons.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mobileCompany/company/font-awesome-4.7.0/less/larger.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mobileCompany/company/font-awesome-4.7.0/less/list.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mobileCompany/company/font-awesome-4.7.0/less/mixins.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mobileCompany/company/font-awesome-4.7.0/less/path.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mobileCompany/company/font-awesome-4.7.0/less/rotated-flipped.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mobileCompany/company/font-awesome-4.7.0/less/screen-reader.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mobileCompany/company/font-awesome-4.7.0/less/stacked.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mobileCompany/company/font-awesome-4.7.0/less/variables.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mobileCompany/company/font-awesome-4.7.0/scss/_animated.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mobileCompany/company/font-awesome-4.7.0/scss/_bordered-pulled.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mobileCompany/company/font-awesome-4.7.0/scss/_core.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mobileCompany/company/font-awesome-4.7.0/scss/_fixed-width.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mobileCompany/company/font-awesome-4.7.0/scss/_icons.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mobileCompany/company/font-awesome-4.7.0/scss/_larger.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mobileCompany/company/font-awesome-4.7.0/scss/_list.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mobileCompany/company/font-awesome-4.7.0/scss/_mixins.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mobileCompany/company/font-awesome-4.7.0/scss/_path.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mobileCompany/company/font-awesome-4.7.0/scss/_rotated-flipped.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mobileCompany/company/font-awesome-4.7.0/scss/_screen-reader.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mobileCompany/company/font-awesome-4.7.0/scss/_stacked.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mobileCompany/company/font-awesome-4.7.0/scss/_variables.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mobileCompany/company/font-awesome-4.7.0/scss/font-awesome.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mobileCompany/company/gdqk1.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mobileCompany/company/gdqk2.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mobileCompany/company/gdqk3.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mobileCompany/company/gudongguf.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mobileCompany/company/industry1.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mobileCompany/company/industry2.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mobileCompany/company/industry3.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mobileCompany/company/investmentAbroadDetail.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mobileCompany/company/listedCompanyInfo1.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mobileCompany/company/listedCompanyInfo2.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mobileCompany/company/listedCompanyInfo3.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mobileCompany/company/listedCompanyInfo4.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mobileCompany/company/listedCompanyInfo5.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mobileCompany/company/listedCompanyInfo6.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mobileCompany/company/marketDzjy.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mobileCompany/company/marketLhb1.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mobileCompany/company/marketLhb2.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mobileCompany/company/marketLhb3.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mobileCompany/company/marketRzrq1.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mobileCompany/company/marketRzrq2.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mobileCompany/company/marketRzrq3.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mobileCompany/css/app.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mobileCompany/css/company.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mobileCompany/css/feedback.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mobileCompany/css/icons-extra.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mobileCompany/css/menudown.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mobileCompany/css/mui.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mobileCompany/css/mui.imageviewer.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mobileCompany/css/mui.indexedlist.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mobileCompany/css/mui.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mobileCompany/css/mui.picker.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mobileCompany/css/mui.picker.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mobileCompany/css/mui.poppicker.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mobileCompany/css/set.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mobileCompany/css/style.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mobileCompany/css/xiangmu.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mobileCompany/css/zxapp.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mobileCompany/iconfont/demo.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mobileCompany/iconfont/demo_fontclass.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mobileCompany/iconfont/demo_symbol.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mobileCompany/iconfont/demo_unicode.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mobileCompany/iconfont/iconfont.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mobileCompany/iconfont/iconfont.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mobileCompany/iconfont/iconfont.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mobileCompany/js/app.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mobileCompany/js/arttmpl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mobileCompany/js/city.data.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mobileCompany/js/companyCommon.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mobileCompany/js/drag-panes.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mobileCompany/js/echarts.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mobileCompany/js/exporting.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mobileCompany/js/feedback.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mobileCompany/js/highcharts-zh_CN.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mobileCompany/js/highcharts.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mobileCompany/js/highstock.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mobileCompany/js/input.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mobileCompany/js/jquery-1.11.3.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mobileCompany/js/macarons.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mobileCompany/js/menudown.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mobileCompany/js/mui.imageViewer.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mobileCompany/js/mui.indexedlist.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mobileCompany/js/mui.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mobileCompany/js/mui.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mobileCompany/js/mui.picker.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mobileCompany/js/mui.picker.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mobileCompany/js/mui.poppicker.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mobileCompany/js/mui.previewimage.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mobileCompany/js/mui.view.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mobileCompany/js/mui.zoom.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mobileCompany/js/ripple.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myAddressList.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myCollection.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myProject.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myProjectDetail.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/new-interview.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/new-interview1.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/newFriend.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/newInterview.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/news-details.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/news-list.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/no-network.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/personal.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projectApply.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projectApply2.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/reger.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/register.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scheduleDetails.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scheduleDetails2.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scheduleDetails3.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/selectEditor.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sharing12-21/.idea/modules.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sharing12-21/.idea/sharing12-21.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sharing12-21/.idea/workspace.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sharing12-21/.project" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sharing12-21/bgbuy-fenx.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sharing12-21/bgsell-fenx.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sharing12-21/css/app.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sharing12-21/css/mui.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sharing12-21/css/mui.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sharing12-21/css/mui.picker.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sharing12-21/css/sharing.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sharing12-21/cybgjj-fenx.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sharing12-21/gqjl-fenx.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sharing12-21/gqzy-fenx.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sharing12-21/js/app.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sharing12-21/js/jquery-1.11.3.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sharing12-21/js/mui.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sharing12-21/js/mui.picker.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sharing12-21/js/mui.view.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sharing12-21/js/sharing.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sharing12-21/tdgdzjc-fenx.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sharing12-21/tzlc-fenx.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sound-recording.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tab-main.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tdgdzcj-list.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tdgdzjc-bj5.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tdgdzjc-ck5.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tzlc-bj10.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tzlc-ck10.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tzlc-list.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/unpackage/.confirmed_dependencies" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/unpackage/.dependencies" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/unpackage/release/1c09caf0-f44e-11e7-9a33-4df531c95a7a" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/upgrades.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wave.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xd-bj8.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xd-ck8.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xdxm-list.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xiangmu-fabu.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xiangmu-fk-xq-sz.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xiangmu-fk-xq.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xiangmu-fk.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xiangmu-v0.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xiangmu.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xiangmu2.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/yzsq.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/znpp-ssgs.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/znpp-ssgs2.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zq-bj9.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zq-ck9.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zqxm-list.html" />
+    </list>
+    <ignored path="$PROJECT_DIR$/.tmp/" />
+    <ignored path="$PROJECT_DIR$/temp/" />
+    <ignored path="$PROJECT_DIR$/tmp/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="common.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/calendar/js/common.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="zq-ck9.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/zq-ck9.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="567">
+              <caret line="21" column="17" lean-forward="true" selection-start-line="21" selection-start-column="17" selection-end-line="21" selection-end-column="17" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-9" />
+    <option name="y" value="-9" />
+    <option name="width" value="1938" />
+    <option name="height" value="1048" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scratches" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="mobileShangzhengbao" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mobileShangzhengbao" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mobileShangzhengbao" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mobileShangzhengbao" type="462c0819:PsiDirectoryNode" />
+              <item name="unpackage" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mobileShangzhengbao" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mobileShangzhengbao" type="462c0819:PsiDirectoryNode" />
+              <item name="unpackage" type="462c0819:PsiDirectoryNode" />
+              <item name="release" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="HbShouldOpenHtmlAsHb" value="" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\myGithub\workplace\mobileShangzhengbao" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ff3b67d7-b356-4832-931b-5968fa18eeff" name="Default" comment="" />
+      <created>1537863201144</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1537863201144</updated>
+      <workItem from="1537863202302" duration="1130000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="1130000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="上证报手机端9-25" />
+    <option name="LAST_COMMIT_MESSAGE" value="上证报手机端9-25" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/calendar/js/common.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zq-ck9.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="567">
+          <caret line="21" column="17" lean-forward="true" selection-start-line="21" selection-start-column="17" selection-end-line="21" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

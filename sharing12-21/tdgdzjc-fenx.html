@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html class="sharing-bc">
+	<head>
+		<meta charset="utf-8">
+		<title>特定股东增减持-分享</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+		<!--标准mui.css-->
+		<link rel="stylesheet" href="css/mui.min.css">
+		<!--App自定义的css-->
+		<link rel="stylesheet" type="text/css" href="css/app.css" />
+        <link rel="stylesheet" type="text/css" href="css/mui.picker.min.css" />
+        <link rel="stylesheet" type="text/css" href="css/sharing.css" />
+        <style>
+
+        </style>
+	</head>
+	<body style="padding-bottom: 40px;">
+		<div class="mui-content share-content">
+			<img src="img/fxbg.png" class="fx-bcimg"/>
+			<div class="openPledge" style="position: fixed;bottom: 0;left: 0;">
+				<button style="height: 36px;width: 94%;margin-left:3%;">点击立即询价</button>
+			</div>
+			
+		<!--弹出层	-->
+		<div id="tc"  class="mint-popup">
+			<div  class="mint-popup-scroll">
+				<div  class="mint-popup-head">
+					<p>温馨提示</p> 
+					<p >请如实填写表单，我们在收到表单后会尽快与您联系。</p>
+				</div> 
+				<div  class="mint-popup-content">
+					<section>
+						<form action="" class="chaxform" name="myForm"  id="validataF">
+							<div class="field ">
+								<label> 股票名称：</label>
+								<div class="ui inputBox">
+									<input type="text" name="fname" class="inputRequired">
+									<div class="ui corner label">
+										<i class="asterisk icon">*</i>
+									</div>
+								</div>
+							</div>
+							<div class="field ">
+								<label> 股票代码：</label>
+								<div class="ui inputBox">
+									<input type="text" name="fname" class="inputRequired">
+									<div class="ui corner label">
+										<i class="asterisk icon">*</i>
+									</div>
+								</div>
+							</div>
+							<div class="field ">
+								<label> 增减持方姓名：</label>
+								<div class="ui inputBox">
+									<input type="text">
+								</div>
+							</div>
+							<div class="field">
+								<label> 增减持方联系电话：</label>
+								<div class="ui inputBox">
+									<input type="text">
+								</div>
+							</div>
+							<div class="field">
+								<label> 拟增减持数量（万股）：</label>
+								<div class="ui inputBox">
+									<input type="text" name="fname" class="inputRequired">
+									<div class="ui corner label">
+										<i class="asterisk icon">*</i>
+									</div>
+								</div>
+							</div>
+							<div class="field">
+								<label> 拟增减持金额（万元）：</label>
+								<div class="ui inputBox">
+									<input type="text" name="fname" class="inputRequired">
+									<div class="ui corner label">
+										<i class="asterisk icon">*</i>
+									</div>
+								</div>
+							</div>
+							<div class="field">
+								<label> 拟增减持时间区间：</label>
+								<div class="ui inputBox">
+									<div id='demo4' data-options='{"type":"date"}' class="btn mui-btn mui-btn-block dataSelectbtn dateRequires">
+										<i id='result' class="ui-alert dateResult"></i>
+									</div>
+									<div class="ui corner label">
+										<i class="asterisk icon">*</i>
+									</div>
+								</div>
+								<div style="margin: 5px 0;"> 至</div>
+								<div class="ui inputBox">
+									<div id='demo42' data-options='{"type":"date"}' class="btn mui-btn mui-btn-block dataSelectbtn dateRequires">
+										<i id='result2' class="ui-alert dateResult"></i>
+									</div>
+									<div class="ui corner label">
+										<i class="asterisk icon">*</i>
+									</div>
+								</div>
+							</div>
+							<div class="field">
+								<label>拟增减持方式：</label>
+								<div class="ui inputBox">
+									<input type="text" name="fname" class="inputRequired">
+									<div class="ui corner label">
+										<i class="asterisk icon">*</i>
+									</div>
+								</div>
+							</div>
+							<div class="field">
+								<label>拟增减持的股份来源：</label>
+								<div class="ui inputBox">
+									<input type="text" name="fname" class="inputRequired">
+									<div class="ui corner label">
+										<i class="asterisk icon">*</i>
+									</div>
+								</div>
+							</div>
+							<div class="field">
+								<label> 其他重要事项：</label>
+								<div class="ui inputBox">
+									<textarea name="" id="" cols="30" rows="10" ></textarea>
+								</div>
+							</div>
+						</form>
+					</section>
+
+				</div>
+				<div  class="mint-popup-foot">
+					<button id="quxiao">取消</button>
+					<button class="form_submitbtn">提交</button>
+				</div>
+			</div>
+		</div>
+		</div>
+        <script src="js/mui.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="js/mui.picker.min.js"></script>
+		<script src="js/app.js"></script>
+		<script src="js/sharing.js"></script>
+	</body>
+</html>

@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en" class="bcWhite">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>限售解禁</title>
+    <link href="../../css/mui.min.css" rel="stylesheet" />
+    <link href="../../iconfont/iconfont.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../dc-company/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link href="../../css/app.css" rel="stylesheet" />
+    <link href="../dc-company/css/dc-company.css" rel="stylesheet"/>
+    <style>
+
+    </style>
+    <script src="../dc-company/js/companyCommon.js"></script>
+    <script src="../../js/mui.min.js"></script>
+    <script src="../../js/jquery-1.11.3.min.js"></script>
+    <script src="../../js/echarts.js"></script>
+    <script src="../../js/app.js"></script>
+</head>
+<body>
+<header class="mui-bar mui-bar-nav">
+    <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+    <h1 class="mui-title bc-white-inp" style="right: 46px;">限售解禁</h1>
+</header>
+
+<div class="mui-content bcWhite jsjj-box">
+    <ul class="top-jjbox">
+        <li class="top-jj-cell">
+            <span class="jj-txt">解禁时间</span>
+            <span class="jj-txt">2018-05-21</span>
+        </li>
+        <li class="top-jj-cell">
+            <span class="jj-txt">股份数量(万股)</span>
+            <span class="jj-txt"></span>
+        </li>
+        <li class="top-jj-cell">
+            <span class="jj-txt">解禁前流通股</span>
+            <span class="jj-txt">1691799.88</span>
+        </li>
+        <li class="top-jj-cell">
+            <span class="jj-txt">本次解禁</span>
+            <span class="jj-txt"></span>
+        </li>
+        <li class="top-jj-cell">
+            <span class="jj-txt">解禁后流通股</span>
+            <span class="jj-txt">1717024.68</span>
+        </li>
+        <li class="top-jj-cell">
+            <span class="jj-txt">本次解禁数量占比(%)</span>
+            <span class="jj-txt"></span>
+        </li>
+        <li class="top-jj-cell">
+            <span class="jj-txt">占解禁前流通股</span>
+            <span class="jj-txt">1.49</span>
+        </li>
+        <li class="top-jj-cell">
+            <span class="jj-txt">占解禁后流通股</span>
+            <span class="jj-txt">1.47</span>
+        </li>
+        <li class="top-jj-cell">
+            <span class="jj-txt">占总股本</span>
+            <span class="jj-txt">1.47</span>
+        </li>
+        <li class="top-jj-cell">
+            <span class="jj-txt">上市股份类型</span>
+            <span class="jj-txt">定向增发机构配售股份</span>
+        </li>
+        <li class="top-jj-cell">
+            <span class="jj-txt">剩余限售股数(万股)</span>
+            <span class="jj-txt">16.46</span>
+        </li>
+    </ul>
+    <ul class="bt-jjbox">
+        <li class="bt-jj-cell">
+            <span class="jj-txt">解禁股东明细</span>
+        </li>
+        <li class="bt-jj-cell">
+            <span class="jj-txt">股东名称</span>
+            <span class="jj-txt">本次解禁股份数量(万股)</span>
+            <span class="jj-txt">解禁市值(万元)</span>
+        </li>
+        <li class="bt-jj-cell">
+            <span class="jj-txt">中国平安保险</span>
+            <span class="jj-txt">25224.80</span>
+            <span class="jj-txt">276211.54</span>
+        </li>
+
+    </ul>
+</div>
+
+
+<script>
+    window.onload = function () {
+        /*机构投资者单行toggle*/
+        mui('body').on('tap','.rigth-arr-ico ',function () {
+            var oldparent = this.parentNode.parentNode;
+            var downInfo = oldparent.getElementsByClassName('hide-down-info')[0];
+            if(oldparent.classList.contains('actived')){
+                oldparent.classList.remove('actived')
+            }else{
+                oldparent.classList.add('actived')
+            }
+        });
+
+
+        /*股东户数-顶部tab选择*/
+        mui('.tb-toplabel').on('tap', '.top-tab-cell ', function () {
+            var len = this.parentNode.getElementsByClassName('top-tab-cell').length;
+            var siblinsnodes = this.parentNode.getElementsByClassName('top-tab-cell');
+            for (var i = 0; i < len; i++) {
+                siblinsnodes[i].classList.remove('actived')
+            }
+            this.classList.add('actived')
+        });
+
+        /*******从一个页面跳转到此页面指定tab******/
+        function GetQueryString(name)
+        {
+            var reg = new RegExp("(^|&)"+ name +"=([^&]*)(&|$)");
+            var r = window.location.search.substr(1).match(reg);
+            if(r!=null)return  unescape(r[2]); return null;
+        }
+        var tar=GetQueryString("tar");
+        var tabLen = mui('#segmentedControl .mui-control-item').length;
+        if(tar !=null && tar >= 0)
+        {
+            for(var i = 0;i< tabLen;i++){
+                document.getElementsByClassName('mui-control-item')[i].classList.remove('mui-active');
+                document.getElementsByClassName('mui-control-content')[i].classList.remove('mui-active');
+            }
+            document.getElementsByClassName('mui-control-content')[tar].classList.add('mui-active');
+            document.getElementsByClassName('mui-control-item')[tar].classList.add('mui-active');
+        }
+
+        var gdhsTar = GetQueryString("gdhsTar");
+        var gdhsTarLen = mui('.tb-toplabel .top-tab-cell').length;
+        if(gdhsTar !=null && gdhsTar>=0){
+
+            //切换到股东户数下的tab2
+            console.log('gdhsTar:'+gdhsTar)
+            for (var i = 0; i < gdhsTarLen; i++) {
+                mui('.tb-toplabel .top-tab-cell')[i].classList.remove('actived')
+            }
+            mui('.tb-toplabel .top-tab-cell')[gdhsTar].classList.add('actived')
+        }
+        /*******从一个页面跳转到此页面指定tab end******/
+
+
+        /*选择时间范围*/
+        document.onclick = function(){
+            this.getElementsByClassName('selectLis')[0].classList.remove('actived');
+        };
+        mui('body').on('tap','.select-con',function (e) {
+            //取消冒泡
+            e = e || window.event;
+            if(document.all){
+                e.cancelBubble = true;
+            }else{
+                e.stopPropagation();
+            }
+
+            if(this.getElementsByClassName('selectLis')[0].classList.contains('actived')){
+                this.getElementsByClassName('selectLis')[0].classList.remove('actived')
+            }else{
+                this.getElementsByClassName('selectLis')[0].classList.add('actived')
+            }
+        });
+        mui('body').on('tap','.select-con .se-cell',function () {
+            var innerTxt = this.innerText;
+            var nodeLen = this.parentNode.getElementsByClassName('se-cell').length;
+            for(var i =0;i<nodeLen;i++){
+                this.parentNode.getElementsByClassName('se-cell')[i].classList.remove('actived');
+                this.classList.add('actived')
+            }
+            var txtBox = this.parentNode.parentNode.getElementsByClassName('seelct-rs')[0];
+            txtBox.innerText = innerTxt;
+        })
+        /*echarts*/
+        var myChart1 = echarts.init(document.getElementById('rzrqChart'));
+        option = {
+            grid:{
+                x:50,
+                x2:30,
+                y:10
+            },
+            legend: {
+                data: ['股东总户数','收盘价(右)'],
+                itemWidth:18,
+                itemHeight:3,
+                icon: 'rect',
+                y:'bottom'
+            },
+            xAxis: [{
+                type:'category',
+                axisTick:{
+                    show:false
+                },
+                axisLine:{
+                    lineStyle:{
+                        color:'#b8b9ba'
+                    }
+                },
+                axisLabel: {
+                    textStyle:{
+                        fontSize:'12',
+                        color:'#9fa4ab'
+                    }
+                },
+                data:['2017-10-01','2017-11-01','2017-12-01']
+            }],
+            yAxis: [{
+                type:'value',
+                /*name:'融资余额',*/
+                min: 70000,
+                max: 90000,
+                interval: 5000,
+                axisTick:{
+                    show:false
+                },
+                axisLine:{
+                    show:false
+                },
+                axisLabel: {
+                    formatter: '{value}',
+                    textStyle:{
+                        fontSize:'12',
+                        color:'#9fa4ab'
+                    }
+                },
+                splitLine:{
+                    lineStyle:{
+                        color:'#b8b9ba'
+                    }
+                }
+            },{
+                type:'value',
+                /*name:'融券余额',*/
+                min: 0,
+                max: 50,
+                interval: 10,
+                axisTick:{
+                    show:false
+                },
+                axisLine:{
+                    show:false
+                },
+                axisLabel: {
+                    formatter: '{value}',
+                    textStyle:{
+                        fontSize:'12',
+                        color:'#9fa4ab'
+                    }
+                },
+                splitLine:{
+                    show:false
+                }
+            }],
+            series: [{
+                name:'股东总户数',
+                type:'line',
+                data:[71000,81000,78900]
+
+            },{
+                name:'收盘价(右)',
+                type:'line',
+                yAxisIndex: 1,
+                data:[31,30.3,30.2]
+            }],
+            label: {
+                normal: {
+                    show: true,
+                    position: 'top',
+                    textStyle: {
+                        color: 'black'
+                    }
+                }
+            },
+            color: ['#0f88cb','#ff4242']
+        };
+        myChart1.setOption(option);
+        /*echarts*/
+
+        /*固定两个表格一行高度*/
+        function fixtableHeight() {
+            var leftTrLen = mui('.fixedcolumn-table .left-col-table tr').length;
+            /*  console.log('leftTrLen:'+ mui('.left-col-table tr')[2].offsetHeight)*/
+            for (var i = 0; i < leftTrLen; i++) {
+                var leftTrH = mui('.fixedcolumn-table .left-col-table tr')[i].offsetHeight;
+                var rightTrH = mui('.fixedcolumn-table .right-con-table tr')[i].offsetHeight;
+                if (leftTrH < rightTrH) {
+                    mui('.fixedcolumn-table .left-col-table tr')[i].style.height = rightTrH + 'px';
+                    mui('.fixedcolumn-table .right-con-table tr')[i].style.height = rightTrH + 'px'
+                } else if (leftTrH > rightTrH) {
+                    mui('.fixedcolumn-table .left-col-table tr')[i].style.height = leftTrH + 'px';
+                    mui('.fixedcolumn-table .right-con-table tr')[i].style.height = leftTrH + 'px'
+                }
+            }
+        }
+        fixtableHeight();
+        mui('body').on('tap', '.mui-control-item', function () {
+            fixtableHeight();
+            setTimeout(function () {
+                fixtableHeight()
+            }, 1)
+        });
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>验证申请</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+		<!--标准mui.css-->
+		<link rel="stylesheet" href="css/mui.min.css">
+		<!--App自定义的css-->
+		<link rel="stylesheet" type="text/css" href="css/app.css" />
+        <style>
+            .newFriendSearchbox {
+                margin-top: 16px;
+                padding-bottom: 6px;
+                background: #fff!important;
+            }
+            .newFriendSearchbox input {
+                border-radius:0;
+                border:0;
+                border-bottom:1px solid #999;
+            }
+            .layimSearchResult {
+                margin-top:16px;
+                background-color: #fff;
+                padding: 12px;
+            }
+            .sr_tit {
+                border-bottom:1px solid #ccc;
+                padding-bottom: 5px;
+                color: #aaa;
+                font-size: 14px;
+            }
+            .sr_cont li a{
+                display:block;
+                padding:8px 0;
+                border-bottom:1px solid #ddd;
+            }
+            .fname {
+                color: #333;
+            }
+            .layimNav {
+                background:#36373c;
+                height: 50px;line-height: 50px;
+                padding-top: 3px;
+            }
+            .yzsq_part {
+                padding: 10px;
+                background-color: #fff;
+                margin-bottom: 12px;
+            }
+            .yzsq_part .textgray {
+                color: #999;
+                font-size: 14px;
+            }
+            .yzsq_part input {
+                border: 0;
+                border-radius:0;
+                border-bottom:1px solid #36373c;
+            }
+        </style>
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav layimNav">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<h1 class="mui-title" style="text-align: left;">验证申请</h1>
+            <a class="mui-btn mui-btn-link mui-pull-right" href="ipo-bj1.html">
+               发送
+            </a>
+		</header>
+		<div class="mui-content ">
+            <div class="yzsq_part">
+                <span class="textgray">你需发送验证申请，等对方通过</span>
+                <div class="mui-input-row">
+                    <input type="text" class="mui-input-clear">
+                </div>
+            </div>
+            <div class="yzsq_part">
+                <span class="textgray">为朋友设置备注</span>
+                <div class="mui-input-row">
+                    <input type="text" class="mui-input-clear" style="border-color: #e6e6e6;">
+                </div>
+            </div>
+        </div>
+		<script src="js/mui.min.js"></script>
+		<script src="js/app.js"></script>
+    </body>
+</html>

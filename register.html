@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html class="registerhd-bc">
+
+	<head>
+		<meta charset="utf-8">
+		<title>注册</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+		<!--标准mui.css-->
+		<link rel="stylesheet" href="css/mui.min.css">
+		<!--App自定义的css-->
+		<link rel="stylesheet" type="text/css" href="css/app.css" />
+		<link rel="stylesheet" type="text/css" href="css/xiangmu.css">
+		<style>
+			.login-form {
+				margin-top: 0;
+			}
+			.registerhd {
+				background: rgba(0,0,0,.3);
+				box-shadow: none;
+			}
+		.login-form {
+			padding-top: 30px;
+		}
+		.mui-content.register-con {
+			padding-top: 0;
+		}
+		.login-box {
+			padding-top: 40px;
+		}
+		</style>
+	</head>
+
+	<body style="min-height: 100%;">
+	<header class="mui-bar mui-bar-nav registerhd">
+		<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+		<!--<h1 id="title" class="mui-title">注册</h1>-->
+	</header>
+		<div class="mui-content login-content register-con">
+
+			<div class="login-box">
+				<div class="login-form">
+					<div class="sign-in-htm" >
+						<div class="group">
+							<input id="user" type="text" class="input" placeholder="请输入用户名">
+						</div>
+						<div class="group">
+							<input id="pass" type="password" class="input" data-type="password" placeholder="请输入密码">
+						</div>
+						<div class="group">
+							<input type="text" class="input" id="name" placeholder="请输入姓名">
+						</div>
+						<div class="group">
+							<input type="text" class="input" placeholder="请输入手机号码">
+						</div>
+						<div class="group">
+							<input type="text" class="input" placeholder="请输入邮箱">
+						</div>
+						<div class="group">
+							<input type="text" class="input" placeholder="请输入工作单位">
+						</div>
+						<div class="group">
+							<input type="text" class="input" placeholder="请输入职务">
+						</div>
+						<div class="group">
+							<input type="text" class="input" placeholder="请输入年龄">
+						</div>
+						<div class="group">
+							<a class=""><input type="submit" class="button" value="注册"></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>		
+		<script src="js/mui.min.js"></script>
+		<script src="js/app.js"></script>
+		<script type="text/javascript">
+		/*获取屏幕可用高度*/
+            var winheight = window.screen.availHeight;
+            document.getElementsByClassName('login-box')[0].style.height = winheight+'px';
+		</script>
+	</body>
+
+</html>

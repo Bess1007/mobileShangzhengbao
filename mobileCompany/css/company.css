@@ -1,0 +1,2306 @@
+
+@charset "UTF-8";
+
+html{
+    font-size: 625%; font-size: 100px;
+}
+body {
+    font-size: 0.14rem;
+    font-family:方正正黑,黑体,宋体,微软雅黑,sans-serif !important;
+    background: rgb(255, 255, 255);
+    color:#000;
+}
+html, body, div, form, p, a, h1, h2, h3, h4, h5, h6, img, table, td, th, input, span, section, header, footer, nav, article, aside, fieldset, textarea, dl, dt, dd, blockquote, ul, ol, strong {
+    margin: 0;
+    padding: 0;
+    border: 0;
+
+}
+*, *:before, *:after {
+    -webkit-tap-highlight-color: transparent;/*清除点击默认的高亮效果*/
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+}
+img {
+    border:none;
+}
+ul{
+    list-style: none;
+
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+input,textarea{
+    border:0;
+    resize: none;
+    outline: none;
+    -webkit-appearance: none;/*清除浏览器默认的样式*/
+}
+/*清除浮动*/
+.clearfix::before,.clearfix::after {
+    content: ".";
+    display: block;
+    height:0;
+    line-height:0;
+    visibility: hidden;
+    clear: both;
+}
+i,strong,b{
+    font-weight:normal;
+    font-style: normal;
+}
+.fl{float: left;}
+.fr{float: right;}
+
+
+.mui-bar-nav {
+    background-color: #1b82d2;
+    color: #fff;
+}
+.mui-bar-nav.bcWhiteNav {
+    background-color: #fff;
+}
+.mui-bar-nav.bcWhiteNav a {
+    color: #000;
+}
+.mui-bar-nav a {
+    color: #fff;
+}
+.mui-bar-nav .mui-title {
+    color: #fff;
+}
+.bcWhiteNav .mui-title {
+    color: #000;
+}
+.mui-bar .mui-btn-link {
+    color: #fff;
+}
+.index_search {
+    background-color: #265cd8;
+    color: #b4c6f1;
+    font-size: 0.14rem;
+}
+.index_search.mui-search .mui-placeholder {
+    color: #b4c6f1;
+}
+
+
+.ripple-container .ripple{
+    background-color: rgba(204,204,204,0.4);
+    animation: ripple 1s forwards cubic-bezier(0, 0, 0.2, 1);
+}
+@keyframes ripple {
+    0% {
+        transform: scale(0);
+        opacity: 1;
+    }
+    80% {
+        transform: scale(1);
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+html {
+    background-color: #f5f5f5;
+    /*padding-top: 10px;*/
+}
+
+
+::-webkit-input-placeholder { /* WebKit browsers */
+    color: #999;
+}
+::-moz-placeholder { /* WebKit browsers */
+    color: #999;
+}
+:-moz-placeholder { /* WebKit browsers */
+    color: #999;
+}
+:-ms-input-placeholder { /* WebKit browsers */
+    color: #999;
+}
+
+
+.mui-table-view-radio .mui-table-view-cell>a:not(.mui-btn) {
+    margin-right: -0.65rem;
+    width: auto;
+    display: inline-block;
+    padding: .11rem .15rem .11rem .38rem;
+}
+.mui-table-view-radio .mui-table-view-cell .mui-navigate-right:after {
+    font-size: .30rem;
+    font-weight: 600;
+    left: .19rem;
+    content: '.';
+    color: #ccc;
+    top: .16rem;
+}
+.mui-table-view-radio .mui-table-view-cell.mui-selected .mui-navigate-right:after {
+    content: '\e472';
+    top: .22rem;
+    color: #177ef3;
+    left: .09rem;
+}
+.mui-table-view-radio	 .mui-table-view-cell {
+    display:table-cell;
+}
+input[type=search].schComp {
+    border-radius: 0;
+    border-color: #f0f0f0;
+    background-color: transparent;
+}
+
+
+.item-block {
+    padding:.10rem 0;
+    background-color: #fff;
+}
+.item-block li {
+    border-bottom:.01rem solid #f0f0f0;
+}
+.item-block li label {
+    width:auto;
+}
+.item-block li input {
+    width:auto;background-color: transparent;border: 0;
+    margin-bottom: 0;
+    color: #444;
+    float: left;
+}
+.zp-sel.mui-table-view-radio .mui-table-view-cell {
+    display:inline-block;
+}
+.zp-sel.mui-table-view-radio .mui-table-view-cell a {
+    padding-top: 0;
+    padding-bottom: 0;
+    background-color: #efefef;
+    color: #b3b3b3;
+    border-radius:.03rem;
+}
+.zp-sel.mui-table-view-radio .mui-table-view-cell.mui-selected .mui-navigate-right:after {
+    top:.11rem;
+    color: #fff;
+}
+.zp-sel.mui-table-view-radio .mui-table-view-cell.mui-selected .mui-navigate-right {
+    background-color: #1b92e6;
+    color: #fff;
+}
+.zp-sel.mui-table-view-radio .mui-table-view-cell .mui-navigate-right:after {
+    top: .05rem;
+}
+.zp-sel li {
+    border-bottom: 0;
+    padding: .06rem .15rem;
+}
+.zp-sel .mui-table-view-cell:after {
+    display:none;
+ }
+.zp-sel:after {
+    display:none;
+}
+.zp-item-block li input {
+    width: 100%;
+    padding-left: 1.04rem;
+    margin-left: -1.04rem;
+}
+
+
+.mui-checkbox input[type=checkbox]:checked:before {
+    content: '\e472';
+    font-size: .30rem;
+    font-weight: 600;
+    position: absolute;
+    top:-0.07rem;
+    left:.92rem;
+    color: #fff;
+}
+.mui-checkbox input[type=checkbox]:before {
+    content: '.';
+    font-size: .30rem;
+    font-weight: 600;
+    top:-0.13rem;
+    color: #ccc;
+    position: absolute;
+}
+.gxlx-box .mui-checkbox input[type=checkbox]:checked  + label {
+    background-color: #1b92e6;
+    color: #fff;
+}
+.zp-item-block .mui-checkbox {
+    display:inline-block;
+    height:auto;
+    margin-top: .08rem;
+    margin-right: .12rem;
+}
+.mui-input-row .gxlx-box {
+    width: 100%;
+    padding-left: 1.04rem;
+    margin-left: -1.04rem;
+    border: 0;
+    background: transparent;
+}
+.mui-input-row .gxlx-box:after,.mui-input-row .gxlx-box:before {display:none}
+.gxlx-box .mui-input-row:after {
+    display: none;
+}
+.gxlx-box .mui-checkbox.mui-left label {
+    background-color: #efefef;
+    height: .24rem;
+    line-height: .24rem;
+    color: #b3b3b3;
+    padding:0 .15rem 0 .38rem;
+    border-radius:.03rem;
+    font-size: .12rem;
+}
+
+.ptsCtScBox {
+    float: left;
+    width: 100%;
+    padding-left: 1.04rem;
+    margin-left:-1.04rem;
+}
+.ptsCtScBox li {
+    display: block;
+    overflow: hidden;
+}
+.ptsCtScBox li label {
+    font-size: .14rem;
+    color: #999;
+}
+.scpointsBtn {
+    display: block;
+    width: 100%;
+    text-align: center;
+    line-height: .32rem;
+    background-color: #2888f3;
+    color: #ffffff;
+    border:0;
+    padding: .06rem .12rem;
+    transition-duration: .2s;
+    border-radius: .03rem;
+}
+.grayBtn {
+    background-color: #efefef;
+    color: #b3b3b3;
+}
+
+/***********公司详情页**********/
+footer {
+    border-top: .01rem solid #e0e0e0;
+}
+footer {
+    width: 100%;
+    height: auto;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    background-color: #fff;
+    z-index: 100;
+}
+footer .foottableul {
+    width: 100%;
+    display: table;
+}
+.tcli {
+    display: table-cell;
+    text-align: center;
+    position: relative;
+}
+.tcli a {
+    display: block;
+    padding: .08rem 0;
+}
+.tcli .cIco {
+    margin-bottom: .03rem;
+    font-size: .18rem;
+    height:.22rem;
+    line-height:.22rem;
+    display: block;
+}
+
+.companyHead {
+    padding: .20rem .15rem;
+    background-color: #fff;
+    display: table;
+    width: 100%;
+    margin-bottom: .02rem;
+}
+.companyHead .tc {
+    display: table-cell;
+    vertical-align: top;
+}
+.pl12 {
+    padding-left: .12rem;
+    padding-right: .12rem;
+}
+.companynamebox {
+    position: relative;
+    text-align: left;
+}
+.cname {
+    font-size:0.18rem;
+    color: #42454e;
+    display: inline-block;
+    padding-top: .05rem;
+    /* padding-right: 60px; */
+    /* margin-left: 12px; */
+}
+.info2 {
+    font-size: .12rem;
+    margin-top: .15rem;
+}
+.lightgray {
+    color: #9f9f9f;
+}
+.verticalline {
+    color: #ebeaea;
+    margin: 0 0.07rem;
+}
+.info3 {
+    font-size: 0.12rem;
+    line-height: 0.24rem;
+    margin-top: 0.1rem;
+}
+.infozt {
+    border: .01rem solid #67b9ff;
+    color: #67b9ff;
+    border-radius: .02rem;
+    padding: 0 0.04rem;
+    margin-top: 0.13rem;
+    display: inline-block;
+    font-size: 0.12rem;
+    height: 0.2rem;
+    line-height: 0.2rem;
+}
+.companypart2 {
+    display: table;
+    height: 0.46rem;
+    line-height: 0.46rem;
+    background-color: #fff;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 0.1rem;
+}
+.companypart2 .tc {
+    display: table-cell;
+    font-size: 0.12rem;
+}
+.mr8 {
+    margin-right: 0.08rem;
+}
+.textgreen {
+    color: #69AA46;
+}
+.textred {
+    color: #DD5A43;
+}
+.textblue {
+    color: #2b7dbc;
+}
+.info3 {
+    overflow: hidden;
+}
+.info3 span {
+    float: left;
+    white-space: nowrap;
+}
+
+.touchw span {
+    font-size: 0.14rem;
+}
+span.lico {
+    font-size: 0.18rem;
+    color: #a8abb5;
+    margin-right: 0.08rem;
+    position: relative;
+    top: 0.03rem;
+    font-weight:normal;
+}
+.lx-info-box span {
+    padding-right:.10rem;
+}
+.mui-icon.lico {
+    color: #a8abb5;
+}
+.companypart3 {
+    margin-bottom: 0.1rem;
+}
+
+.infoHead {
+    width: 100%;
+    background-color: #fff;
+    padding: 0 0.16rem;
+    height: 0.44rem;
+    line-height: 0.44rem;
+    font-size: 0.16rem;
+    color: #40434d;
+    font-weight: 700;
+    border-bottom: 1px solid #e3e3e3;
+}
+.infobody {
+    background-color: #fff;
+}
+.infoeles {
+    float: left;
+    width: 25%;
+    height: 1.08rem;
+    background-color: #fff;
+    border-right: 1px solid #e3e3e3;
+    border-bottom: 1px solid #e3e3e3;
+    text-align: center;
+    padding: 0 0.03rem;
+    font-size: 0.12rem;
+}
+.fico {
+    display: block;
+    font-size: 0.22rem;
+    color: #2b7dbc;
+    /* line-height: 66px; */
+    margin: 0.3rem 0 0.2rem;
+    position: relative;
+    height: 0.22rem;
+    line-height:0.22rem;
+}
+.fico i {
+    position: absolute;
+    top: -0.10rem;
+    right: 0.14rem;
+    color: #333;
+    font-size: 0.10rem;
+}
+.infoinner {
+    display: block;
+    font-size: 0.12rem;
+    line-height: 0.16rem;
+}
+.commonStyleBox {
+    margin-bottom: 0.10rem;
+}
+/*公司动态图标颜色*/
+.companyDynamic .fico {
+    color: #2eb5a9;
+}
+/*公司概况下图标颜色*/
+.companySurvey .fico,.companySurvey i {
+    color: #0fbbe9;
+}
+
+/*公司基本信息下图标颜色*/
+.companyBaseInfo .fico {
+    color: #1d8fe1;
+}
+
+/*公司高管情况下图标颜色*/
+.companyExecutive .fico {
+    color: #7686de;
+}
+
+/*公司财务信息下图标颜色*/
+.companyFinanceInfo .fico {
+    /*color: #e3db5d;*/
+    color: #e99307;
+}
+
+/*公司风险信息下图标颜色*/
+.companyRiskInfo .fico,.companyRiskInfo i {
+    color: #ff682d;
+}
+
+/*公司风险评测下图标颜色*/
+.companyEvaluate .fico {
+    color: #f39826;
+}
+
+/*公司F10下图标颜色*/
+.companyF10 .fico {
+    color: #0f7ab8;
+}
+
+/*没有内容时图标颜色*/
+.graypart .fico,.graypart i {
+    color: #adb2c1;
+}
+/***********公司详情页 end**********/
+
+/****************公司动态****************/
+/*****时间轴*****/
+.cBox {
+    padding: .09rem .07rem;
+    padding-bottom: 0;
+    padding-right: 0;
+    background: #fff;
+    margin-top: .02rem;
+}
+.changebox {
+    padding: 0 .16rem;
+    border-left: .02rem solid #dfe0e1;
+    width: 100%;
+}
+.nodeBox {
+    padding-bottom: .36rem;
+}
+.clittleboxs {
+    border-bottom: .02rem solid #f9f9f9;
+}
+.timetit {
+    position: relative;
+    text-align: left;
+    font-size: .12rem;
+    line-height: .12rem;
+    color: #a9afbe;
+    margin-bottom: .10rem;
+}
+.node {
+    position: absolute;
+    top: 0;
+    left: -0.23rem;
+    width: .12rem;
+    height: .12rem;
+    border: .01rem solid #e4e9ea;
+    border-radius: .06rem;
+    background: #fff;
+    text-align: center;
+}
+.node i {
+    display: inline-block;
+    width: .06rem;
+    height: .06rem;
+    background: #d4dcdf;
+    border-radius: .03rem;
+    margin-bottom: .02rem;
+}
+.clittleboxs.tablebox {
+    padding: .12rem 0 .04rem 0;
+    width: 100%;
+}
+.tablebox {
+    display: table;
+}
+.clittleboxs {
+    border-bottom: .02rem solid #f9f9f9;
+}
+.clittleboxs .tableCellbox {
+    text-align: left;
+}
+.br1 {
+    border-right: 1px solid #f0f0f0;
+    /*padding-right: .17rem;*/
+    padding:0 .08rem;
+}
+.tableCellbox {
+    display: table-cell;
+}
+.tableCellbox span {
+    display: block;
+    font-weight: 400;
+    font-size: .12rem;
+}
+.tableCellbox span {
+    display: block;
+    font-weight: 400;
+    font-size: .12rem;
+    line-height: .14rem;
+}
+.mch {
+    margin: .04rem 0 .15rem;
+}
+.textgray {
+    color: #8c8c8c;
+}
+.ml18 {
+    padding-left: .18rem;
+}
+/*****时间轴end*****/
+
+/*****公司画像*****/
+.blocks {
+    width: 100%;
+}
+.blocks .trbox {
+    padding: .12rem .16rem;
+    vertical-align: top;
+    background-color: #fff;
+    margin-bottom: .01rem;
+    font-size: .14rem;
+    border: 0;
+    display: block;
+}
+.blocks .trbox .tdbox {
+    display: inline-block;
+    vertical-align: top;
+}
+.blocks .trbox .tdbox:nth-child(1) {
+    width: 30%;
+    text-align: left;
+}
+.blocks .trbox .tdbox:nth-child(2) {
+    width: 66%;
+    text-align: left;
+}
+
+/*****公司画像end *****/
+
+/*****财务摘要*****/
+.cwzyBox {
+    width: 100%;
+    background-color: #fff;
+}
+.ulTable {
+    display:table;
+    width: 100%;
+}
+.tCellLi {
+    display:table-cell;
+}
+.cw-time-tit {
+    text-align: center;
+    font-size: .14rem;
+    font-weight:bold;
+    color: #0c9cd9;
+    height: .32rem;
+    line-height: .32rem;
+    border-bottom: .02rem solid #f0f0f0;
+}
+.cw-inner {
+    padding:.12rem 0;
+    border-bottom: .01rem solid #f0f0f0;
+    text-align: center;
+}
+.cw-inners-cell {
+    display:block;
+    font-size: .14rem;
+    line-height: .16rem;
+    margin-bottom: .06rem;
+}
+.cw-inners-cell-num {
+    color: #9e9e9e;
+}
+.left-tCellLi .cw-inner ,.left-tCellLi .cw-time-tit{
+    border-right:.01rem solid #f0f0f0;
+}
+/*****财务摘要end *****/
+
+/*****停牌天数*****/
+.tp-survey {
+    background-color: #fff;
+    margin-bottom: .10rem;
+}
+.tp-survey-span-box {
+    display:inline-block;
+    padding:0 .14rem;
+    height: .36rem;
+    line-height: .36rem;
+    font-size: .14rem;
+}
+.tp-survey-span-box i {
+    color: #f36d40;
+}
+.common-nodeBox {
+    display:block;
+    background-color: #fff;
+    padding: .12rem .12rem;
+    margin-bottom: .12rem;
+    font-size: .14rem;
+    position: relative;
+}
+.nodeBox-lis {
+    line-height: .20rem;
+    margin: .04rem 0;
+    overflow: hidden;
+}
+.labelBox,.rightTxtBox {
+    float: left;
+}
+.rightTxtBox {
+    color: #8c8c8c;
+}
+.textblue {
+    color: #2b7dbc;
+} 
+/*****停牌天数end*****/
+
+/*****有关事件*****/
+.dynamic-event .tableCellbox span {
+    width: 100%;
+    word-break:break-all;
+    display:-webkit-box;
+    -webkit-line-clamp:6;
+    -webkit-box-orient:vertical;
+    overflow:hidden;
+}
+.positiveEvent {
+    display:inline-block;
+    background-color: #1b92e6;
+    color: #fff;
+    font-size: .12rem;
+    padding:0 .06rem;
+    height: .16rem;
+    line-height: .16rem;
+}
+.negativeEvent {
+    display:inline-block;
+    background-color: #ff4242;
+    color: #fff;
+    font-size: .12rem;
+    padding:0 .06rem;
+    height: .16rem;
+    line-height: .16rem;
+}
+/*****有关事件end*****/
+
+/****************公司动态end ****************/
+
+
+/****************基本信息 ****************/
+
+/******高管信息*****/
+.nodeBox-lis.pd12 {
+    padding: .12rem;
+    padding-bottom: 0;
+}
+.ggxx-li {
+    background-color: #fff;
+    box-shadow: .08rem .04rem .10rem #ccc;
+    margin-bottom: .15rem;
+}
+.ggxx-dwtz {
+    padding:0 .12rem;
+    display:block;
+    text-align: left;
+    position: relative;
+    line-height: .34rem;
+    border-top:.01rem solid #f0f0f0;
+}
+.ggxx-dwtz .fa-angle-right {
+    position: absolute;
+    height: 100%;
+    line-height: .34rem;
+    font-size: .18rem;
+    width: .30rem;
+    text-align: center;
+    top:0;
+    right: 0;
+    color: #999;
+}
+/******高管信息end*****/
+
+/******高管信息详细信息列表页*****/
+.inverstInfolist {
+    margin-top: .10rem;
+}
+.inverstInfolist .ggxx-li {
+    margin-bottom: .10rem;
+    box-shadow: none;
+}
+.inverstInfolist .ggxx-dwtz {
+    line-height: .40rem;
+}
+.inverstInfolist .ggxx-dwtz .fa-angle-right {
+    line-height: .40rem;
+}
+.inverst-num {
+    display:inline-block;
+    background-color: #ffa600;
+    color: #fff;
+    padding:0 .06rem;
+    line-height: .16rem;
+    border-radius: .3rem;
+    font-size: .12rem;
+    margin-left: .03rem;
+}
+/******高管信息详细信息列表页end*****/
+/****************基本信息 end****************/
+
+/****************财务信息****************/
+.dateSelectBox-cell {
+    position: relative;
+    padding-right: .20rem;
+    float: right;
+    border-left:.03rem solid #f5f5f5;
+}
+.dateSelectBox-cell select {
+    background-color: transparent;
+    margin-bottom: 0;
+    height: .30rem;
+    padding:.04rem .08rem;
+    font-size: .14rem;
+
+}
+.dateSelectBox-cell .mui-icon-arrowdown {
+    position: absolute;
+    height: .30rem;
+    line-height: .30rem;
+    width: .28rem;
+    text-align: center;
+    top:0;
+    right: 0;
+    color: #999;
+    font-size: .18rem;
+}
+.unitBox {
+    padding-right: .20rem;
+    padding-left: .08rem;
+    float: left;
+    height: .33rem;
+    line-height: .30rem;
+    border-right:.03rem solid #f5f5f5;
+}
+.dateSelectBox-cell,.unitBox {
+    width: 50%;
+    border-top:.02rem solid #ddd;
+    background-color: #fff;
+    font-size: .14rem;
+    margin-bottom: .10rem;
+    margin-top: .08rem;
+}
+/****************财务信息end****************/
+
+/****************风险信息****************/
+.pr20 {
+    padding-right: .20rem;
+}
+.common-nodeBox.pr20 {
+    position: relative;
+    padding-right: .32rem;
+}
+.currentNum {
+    padding: .02rem .05rem;
+    line-height: .12rem;
+    background-color: #0f88cb;
+    font-size: .12rem;
+    border-radius: .03rem;
+    color: #fff;
+    margin-right: .03rem;
+    float: none;
+    display:inline-block;
+}
+.inverstC {
+    float: none;
+}
+.common-nodeBox .rightAngle {
+    position: absolute;
+    right: 0;
+    bottom: .16rem;
+    font-size: .20rem;
+    width: .32rem;
+    height: .32rem;
+    text-align: center;
+    line-height: .32rem;
+    color: #a6acbc;
+}
+.common-nodeBox .rightAngle a {
+    color: #a6acbc;
+}
+/****************风险信息end****************/
+
+/****************F10****************/
+.hqbj-box {
+    background-color: #fff;
+    margin-bottom: .01rem;
+}
+.hq-left-box,.hq-right-box{
+    float: left;
+    width:50%;
+    text-align: center;
+    padding: .06rem;
+}
+.classTit {
+    font-weight:normal;
+    font-size: .14rem;
+    padding:0 .12rem;
+    background-color: #fff;
+    height: .30rem;
+    line-height: .30rem;
+    border-left:.04rem solid #528098;
+    border-right:.04rem solid #528098;
+    color: #528098;
+    margin-bottom: .05rem;
+    margin-top: .03rem;
+    border-top:.01rem solid #fff;
+    border-bottom:.01rem solid #fff;
+}
+.classBy {
+    margin-bottom: .14rem;
+}
+.classBy .common-nodeBox {
+    margin-bottom: .06rem;
+}
+/****************F10 end****************/
+
+/****************echarts表格页面****************/
+/******本日行情*******/
+.todayMarketBox {
+
+    padding: .10rem;
+    border-bottom:.01rem solid #f0f0f0;
+    background-color: #fff;
+}
+.todayMarket {
+    width: 100%;
+
+}
+.todayMarket td {
+    padding:0 .08rem;
+}
+.updown-name-td {
+    padding-right: .15rem;
+    text-align: right;
+}
+.market-num {
+    font-size: .20rem;
+}
+.company-code,.company-name {
+    font-size: .16rem;
+}
+/******本日行情end*******/
+
+/******行情走势*******/
+.hqzsLp {
+    border-bottom:.01rem solid #f0f0f0;
+}
+.hqzsLp .tablebox {
+    width: 100%;
+    text-align: center;
+    padding:.05rem;
+}
+.kLine {
+    margin-top: .10rem;
+}
+.search-zqdmBox {
+    height: .34rem; margin-top: .04rem;
+    margin-bottom: .04rem;
+}
+.search-zqdmBox .search-zqdm {
+    border:0;
+    /*box-shadow: 0 0 3px #0c9cd9;*/
+    border-radius:0;
+    border-left:.05rem solid #ccc;
+    text-align: left;
+
+}
+.kLine .mui-segmented-control.mui-segmented-control-inverted .mui-control-item.mui-active {
+    color: #1b92e6;
+    border-color: #1b92e6;
+}
+.kLine .mui-control-content {
+    padding-top:.10rem;
+}
+/******行情走势end*******/
+
+
+.gradeBox {
+    width:3.20rem;
+    margin:.15rem auto;
+}
+.gradeBox .dingliang_grade {
+    margin-top: .10rem;
+    margin-bottom: .15rem;
+}
+/*********当前信用评级end*********/
+
+/***********成长能力***********/
+.chartTopTable .titTxt,.chartTopTable .numTxt {
+    font-weight: 400;
+    font-size: .12rem;
+    line-height: .26rem;
+}
+.chartTopTable .numTxt {
+    color: #8c8c8c;
+}
+.underChartBox {
+    margin-top: .10rem;
+}
+/***********成长能力end***********/
+/*****ZETA*****/
+.textInd {
+    padding:.08rem;
+}
+.textInd p {
+    font-size: .13rem ;
+    line-height: .16rem;
+    text-indent: 2em;
+}
+/*****ZETAend*****/
+/****************echarts表格页面end****************/
+
+/******12-28新增跳转模糊查询搜索页面****/
+.mui-title .company_hd_sc {
+    height: .30rem;
+    margin: 0;
+    border-radius:.03rem;
+    background-color: #f4f4f4;
+    border-color:#e2e2e2;
+    font-size: .12rem;
+    padding-left: .05rem;
+    position: relative;
+    top:-0.02rem;
+}
+.company_hd_sc::-webkit-input-placeholder { /* WebKit browsers */
+    font-size:.12rem;
+}
+.company_hd_sc:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    font-size:.12rem;
+}
+.company_hd_sc::-moz-placeholder { /* Mozilla Firefox 19+ */
+    font-size:.12rem;
+}
+.company_hd_sc:-ms-input-placeholder { /* Internet Explorer 10+ */
+    font-size:.12rem;
+}
+.mui-bar.mui-bar-nav .hd_sc_qd {
+    line-height: .26rem;
+    padding-left: .06rem;
+    font-size: .14rem;
+    padding-right: .06rem;
+}
+.matchCompany_num {
+    line-height: .30rem;
+    padding-left: .12rem;
+    color: #454545;
+    font-size: .12rem;
+}
+.matchCompany_num .icon-jieshao {
+    margin-right: .06rem;
+}
+.fwBold {
+    font-weight:bold;
+}
+.searchCompany_rsCell {
+    background-color: #fff;
+    padding-left: .15rem;
+    margin-bottom: .08rem;
+}
+.leftCompanyIco {
+    display:block;
+    width: .32rem;
+    height: .32rem;
+    border-radius:.03rem;
+    color: #fff;
+    line-height: .32rem;
+    text-align: center;
+    font-size: .16rem;
+}
+.bc_red {
+    background-color: #ef3b39;
+}
+.bc_orange {
+    background-color: #fd7f2d;
+}
+.bc_yellow {
+    background-color: #ffcb20;
+}
+.bc_green {
+    background-color: #4ccb44;
+}
+.bc_cyan{
+    background-color: #41b1c2;
+}
+.bc_blue {
+    background-color: #157df3;
+}
+.bc_purple {
+    background-color: #9b49fe;
+}
+.bc_cyan2 {
+    background-color: #85b0f2;
+}
+.companysname {
+    padding:.10rem 0;
+    line-height: .14rem;
+    font-size: .12rem;
+    color: #9e9e9e;
+    border-top:.01rem solid #e0e0e0;
+}
+.rightCompanyInfo {
+    width: 100%;
+    padding-left: .40rem;
+    margin-left: -0.34rem;
+
+}
+.info_cnameBox {
+    position: relative;
+    padding:.10rem;
+    padding-left: 0;
+    padding-right: .15rem;
+    border-bottom:.01rem solid #e0e0e0;
+}
+.chooseC {
+    background: linear-gradient(to bottom right,#68c0b0,#0c9cd9);
+   /* padding: 5px 8px;*/
+    color: #fff;
+    font-size: .12rem;
+    height: .24rem;
+    line-height: .24rem;
+    width: .40rem;
+    text-align: center;
+    border-radius:.03rem;
+}
+.info_cname {
+    width: 100%;
+    word-break: break-all;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    padding-right: .50rem;
+    margin-right: -0.40rem;
+    line-height: .24rem;
+    height: .24rem;
+    font-size: .14rem;
+    color: #202020;
+
+}
+.leftCompanyIcoBox {
+    margin-top: .07rem;
+}
+.info_fddbr {
+    border: 0;
+    color: #737373;
+    font-size: .13rem;
+}
+.info_fddbr .info_cname {
+    font-size: .13rem;
+    color: #737373;
+}
+.companysname .icon-huaxiangfenxi1 {
+    font-size: .13rem;
+}
+.matchCompanyBox {
+    width: 100%;
+    display: none;
+}
+
+/******12-28新增跳转模糊查询搜索页面end****/
+
+
+/*12-29新增搜索历史*/
+.search_historyBox .search_tit{
+    margin-top: .02rem;
+    background-color: #fff;
+    text-align: center;
+    font-size: .12rem;
+    color: #9e9e9e;
+    line-height: .38rem;
+    border-bottom:.01rem solid #f3f3f3;
+}
+.search_tit .fa-clock-o {
+    font-size: .16rem;
+}
+.search_history_ul {
+    background-color: #fff;
+    padding:0 .14rem;
+  /*  height: 225px;*/
+    overflow: auto;
+}
+.search_history_cell {
+    padding:.10rem 0;
+    font-size: .13rem;
+    line-height: .24rem;
+    border-bottom:.01rem solid #f3f3f3;
+}
+.clearAllHistory {
+    width: 100%;
+    line-height: .50rem;
+    font-size: .16rem;
+    color: #202020;
+    text-align: center;
+} 
+.clearAllHistory .fa-trash-o {
+    color: #5b5b5b;
+}
+
+
+
+/***************1-21公司详情页新增股东和董监高***************/
+.gdDjg {
+    padding: 0.10rem;
+    background-color: #fff;
+    margin-bottom: 0.10rem;
+}
+.gddjg_leftLabel {
+    display:table;
+    vertical-align: middle;
+    font-size: 0.12rem;
+    width: 0.18rem;
+    height: 0.70rem;
+    line-height: 0.18rem;
+    background-color: #e8f8fe;
+    text-align: center;
+    position: relative;
+    z-index: 9;
+}
+.gddjg_leftLabel span {
+    display: table-cell;
+    color: #1bbdf1;
+    vertical-align: middle;
+}
+.gddjg_rightCon {
+    width: 100%;
+    padding-left: 0.28rem;
+    margin-left: -0.24rem;
+}
+.shareholder {
+    margin-bottom: 0.04rem;
+}
+
+.dongjiangao  .gddjg_leftLabel span {
+    display: table-cell;
+    color: #5492ef;
+    vertical-align: middle;
+}
+.dongjiangao .gddjg_leftLabel {
+    background-color: #eef4fd;
+}
+.gddjg_rightCon_list_node {
+    display:block;
+    width: 1.1rem;
+    margin-right: 0.04rem;
+    height: 0.7rem;
+    border-radius:0.04rem;
+    background-color: #f4f4f4;
+    float: left;
+}
+.gddjg_name {
+    display: block;
+    position: relative;
+    padding:0.04rem 0;
+    padding-left: 0.46rem;
+    height: 0.42rem;
+}
+.gddjg_left_head_img {
+    position: absolute;
+    width: .32rem;
+    height: .32rem;
+    border-radius: .03rem;
+    overflow: hidden;
+    line-height: .32rem;
+    text-align: center;
+    color: #fff;
+    font-size: .18rem;
+    top: .04rem;
+    left: .08rem;
+}
+.gddjg_left_head_img img {
+    width: 100%;
+}
+.gddjg_fullname {
+    display: block;
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    height: .16rem;
+    font-size: .10rem;
+    color: #1d8fe1;
+    line-height: .12rem;
+}
+.gddjg_id {
+    display: block;
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    height: .14rem;
+    font-size: .10rem;
+    color: #666;
+    line-height: .14rem;
+}
+.gddjg_id_bd {
+    display: block;
+    float: left;
+    width: auto;
+    padding: .02rem;
+    line-height: .10rem;
+    font-size: .10rem;
+    border: .01rem solid #f3564d;
+    color: #f3564d;
+    border-radius: .02rem;
+}
+.gddjg_person_details {
+    padding:0 .08rem;
+}
+.gddjg_person_details span{
+    font-size: .10rem;
+    line-height: .14rem;
+    color: #666;
+    display: block;
+}
+.gddjg_person_details .text_red {
+    color: #f3564d;
+}
+.gddjg_rightCon_list_box {
+    height: .70rem;
+}
+.gdgg-checkmore .gddjg_id {
+    margin-top:.1rem;
+}
+.gdgg-checkmore .gddjg_id .mui-icon {
+    font-size:.13rem;
+}
+.gdgg-checkmore .gddjg_person_details {
+    text-align: center;
+
+}
+/***************1-21公司详情页新增股东和董监高 end***************/
+
+.infozt-biddingTit {
+    border:.01rem solid #7ac9c1;
+    color: #7ac9c1;
+    margin-left: .08rem;
+}
+
+/*公司详情页 发票抬头弹框*/
+.invoiceTit-pop {
+    width: 100%;
+    height: 100%;
+    background-color: #eef1f3;
+    border-radius:.04rem;
+
+    height: 4.80rem;/*1-26改*/
+    overflow: auto;
+    padding-bottom: .20rem;
+}
+.invoiceTit-hd {
+    height: .76rem;
+    line-height: .76rem;
+    text-align: center;
+    color: #333;
+    font-weight:bold;
+    background-color: transparent;
+    font-size: .24rem;
+}
+.invoiceTit-part {
+    padding: .16rem .25rem;
+    background-color: #fff;
+    margin-bottom: .12rem;
+}
+.invoiceTit-part-node {
+    display:table;
+}
+.invoiceTit-part-node label {
+    display:table-cell;
+    font-size: .14rem;
+    line-height: .20rem;
+    font-weight:bold;
+    color: #333;
+}
+.invoicePop_right_txt {
+    display:table-cell;
+    color: #333;
+    font-size: .14rem;
+    line-height: .20rem;
+}
+.invoiceTit-part .invoiceTit-part-node:nth-of-type(odd){
+    padding-bottom: .18rem;
+}
+.invoiceTit-part2 label {
+    width: .72rem;
+}
+.invoice-pop-prompt {
+    font-size: .12rem;
+    line-height: .22rem;
+    color: #666;
+    margin-bottom: .18rem;
+    text-align: center;
+    width: 100%;
+}
+.invoice-pop-btns {
+    padding:0 .25rem;
+}
+.invoice-pop-btn-cancel,.invoice-pop-btn-save {
+    padding:0 .10rem;
+    min-width: 1.18rem;
+    text-align: center;
+    height: .46rem;
+    line-height: .46rem;
+    box-shadow: none;
+    border-radius:.04rem;
+    border:0;
+}
+.invoice-pop-btn-cancel {
+    background-color: #bbbbbb;
+    color: #333;
+    font-size: .14rem;
+}
+.invoice-pop-btn-save {
+    background-color: #1d8fe1;
+    color: #fff;
+}
+/*公司详情页 发票抬头弹框 end*/
+
+.input[type=search] {
+    background-color: transparent;
+}
+
+/*******4-10公司系列页面整改******/
+.logImg.tc {
+    width:0.44rem;
+}
+.ss-state {
+    color: #fb6d6d;
+    border-color: #fb6d6d;
+}
+.gdgg-hd {
+    height: .44rem;
+    line-height: .44rem;
+    font-size:.16rem;
+}
+.gdgg-hd .ck-allgdgg {
+    font-size:.12rem;
+    color: #a6acbc;
+}
+.ck-allgdgg .mui-icon-arrowright {
+    font-size: .16rem;
+}
+.companypart3 .mui-table-view:after {
+    height: 0;
+}
+.ssgs-info {
+    margin-bottom:.10rem;
+}
+.ssgs-info .mui-table-view-cell.mui-active {
+    background-color: #fff;
+}
+.ssgs-info .mui-navigate-right {
+    border-bottom:0.01rem solid #e3e3e3;
+}
+.ssgs-info .mui-navigate-right:after, .mui-push-left:after, .mui-push-right:after,.companypart3  .mui-navigate-right:after, .mui-push-left:after, .mui-push-right:after {
+    color: #7a808f;
+}
+.ssgs-info .touchw .companyHq {
+    font-size:.13rem;
+    margin-right: 20px;
+}
+.ssgs-info .touchw span {
+    font-size:.16rem;
+}
+.companyHq .mui-icon-arrowthinup {
+    color: #e60012;
+}
+.companyHq .mui-icon-arrowthindown {
+    color: #68c0b0;
+}
+.companyHq .mui-icon {
+    font-size: .14rem;
+    font-weight:bold;
+}
+.ssgs-info .mui-table-view-cell.mui-collapse .mui-collapse-content {
+    padding: 0;
+}
+.pdbox {
+    padding:.08rem .15rem;
+    padding-bottom:0;
+}
+.ssgs_tit1 {
+    font-size:.13rem;
+    line-height:.13rem;
+    color: #7a808f;
+    margin-bottom:.16rem;
+}
+.graytxt2 {
+    color: #7a808f;
+}
+.gfxqbox-tb td {
+    padding-bottom:.12rem;
+    line-height:.14rem;
+}
+.gf_leftlabel {
+    text-align: left;
+    color: #000;
+    font-size:.13rem;
+}
+.gf_rigthTxt {
+    font-size:.14rem;
+    text-align: left;
+    padding-left:.1rem;
+    color: #7a808f;
+}
+.leftmr {
+    margin-right: .54rem;
+}
+.gfxqbox2 {
+    border-top:.01rem solid #e5e5e5;
+}
+.gfxqboxLi {
+    padding-right:.16rem;
+    border-right:.01rem solid #f3f3f3;
+    border-bottom:.01rem solid #f3f3f3;
+    width: 50%;
+    float: left;
+}
+.gfxqboxLi:nth-child(2n) {
+    border-right: 0;
+}
+.gfxqbox2 .gfxqboxLi_lk {
+    display: block;
+    width: 100%;
+    height: .44rem;
+    line-height:.44rem;
+    color: #000;
+    font-size:.13rem;
+    padding-left: .44rem;
+    position: relative;
+}
+.gfxqboxLi_lk .iconfont {
+    position: absolute;
+    width: .44rem;
+    height: .44rem;
+    line-height:.44rem;
+    text-align: center;
+    left: 0;
+    top: 0;
+    font-size:.14rem;
+    color: #46a6f8;
+}
+/*新建群组*/
+.group-ico {
+    width: 1rem;
+    height: 1rem;
+    border:2px solid #ccc;
+    text-align: center;
+    line-height: 1rem;
+    margin:.60rem auto;
+    margin-bottom: .50rem;
+}
+.group-ico .iconfont {
+    font-size: .60rem;
+    color: #aaa;
+}
+.blue-groupIco.group-ico {
+    border-color: #1d8fe1;
+}
+.blue-groupIco.group-ico .iconfont {
+    color: #1d8fe1;
+}
+input[type=text].newGroup-input {
+    border:0;
+    border-bottom:1px solid #aaa;
+    height:.40rem;
+    line-height: .40rem;
+    margin-bottom: .40rem;
+    border-radius:0;
+    background-color: transparent;
+}
+.mui-content.bc_white {
+    background-color: #fff;
+}
+/*新建群组 end*/
+
+.r-line {
+    position: relative;
+}
+.r-line:after{
+    content: '';
+    position: absolute;
+    width: .01rem;
+    height: .2rem;
+    background-color: #e5e5e5;
+    top: 50%;
+    margin-top:-.1rem;
+    right: 0;
+}
+/***股东情况***/
+.timeSelectBox {
+    width: 100%;
+    position: fixed;
+    top: 44px;
+    left: 0;
+    height: 42px;
+    line-height: 42px;
+    font-size:13px;
+    background-color: #fff;
+    z-index: 10;
+    border-top:1px solid #e0e0e0;
+    padding:0 10px;
+    border-bottom: 1px solid #f5f5f5;
+}
+.cenTimeselect {
+    position: absolute;
+    top: 0;
+    left: 94px;
+    right: 94px;
+    width:auto;
+    display: inline-block;
+    overflow: hidden;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 0;
+    text-align: center;
+    color: #1b82d2;
+}
+.selectedTime {
+    position: relative;
+    padding-right:16px;
+}
+.timeSelectBox .arrowsico {
+    font-size: 14px;
+}
+.cenTimeselect .arrowDown {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    margin-top: -2px;
+    border:5px solid transparent;
+    border-top:5px solid #9e9e9e;
+}
+.cenTimeselect .arrowUp {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    margin-top: -9px;
+    border:5px solid transparent;
+    border-bottom:5px solid #1b82d2;
+}
+.timeSelectBox .noClick {
+    color: #9e9e9e;
+}
+#timePopover .mui-table-view-radio .mui-table-view-cell {
+    display: block;
+    height: 34px;
+    border-radius:0;
+
+}
+#timePopover .mui-table-view-radio .mui-table-view-cell .mui-navigate-right:after {
+    display: none;
+}
+#timePopover .mui-table-view-radio .mui-table-view-cell>a:not(.mui-btn) {
+    display: inline-block;
+    padding:0;
+    text-align: center;
+    margin: 0;
+    width: 100%;
+    line-height: 34px;
+    border-radius:0!important;
+}
+#timePopover .mui-table-view-radio .mui-table-view-cell {
+    padding: 0;
+    text-align: center;
+}
+#timePopover .mui-table-view-cell.mui-selected  a {
+    color: #1b82d2;
+}
+#timePopover.mui-popover .mui-table-view {
+    border-radius: 0;
+}
+.gd-lisbox1 {
+    padding:0 .15rem;
+    background-color: #fff;
+    margin-top:.1rem;
+}
+.gd-list1 {
+    height:auto;
+    min-height: .42rem;
+    line-height: .22rem;
+    border-bottom:1px solid #e0e0e0;
+    padding:.1rem 0;
+}
+.gd-list1:last-child {
+    border-bottom:0;
+}
+.gd-lisbox2 {
+    margin-top:.1rem;
+}
+.gd-name {
+    font-size:.14rem;
+    color: #000;
+    line-height:.20rem;
+    padding:.02rem .14rem;
+    background-color: #fff;
+    border-bottom:1px solid #e0e0e0;
+}
+.gd-xgnr {
+    background-color: #fff;
+}
+.gd-xgnr-cell {
+    float: left;
+    width:33.33%;
+    /*border-right:1px solid #dadada;*/
+    font-size: .13rem;
+    padding:.1rem 4px;
+    position: relative;
+    text-align: center;
+    padding-left:6px;
+    height: .66rem;
+}
+.gd-xgnr-cell:after {
+    content: '';
+    position: absolute;
+    width: 1px;
+    height:.4rem;
+    background-color: #e0e0e0;
+    right: -2px;
+    top: 50%;
+    margin-top:-.2rem;
+    text-align: center;
+}
+.gd-xgnr-cell:nth-child(3n):after{
+    height: 0;
+}
+.gd-xgnr-cell-con {
+    color: #737373;
+    font-size: .13rem;
+    line-height:.14rem;
+    margin-top:.06rem;
+}
+.gd-xgnr-cell-label {
+    line-height:.18rem;
+}
+.gd-xgnr-cell-con.textred .mui-icon {
+    color: #e60012;
+    font-size: .16rem;
+    font-weight:bold;
+}
+.gd-xgnr-cell-con.textgreen .mui-icon {
+    color: #69AA46;
+    font-size: .16rem;
+    font-weight:bold;
+}
+.gd-list1 .mui-icon-arrowthinup,.gd-list1 .mui-icon-arrowthindown {
+    font-size:.16rem;
+    font-weight:bold;
+}
+.ssgs-info .mui-collapse {
+    width: 100%;
+}
+.tcsdltd {
+    margin-top:.1rem;
+
+}
+.tcsdltd.ssgs-info .mui-table-view-cell.mui-collapse .mui-collapse-content {
+    padding:.1rem;
+    box-shadow: 0 0 .4rem #ccc inset;
+}
+.tcsdltd .touchw span{
+    font-size: .14rem;
+}
+.tcsdltd .gd-name {
+
+}
+.tcsdltd .gd-lisbox2 {
+    margin-top: 0;
+    margin-bottom: .1rem;
+
+
+}
+.tcsdltd .gd-xgnr {
+
+}
+.leftSq {
+    width: .03rem;
+    height: .10rem;
+    background-color: #1b82d2;
+    margin-right: .06rem;
+    margin-top:.07rem;
+}
+.tcsdltd .mui-table-view-cell.mui-collapse .mui-collapse-content {
+    background-color: transparent;
+}
+.tcsdltd  .mui-table-view-cell.mui-active,.tcsdltd .mui-table-view {
+    background-color: transparent;
+}
+.tcsdltd .mui-navigate-right {
+    background-color: #fff;
+}
+/***股东情况end*** /
+
+/****高管信息****/
+.executiveSimpleInfoBox {
+    background-color: #fff;
+    padding-left:.14rem;
+}
+.executiveSimpleInfo {
+    width: 100%;
+    display:block;
+    height:auto;
+    border-bottom:1px solid #e0e0e0;
+    position: relative;
+    padding:.15rem 0;
+    padding-right:.40rem;
+}
+.executiveSimpleInfo:last-child {
+    border-bottom: 0;
+}
+.executiveSimpleInfo .excutiveName {
+    font-size:.15rem;
+    line-height: .15rem;
+    color: #000;
+    margin-bottom:.15rem;
+    display: block;
+}
+.executiveSimpleInfo .excutive-simple-info:last-child{
+    margin-bottom: 0;
+}
+.excutive-simple-info {
+    color: #737373 ;
+    font-size:.14rem;
+    line-height: .14rem;
+    margin-bottom:.15rem;
+    display: block;
+}
+.executiveSimpleInfo .mui-icon-forward {
+    position: absolute;
+    width: .40rem;
+    text-align: center;
+    height:.30rem;
+    color: #737373;
+    font-size:.20rem;
+    line-height:.30rem;
+    top: 50%;
+    margin-top:-.15rem;
+    right: 0;
+}
+.excutiveDetailes {
+    padding:0 .12rem;
+    padding-left: .02rem;
+    background-color: #fff;
+    margin-top: .1rem;
+}
+.excutiveDetailes .excutiveName {
+    font-size:.15rem;
+    color: #1b82d2;
+    height: .44rem;
+    line-height: .44rem;
+    padding-left: .10rem;
+}
+.excutiveDetailes .excutiveinfos:nth-child(2n+1) {
+    border-right:1px solid #e0e0e0;
+}
+.excutiveinfos {
+    float: left;
+    width: 50%;
+    margin-bottom: .15rem;
+    padding-left: .10rem;
+}
+.toplabel {
+    line-height:.22rem;
+    font-size:.14rem;
+    color: #000;
+}
+.btinner {
+    font-size:.13rem;
+    color: #737373;
+    line-height: .22rem;
+}
+.jjtit {
+    font-size: .14rem;
+    line-height: .24rem;
+}
+.excutiveDetailes.jjtitbox {
+    padding: .14rem;
+}
+.jjinner {
+    font-size: .13rem;
+    line-height: .18rem;
+    color: #737373;
+}
+/****高管信息 end****/
+
+/****公司财务****/
+.selectTimeType {
+    height: 40px;
+    line-height: 40px;
+    width: 33.33%;
+    float: left;
+    position: relative;
+    text-align: center;
+    background-color: #fff;
+    font-size: 14px;
+}
+.selectTimeType:after {
+    content: '';
+    position: absolute;
+    width: 1px;
+    height: 20px;
+    background-color: #e0e0e0;
+    top: 50%;
+    margin-top: -10px;
+    right: 0;
+}
+.selectTimeType.actived {
+    color: #1b82d2;
+}
+.selectTimeTypeBox {
+    width: 100%;
+    position: absolute;
+    top: 44px;
+    left: 0;
+}
+.timeSelectBox2 {
+    top: 84px;
+    left: 0;
+}
+/****公司财务 end****/
+
+/****行业****/
+.topchoosebtn {
+    display:block;
+    font-size: 13px;
+    padding: 0 10px;
+    margin-right: -10px;
+    position: relative;
+    z-index: 11;
+}
+.industrySelectRs {
+    display:inline-block;
+    width: 100px;
+    text-align: right;
+    line-height: 44px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-break:keep-all;
+}
+.topchoosebtn .mui-icon.mui-icon-arrowdown {
+    display:inline-block;
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+    line-height: 44px;
+    float: right;
+    margin-left: 3px;
+}
+#industrySelect .mui-navigate-right{
+    font-size: 13px;
+}
+.selectpopbox {
+    min-height: 150px;
+}
+.selectpopbox  .mui-navigate-right {
+    font-size: 13px;
+}
+.selectpopbox .mui-table-view-radio .mui-table-view-cell {
+    display: block;
+    padding: 0;
+}
+.selectpopbox .mui-table-view-radio .mui-table-view-cell>a:not(.mui-btn) {
+    padding: 0;
+    margin: 0;
+
+}
+.selectpopbox .mui-table-view-radio .mui-table-view-cell .mui-navigate-right:after{
+    display: none;
+}
+.selectpopbox .mui-table-view-cell.mui-selected .mui-navigate-right {
+    color: #1b82d2;
+}
+.selectpopbox .mui-table-view-radio .mui-table-view-cell>a:not(.mui-btn) {
+    display: inline-block;
+    padding: 0;
+    text-align: center;
+    margin: 0;
+    width: 100%;
+    line-height: 34px;
+    border-radius: 0!important;
+}
+.selectpopbox .mui-table-view-radio .mui-table-view-cell {
+    display: block;
+    height: 34px;
+    border-radius: 0;
+}
+.selectLabeltxt {
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    font-size: 13px;
+    text-align: center;
+    border-bottom:1px solid #1b82d2;
+}
+.latestClosingDay {
+    background-color: #fff;
+    padding:0 .12rem;
+    line-height: .36rem;
+    margin-bottom: .1rem;
+}
+/*市场比较*/
+.company-closingdata {
+    margin-bottom: .1rem;
+}
+.closingdata-tit {
+    position: relative;
+    background-color: #fff;
+    padding: .1rem;
+    display: table;
+    width: 100%;
+    border-bottom:1px solid #e0e0e0;
+    line-height: .2rem;
+}
+.leftRanking {
+    color: #f36d40;
+  /*  border:3px double #f36d40;*/
+    /*padding:.04rem;*/
+   /* line-height:.14rem;*/
+    position: relative;
+}
+
+.leftcnamecode {
+    padding-left: .6rem;
+    margin-left: -0.5rem;
+    width: 100%;
+}
+.scbj-con.gd-lisbox1 {
+    background-color: #fff;
+    margin-top: 0;
+}
+.scbj-cell h4 {
+    font-size: .14rem;
+    line-height: .22rem;
+    color: #0f88cb;
+    font-weight:normal;
+    margin-bottom: .06rem;
+    /*border-bottom:1px dashed #000;*/
+}
+.levbox-cell {
+    float: left;
+    width: 25%;
+    text-align: center;
+    position: relative;
+}
+.levbox-tit {
+    color: #000;
+    line-height: .22rem;
+    font-size: .14rem;
+}
+.levbox-con {
+    line-height: .22rem;
+    font-size: .14rem;
+}
+.levbox-cell:after {
+    content: '';
+    position: absolute;
+    width: 1px;
+    height:.34rem;
+    background-color: #dadada;
+    top: 50%;
+    right: 0;
+    margin-top: -.17rem;
+}
+.levbox2 .levbox-cell:last-child:after{
+    display: none;
+}
+.teles-box.ssgs-info .touchw span {
+    font-size: .14rem;
+}
+.teles-box .mui-navigate-right {
+    padding:.1rem;
+    line-height: .21rem;
+}
+
+.scbj-con2 .levbox-cell {
+    width: 33.33%;
+}
+.top-hyzbxz {
+    position: fixed;
+    top: 44px;left: 0;width: 100%;
+    background-color: #fff;
+    border-bottom:1px solid #e0e0e0;
+    height: 44px;
+    z-index: 10;
+    margin-top: 2px;
+}
+.top-hyzbxz .topchoosebtn {
+    margin: 0;
+    width: 50%;
+    text-align: center;
+    font-size: .13rem;
+    padding:0 3px;
+}
+.top-hyzbxz .topchoosebtn .industrySelectRs {
+    width:auto;
+}
+.top-hyzbxz .rightAngle {
+    display: inline-block;
+    position: relative;
+    border: 6px solid transparent;
+    border-top-color: #bbb;
+    top: -11px;
+}
+/****行业****/
+
+/****市场****/
+.marketxg.ssgs-info .touchw span {
+    font-size: .14rem;
+}
+.marketxg .mui-table-view-cell>a:not(.mui-btn) {
+    padding:0 .12rem;
+    line-height: .40rem;
+    border-left: .02rem solid #0f88cb;
+}
+.marketxg .mui-navigate-right:after, .mui-push-right:after {
+    font-size: .18rem;
+    right: .08rem;
+}
+.ssgs-info.marketxg .mui-navigate-right {
+    border-bottom: 0;
+}
+.mui-table-view-cell .lhbsj-cell {
+    display: block;
+    font-size: .14rem;
+    line-height: .21rem;
+    padding:.1rem 0;
+    color: #666;
+    border-bottom:1px solid #e0e0e0;
+    position: relative;
+}
+.lhbsj-cell:after {
+    font-family: Muiicons;
+    content: '\e583';
+    position: absolute;
+    height: 100%;
+    line-height: .34rem;
+    font-size: .18rem;
+    width: .20rem;
+    text-align: center;
+    top: 0;
+    right: 0;
+    color: #999;
+}
+.mui-table-view-cell .lhbsj-cell:last-child {
+    border-bottom: 0;
+}
+.marketxg.ssgs-info .mui-table-view-cell.mui-collapse .mui-collapse-content {
+    padding:0 .1rem;
+    background-color: #fff;
+    border-top:1px solid #e0e0e0;
+}
+.ggxx-li.marketli {
+    border-left: .02rem solid #0f88cb;
+}
+.marketListbox1 {
+  /*  border-top: 0.03rem solid #0f88cb;*/
+    box-shadow:0 0 3px #ccc;
+    margin-bottom: .1rem;
+   /* margin-top: .02rem  ;*/
+    border-top:1px solid #0f88cb;
+}
+.p-tit {
+    padding:0 .15rem;
+    font-size: .14rem;
+    line-height: .34rem;
+    background-color: #fff;
+}
+.p-con {
+    padding: .10rem;
+    box-shadow:0 0 0.6rem #ccc inset;
+    background-color: #f0f0f0;
+}
+.leftSmallvtbar {
+    display: inline-block;
+    width: .03rem;
+    height: .10rem;
+    background-color: #1b82d2;
+    margin-right: .06rem;
+    margin-top: .11rem;
+}
+.p-con .gd-lisbox2 {
+    margin-top: 0;
+    margin-bottom: .1rem;
+}
+.gd-xgnr-cell-con.textred {
+    color: #e60012;
+}
+.gd-xgnr-cell-con.textgreen {
+    color: #00c813;
+}
+.parentbox .gd-name {
+    font-size: .13rem;
+}
+.sb-reason {
+    width: 100%;
+    margin-top: .1rem;
+    border-top:1px solid #e0e0e0;
+    font-size: .13rem;
+    padding: .1rem .15rem   ;
+    line-height: .13rem;
+}
+
+.lhbmxsj {
+    margin-top: .1rem;
+}
+.lhsb-reason {
+    line-height: .36rem;
+    font-size: .13rem;
+    border-bottom:1px solid #e0e0e0;
+    margin-bottom: .1rem;
+}
+.fiveRanking {
+    border-left:2px solid #dfe0e1;
+    
+}
+.r-cell {
+    position: relative;
+    padding-left: .20rem;
+    margin-bottom: .05rem;
+    font-size: .13rem;
+}
+.r-cell-tit {
+    border-bottom:1px solid #e0e0e0;
+
+}
+.r-cell.r-cell-hd {
+    margin-bottom: .2rem;
+}
+.leftCircle {
+    position: absolute;
+    width: .22rem;
+    height: .22rem;
+    line-height: .22rem;
+    font-size: .12rem;
+    text-align: center;
+    border:.01rem solid #ccc;
+    box-shadow: 0 0 .1rem #ccc inset;
+    top: 0;
+    left: -.11rem;
+    border-radius:50%;
+    background-color: #fff;
+    z-index: 5;
+}
+.r-cell-hd .leftCircle{
+    border:.04rem double #9fc8de;
+    box-shadow: 0 0 .1rem #9fc8de inset;
+}
+.r-cell-hd .leftCircle:after {
+/*    content: '';
+    position: absolute;
+    width: .08rem;
+    height: .08rem;
+    border:1px solid #ccc;
+    background-color: #ccc;
+    top: 50%;
+    left: 50%;
+    margin-left:-.04rem;
+    margin-top:-.04rem;*/
+  /*  border-radius:50%;*/
+}
+.r-cell-hd .r-cell-tit {
+    color: #1b82d2;
+}
+.lhbmxsj .mui-collapse {
+    margin-bottom: .1rem;
+    background-color: #fff;
+}
+.lhbmxsj .mui-table-view {
+    background-color: transparent;
+}
+.percenttable3 .tableCellbox {
+    width:33.33%;
+}
+.dzjy-table .clittleboxs {
+    border-bottom:.02rem solid #f0f0f0;
+}
+.dzjy-table .timetit {
+    color: #808592;
+}
+.zygclist .levbox-cell {
+    width: 33.33%;
+    margin-bottom:.08rem;
+}
+.zygclist .levbox-cell:nth-of-type(3n):after{
+    display:none;
+}
+/****市场 end****/

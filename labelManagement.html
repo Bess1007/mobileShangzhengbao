@@ -1,0 +1,204 @@
+<!doctype html>
+<html class="pb40">
+<head>
+    <meta charset="UTF-8">
+    <title>采访信息展示</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link href="css/mui.min.css" rel="stylesheet" />
+    <link href="iconfont/iconfont.css" rel="stylesheet" />
+    <link href="css/app.css" rel="stylesheet" />
+    <link href="css/interview.css" rel="stylesheet" />
+    <style>
+        html {
+            background-color: #fff;
+            padding-bottom: 50px;
+        }
+        .mui-content {
+            background-color: #fff;
+        }
+        /*选项卡样式改*/
+        .mui-segmented-control .mui-control-item {
+            font-size: 14px;
+        }
+        .mui-segmented-control.mui-segmented-control-inverted .mui-control-item.mui-active {
+            color: #177ef3;
+            border-color: #177ef3;
+        }
+
+        .mui-slider .mui-segmented-control.mui-segmented-control-inverted~.mui-slider-group .mui-slider-item{
+            border:0;
+        }
+        #sliderSegmentedControl {
+            padding-top: 10px;
+        }
+        .mui-slider-group {
+            margin-top: 10px;
+        }
+        .mui-segmented-control.mui-segmented-control-inverted {
+            border-bottom:1px solid #ddd;
+        }
+
+    </style>
+</head>
+
+<body class="interview_box">
+<header class="mui-bar mui-bar-nav">
+    <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+    <h1 class="mui-title">自定义标签管理</h1>
+    <span class="mui-btn mui-btn-link mui-pull-right" id="addLabelPrompt">
+        <span class="mui-icon mui-icon-plus"></span>
+    </span>
+</header>
+
+<div class="mui-content " >
+    <div class="glbq_box">
+        <!--标签搜索-->
+            <!--<div class="label_search_box mui-input-row mui-search"><input type="search" class="search_label mui-input-clear" placeholder="输入关键词搜索标签"></div>-->
+        <!--标签搜索 end-->
+
+        <!--管理-->
+        <div class="interview_rec_mg clearfix">
+            <div class="fl txtgray"><span>5个标签</span></div>
+            <a href="#batchOpe" class="fr"><span class="mui-icon mui-icon-list"></span> <span>管理</span></a>
+        </div>
+        <!--管理 end-->
+        <ul class="pl_10">
+            <li class="interview_rec_cell">
+                <a href="#" class="interview_rec_cell_lk clearfix">
+                    <div class="fl interview_cell_con">
+                        <span class="iconfont icon-gongsidongtai"></span>
+                       <span>宏观经济</span>
+                    </div>
+                </a>
+                <a href="#ope_box" class="nolink interview_ope iconfont icon-gengduo2"></a>
+            </li>
+            <li class="interview_rec_cell">
+                <a href="#" class="interview_rec_cell_lk clearfix">
+                    <div class="fl interview_cell_con">
+                        <span class="iconfont icon-gongsidongtai"></span>
+                        <span>混改</span>
+                    </div>
+                </a>
+                <a href="#ope_box" class="nolink interview_ope iconfont icon-gengduo2"></a>
+            </li>
+            <li class="interview_rec_cell">
+                <a href="#" class="interview_rec_cell_lk clearfix">
+                    <div class="fl interview_cell_con">
+                        <span class="iconfont icon-gongsidongtai"></span>
+                        <span>5G</span>
+                    </div>
+                </a>
+                <a href="#ope_box" class="nolink interview_ope iconfont icon-gengduo2"></a>
+            </li>
+            <li class="interview_rec_cell">
+                <a href="#" class="interview_rec_cell_lk clearfix">
+                    <div class="fl interview_cell_con">
+                        <span class="iconfont icon-gongsidongtai"></span>
+                        <span>人工智能</span>
+                    </div>
+                </a>
+                <a href="#ope_box" class="nolink interview_ope iconfont icon-gengduo2"></a>
+            </li>
+            <li class="interview_rec_cell">
+                <a href="#" class="interview_rec_cell_lk clearfix">
+                    <div class="fl interview_cell_con">
+                        <span class="iconfont icon-gongsidongtai"></span>
+                        <span>区域规划</span>
+                    </div>
+                </a>
+                <a href="#ope_box" class="nolink interview_ope iconfont icon-gengduo2"></a>
+            </li>
+        </ul>
+    </div>
+
+    <!--批量操作弹框-->
+    <div id="batchOpe" class="mui-modal label_batchOpe">
+        <header class="mui-bar mui-bar-nav">
+            <a class="mui-icon  mui-pull-left" href="javascript:selectAll();" style="font-size: 14px;line-height: 28px;">全选</a>
+            <h1 class="mui-title">批量操作</h1>
+            <a class="mui-icon  mui-pull-right" href="#batchOpe" style="font-size: 14px;line-height: 28px;">取消</a>
+        </header>
+        <div class="mui-content" style="height: 100%;padding-bottom: 60px;overflow: auto">
+            <nav class="batchOpe_btns">
+                <div class="batchOpe_btn">
+                    <span class="iconfont icon-lajitong-copy"></span>
+                    <span>删除</span>
+                </div>
+            </nav>
+            <!--标签列表-->
+            <ul class="batchOpe_cf_list mui-table-view">
+                <li class="interview_rec_cell mui-table-view-cell mui-checkbox mui-left">
+                    <input name="checkbox" type="checkbox">
+                    <div class="interview_rec_cell_lk clearfix">
+                        <div class="fl interview_cell_con">
+                            <h5 class="interview_tit">宏观经济</h5>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--批量操作弹框 end-->
+</div>
+
+<div id="ope_box" class="myope_box mui-popover mui-popover-action mui-popover-bottom">
+    <ul class="mui-table-view">
+        <li class="mui-table-view-cell">
+            <a href="#">删除</a>
+        </li>
+        <li class="mui-table-view-cell">
+            <a href="#">重命名</a>
+        </li>
+    </ul>
+    <ul class="mui-table-view">
+        <li class="mui-table-view-cell">
+            <a href="#ope_box"><b>取消</b></a>
+        </li>
+    </ul>
+</div>
+</body>
+<script src="js/mui.min.js"></script>
+<script src="js/app.js"></script>
+<script>
+    mui.init({
+        swipeBack:true //启用右滑关闭功能
+    });
+    /*弹出新增标签框*/
+    document.getElementById("addLabelPrompt").addEventListener('tap', function(e) {
+        e.detail.gesture.preventDefault(); //修复iOS 8.x平台存在的bug，使用plus.nativeUI.prompt会造成输入法闪一下又没了
+        var btnArray = ['取消', '确定'];
+        mui.prompt('', '', '新增标签', btnArray, function(e) {
+            if (e.index == 1) {
+                /*e.value(输入的内容);*/
+
+            } else {
+
+            }
+        })
+    });
+    /*弹出新增标签框 end*/
+    mui('body').on('shown', '.mui-popover', function(e) {
+        //console.log('shown', e.detail.id);//detail为当前popover元素
+    });
+    mui('body').on('hidden', '.mui-popover', function(e) {
+        //console.log('hidden', e.detail.id);//detail为当前popover元素
+    });
+    var info = document.getElementById("info");
+    mui('body').on('tap', '.mui-popover-action li>a', function() {
+        var a = this,
+            parent;
+        //根据点击按钮，反推当前是哪个actionsheet
+        for (parent = a.parentNode; parent != document.body; parent = parent.parentNode) {
+            if (parent.classList.contains('mui-popover-action')) {
+                break;
+            }
+        }
+        //关闭actionsheet
+        mui('#' + parent.id).popover('toggle');
+        /*       info.innerHTML = "你刚点击了\"" + a.innerHTML + "\"按钮";*/
+    })
+</script>
+
+</html>

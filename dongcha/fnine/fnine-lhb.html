@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en" class="bcWhite">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>龙虎榜</title>
+    <link href="../../css/mui.min.css" rel="stylesheet" />
+    <link href="../../iconfont/iconfont.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../dc-company/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link href="../../css/app.css" rel="stylesheet" />
+    <link href="../dc-company/css/dc-company.css" rel="stylesheet"/>
+    <script src="../dc-company/js/companyCommon.js"></script>
+    <style>
+        .mui-table-view-cell.mui-active {
+            background-color: #fff;
+        }
+        .lhb-box.mui-table-view:after {
+            display: none;
+        }
+        .lhb-box .mui-table-view-cell {
+            padding: 0;
+            margin: 0;
+        }
+        .mui-collapse >a:not(.mui-btn).mui-navigate-right {
+            border-bottom:0.01rem solid #eaeaea;
+            height: .6rem;
+            line-height: .6rem;
+            font-size: .12rem;
+            padding: 0;
+            padding-left: .15rem;
+            margin: 0;
+        }
+        .lhb-box .mui-navigate-right:after, .mui-push-right:after {
+            font-size: .12rem;
+            color: #666e77;
+            right: .15rem;
+        }
+        .lhb-box .mui-table-view-cell.mui-collapse .mui-collapse-content {
+            margin: 0;
+            padding: 0;
+        }
+        .mui-table-view-cell.mui-collapse.mui-active {
+            margin-top: 0;
+        }
+    </style>
+</head>
+<body>
+<header class="mui-bar mui-bar-nav">
+    <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+    <h1 class="mui-title bc-white-inp">龙虎榜</h1>
+</header>
+
+<div class="mui-content bcWhite">
+    <ul class="mui-table-view lhb-box" style="margin-top: 0;">
+        <li class="mui-table-view-cell mui-collapse mui-active">
+            <a class="mui-navigate-right" href="#">2017-07-11上榜</a>
+            <div class="mui-collapse-content">
+                <ul class="sbly clearfix">
+                    <li>
+                        <label for="">买入总计</label>
+                        <span class="txtred">4.95亿元</span>
+                    </li>
+                    <li>
+                        <label for="">卖出总计</label>
+                        <span class="txtgreen">3.06亿元</span>
+                    </li>
+                    <li>
+                        <label for="">上榜理由</label>
+                        <span>涨幅偏离值达7%的证券</span>
+                    </li>
+                </ul>
+                <div class="mrmc">
+                    <table>
+                        <tr>
+                            <td><div class="tbcell">买入前五名</div></td>
+                            <td><div class="tbcell">买入金额</div></td>
+                        </tr>
+                        <tr>
+                            <td><div class="tbcell">中信证券股份有限公司上海古北路证券营业部</div></td>
+                            <td><div class="tbcell txtred">1.34亿</div></td>
+                        </tr>
+                        <tr>
+                            <td><div class="tbcell">机构专用</div></td>
+                            <td><div class="tbcell txtred">8658.03万元</div></td>
+                        </tr>
+                        <tr>
+                            <td><div class="tbcell">中信证券股份有限公司上海溧阳路证券营业部</div></td>
+                            <td><div class="tbcell txtred">7276.45万元</div></td>
+                        </tr>
+                        <tr>
+                            <td><div class="tbcell">广发证券股份有限公司西安南广济街证券营业部</div></td>
+                            <td><div class="tbcell txtred">6381.38万元</div></td>
+                        </tr>
+                        <tr>
+                            <td><div class="tbcell">东方证券股份有限公司上海浦东新区新川路证券营业部</div></td>
+                            <td><div class="tbcell txtred">6381.38万元</div></td>
+                        </tr>
+                    </table>
+                    <table>
+                        <tr>
+                            <td><div class="tbcell">买出前五名</div></td>
+                            <td><div class="tbcell">卖出金额</div></td>
+                        </tr>
+                        <tr>
+                            <td><div class="tbcell">中信证券股份有限公司上海古北路证券营业部</div></td>
+                            <td><div class="tbcell txtgreen">1.34亿</div></td>
+                        </tr>
+                        <tr>
+                            <td><div class="tbcell">机构专用</div></td>
+                            <td><div class="tbcell txtgreen">8658.03万元</div></td>
+                        </tr>
+                        <tr>
+                            <td><div class="tbcell">中信证券股份有限公司上海溧阳路证券营业部</div></td>
+                            <td><div class="tbcell txtgreen">7276.45万元</div></td>
+                        </tr>
+                        <tr>
+                            <td><div class="tbcell">广发证券股份有限公司西安南广济街证券营业部</div></td>
+                            <td><div class="tbcell txtgreen">6381.38万元</div></td>
+                        </tr>
+                        <tr>
+                            <td><div class="tbcell">广发证券股份有限公司西安南广济街证券营业部</div></td>
+                            <td><div class="tbcell txtgreen">6381.38万元</div></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </li>
+        <li class="mui-table-view-cell mui-collapse ">
+            <a class="mui-navigate-right" href="#">2017-07-11上榜</a>
+            <div class="mui-collapse-content">
+                <ul class="sbly clearfix">
+                    <li>
+                        <label for="">买入总计</label>
+                        <span class="txtred">4.95亿元</span>
+                    </li>
+                    <li>
+                        <label for="">卖出总计</label>
+                        <span class="txtgreen">3.06亿元</span>
+                    </li>
+                    <li>
+                        <label for="">上榜理由</label>
+                        <span>涨幅偏离值达7%的证券</span>
+                    </li>
+                </ul>
+                <div class="mrmc">
+                    <table>
+                        <tr>
+                            <td><div class="tbcell">买入前五名</div></td>
+                            <td><div class="tbcell">买入金额</div></td>
+                        </tr>
+                        <tr>
+                            <td><div class="tbcell">中信证券股份有限公司上海古北路证券营业部</div></td>
+                            <td><div class="tbcell txtred">1.34亿</div></td>
+                        </tr>
+                        <tr>
+                            <td><div class="tbcell">机构专用</div></td>
+                            <td><div class="tbcell txtred">8658.03万元</div></td>
+                        </tr>
+                        <tr>
+                            <td><div class="tbcell">中信证券股份有限公司上海溧阳路证券营业部</div></td>
+                            <td><div class="tbcell txtred">7276.45万元</div></td>
+                        </tr>
+                        <tr>
+                            <td><div class="tbcell">广发证券股份有限公司西安南广济街证券营业部</div></td>
+                            <td><div class="tbcell txtred">6381.38万元</div></td>
+                        </tr>
+                        <tr>
+                            <td><div class="tbcell">东方证券股份有限公司上海浦东新区新川路证券营业部</div></td>
+                            <td><div class="tbcell txtred">6381.38万元</div></td>
+                        </tr>
+                    </table>
+                    <table>
+                        <tr>
+                            <td><div class="tbcell">买出前五名</div></td>
+                            <td><div class="tbcell">卖出金额</div></td>
+                        </tr>
+                        <tr>
+                            <td><div class="tbcell">中信证券股份有限公司上海古北路证券营业部</div></td>
+                            <td><div class="tbcell txtgreen">1.34亿</div></td>
+                        </tr>
+                        <tr>
+                            <td><div class="tbcell">机构专用</div></td>
+                            <td><div class="tbcell txtgreen">8658.03万元</div></td>
+                        </tr>
+                        <tr>
+                            <td><div class="tbcell">中信证券股份有限公司上海溧阳路证券营业部</div></td>
+                            <td><div class="tbcell txtgreen">7276.45万元</div></td>
+                        </tr>
+                        <tr>
+                            <td><div class="tbcell">广发证券股份有限公司西安南广济街证券营业部</div></td>
+                            <td><div class="tbcell txtgreen">6381.38万元</div></td>
+                        </tr>
+                        <tr>
+                            <td><div class="tbcell">广发证券股份有限公司西安南广济街证券营业部</div></td>
+                            <td><div class="tbcell txtgreen">6381.38万元</div></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </li>
+    </ul>
+</div>
+
+<script src="../../js/mui.min.js"></script>
+<script src="../../js/app.js"></script>
+<script>
+
+</script>
+</body>
+</html>

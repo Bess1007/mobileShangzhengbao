@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html class="bcWhite">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title>转发采访</title>
+    <link href="../css/mui.min.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="../css/mui.picker.min.css" />
+    <link href="../css/app.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../iconfont/iconfont.css">
+    <link rel="stylesheet" href="../css/schedule.css">
+    <style>
+        .mui-content {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            width: 100%;
+            overflow-y: scroll;
+            -webkit-overflow-scrolling: touch;
+        }
+        .mui-popover {
+            width: 280px!important;
+            height: 300px;
+            overflow: hidden;
+            position: fixed;
+            top: 100px!important;
+            left: 50%!important;
+            margin-left: -140px;
+        }
+    </style>
+</head>
+
+<body>
+<header class="mui-bar mui-bar-nav bcWhiteNav   ">
+    <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+    <h1 class="mui-title bc-white-inp">转发采访</h1>
+    <a href="javascript:;" class="mui-icon mui-pull-right" style="color: #000;font-size: 16px;line-height: 26px;">确定</a>
+</header>
+<div class="mui-content bcWhite">
+    <div class="zydq-jjrq zydq-filter-cell">
+        <label for="" class="cell-tit">收件人</label>
+        <div class="mui-table-view-cell clearfix zydq-lis-cell" style="padding-right: 16px;">
+            <input type="text" class="f-input" placeholder="收件人姓名" value="傲然">
+        </div>
+        <div class="mui-table-view-cell clearfix zydq-lis-cell" style="padding-right: 16px;">
+            <input type="text" class="f-input" placeholder="部门" value="资讯编辑部">
+        </div>
+    </div>
+    <div class="zydq-jjrq zydq-filter-cell">
+        <label for="" class="cell-tit">采访标题</label>
+        <div class="mui-table-view-cell clearfix zydq-lis-cell" style="padding-right: 16px;">
+            <input type="text" class="f-input" placeholder="输入采访标题">
+        </div>
+    </div>
+    <!--采访时间-->
+    <div class="zydq-jjrq zydq-filter-cell">
+        <label for="" class="cell-tit">采访时间</label>
+        <div id='demo1' data-options='{"type":"date","beginYear":1900}'  class="mui-table-view-cell clearfix zydq-lis-cell">
+            <label for="" class="sclabelLeft fl">选择时间</label>
+            <div id='result' class="ui-alert frscTimeRight fr" name="采访时间"></div>
+            <i class="mui-icon mui-icon-arrowright"></i>
+        </div>
+    </div>
+    <!--采访对象-->
+    <div class="zydq-jjrq zydq-filter-cell">
+        <label for="" class="cell-tit">采访对象</label>
+        <!--新增-->
+        <a href="interview-obj-newadd.html" class="mui-icon mui-icon-plus"></a>
+        <!--新增 end-->
+        <a  href="interview-obj-edit.html" class="mui-table-view-cell clearfix zydq-lis-cell">
+            <span class="interview-obj-txt">对象名称1-基金公司-投资总监</span>
+            <i class="mui-icon mui-icon-arrowright"></i>
+        </a>
+        <a  href="interview-obj-edit.html" class="mui-table-view-cell clearfix zydq-lis-cell">
+            <span class="interview-obj-txt">对象名称2-上市公司-董事长</span>
+            <i class="mui-icon mui-icon-arrowright"></i>
+        </a>
+    </div>
+    <!--采访类型-->
+    <div class="zydq-jjrq zydq-filter-cell" style="padding-bottom: 10px;">
+        <label for="" class="cell-tit">采访类型</label>
+        <div class="mui-table-view-cell clearfix zydq-lis-cell interview-type-cell all-select">
+            <label for="">线上</label>
+            <a href="#choose1" class="choose-btn mui-icon mui-icon-arrowdown"></a>
+            <input type="text" id="chooseTxt1" class="f-input" readonly>
+        </div>
+        <div class="mui-table-view-cell clearfix zydq-lis-cell interview-type-cell ">
+            <label for="">线下</label>
+            <a href="#choose2" class="choose-btn mui-icon mui-icon-arrowdown"></a>
+            <input type="text" id="chooseTxt2" class="f-input">
+        </div>
+        <div class="mui-table-view-cell clearfix zydq-lis-cell " style="padding-right: 16px;padding-top: 5px;">
+            <input type="text" class="f-input"  placeholder="其他参加的媒体或机构" style="bottom: 0;">
+        </div>
+    </div>
+    <!--稿件正文-->
+    <div class="zydq-jjrq zydq-filter-cell">
+        <div class=" clearfix zydq-lis-cell" style="padding-right: 16px;height: auto;line-height: 28px;">
+          <!--  <input type="text" class="f-input" placeholder="稿件正文">-->
+            <textarea name="" id="" cols="30" rows="10"  placeholder="稿件正文"></textarea>
+        </div>
+    </div>
+    <!--添加附件-->
+    <div class="zydq-jjrq zydq-filter-cell">
+        <label for="" class="cell-tit">添加附件</label>
+        <div class="mui-table-view-cell clearfix zydq-lis-cell">
+            <span class="interview-obj-txt">从我的采访中文件选择</span>
+            <i class="mui-icon mui-icon-arrowright"></i>
+        </div>
+        <div class="mui-table-view-cell clearfix zydq-lis-cell">
+            <span class="interview-obj-txt">从电脑本地文件选择</span>
+            <i class="mui-icon mui-icon-arrowright"></i>
+        </div>
+    </div>
+    <!--选择的附件-->
+    <div class="zydq-jjrq zydq-filter-cell">
+        <label for="" class="cell-tit">添加的附件</label>
+        <div class=" clearfix zydq-lis-cell">
+            <span class="interview-obj-txt">附件1</span>
+            <i class="mui-icon mui-icon-close"></i>
+        </div>
+        <div class=" clearfix zydq-lis-cell">
+            <span class="interview-obj-txt">附件2</span>
+            <i class="mui-icon mui-icon-close"></i>
+        </div>
+    </div>
+
+
+
+
+    <!--线上选项-->
+    <div id="choose1" class="mui-popover">
+        <ul class="mui-table-view mui-table-view-radio">
+            <li class="mui-table-view-cell">
+                <a class="mui-navigate-right noLink" href="#choose1">
+                    电话采访
+                </a>
+            </li>
+            <li class="mui-table-view-cell ">
+                <a class="mui-navigate-right noLink" href="#choose1">
+                    网络社交平台
+                </a>
+            </li>
+        </ul>
+    </div>
+    <!--线下选项-->
+    <div id="choose2" class="mui-popover" style='width: 100%;right:0;'>
+        <div class="mui-scroll-wrapper">
+            <div class="mui-scroll">
+                <ul class="mui-table-view mui-table-view-radio">
+                    <li class="mui-table-view-cell">
+                        <a class="mui-navigate-right noLink" href="#choose2">
+                            主动走访调研
+                        </a>
+                    </li>
+                    <li class="mui-table-view-cell ">
+                        <a class="mui-navigate-right noLink" href="#choose2">
+                            股东大会
+                        </a>
+                    </li>
+                    <li class="mui-table-view-cell ">
+                        <a class="mui-navigate-right noLink" href="#choose2">
+                            机构调研
+                        </a>
+                    </li>
+                    <li class="mui-table-view-cell ">
+                        <a class="mui-navigate-right noLink" href="#choose2">
+                            路演活动
+                        </a>
+                    </li>
+                    <li class="mui-table-view-cell ">
+                        <a class="mui-navigate-right noLink" href="#choose2">
+                            媒体沟通说明会
+                        </a>
+                    </li>
+                    <li class="mui-table-view-cell ">
+                        <a class="mui-navigate-right noLink" href="#choose2">
+                            新闻发布会
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+</div>
+<script src="../js/mui.min.js"></script>
+<script src="../js/mui.picker.min.js"></script>
+<script src="../js/app.js"></script>
+<script>
+    mui('.mui-scroll-wrapper').scroll();
+    /*弹框选择*/
+    function selectState(infoId,selectCell) {
+        var info = document.getElementById(infoId);
+        document.querySelector(selectCell).addEventListener('selected',function(e){
+            info.value = e.detail.el.innerText;
+        });
+    }
+    selectState('chooseTxt1','#choose1');
+    selectState('chooseTxt2','#choose2');
+    (function($) {
+        $.init();
+
+        var $timeStart   = document.getElementById('demo1');
+        var $timeStartRs = document.getElementById('result');
+
+        $timeStart.addEventListener('tap', function() {
+            var optionsJson = this.getAttribute('data-options') || '{}';
+            var options = JSON.parse(optionsJson);
+            var id = this.getAttribute('id');
+            var picker = new mui.DtPicker(options);
+            picker.show(function(rs) {
+                $timeStartRs.innerText = rs.text;
+                picker.dispose();
+            });
+        }, false);
+    })(mui);
+</script>
+</body>
+
+</html>

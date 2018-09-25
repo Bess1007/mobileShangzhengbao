@@ -1,0 +1,232 @@
+<!doctype html>
+<html class="pb60">
+<head>
+    <meta charset="UTF-8">
+    <title>采访信息展示</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link href="css/mui.min.css" rel="stylesheet" />
+    <link href="iconfont/iconfont.css" rel="stylesheet" />
+    <link href="company/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="css/app.css" rel="stylesheet" />
+    <link href="css/interview.css" rel="stylesheet" />
+    <style>
+        html {
+            background-color: #fff;
+            padding-bottom: 50px;
+        }
+        .mui-content {
+            background-color: #fff;
+        }
+
+		.cen-sc-inp input::-webkit-input-placeholder {
+			color: #ccc;
+		}
+		.mui-table-view-cell>a.mui-navigate-right {
+			padding: 6px 10px;
+		}
+		.top-time-select {
+			position: relative;		
+			background-color: #fff;
+			border-top: 1px solid #f0f0f0;
+		}
+		.top-time-select .chooseStatebtn:after {
+			font-family: Muiicons;
+			font-size: 24px;
+			font-weight: 400;
+			font-style: normal;
+			line-height: 1;
+			display: inline-block;
+			text-decoration: none;
+			-webkit-font-smoothing: antialiased;
+			content: '\e581';
+			color: #4d4d4d;
+			position: absolute;
+			width: 30px;
+			height: 20px;
+			line-height:20px;
+			top:50%;
+			margin-top:-10px;
+			right:0;
+			text-align: center;		
+		}
+		.top-time-select .chooseStatebtn {
+			position: relative;
+			padding: 12px;
+			display: inline-block;
+			width: 100%;
+		}
+	
+    </style>
+</head>
+
+<body class="interview_box">
+<header class="mui-bar mui-bar-nav bcWhiteNav">
+    <a class=" mui-icon  mui-pull-left " href="labelManagement.html"></a>
+    <h1 class="mui-title">导入到</h1>
+    <a class=" mui-icon  mui-pull-right " href="labelManagement.html" style="font-size: 16px;line-height: 26px;">取消</a>
+</header>
+<div class="mui-content " >
+    <!--搜索框-->
+    <div class="m-search-box">
+        <span class="iconfont icon-sousuo"></span> <span> 搜索 </span>
+    </div>
+    <!--搜索框 end-->
+    <!--高级搜索框-->
+    <div class="advanced-search-box">
+        <!--半透明黑色背景-->
+        <div class="translucet-bc"></div>
+        <!--高级搜索内容框-->
+        <div class="advanced-sbox">        
+            <div class="cen-search-sel">               
+                <div class="cen-search-opt actived">按时间</div>
+                <div class="cen-search-opt ">按标题</div>
+            </div>
+            <div class="top-time-select">
+        		 <a href="#chooseState" class="chooseStatebtn">
+        		 	<span id="statetxt" class="mustInput txtMust" name="状态">一个月</span>
+        		 </a>
+        	</div>          
+             <div class="top-searchinp" style="border-top: 1px solid #f0f0f0;display: none;">
+                <div class="left-sc-ico iconfont icon-sousuo"></div>
+                <div class="cen-sc-inp"><input type="text" placeholder="输入标题搜索"></div>               
+            </div>
+        </div>
+    </div>
+    <!--高级搜索框 end-->
+    <ul class="pl_10" style="padding-top: 42px;">
+        <li class="interview_rec_cell">
+            <a href="" class="interview_rec_cell_lk clearfix">
+                <!--<span class="interview_left_ico fl iconfont icon-meiticaifang"></span>-->
+                <div class="fl interview_cell_con">
+                    <h5 class="interview_tit">2018年4月2日 光线传媒 实地采访</h5>
+                    <div class="interview_time_box">
+                        2018.02.07 09:30:45
+                    </div>
+                    <ul class="clearfix">
+                        <li class="interview_label">传媒</li>
+                        <li class="interview_label">传媒222</li>
+                    </ul>
+                </div>
+            </a>
+        </li>
+        <li class="interview_rec_cell">
+            <a href="" class="interview_rec_cell_lk clearfix">
+                <!--<span class="interview_left_ico fl iconfont icon-meiticaifang"></span>-->
+                <div class="fl interview_cell_con">
+                    <h5 class="interview_tit">2018年4月2日 光线传媒 实地采访</h5>
+                    <div class="interview_time_box">
+                        2018.02.07 09:30:45
+                    </div>
+                    <ul class="clearfix">
+                        <li class="interview_label">传媒</li>
+                        <li class="interview_label">传媒222</li>
+                    </ul>
+                </div>
+            </a>
+        </li>
+        <li class="interview_rec_cell">
+            <a href="" class="interview_rec_cell_lk clearfix">
+                <!--<span class="interview_left_ico fl iconfont icon-meiticaifang"></span>-->
+                <div class="fl interview_cell_con">
+                    <h5 class="interview_tit">2018年4月2日 光线传媒 实地采访</h5>
+                    <div class="interview_time_box">
+                        2018.02.07 09:30:45
+                    </div>
+                    <ul class="clearfix">
+                        <li class="interview_label">传媒</li>
+                        <li class="interview_label">传媒222</li>
+                    </ul>
+                </div>
+            </a>
+        </li>
+        <li class="interview_rec_cell">
+            <a href="" class="interview_rec_cell_lk clearfix">
+                <!--<span class="interview_left_ico fl iconfont icon-meiticaifang"></span>-->
+                <div class="fl interview_cell_con">
+                    <h5 class="interview_tit">2018年4月2日 光线传媒 实地采访</h5>
+                    <div class="interview_time_box">
+                        2018.02.07 09:30:45
+                    </div>
+                    <ul class="clearfix">
+                        <li class="interview_label">传媒</li>
+                        <li class="interview_label">传媒222</li>
+                    </ul>
+                </div>
+            </a>
+        </li>
+    </ul>
+</div>
+
+<div id="chooseState" class="mui-popover">
+    <ul class="mui-table-view mui-table-view-radio">
+        <li class="mui-table-view-cell mui-selected">
+            <a class="mui-navigate-right mui-selected noLink" href="#chooseState">
+                一个月
+            </a>
+        </li>
+        <li class="mui-table-view-cell ">
+            <a class="mui-navigate-right noLink" href="#chooseState">
+                三个月
+            </a>
+        </li>
+        <li class="mui-table-view-cell">
+            <a class="mui-navigate-right noLink" href="#chooseState">
+                六个月
+            </a>
+        </li>
+    </ul>
+</div>
+</body>
+
+<script src="js/mui.min.js"></script>
+<script src="../js/mui.picker.min.js"></script>
+<script src="js/app.js"></script>
+<script>
+    mui.init({
+        swipeBack:true //启用右滑关闭功能
+    });
+
+	/*按时间选择下拉选项*/
+	  function selectState(infoId,selectCell) {
+            var info = document.getElementById(infoId);
+            document.querySelector(selectCell).addEventListener('selected',function(e){
+                info.innerHTML = e.detail.el.innerText;
+            });
+        }
+        selectState('statetxt','#chooseState .mui-table-view.mui-table-view-radio');     
+
+
+    /*cen-search-sel选项切换*/
+    mui('.cen-search-sel').on('tap','.cen-search-opt',function () {
+        var len = this.parentNode.getElementsByClassName('cen-search-opt').length;
+        for(var i = 0;i<len;i++){
+            this.parentNode.getElementsByClassName('cen-search-opt')[i].classList.remove('actived');
+        }
+        this.classList.add('actived');
+        
+        /*切换对应内容*/
+       if(this.innerHTML =='按时间'){
+       	mui('.top-time-select')[0].style.display = 'block';
+       	mui('.top-searchinp')[0].style.display = 'none';
+       }else{
+       	mui('.top-time-select')[0].style.display = 'none';
+       	mui('.top-searchinp')[0].style.display = 'block';
+       }
+    })
+    /*cen-search-sel选项切换 end*/
+
+    /*高级搜索框的显示与隐藏*/
+    mui('.m-search-box')[0].addEventListener('tap',function () {
+        mui('.advanced-search-box')[0].style.display = 'block'
+    });
+    
+    mui('.translucet-bc')[0].addEventListener('tap',function () {/*点击黑色半透明背景*/
+        mui('.advanced-search-box')[0].style.display = 'none'
+    });
+    /*高级搜索框的显示与隐藏 end*/
+
+</script>
+
+</html>

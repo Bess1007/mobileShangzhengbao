@@ -1,0 +1,417 @@
+<!doctype html>
+<html class="pb40 ">
+<head>
+    <meta charset="UTF-8">
+    <title>采访详情</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link href="css/mui.min.css" rel="stylesheet" />
+    <link href="iconfont/iconfont.css" rel="stylesheet" />
+    <link href="css/app.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="css/mui.picker.min.css" />
+    <link href="css/interview.css" rel="stylesheet" />
+    <link href="css/schedule.css" rel="stylesheet" />
+
+    <style>
+        .mui-content {
+            position: absolute;
+            top: 0;
+            bottom: 50px;
+            width: 100%;
+            /* 使之可以滚动 */
+            overflow-y: scroll;
+            /* 增加该属性，可以增加弹性 */
+            -webkit-overflow-scrolling: touch;
+        }
+
+        /***5-14新增样式***/
+        .scheduleConCell {
+            display: block;
+        }
+        .funBtns {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            height: 50px;
+            display: table;
+            text-align: center;
+            width: 100%;
+            border-top: 10px solid #f5f5f5;
+            padding: 10px;
+            background-color: #fff;
+            z-index: 100;
+        }
+        .funs-w, .funs-img, .funs-rec {
+            display: table-cell;
+        }
+        .funs-ico span {
+            font-size: 18px;
+            color: #222;
+        }
+        .funs-ico.actived span {
+            color: #1b82d2;
+        }
+        .completion-situ-box {
+            height:auto;
+            padding: 10px;
+        }
+        .importBtn {
+        	width: 100%;height:100%;opacity: 0;position: absolute;top: 0;left: 0;
+        }
+    </style>
+</head>
+
+<body class="interview_box">
+<header class="mui-bar mui-bar-nav">
+    <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+    <h1 class="mui-title">采访详情</h1>
+    <a class="icon iconfont icon-icon-  mui-pull-right saveBtn"></a>
+</header>
+<!--底部功能按钮-->
+<nav class="funBtns">
+    <div class="funs-ico funs-w actived"><span class="iconfont icon-wenzi1"></span></div>
+    <div class="funs-ico funs-img"><span class="iconfont icon-tupian"></span></div>
+    <div class="funs-ico funs-v"><span class="iconfont icon-shipin"></span></div>
+    <div class="funs-ico funs-rec"><span class="iconfont icon-dkw_luyin"></span></div>
+    <div class="" style="position: relative;"><input type="file" class="importBtn" /><span class="iconfont icon-daoru" style="font-size: 21px;"></span></div>
+</nav>
+<div class="mui-content">
+    <div class="fx-infolist-box">
+        <!--创新活动-->
+        <div class="scheduleConCell">
+
+            <div class="scheduleinput">
+                <ul class="mui-table-view">
+                    <li class="mui-table-view-cell scheduleinputLi clearfix">
+                        <label for="" class="sclabelLeft fl">完成情况</label>
+                        <a href="#chooseState" class="chooseStatebtn">
+                            <span id="statetxt" class="mustInput txtMust" name="状态"></span>
+                        </a>
+                        <i class="mui-icon mui-icon-arrowright"></i>
+                    </li>
+                    <li id='demo1' data-options='{}'  class="mui-table-view-cell scheduleinputLi clearfix scbtn ">
+                        <label for="" class="sclabelLeft fl">采访时间</label>
+                        <div id='result' class="ui-alert frscTimeRight fr txtMust" name="采访时间">2018-02-18</div>
+                        <i class="mui-icon mui-icon-arrowright"></i>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="scheduleinput">
+                <ul class="">
+                    <li class=" scheduleinputLi clearfix linkLi">
+                        <a href="#batchOpe" class="clearfix lisLink">
+                            <label for="" class="sclabelLeft fl" >采访对象</label>
+                            <input type="text" value="">
+                            <i class="mui-icon mui-icon-arrowright"></i>
+                        </a>
+                        <ul class="selected-company-box clearfix">
+                            <li class="selected-company-cell">
+                                <i class="mui-icon mui-icon-closeempty del-company"></i>
+                                <span>采访对象1</span>
+                            </li>
+                            <li class="selected-company-cell">
+                                <i class="mui-icon mui-icon-closeempty del-company"></i>
+                                <span>采访对象2</span>
+                            </li>
+                            <li class="selected-company-cell">
+                                <i class="mui-icon mui-icon-closeempty del-company"></i>
+                                <span>采访对象3</span>
+                            </li>
+                            <li class="selected-company-cell">
+                                <i class="mui-icon mui-icon-closeempty del-company"></i>
+                                <span>一个很长很长很长很长很长很长很长的公司名称</span>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="mui-table-view-cell scheduleinputLi scheduletextareaLi clearfix ">
+                        <textarea name="" id="" cols="30" rows="10" placeholder="采访提纲"></textarea>
+                    </li>
+                </ul>
+            </div>
+
+            <!--活动记录&备注-->
+            <div class="scheduleinput">
+                <ul class="mui-table-view">
+
+                    <li class="mui-table-view-cell scheduleinputLi scheduletextareaLi clearfix ">
+                        <textarea name="" id="" cols="30" rows="10" placeholder="采访内容" class="interviewBox"></textarea>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+        <!--创新协议-->
+    </div>
+</div>
+
+<!--完成情况选择-->
+<div id="chooseState" class="mui-popover completion-situ-box">
+    <ul class="mui-table-view mui-table-view-radio">
+        <li class="mui-table-view-cell">
+            <a class="mui-navigate-right noLink" href="#chooseState">
+                已完成
+            </a>
+        </li>
+        <li class="mui-table-view-cell ">
+            <a class="mui-navigate-right noLink" href="#chooseState">
+                未完成
+            </a>
+        </li>
+    </ul>
+</div>
+<!--完成情况选择 end-->
+
+<!--通讯录弹框-->
+<div id="batchOpe" class="mui-modal txlPop">
+    <header class="mui-bar mui-bar-nav">
+        <a class=" mui-icon mui-icon-left-nav mui-pull-left" href="#batchOpe"></a>
+        <h1 id="title" class="mui-title">通讯录</h1>
+        <span class="mui-btn mui-btn-link mui-pull-right" id="openAddctcPop">
+                        <span class="mui-icon mui-icon-plusempty" style="font-size: 30px;position: relative;top: 2px;"></span>
+                    </span>
+    </header>
+    <div class="mui-content" style="height: 100%;padding-bottom: 60px;overflow: auto;top: 44px;">
+        <div id='list' class="mui-indexed-list">
+            <div class="mui-indexed-list-search mui-input-row mui-search">
+                <input type="search" class="mui-input-clear mui-indexed-list-search-input" placeholder="搜索">
+            </div>
+
+            <div class="mui-indexed-list-alert"></div>
+            <div class="mui-indexed-list-inner">
+                <ul class="mui-table-view">
+                    <li data-group="A" class="mui-table-view-divider mui-indexed-list-group">A</li>
+                    <li data-value="AKU" data-tags="AKeSu" class="mui-table-view-cell mui-indexed-list-item">
+                        阿克苏
+                        <p>18010000000</p>
+                    </li>
+                    <li data-value="BPL" data-tags="ALaShan" class="mui-table-view-cell mui-indexed-list-item">
+                        阿拉山
+                        <p>18010000000</p>
+                    </li>
+                    <li data-value="AAT" data-tags="ALeTai" class="mui-table-view-cell mui-indexed-list-item">
+                        阿勒泰
+                        <p>18010000000</p>
+                    </li>
+                    <li data-group="B" class="mui-table-view-divider mui-indexed-list-group">B</li>
+                    <li data-value="BS" data-tags="BaoShan" class="mui-table-view-cell mui-indexed-list-item">
+                        保山
+                        <p>18010000000</p>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<!--通讯录弹框 end-->
+
+<!--添加联系人-->
+<div id="addContact" style="display:none;position: fixed;top: 0;left: 0;z-index: 1000;width: 100%; height: 100%;overflow: auto">
+    <header class="mui-bar mui-bar-nav">
+        <span class="mui-icon mui-icon-left-nav mui-pull-left" id="closeAddctc_pop"></span>
+        <h1 class="mui-title">添加联系人</h1>
+    </header>
+    <div class="mui-content">
+        <section>
+            <form action="" class="chaxform" name="myForm" id="validataF">
+                <div class="field ">
+                    <label> 姓名：</label>
+                    <div class="ui inputBox">
+                        <input type="text" name="fname" class="inputRequired">
+                        <div class="ui corner label">
+                            <i class="asterisk icon">*</i>
+                        </div>
+                    </div>
+                </div>
+                <div class="field">
+                    <label> 所属分组：</label>
+                    <div class="ui inputBox">
+                        <select name="" id="" class="form_select_int">
+                            <option value="">报社</option>
+                            <option value="">采访</option>
+                            <option value="" selected="">其他</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="field">
+                    <label> 性别：</label>
+                    <div class="ui inputBox">
+                        <select name="" id="" class="form_select_int">
+                            <option value="">男</option>
+                            <option value="">女</option>
+                        </select>
+                        <div class="ui corner label">
+                            <i class="asterisk icon">*</i>
+                        </div>
+                    </div>
+                </div>
+                <div class="field ">
+                    <label> 单位：</label>
+                    <div class="ui inputBox">
+                        <input type="text" name="fname" class="">
+                    </div>
+                </div>
+                <div class="field ">
+                    <label> 职务：</label>
+                    <div class="ui inputBox">
+                        <input type="text" name="fname" class="">
+                    </div>
+                </div>
+                <div class="field ">
+                    <label> 联系地址：</label>
+                    <div class="ui inputBox">
+                        <input type="text" name="fname" class="">
+                    </div>
+                </div>
+                <div class="field ">
+                    <label> 家庭电话：</label>
+                    <div class="ui inputBox">
+                        <input type="text" name="fname" class="">
+                    </div>
+                </div>
+                <div class="field ">
+                    <label> 办公电话：</label>
+                    <div class="ui inputBox">
+                        <input type="text" name="fname" class="">
+                    </div>
+                </div>
+                <div class="field ">
+                    <label> 移动电话：</label>
+                    <div class="ui inputBox">
+                        <input type="text" name="fname" class="">
+                    </div>
+                </div>
+                <div class="field ">
+                    <label> Email地址：</label>
+                    <div class="ui inputBox">
+                        <input type="text" name="fname" class="">
+                    </div>
+                </div>
+                <div class="field ">
+                    <label> 邮政编码：</label>
+                    <div class="ui inputBox">
+                        <input type="text" name="fname" class="">
+                    </div>
+                </div>
+                <div class="field ">
+                    <label> 邮寄地址：</label>
+                    <div class="ui inputBox">
+                        <input type="text" name="fname" class="">
+                    </div>
+                </div>
+                <div class="field ">
+                    <label> 传真：</label>
+                    <div class="ui inputBox">
+                        <input type="text" name="fname" class="">
+                    </div>
+                </div>
+                <div class="field">
+                    <label> 备注：</label>
+                    <div class="ui inputBox">
+                        <textarea name="" id="" cols="30" rows="10"></textarea>
+                    </div>
+                </div>
+                <button type="submit" class="form_submitbtn">保存</button>
+            </form>
+        </section>
+    </div>
+</div>
+<!--添加联系人 end-->
+</body>
+<script src="js/mui.min.js"></script>
+<script src="js/app.js"></script>
+<script>
+
+</script>
+
+<script src="js/mui.picker.min.js"></script>
+<script>
+    (function($) {
+        /*底部功能按钮选中高亮*/
+        var len = $('.funBtns .funs-ico').length;
+        $('body').on('tap','.funs-ico',function () {
+            for(var i=0;i<len;i++){
+                $('.funBtns .funs-ico')[i].classList.remove('actived');
+            }
+            this.classList.add('actived');
+        })
+        /*底部功能按钮选中高亮end*/
+
+        /*给采访内容框 interviewBox 设置高度*/
+        var winheight = window.screen.availHeight;
+        $('.interviewBox')[0].style.height = winheight-134+'px';
+        /*给采访内容框 interviewBox 设置高度 end*/
+
+        /*状态选择*/
+        function selectState(infoId,selectCell) {
+            var info = document.getElementById(infoId);
+            document.querySelector(selectCell).addEventListener('selected',function(e){
+                info.innerHTML = e.detail.el.innerText;
+            });
+        }
+        selectState('statetxt','#chooseState .mui-table-view.mui-table-view-radio');
+        /*状态选择end*/
+
+        /*点击采访对象弹出弹框*/
+
+        /*弹出、关闭添加联系人弹框*/
+        mui('#openAddctcPop')[0].addEventListener('tap',function () {
+            mui('#addContact')[0].style.display='block'
+        })
+        mui('#closeAddctc_pop')[0].addEventListener('tap',function () {
+            mui('#addContact')[0].style.display='none'
+        })
+        /*弹出、关闭添加联系人弹框end*/
+
+        $.init();
+        $('.mui-scroll-wrapper').scroll();
+        var result = $('#result')[0];
+        var btns = $('.scbtn');
+        btns.each(function(i, btn) {
+            btn.addEventListener('tap', function() {
+                var optionsJson = this.getAttribute('data-options') || '{}';
+                var options = JSON.parse(optionsJson);
+                var id = this.getAttribute('id');
+                /*
+                 * 首次显示时实例化组件
+                 * 示例为了简洁，将 options 放在了按钮的 dom 上
+                 * 也可以直接通过代码声明 optinos 用于实例化 DtPicker
+                 */
+                var picker = new $.DtPicker(options);
+                picker.show(function(rs) {
+                    /*
+                     * rs.value 拼合后的 value
+                     * rs.text 拼合后的 text
+                     * rs.y 年，可以通过 rs.y.vaue 和 rs.y.text 获取值和文本
+                     * rs.m 月，用法同年
+                     * rs.d 日，用法同年
+                     * rs.h 时，用法同年
+                     * rs.i 分（minutes 的第二个字母），用法同年
+                     */
+                    btn.getElementsByClassName('ui-alert')[0].innerText = rs.text;
+                   /* result.innerText = rs.text;*/
+                    /*
+                     * 返回 false 可以阻止选择框的关闭
+                     * return false;
+                     */
+                    /*
+                     * 释放组件资源，释放后将将不能再操作组件
+                     * 通常情况下，不需要示放组件，new DtPicker(options) 后，可以一直使用。
+                     * 当前示例，因为内容较多，如不进行资原释放，在某些设备上会较慢。
+                     * 所以每次用完便立即调用 dispose 进行释放，下次用时再创建新实例。
+                     */
+                    picker.dispose();
+                });
+            }, false);
+        });
+    })(mui);
+</script>
+
+<script>
+
+
+</script>
+
+</html>

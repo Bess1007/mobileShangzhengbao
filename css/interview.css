@@ -1,0 +1,1253 @@
+/******3-1采访相关页面重构******/
+.pl_10 { padding-left: 10px;}
+.interview_rec_cell {
+    position: relative;
+    padding: 10px 0;
+    padding-right: 60px;
+    border-bottom:1px solid #ddd;
+}
+.interview_rec_cell_lk {
+    display:block;
+    width: 100%;
+}
+.interview_ope {
+    position: absolute;
+    width: 60px;
+    text-align: center;
+    top: 50%;
+    right: 0;
+    margin: 0;
+    height: 100%;
+    color: #4d4d4d;
+    font-size: 24px;
+    line-height: 24px;
+    margin-top: -12px;
+}
+.interview_left_ico {
+    width: 60px;
+    font-size: 60px;
+    line-height: 60px;
+    color: #1b92e6;
+    margin-right: -70px;
+}
+
+.zp_box .interview_cell_con {
+    padding-left: 70px;
+}
+.interview_tit {
+    color: #000;
+    font-size: 14px;
+    line-height: 18px;
+}
+.interview_time_box {
+    color: #aaa;
+    font-size: 13px;
+    line-height: 13px;
+    margin: 6px 0 ;
+}
+.interview_label {
+    float: left;
+    font-size: 12px;
+    line-height: 12px;
+    border:1px solid #1b92e6;
+    border-radius:3px;
+    background-color: #1b92e6;
+    color: #fff;
+    padding:3px ;
+    margin: 4px;
+    margin-left: 0;
+}
+.addNewInterview_btn {
+    display: block;
+    width: 46px;
+    height: 46px;
+    text-align: center;
+    line-height: 46px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    border: 0;
+    /* background: linear-gradient(to bottom right,#005edc,#1099f0); */
+    background: linear-gradient(to bottom right,rgba(243,97,49,.9),rgba(241,124,84,.9));
+    color: #fff;
+    box-shadow: 0 0 10px #f36d40;
+    position: fixed;
+    bottom: 40px;
+    right: 15px;
+    z-index: 100;
+}
+.addNewInterview_btn .mui-icon {
+    border: 0;
+    color: #fff;
+    font-size: 30px;
+    margin: 0;
+    line-height: 46px;
+}
+.myope_box {
+    height:auto;
+}
+
+.interview_rec_mg {
+    line-height: 24px;
+    font-size: 14px;
+    border-bottom:1px solid #ccc;
+    padding:0 10px;
+    padding-bottom: 5px;
+}
+.interview_rec_mg span {
+    display:inline-block;
+}
+.interview_rec_mg .mui-icon-list {
+    color: #1b92e6;
+    position: relative;
+    top: 2px;
+}
+.batchOpe_btns {
+    width: 100%;
+    height: 60px;
+    display:table;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    border-top:1px solid #ccc;
+    vertical-align: middle;
+    background-color: #fff;
+    z-index: 100;
+}
+.batchOpe_btn {
+    display:table-cell;
+    height: 100%;
+
+}
+.batchOpe_btn span {
+    display:block;
+}
+.batchOpe_btn .iconfont {
+    font-size: 24px;
+    margin-top: 11px;
+}
+.batchOpe_cf_list {
+  /*  padding-left: 46px;*/
+}
+.batchOpe_cf_list .interview_rec_cell {
+    padding-right: 10px;
+}
+.cf_left_checkbox {
+    position: absolute;
+    top: 50%;
+    margin-top: -15px;
+    left: -36px;
+    width: 46px;
+    height: 30px;
+    line-height: 60px;
+}
+
+
+.mui-slider .mui-slider-group .mui-slider-item img.cp_interview_img {
+    margin-right: -70px;
+    width: 60px;
+}
+.cp_box .interview_cell_con {
+    padding-left: 70px;
+}
+.file_num {
+    white-space: nowrap;
+    font-size: 12px;
+}
+input.interview_search {
+    background-color: transparent;
+    color: #fff;
+    border:0;
+    margin-bottom: 0;
+    text-align: left;
+}
+.lab_sc_tit {
+    background-color: transparent;
+    color: #666;
+    font-size: 14px;
+    line-height: 40px;
+    padding-left: 10px;
+}
+.lab_box {
+    padding: 5px;
+    background-color: #fff;
+}
+.lab_cell {
+    margin: 10px;
+    padding: 5px;
+    font-size: 14px;
+    line-height: 14px;
+    border:1px solid #ccc;
+    border-radius:6px;
+    float: left;
+    white-space: nowrap;
+}
+.interview_outline .mui-navigate-right {
+    font-size: 14px;
+    padding: 5px 0;
+}
+.mui-table-view-cell>a.mui-navigate-right {
+    padding: 5px 0;
+}
+.mui-table-view-cell.mui-collapse.interview_outline .mui-collapse-content {
+    padding: 5px;
+}
+.interview_outline {
+    border-bottom:1px solid #ccc;
+}
+.interview_obj_inp_con {
+    display:none;
+}
+.interview_obj_inp_con.actived {
+    display:block;
+}
+.interview_obj_inp_con {
+    position: fixed;
+    top: 50px;
+    left: 0;
+    width: 80%;
+    margin:0 10%;
+    background-color: #fff;
+    z-index: 100;
+    padding: 20px;
+    box-shadow: 0 0 3px #ccc;
+}
+.interview_btns {
+    text-align: right;
+}
+.interview_btns button {
+    display: inline-block;
+    background-color: #1b92e6;
+    color: #fff;
+    box-shadow: none;
+}
+.interview_btns .btn_cancel {
+    background-color: #eee;
+    color: #000;
+}
+.completionOfSitua {
+    padding:5px 10px;
+    background-color: #f0f0f0;
+    padding-bottom: 0;
+}
+.completionOfSitua .mui-radio {
+    display:inline-block;
+    width: 120px;
+}
+
+.saveBtn {
+    color: #fff;
+    display:inline-block;
+    padding: 10px;
+    margin-right: -10px;
+}
+.pb40 {padding-bottom: 40px;}
+.pb60 {padding-bottom: 60px;}
+
+/*标签管理*/
+.label_search_box {
+    padding: 10px;
+}
+input[type=search].search_label {
+    height: 34px;
+    background-color: #ddd;
+    width: 100%;
+    float: none;
+    border: 0;
+    padding-right: 34px;
+}
+.label_search_box .mui-placeholder {
+    top: 10px;
+}
+.label_search_box.mui-search.mui-active:before {
+    left: 20px;
+}
+.label_search_box.mui-input-row.mui-search .mui-icon-clear {
+    top: 16px;
+    right: 16px;
+}
+.glbq_box .interview_rec_mg {
+    background-color: #f5f5f5;
+    border-bottom: 0;
+    padding:6px 10px;
+}
+.interview_rec_mg {
+    font-size: 14px;
+    line-height: 20px;
+}
+.interview_rec_mg .mui-icon-list {
+    font-size: 20px;
+}
+.interview_cell_con .iconfont {
+    color: #1b92e6;
+}
+.label_batchOpe .interview_rec_cell {
+    padding:15px 0;
+}
+/*添加/删除标签*/
+.selected_label {
+    padding:0 10px;
+    padding-bottom: 10px;
+    background-color: #fff;
+    margin-bottom: 6px;
+}
+.label_group_tit {
+    line-height: 50px;
+    height: 50px;
+    font-size: 14px;
+    color: #000;
+    font-weight:bold;
+}
+.selected_label_cell {
+    line-height: 30px;
+    border-bottom:1px solid #ccc;
+    padding-right: 50px;
+    font-size: 13px;
+    position: relative;
+    margin-bottom: 8px;
+}
+.deleteLabel_btn {
+    position: absolute;
+    height: 30px;
+    line-height: 30px;
+    top: 50%;
+    right: 0;
+    margin-top: -15px;
+    width: 30px;
+    text-align: center;
+    font-size: 26px;
+}
+.flex_label_gp {
+    padding:0 10px;
+    background-color: #fff;
+    margin-bottom: 6px;
+}
+.xt_label_box {
+
+}
+.xt_label_cell {
+    float: left;
+    font-size: 12px;
+    line-height: 12px;
+    padding: 5px;
+    border:1px solid #1b92e6;
+    border-radius:12px;
+    margin-right: 10px;
+    margin-bottom: 12px;
+
+}
+.xt_label_cell.actived {
+    background-color: #1b92e6;
+    color: #fff;
+}
+.more_label_btn {
+    border-top:1px solid #ccc;
+    text-align: center;
+    padding:12px 0;
+    font-size: 12px;
+    color: #aaa;
+    display: none;
+
+}
+.more_label_btn .mui-icon {
+    font-size: 16px;
+}
+.hideSomeLabel {
+    height:auto;
+    transition: all 0.3s ease;
+
+}
+.hideSomeLabel.actived {
+    height:72px;
+    overflow: hidden;
+}
+/*采访搜索*/
+.searchByCompanyname input[type=text] {
+    color: #000;
+    margin-bottom: 0;
+    height: 36px;
+    line-height: 36px;
+}
+.form_select_int {
+    width: 100%;
+    height: 40px;
+    padding: 8px 16px;
+    border: 1px solid rgba(0, 0, 0, 0.15)!important;
+    outline: none;
+    color: rgba(0, 0, 0, 0.7);
+    font-size: 1em;
+    border-radius: 0.3125em!important;
+    margin-bottom: 0;
+}
+a.interview_obj_box {
+    display:block;width: 100%;min-height: 36px;line-height: 36px;border: 1px solid rgba(0, 0, 0, 0.15);margin-bottom: 10px;
+}
+.txlPop input[type=search] {
+    border-radius: 0;
+    border-color: #ddd;
+}
+.txlPop .mui-search {
+    padding: 0 7px;
+    margin: 5px 0;
+    border-bottom: 0;
+}
+.txl_li {
+    position: relative;
+    padding-right: 46px;
+}
+.txl_li .mui-icon-arrowright {
+    position: absolute;
+    font-size: 30px;
+    line-height: 40px;
+    width: 46px;
+    text-align: center;
+    top: 50%;
+    margin-top: -20px;
+    right: 0;
+    color: #333;
+}
+/*采访搜索 end*/
+/******3-1采访相关页面重构 end******/
+
+/*5-10新增样式*/
+#slider {
+    padding-top: 48px;
+}
+#sliderSegmentedControl {
+    position: fixed;
+    top: 44px;
+    left: 0;
+    background-color: #fff;
+    z-index:9;
+}
+#sliderProgressBar {
+    position:fixed;
+    top: 90px;
+    z-index: 9;
+}
+.mui-segmented-control.mui-segmented-control-inverted {
+    border-bottom:5px solid #f8f8f8!important;
+}
+.current-time {
+    position: relative;
+    width: 100%;
+    height: 32px;
+    line-height: 32px;
+    font-size:18px;
+    color: #000;
+    padding-left: 15px;
+    z-index: 9;
+    background-color: #fff;
+    font-weight:bold;
+    margin-bottom: 5px;
+}
+.audioinfobox {
+    padding:0 15px;
+    padding-left: 30px;
+    margin-bottom: 20px;
+}
+.audioinfocell {
+    padding: 6px 24px;
+    padding-right: 0;
+    padding-bottom: 15px;
+    border-left:2px solid #aaaaaa;
+    position: relative;
+}
+.audio-ms {
+    color: #aaaaaa;
+    font-size: 12px;
+    height: 30px;
+    line-height: 12px;
+    padding-top: 10px;
+    width: 44px;
+    text-align: center;
+    left: 0;
+    top: 0;
+    margin-left: -22px;
+    position: absolute;
+    background-color: #fff;
+}
+.audio-tit {
+    font-size: 14px;
+    line-height: 22px;
+}
+.audio-txt {
+    font-size: 14px;
+    line-height: 22px;
+}
+
+.audio-play .fa {
+    font-size: 16px;
+    padding: 5px;
+    padding-right: 10px;
+}
+.audio-txt {
+    height: 65px;
+    overflow: hidden;
+}
+.audio-txt.openbox {
+    height:auto;
+    overflow: inherit;
+}
+.interview-img-box {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.mui-slider .mui-slider-group .mui-slider-item .innnerimgsbox img {
+    float: left;
+   /* width: 33.33%;*/
+}
+.innnerimgsbox {
+    position: relative;
+    left: 0;
+    transition: all .3s ease-in-out;
+}
+.left-slidebtn{
+    display: -webkit-box;
+    -webkit-box-pack:center;
+    -webkit-box-align:center;
+    position: absolute;
+    height:100%;
+    background-color: rgba(0,0,0,.5);
+    color: #fff;
+    font-size: 22px;
+    top:0;
+    left: 0;
+    width: 30px;
+    text-align: center;
+}
+.right-slidebtn {
+    display: -webkit-box;
+    -webkit-box-pack:center;
+    -webkit-box-align:center;
+    position: absolute;
+    height: 100%;
+    line-height: 30px;
+    background-color: rgba(0,0,0,.5);
+    color: #fff;
+    font-size: 22px;
+    top:0;
+    right:0;
+    width: 30px;
+    text-align: center;
+}
+/*mui图片放大*/
+.mui-preview-image.mui-fullscreen {
+    position: fixed;
+    z-index: 100;
+    background-color: #000;
+}
+.mui-preview-header,
+.mui-preview-footer {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    z-index: 10;
+}
+.mui-preview-header {
+    height: 44px;
+    top: 0;
+}
+.mui-preview-footer {
+    height: 50px;
+    bottom: 0px;
+}
+.mui-preview-header .mui-preview-indicator {
+    display: block;
+    line-height: 25px;
+    color: #fff;
+    text-align: center;
+    margin: 15px auto ;
+    width: 70px;
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 12px;
+    font-size: 16px;
+}
+.mui-preview-image {
+    display: none;
+    -webkit-animation-duration: 0.5s;
+    animation-duration: 0.5s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+.mui-preview-image.mui-preview-in {
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+}
+.mui-preview-image.mui-preview-out {
+    background: none;
+    -webkit-animation-name: fadeOut;
+    animation-name: fadeOut;
+}
+.mui-preview-image.mui-preview-out .mui-preview-header,
+.mui-preview-image.mui-preview-out .mui-preview-footer {
+    display: none;
+}
+.mui-zoom-scroller {
+    position: absolute;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    -webkit-backface-visibility: hidden;
+}
+.mui-zoom {
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+.mui-slider .mui-slider-group .mui-slider-item img {
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+}
+.mui-android-4-1 .mui-slider .mui-slider-group .mui-slider-item img {
+    width: 100%;
+}
+.mui-android-4-1 .mui-slider.mui-preview-image .mui-slider-group .mui-slider-item {
+    display: inline-table;
+}
+.mui-android-4-1 .mui-slider.mui-preview-image .mui-zoom-scroller img {
+    display: table-cell;
+    vertical-align: middle;
+}
+.mui-preview-loading {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: none;
+}
+.mui-preview-loading.mui-active {
+    display: block;
+}
+.mui-preview-loading .mui-spinner-white {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -25px;
+    margin-top: -25px;
+    height: 50px;
+    width: 50px;
+}
+.mui-preview-image img.mui-transitioning {
+    -webkit-transition: -webkit-transform 0.5s ease, opacity 0.5s ease;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+}
+@-webkit-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@-webkit-keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+p img {
+    max-width: 100%;
+    height: auto;
+}
+
+.mui-slider-img-content {position: absolute;bottom: 0;left: 0;right: 0;color:#fff;line-height: 22px; padding: 10px; background-color: rgba(0,0,0,.6);}
+/*mui图片放大 end*/
+/*5-10新增样式 end*/
+
+/***6-29采访模块重构***/
+.manuscript-filter .mui-icon {
+    font-size: 18px;
+    color: #999;
+}
+.manuscript-filter.actived .mui-icon:before {
+    content:'\e580'
+}
+.manuscript-filter-box {
+    position: fixed;
+    top: 44px;
+    left: 0;
+    z-index: 10;
+    width: 100%;
+    height:auto;
+    background-color: #fff;
+    border-top:1px solid #f2f2f2;
+}
+.manuscript-fcell {
+    height: 42px;
+    line-height: 42px;
+    font-size: 16px;
+    padding:0 15px;
+    border-bottom:1px solid #f2f2f2;
+    color: #666;
+}
+.manuscript-fcell:active {
+    background-color: #f0f0f0;
+    -webkit-tap-highlight-color:transparent;
+}
+.manuscript-fcell .fcell-rightico {
+    font-size: 18px;
+    color: #e60012;
+    font-weight:700;
+}
+.m-search-box {
+    position: fixed;
+    width: 100%;
+    top: 44px;
+    left: 0;
+    z-index: 9;
+    text-align: center;
+    background-color: #fff;
+    border-bottom:1px solid #f2f2f2;
+    height: 42px;
+    line-height: 42px;
+    color: #ccc;
+}
+.translucet-bc {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,.5);
+    z-index: 10;
+}
+.advanced-sbox {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height:auto;
+    z-index: 11;
+    background-color: #f0f0f0;
+}
+.top-searchinp {
+    position: relative;
+    padding-left: 40px;
+    padding-right: 60px;
+    height: 44px;
+    line-height: 44px;
+    background-color: #fff;
+    margin-bottom: 2px;
+}
+.cen-sc-inp {
+    width: 100%;
+    height: 44px;
+    line-height: 44px;
+}
+.cen-sc-inp input {
+    border: 0;
+    margin-bottom: 0;
+}
+.left-sc-ico {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 44px;
+    width: 40px;
+    text-align: center;
+    color: #666;
+    font-size: 18px;
+}
+.right-sc-cancel {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 60px;
+    height: 44px;
+    line-height: 44px;
+    color: #e60012;
+    text-align: center;
+}
+.cen-search-sel {
+    background-color: #fff;
+    padding:10px 50px 10px 12px;
+    position: relative;
+    display: flex;
+}
+.cen-search-opt {
+    height: 24px;
+    line-height: 24px;
+    padding:0 10px;
+    border-radius:12px;
+    color: #666;
+    margin-right: 26px;
+}
+.cen-search-opt.actived {
+    background-color: #e60012;
+    color: #fff;
+}
+.cen-search-sel .right-arr-ico {
+    position: absolute;
+    height: 30px;
+    line-height: 30px;
+    width: 50px;
+    text-align: center;
+    right: 0;
+    top: 50%;
+    margin-top: -15px;
+}
+.cen-search-sel .right-arr-ico.actived:before {
+    content: '\e580';
+}
+.manuscriptshow-switch {
+    background-color: #fff;
+    margin-bottom: 10px;
+    padding-left: 12px;
+}
+.manuscriptshow-switch span {
+    color: #666;
+}
+.manuscriptshow-switch .mui-table-view-cell {
+    padding:12px;
+    padding-left: 0;
+}
+.time-range {
+    background-color: #fff;
+    padding-left: 12px;
+}
+.time-range .scheduleinputLi {
+    min-height: 45px;
+    line-height: 45px;
+    border-color: #e5e5e5;
+    padding-right: 12px;
+}
+.time-range .scheduleinputLi .mui-icon-arrowright {
+    height: 45px;
+    line-height: 45px;
+}
+.time-range .scheduleinputLi .mui-icon-arrowright {
+    right: 12px;
+}
+.hide-advanced-box {
+    display: none;
+    margin-top: 10px;
+}
+.advanced-search-box {
+    display: none;
+}
+.manuscript-cell.mui-table-view-cell {
+    padding: 0;
+}
+.manuscript-list {
+    padding-top: 42px;
+}
+.manuscript-cell .manuscript-list-cell {
+    display: block;
+    position: relative;
+    padding:10px 50px 10px 60px;
+}
+.left-mns-ico {
+    position: absolute;
+    width: 36px;
+    height: 36px;
+    border-radius:50%;
+    border:1px solid #eaaf69;
+    color: #eaaf69;
+    text-align: center;
+    line-height: 36px;
+    font-size: 16px;
+    left: 10px;
+    top: 50%;
+    margin-top: -18px;
+}
+.manuscript-cell:nth-of-type(2n) .left-mns-ico{
+    border:1px solid #6bbcd5;
+    color: #6bbcd5;
+}
+.manuscript-cell:nth-of-type(3n) .left-mns-ico{
+    border:1px solid #638dd5;
+    color: #638dd5;
+}
+.manuscript-cell:nth-of-type(4n) .left-mns-ico{
+    border:1px solid #8dba4b;
+    color: #8dba4b;
+}
+.right-mns-lab{
+    position: absolute;
+    width:50px;
+    height:auto;
+    right: 0;
+    bottom: 10px;
+    text-align: right;
+    padding-right: 10px;
+}
+.symbols {
+    display: block;
+}
+.symbols span {
+    display: inline-block;
+    color: #eaaf69;
+    font-size: 16px;
+    line-height:24px;
+    margin-bottom: 0;
+    float: right;
+}
+.symbols .icon-weifasong {
+    font-size: 17px;
+}
+.right-mns-lab .mns-date {
+    display: inline-block;
+    font-size: 12px;
+    color: #8f9195;
+    line-height: 24px;
+}
+.cen-mns-txt .mns-tit {
+    width: 100%;
+    display: block;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    line-height: 28px;
+    font-size: 16px;
+    color: #000;
+    position: relative;
+    /*padding-left: 16px;*/
+}
+/*.cen-mns-txt .mns-tit:before {
+    content: '';
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    border-radius:50%;
+    background-color: #0081ff;
+    top: 10px;
+    left: 0;
+}*/
+.cen-mns-txt .mns-con {
+    width: 100%;
+    display: block;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    line-height:24px;
+    font-size: 14px;
+    color: #8f9195;
+}
+.mns-labels {
+    display: flex;
+    min-height: 24px;
+    overflow: hidden;
+    padding-top: 4px;
+}
+.mns-labels span {
+    padding:0 5px;
+    height: 20px;
+    line-height: 20px;
+    font-size: 12px;
+    border:1px solid #b6cdf5;
+    border-radius:10px;
+    color: #666;
+    margin-right: 6px;
+    margin-bottom: 4px;
+}
+/***6-29采访模块重构 end***/
+/****稿件编辑****/
+.edit-tb-box {
+    width: 100%;
+    display: table;
+}
+.edit-tb-cell{
+    display: table-cell;
+    vertical-align: top;
+    padding: 6px;
+    border-bottom:1px solid #d9d9d9;
+}
+.edit-tb-cell label {
+    color: #909090;
+    line-height: 32px;
+    display: block;white-space: nowrap;
+}
+.edit-tb-cell input {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    height: 32px;
+    line-height: 32px;
+    font-size: 14px;
+
+}
+.edit-tb-cell.mui-input-row .mui-input-clear~.mui-icon-clear {
+    line-height:32px;
+    top: 50%;
+    margin-top:-19px;
+    opacity: .6;
+}
+.glcf-box span {
+    float: left;
+}
+.glcf-tit {
+    width: 100%;
+    padding-right: 32px;
+    line-height: 32px;
+    display: block;
+    float: left;
+}
+.glcf-box .add-attachment {
+    width:30px;
+    margin-left: -32px;
+    margin-right: 0;
+    margin-bottom: 0;
+    font-size: 16px;
+    color: #000;
+}
+.glcf-box .add-attachment:active {
+    background-color: #f0f0f0;
+}
+.glcf-attachments {
+    padding: 5px 10px;
+    border:1px solid #d9d9d9;
+    border-left: 0;
+    border-right: 0;
+}
+.attachment-cell {
+    position: relative;
+    padding:10px 30px 5px 40px;
+    border:1px solid #dddddd;
+    border-radius:6px;
+}
+.left-att-ico {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    top: 50%;
+    margin-top: -20px;
+    left: 0;
+    font-size: 28px;
+    color: #1b82d2;
+}
+.cen-att-con {width: 100%;}
+.cen-att-con .att-name,.cen-att-con .att-size {
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.att-name {
+    display: block;
+    font-size: 14px;
+    color: #000;
+    line-height:14px;
+    padding-bottom: 8px;
+}
+.att-size {
+    display: block;
+    color: #999;
+    font-size: 12px;
+    line-height: 12px;
+}
+.right-att-delete {
+    height: 40px;
+    width: 30px;
+    text-align: center;
+    line-height:40px;
+    position: absolute;
+    top: 50%;
+    margin-top: -20px;
+    right: 0;
+    color: #bcbcbc;
+    font-size: 28px;
+    font-weight:bold;
+}
+.m-edit-send-btn {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    width:auto;
+    text-align: center;
+    height: 40px;
+    line-height: 40px;
+    font-size: 16px;
+    background-color: rgba(0,129,255,.8);
+    box-shadow: 2px 2px 5px #d8e8f1;
+    color: #fff;
+}
+.m-edit-send-btn:active {
+    background-color: #0081ff;
+}
+.edit-tb-cell .mui-table-view-cell {
+    padding: 0;
+    height: 32px;
+    line-height: 32px;
+}
+.edit-tb-cell .mui-icon-arrowright {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    margin-top: -14px;
+    height: 32px;
+    line-height: 32px;
+    color: #b2b2b2;
+}
+.interviewee-box {
+    position: relative;
+    width: 100%;
+    min-height: 34px;
+    padding-right: 44px;
+}
+.interviewee-box .addInterviewee {
+    position: absolute;
+    font-size: 24px;
+    width: 44px;
+    height: 32px;
+    text-align: right;
+    line-height: 32px;
+    top: 50%;
+    margin-top: -15px;
+    right: 0;
+    color: #0081ff;
+    padding-right: 6px;
+}
+.interviewee-name {
+    float: left;
+    height: 24px;
+    line-height: 24px;
+    padding:0 10px;
+    background-color: #7fbded;
+    color: #fff;
+    border-radius:12px;
+    margin-right: 15px;
+    margin-bottom: 5px;
+    font-size: 12px;
+    padding-right: 24px;
+    position: relative;
+}
+.interviewee-name span.interview-delete-btn {
+    position: absolute;
+    font-size: 20px;
+    width: 24px;
+    text-align: left;
+    line-height:24px;
+    right: 0;
+    top: 0;
+    color: #000;
+}
+.interviewee-name a {color: #fff;}
+.interviewee-name .mui-icon {
+    font-size: 14px;
+    color: #000;
+    margin-left: 4px;
+    margin-right: -4px;
+}
+.interview-type-box {
+    display: block;
+    position: relative;
+    padding-right: 24px;
+    min-height: 32px;
+}
+.interview-type-box .select-interviewtype {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    margin-top: -14px;
+    height: 32px;
+    line-height: 32px;
+    color: #b2b2b2;
+    font-size: 18px;
+}
+.interview-type-sel .mui-table-view-cell>a:not(.mui-btn) {
+    /*margin-left: 0;*/
+    /*margin-right: 0;*/
+    padding:10px 0;
+    padding-left: 15px;
+}
+.interviewSel-cell {
+    position: relative;
+    height: 32px;
+}
+.interviewSel-cell input {
+    font-size: 14px;
+    padding-left: 5px;
+}
+.interviewSel-cell .interview-inputbox {
+    position: absolute;
+    width:auto;
+    top: 0;
+    left: 39px;
+    right: 30px;
+    height: 32px;
+    line-height: 32px;
+    z-index: 9;
+}
+.interview-inputbox input {
+    width: 100%;
+    padding-left: 0;
+}
+.interviewSel-cell label {
+    padding: 0;
+    width: 34px;
+    margin-right: -34px;
+}
+.interview-sel-btn {
+    width: 100%;
+    height: 32px;
+    padding-left: 34px;
+    position: relative;
+}
+.interview-sel-btn:before {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    margin-top: -12px;
+    width: 24px;
+    height: 24px;
+    line-height: 24px;
+    font-size: 18px;
+    color: #b2b2b2;
+    text-align: right;
+}
+
+/*****7-9按钮******/
+.add-attachment.m-edit-send-btn,.m-edit-send-btn.save-attachment {
+	left: auto;
+	width: 50px;
+	height: 50px;
+	line-height: 50px;
+	border-radius: 50%;
+	font-size: 20px;
+}
+.m-edit-send-btn.save-attachment {
+	bottom: 90px;
+	right: 28px;
+}
+/*****7-9按钮 end******/

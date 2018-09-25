@@ -1,0 +1,521 @@
+<!doctype html>
+<html class="pb40">
+	<head>
+		<meta charset="UTF-8">
+		<title>新增采访页面</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<link href="css/mui.min.css" rel="stylesheet" />
+		<link href="iconfont/iconfont.css" rel="stylesheet" />
+		<link href="css/app.css" rel="stylesheet" />
+		<link href="css/interview.css" rel="stylesheet" />
+        <link rel="stylesheet" type="text/css" href="css/mui.picker.min.css" />
+		<style>
+            html{
+                background-color: #f8f8f8;
+            }
+           .interview_box .mui-content {
+               background-color: #fff;
+            }
+            .saveBtn {
+                color: #fff;
+                display:inline-block;
+                padding: 10px;
+                margin-right: -10px;
+            }
+            .pb40 {padding-bottom: 40px;}
+            .funBtns {
+                position: fixed;
+                bottom: 0;
+                left: 0;
+                height: 30px;
+                display: table;
+                text-align: center;
+                width: 100%;
+                border-top:1px solid #ccc;
+                padding: 10px;
+                background-color: #f8f8f8;
+                z-index: 100;
+            }
+            .funs-w,.funs-img,.funs-rec {
+                display: table-cell;
+            }
+             .funs-ico span {
+                font-size: 18px;
+                color: #222;
+            }
+             .funs-ico.actived span{
+                 color: #1b82d2;
+             }
+            .funs-img span {
+                font-size: 20px;
+            }
+            .interviewBox {
+                background-color: #fff;
+                padding: 10px;
+                position: relative;
+            }
+            .interview-tit1 {
+
+                color: #000;
+                display: block;
+                margin-bottom: 5px;
+            }
+            .interview-tit2 {
+                padding-left: 10px;
+                color: #666;
+                display: block;
+                margin-bottom: 5px;
+            }
+            .interview_time {
+                border:1px solid rgba(0, 0, 0, 0.15);
+                padding: 10px;
+                height: 40px;
+            }
+            .interview-p1 {
+                padding: 10px;
+            }
+            .tg-Textarea textarea{
+                border: 1px solid rgba(0, 0, 0, 0.15);
+                padding: 8px 16px;
+                height: 120px;
+                font-size: 14px;
+            }
+            .interview_time .ui-alert {
+                font-size: 14px;
+                text-align: left;
+            }
+            .interview-p1-lab {
+                display:block;
+                margin-bottom: 5px;
+            }
+            .interview-obj {
+                width: 100%;
+                border:1px solid rgba(0, 0, 0, 0.15);
+                padding: 10px;
+                height: 40px;
+            }
+            .interviewBox-textarea {
+                height: 100%;
+            }
+
+            /*通讯录*/
+            .mui-bar {
+                -webkit-box-shadow: none;
+                box-shadow: none;
+            }
+            input[type=search] {
+                border-radius: 0;
+                border-color: #ddd;
+            }
+            .mui-search {
+                padding:0 7px;
+                margin:5px 0;
+                border-bottom: 0;
+            }
+            .mui-search.mui-active:before {
+                left: 10px;
+            }
+            .mui-indexed-list-bar {
+                color: #999999;
+                background-color: #fff;
+            }
+            .mui-indexed-list-bar.active {
+                background-color: #fff;
+            }
+        </style>
+	</head>
+
+	<body class="interview_box">
+		<header class="mui-bar mui-bar-nav">
+		    <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+		    <h1 class="mui-title">新采访</h1>
+            <a class="icon iconfont icon-icon-  mui-pull-right saveBtn"></a>
+        </header>
+        <!--底部功能按钮-->
+        <nav class="funBtns">
+            <div class="funs-ico funs-w actived"><span class="iconfont icon-wenzi1"></span></div>
+            <div class="funs-ico funs-img"><span class="iconfont icon-tupian"></span></div>
+            <div class="funs-ico funs-v"><span class="iconfont icon-shipin"></span></div>
+            <div class="funs-ico funs-rec"><span class="iconfont icon-daoru1" style="opacity: .6;"></span></div>
+        </nav>
+        <div class="mui-content mui-content-dy merge-content" >
+           <div class="interview-p1">
+               <div class="mui-table-view-cell mui-collapse interview_outline">
+                   <a class="mui-navigate-right" href="#">采访提纲</a>
+                   <div class="mui-collapse-content">
+                       <!--采访时间-->
+                       <label for="" class="interview-p1-lab">采访时间：</label>
+                       <button id='demo4' data-options='{"type":"date"}' class="btn mui-btn mui-btn-block interview_time ">
+                           <div id='result' class="ui-alert"></div>
+                       </button>
+
+                       <!--输入采访对象-->
+                       <label for="" class="interview-p1-lab ">采访对象：</label>
+                      <!-- <input type="text" class="interview-obj" id="interview_obj_inp">-->
+                       <a href="#batchOpe" class="interview_obj_box" ></a>
+                       <!--采访提纲-->
+                       <span class="interview-tit1">采访提纲</span>
+                       <div class="tg-Textarea">
+                           <textarea name="" id="" cols="30" rows="10"></textarea>
+                       </div>
+                   </div>
+               </div>
+
+
+           </div>
+
+            <!--采访内容-->
+            <div class="interview-tit2">
+                <span class=""><i class="iconfont icon-gaojian-xiangguancaifang"></i>采访内容</span>
+            </div>
+            <div class="interviewBox">
+                <textarea name="" id="" cols="30" rows="10" class="interviewBox-textarea"></textarea>
+            </div>
+
+            <!--采访对象输入内容-->
+          <!--  <div class="interview_obj_inp_con">
+                <div class="interview_obj_inp_con_form">
+                    <label for="" class="interview-p1-lab ">姓名：</label>
+                    <input type="text" class="">
+                </div>
+                <div>
+                    <label for="" class="interview-p1-lab ">公司：</label>
+                    <input type="text" class="">
+                </div>
+                <div>
+                    <label for="" class="interview-p1-lab ">职务：</label>
+                    <input type="text" class="">
+                </div>
+                <div>
+                    <label for="" class="interview-p1-lab ">联系方式：</label>
+                    <input type="text" class="">
+                </div>
+                <div class="interview_btns">
+                    <button class="btn_confirm">确认</button>
+                    <button class="btn_cancel">取消</button>
+                </div>
+            </div>-->
+            <!--采访对象输入内容 end-->
+
+            <!--通讯录弹框-->
+            <div id="batchOpe" class="mui-modal txlPop">
+                <header class="mui-bar mui-bar-nav">
+                    <a class=" mui-icon mui-icon-left-nav mui-pull-left" href="#batchOpe"></a>
+                    <h1 id="title" class="mui-title">通讯录</h1>
+                    <span class="mui-btn mui-btn-link mui-pull-right" id="openAddctcPop">
+                        <span class="mui-icon mui-icon-plusempty" style="font-size: 30px;position: relative;top: 2px;"></span>
+                    </span>
+                </header>
+                <div class="mui-content" style="height: 100%;padding-bottom: 60px;overflow: auto">
+                    <div id='list' class="mui-indexed-list">
+                        <div class="mui-indexed-list-search mui-input-row mui-search">
+                            <input type="search" class="mui-input-clear mui-indexed-list-search-input" placeholder="搜索">
+                        </div>
+
+                        <div class="mui-indexed-list-alert"></div>
+                        <div class="mui-indexed-list-inner">
+                            <ul class="mui-table-view">
+                                <!--已选联系人-->
+                                <li>
+                                    <ul style="border-bottom: 6px solid #f0f0f0;">
+                                        <li data-group="txlSelected" class="mui-table-view-divider mui-indexed-list-group">已选联系人</li>
+                                        <li data-value="AKU" data-tags="AKeSu" class=" mui-indexed-list-item txl_li" >
+                                            <div class="mui-table-view-cell mui-checkbox mui-left">
+                                                <input name="checkbox" type="checkbox" checked="checked">
+                                                <div>
+                                                    阿克苏
+                                                    <p>18010000000</p>
+                                                </div>
+                                            </div>
+                                            <span class="mui-icon mui-icon-arrowright"></span>
+                                        </li>
+                                        <li data-value="BS" data-tags="BaoShan" class="mui-indexed-list-item txl_li">
+                                            <div class="mui-table-view-cell  mui-checkbox mui-left">
+                                                <input name="checkbox" type="checkbox" checked="checked">
+                                                <div>
+                                                    保山
+                                                    <p>18010000000</p>
+                                                </div>
+                                            </div>
+                                            <span class="mui-icon mui-icon-arrowright"></span>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <!--已选联系人 end-->
+                                <li data-group="A" class="mui-table-view-divider mui-indexed-list-group">A</li>
+                                <li data-value="AKU" data-tags="AKeSu" class="mui-indexed-list-item txl_li">
+                                  <div class="mui-table-view-cell  mui-checkbox mui-left">
+                                      <input name="checkbox" type="checkbox" checked="checked">
+                                      <div>
+                                          阿克苏
+                                          <p>18010000000</p>
+                                      </div>
+                                  </div>
+                                    <span class="mui-icon mui-icon-arrowright"></span>
+                                </li>
+                                <li data-value="ALS" data-tags="AKeSu" class="mui-indexed-list-item txl_li">
+                                    <div class="mui-table-view-cell  mui-checkbox mui-left">
+                                        <input name="checkbox" type="checkbox">
+                                        <div>
+                                            阿拉山
+                                            <p>18010000000</p>
+                                        </div>
+                                    </div>
+                                    <span class="mui-icon mui-icon-arrowright"></span>
+                                </li>
+                                <li data-value="ALT" data-tags="ALeiTe" class="mui-indexed-list-item txl_li">
+                                    <div class="mui-table-view-cell  mui-checkbox mui-left">
+                                        <input name="checkbox" type="checkbox">
+                                        <div>
+                                            阿勒泰
+                                            <p>18010000000</p>
+                                        </div>
+                                    </div>
+                                    <span class="mui-icon mui-icon-arrowright"></span>
+                                </li>
+                                <li data-group="B" class="mui-table-view-divider mui-indexed-list-group">B</li>
+                                <li data-value="BS" data-tags="BaoShan" class="mui-indexed-list-item txl_li">
+                                    <div class="mui-table-view-cell  mui-checkbox mui-left">
+                                        <input name="checkbox" type="checkbox" checked="checked">
+                                        <div>
+                                            保山
+                                            <p>18010000000</p>
+                                        </div>
+                                    </div>
+                                    <span class="mui-icon mui-icon-arrowright"></span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--通讯录弹框 end-->
+
+            <!--添加联系人-->
+            <div id="addContact" style="display:none;position: fixed;top: 0;left: 0;z-index: 1000;width: 100%; height: 100%;overflow: auto">
+                <header class="mui-bar mui-bar-nav">
+                    <span class="mui-icon mui-icon-left-nav mui-pull-left" id="closeAddctc_pop"></span>
+                    <h1 class="mui-title">添加联系人</h1>
+                </header>
+                <div class="mui-content">
+                    <section>
+                        <form action="" class="chaxform" name="myForm" id="validataF">
+                            <div class="field ">
+                                <label> 姓名：</label>
+                                <div class="ui inputBox">
+                                    <input type="text" name="fname" class="inputRequired">
+                                    <div class="ui corner label">
+                                        <i class="asterisk icon">*</i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="field">
+                                <label> 所属分组：</label>
+                                <div class="ui inputBox">
+                                    <select name="" id="" class="form_select_int">
+                                        <option value="">报社</option>
+                                        <option value="">采访</option>
+                                        <option value="" selected="">其他</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="field">
+                                <label> 性别：</label>
+                                <div class="ui inputBox">
+                                    <select name="" id="" class="form_select_int">
+                                        <option value="">男</option>
+                                        <option value="">女</option>
+                                    </select>
+                                    <div class="ui corner label">
+                                        <i class="asterisk icon">*</i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="field ">
+                                <label> 单位：</label>
+                                <div class="ui inputBox">
+                                    <input type="text" name="fname" class="">
+                                </div>
+                            </div>
+                            <div class="field ">
+                                <label> 职务：</label>
+                                <div class="ui inputBox">
+                                    <input type="text" name="fname" class="">
+                                </div>
+                            </div>
+                            <div class="field ">
+                                <label> 联系地址：</label>
+                                <div class="ui inputBox">
+                                    <input type="text" name="fname" class="">
+                                </div>
+                            </div>
+                            <div class="field ">
+                                <label> 家庭电话：</label>
+                                <div class="ui inputBox">
+                                    <input type="text" name="fname" class="">
+                                </div>
+                            </div>
+                            <div class="field ">
+                                <label> 办公电话：</label>
+                                <div class="ui inputBox">
+                                    <input type="text" name="fname" class="">
+                                </div>
+                            </div>
+                            <div class="field ">
+                                <label> 移动电话：</label>
+                                <div class="ui inputBox">
+                                    <input type="text" name="fname" class="">
+                                </div>
+                            </div>
+                            <div class="field ">
+                                <label> Email地址：</label>
+                                <div class="ui inputBox">
+                                    <input type="text" name="fname" class="">
+                                </div>
+                            </div>
+                            <div class="field ">
+                                <label> 邮政编码：</label>
+                                <div class="ui inputBox">
+                                    <input type="text" name="fname" class="">
+                                </div>
+                            </div>
+                            <div class="field ">
+                                <label> 邮寄地址：</label>
+                                <div class="ui inputBox">
+                                    <input type="text" name="fname" class="">
+                                </div>
+                            </div>
+                            <div class="field ">
+                                <label> 传真：</label>
+                                <div class="ui inputBox">
+                                    <input type="text" name="fname" class="">
+                                </div>
+                            </div>
+                            <div class="field">
+                                <label> 备注：</label>
+                                <div class="ui inputBox">
+                                    <textarea name="" id="" cols="30" rows="10"></textarea>
+                                </div>
+                            </div>
+                            <button type="submit" class="form_submitbtn">保存</button>
+                        </form>
+                    </section>
+                </div>
+            </div>
+            <!--添加联系人 end-->
+        </div>
+        <script src="js/mui.min.js"></script>
+     <!--   <script src="js/mui.indexedlist.js"></script>-->
+        <script src="js/mui.picker.min.js"></script>
+		<script src="js/app.js"></script>
+        <script>
+            mui.init();
+
+            mui.ready(function() {
+                /*通讯录*/
+                var header = document.querySelector('header.mui-bar');
+                var list = document.getElementById('list');
+                //calc hieght
+                list.style.height = (document.body.offsetHeight - header.offsetHeight) + 'px';
+                //create
+             /*   window.indexedList = new mui.IndexedList(list);*/
+                /*通讯录 end*/
+
+
+                /*mui选择时间*/
+                (function($) {
+                    $.init();
+                    var result = $('#result')[0];
+                    var btns = $('.btn');
+                    btns.each(function(i, btn) {
+                        btn.addEventListener('tap', function() {
+                            var _self = this;
+                            if(_self.picker) {
+                                _self.picker.show(function (rs) {
+                                    result.innerText =  rs.text;
+                                    _self.picker.dispose();
+                                    _self.picker = null;
+                                });
+                            } else {
+                                var optionsJson = this.getAttribute('data-options') || '{}';
+                                var options = JSON.parse(optionsJson);
+                                var id = this.getAttribute('id');
+                                /*
+                                 * 首次显示时实例化组件
+                                 * 示例为了简洁，将 options 放在了按钮的 dom 上
+                                 * 也可以直接通过代码声明 optinos 用于实例化 DtPicker
+                                 */
+                                _self.picker = new $.DtPicker(options);
+                                _self.picker.show(function(rs) {
+                                    /*
+                                     * rs.value 拼合后的 value
+                                     * rs.text 拼合后的 text
+                                     * rs.y 年，可以通过 rs.y.vaue 和 rs.y.text 获取值和文本
+                                     * rs.m 月，用法同年
+                                     * rs.d 日，用法同年
+                                     * rs.h 时，用法同年
+                                     * rs.i 分（minutes 的第二个字母），用法同年
+                                     */
+                                    result.innerText = rs.text;
+                                    /*
+                                     * 返回 false 可以阻止选择框的关闭
+                                     * return false;
+                                     */
+                                    /*
+                                     * 释放组件资源，释放后将将不能再操作组件
+                                     * 通常情况下，不需要示放组件，new DtPicker(options) 后，可以一直使用。
+                                     * 当前示例，因为内容较多，如不进行资原释放，在某些设备上会较慢。
+                                     * 所以每次用完便立即调用 dispose 进行释放，下次用时再创建新实例。
+                                     */
+                                    _self.picker.dispose();
+                                    _self.picker = null;
+                                });
+                            }
+
+                        }, false);
+                    });
+                })(mui);
+                /*给采访内容框 interviewBox 设置高度*/
+                (function ($) {
+                    var winheight = window.screen.availHeight;
+                    $('.interviewBox')[0].style.height = winheight-110+'px';
+                }(mui));
+                /*底部功能按钮选中高亮*/
+                (function ($) {
+                    var len = $('.funBtns .funs-ico').length;
+                    $('body').on('tap','.funs-ico',function () {
+                        for(var i=0;i<len;i++){
+                            $('.funBtns .funs-ico')[i].classList.remove('actived');
+                        }
+                        this.classList.add('actived');
+                    })
+                }(mui));
+
+                /*点击采访对象弹出弹框*/
+                (function ($) {
+                    /*  document.getElementById("interview_obj_inp").addEventListener('tap', function(e) {
+                          $('.interview_obj_inp_con')[0].classList.add('actived')
+                      });
+                      /!*关闭弹框*!/
+                      $('.interview_btns').on('tap','button',function () {
+                          $('.interview_obj_inp_con')[0].classList.remove('actived')
+                      })*/
+                })(mui)
+
+                /*弹出、关闭添加联系人弹框*/
+                mui('#openAddctcPop')[0].addEventListener('tap',function () {
+                    mui('#addContact')[0].style.display='block'
+                })
+                mui('#closeAddctc_pop')[0].addEventListener('tap',function () {
+                    mui('#addContact')[0].style.display='none'
+                })
+
+            });
+
+
+            
+        </script>
+	</body>
+</html>

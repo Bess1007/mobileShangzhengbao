@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en" class="bcWhite">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>项目线索-减持预披露</title>
+    <link href="../css/mui.min.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="../css/mui.picker.min.css" />
+    <link href="../iconfont/iconfont.css" rel="stylesheet" />
+    <link href="../css/app.css" rel="stylesheet" />
+    <link href="../css/dongcha.css" rel="stylesheet"/>
+    <style>
+        ::-webkit-input-placeholder { /* WebKit browsers */
+            color: #999; font-size: 14px;opacity: 0.7;font-family: "微软雅黑";padding-left: 0px;
+        }
+        ::-ms-input-placeholder { /* WebKit browsers */
+            color: #999; font-size: 14px;opacity: 0.7;font-family: "微软雅黑";padding-left: 0px;
+        }
+    </style>
+</head>
+<body>
+    <header class="mui-bar mui-bar-nav bcWhiteNav">
+        <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+        <h1 class="mui-title bc-white-inp" style="right: 46px;">减持预披露</h1>
+        <a href="javascript:;" class="mui-icon mui-pull-right" id="zydqFilterBtn" style="color: #000;font-size: 14px;line-height: 26px;">筛选</a>
+    </header>
+
+    <div class="mui-content bcWhite" style="padding-bottom: 80px;">
+        <!--横竖屏按钮-->
+        <button class="landscapecontrol">
+            <span class="iconfont icon-fangda"></span>
+            <span class="iconfont icon-suoxiao"></span>
+            <i class="txt-enlarge">全屏</i>
+            <i class="txt-quit">退出</i>
+        </button>
+        <!--横竖屏按钮 end-->
+
+        <!--筛选条件-->
+        <div class="zydq-filter">
+            <!--底部按钮-->
+            <div class="f-bot-btn clearfix">
+                <button class="fl resetbtn">重置</button>
+                <button class="fl confirm">查询</button>
+            </div>
+            <!--底部按钮 end-->
+            <!--解禁日期-->
+            <div class="zydq-jjrq zydq-filter-cell">
+                <label for="" class="cell-tit">解禁日期</label>
+                <div id='demo1' data-options='{"type":"date","beginYear":1900}'  class="mui-table-view-cell clearfix zydq-lis-cell">
+                    <label for="" class="sclabelLeft fl">开始时间</label>
+                    <div id='result' class="ui-alert frscTimeRight fr mustInput" name="开始时间"></div>
+                    <i class="mui-icon mui-icon-arrowright"></i>
+                </div>
+                <div id='demo2' data-options='{"type":"date","beginYear":1900}'  class="mui-table-view-cell clearfix zydq-lis-cell">
+                    <label for="" class="sclabelLeft fl">结束时间</label>
+                    <div id='result2' class="ui-alert frscTimeRight fr mustInput" name="结束时间"></div>
+                    <i class="mui-icon mui-icon-arrowright"></i>
+                </div>
+            </div>
+            <!--解禁日期 end-->
+            <!--股票名称-->
+            <div class="zydq-jjrq zydq-filter-cell">
+                <label for="" class="cell-tit">股票名称</label>
+                <div class="mui-table-view-cell clearfix zydq-lis-cell" style="padding-right: 16px;">
+                    <input type="text" class="f-input" placeholder="输入股票名称查询">
+                </div>
+            </div>
+            <!--股票名称 end-->
+            <!--显示我关注的-->
+            <div class="zydq-jjrq zydq-filter-cell">
+                <label for="" class="cell-tit">只显示我关注的</label>
+                <ul class="mui-table-view mui-table-view-radio">
+                    <li class="mui-table-view-cell zydq-lis-cell">
+                        <span class="mui-navigate-right">
+                            是
+                        </span>
+                    </li>
+                    <li class="mui-table-view-cell zydq-lis-cell">
+                        <span class="mui-navigate-right">
+                            否
+                        </span>
+                    </li>
+                </ul>
+            </div>
+            <!--显示我关注的 end-->
+
+        </div>
+        <!--筛选条件 end-->
+        <!--竖屏-->
+        <div class="portraitmode zydq-box">
+            <table class="tb-style">
+                <tr>
+                    <td>股票代码</td>
+                    <td>股票名称</td>
+                    <td>计划起始日</td>
+                    <td>股东名称</td>
+                    <td>减持股数上限（万股）</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </table>
+        </div>
+        <!--横屏-->
+        <div class="landscapemode zydq-box">
+            <table class="tb-style tb-style2">
+                <tr>
+                    <td>股票代码</td>
+                    <td>股票名称</td>
+                    <td>公告日期</td>
+                    <td>公司所在地</td>
+                    <td>计划起始日</td>
+                    <td>计划截止日</td>
+                    <td>股东名称</td>
+                    <td>减持类型</td>
+                    <td>减持前持股占总股本比例</td>
+                    <td>减持股数上限（万股）</td>
+                    <td>是否无条件减持</td>
+                    <td>减持方式</td>
+                    <td>减持原因</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+
+    <script src="../js/mui.min.js"></script>
+    <script src="../js/mui.picker.min.js"></script>
+    <script src="../js/app.js"></script>
+    <script>
+        (function($) {
+            $.init();
+
+            var $timeStart   = document.getElementById('demo1');
+            var $timeEnd     = document.getElementById('demo2');
+            var $timeStartRs = document.getElementById('result');
+            var $timeEndRs = document.getElementById('result2');
+
+            $timeStart.addEventListener('tap', function() {
+                var optionsJson = this.getAttribute('data-options') || '{}';
+                var options = JSON.parse(optionsJson);
+                var id = this.getAttribute('id');
+                var picker = new mui.DtPicker(options);
+                picker.show(function(rs) {
+                    $timeStartRs.innerText = rs.text;
+                    picker.dispose();
+                });
+            }, false);
+
+            $timeEnd.addEventListener('tap', function() {
+                var timestart = $timeStartRs.innerText;
+                var picker = new mui.DtPicker({
+                    type: "date",
+                    beginDate: new Date(timestart),
+                    endDate: new Date(2021, 12, 31)
+                });
+                picker.show(function(rs) {
+                    $timeEndRs.innerText = rs.text;
+                    picker.dispose();
+                });
+            }, false);
+        })(mui);
+
+
+    </script>
+    <script>
+        /*筛选框显示隐藏*/
+        function filterBoxAuto() {
+            if(mui('.zydq-filter')[0].classList.contains('actived')){
+                mui('.zydq-filter')[0].classList.remove('actived');
+            }else{
+                mui('.zydq-filter')[0].classList.add('actived')
+            }
+        }
+        mui('body').on('tap','#zydqFilterBtn',function () {
+            filterBoxAuto()
+        })
+
+        mui('body').on('tap','.landscapecontrol',function () {
+            if(this.classList.contains('actived')){
+                this.classList.remove('actived');
+                mui.plusReady(function() {
+                    plus.screen.lockOrientation("portrait-primary");//锁定横屏 默认不会还原
+                });
+            }else {
+                mui.plusReady(function() {
+                    plus.screen.lockOrientation("landscape-primary");//锁定横屏 默认不会还原
+                });
+
+                this.classList.add('actived')
+            }
+        });
+        mui.init({
+            beforeback: function() { //退出前当前面恢复横屏
+                mui.plusReady(function() {
+                    plus.screen.lockOrientation("portrait-primary");
+                });
+                //返回true，继续页面关闭逻辑
+                return true;
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title></title>
+    <link href="css/mui.min.css" rel="stylesheet" />
+    <link href="css/app.css" rel="stylesheet" />
+    <link rel="stylesheet" href="iconfont/iconfont.css">
+    <style>
+        .audioPlayerBox {
+            background-color: #fff;
+            width: 300px;
+            -webkit-border-radius: 6px;
+            -moz-border-radius: 6px;
+            border-radius: 6px;
+        }
+        .ap-box input[type=range]::-webkit-slider-thumb {
+            height: 15px;
+            width: 15px;
+            background: #188fee;
+            position: relative;
+        }
+
+        .ap-box {
+            width: 300px;
+            height:auto;
+            padding: 10px;
+        }
+        .ap-box .mui-input-range .mui-tooltip {
+            display: none!important;
+        }
+        .ap-box .mui-input-row.mui-input-range {
+            padding-right: 0;
+        }
+        .ap-box .mui-input-row.mui-input-range input[type=range] {
+            margin: 5px 0;
+            margin-bottom: 10px;
+        }
+        .playControl {
+            float: left;
+            width: 30px;
+            height: 30px;
+            -moz-transition: .3s;
+            -webkit-transition: .3s;
+            -o-transition: .3s;
+            transition: .3s;
+            -moz-user-select: none;
+            -khtml-user-select: none;
+            -webkit-user-select: none;
+            -o-user-select: none;
+            user-select: none;
+        }
+        .playControl {
+            background-image: url(images/allicons.png);
+            background-repeat: no-repeat;
+            background-position: -50px -436px;
+        }
+        .playControl.playing {
+            background-image: url(images/allicons.png);
+            background-repeat: no-repeat;
+            background-position: -5px -436px;
+        }
+        .ap-name {
+            float: left;
+            height: 30px;
+            line-height: 30px;
+            margin-left: 10px;
+            max-width: 240px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+        .ap-num span {
+            color: #666;
+        }
+       .audioPlayerBox .mui-progressbar.mui-progressbar-infinite:before {
+           background-color: #ddd;
+        }
+        .audioPlayerBox .mui-progressbar {
+            background-color: #e7e7e7;
+        }
+
+    </style>
+</head>
+
+<body>
+<header class="mui-bar mui-bar-nav scheduleDet_hd bcWhiteNav">
+    <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"><span style="margin-left: 10px;font-size: 15px;">录音demo</span></a>
+</header>
+<div class="mui-content">
+    <!--录音时长为3分钟的音频-->
+    <div class="audioPlayerBox" style="margin: 20px auto;">
+        <audio src="http://jq22.qiniudn.com/ocean_drive_01.mp3"></audio>
+        <!--<p class="mui-progressbar mui-progressbar-infinite"></p>-->
+        <div class="ap-box">
+            <div class="ap-top clearfix">
+                <span class="playControl"></span><!--播放中加playing-->
+                <span class="ap-name">音频名称1234567890</span>
+            </div>
+            <div class="ap-bottom">
+                <div class="mui-input-row mui-input-range">
+                    <input type="range"  value="0" min="0" max="180" readonly="readonly" />
+                </div>
+                <div class="ap-num clearfix">
+                    <span class="fl currentNum">00:00</span>
+                    <span class="fr endNum">03:00</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="js/mui.min.js"></script>
+<script src="js/app.js"></script>
+<script>
+    /*转换秒为分:秒*/
+    function s_to_ms(s){
+        //计算分钟
+        //算法：将秒数除以60，然后下舍入，既得到分钟数
+        var m;
+        m  =   Math.floor(s/60);
+        //计算秒
+        //算法：取得秒%60的余数，既得到秒数
+        s  =   s%60;
+        //将变量转换为字符串
+        m    +=    '';
+        s    +=    '';
+        //如果只有一位数，前面增加一个0
+        m  =   (m.length==1)?'0'+m:m;
+        s  =   (s.length==1)?'0'+s:s;
+        return m+':'+s;
+    }
+    /*转换秒为分:秒 end*/
+    var timer = null;
+    var num = 0;
+    mui('input[type="range"]')[0].addEventListener('input',function () {
+        num = this.value
+    });
+    mui('body').on('tap','.playControl',function () {
+        var this_ = this;
+        var rangeBox = this_.parentNode.parentNode.querySelector('.ap-bottom').getElementsByTagName('input')[0];
+        var currentNum = this_.parentNode.parentNode.querySelector('.ap-bottom').getElementsByClassName('currentNum')[0];
+        if(this_.classList.contains('playing')){//暂停
+            this_.classList.remove('playing');
+            window.clearInterval(timer);
+        }else {//播放
+            if(num == 180){
+                num = 0;
+                window.clearInterval(timer);
+            }
+            this.classList.add('playing');
+            timer = setInterval(audioPlay,1000);
+        }
+        function audioPlay() {
+            num++;
+            if(num>=180){
+                num=180;
+                this_.classList.remove('playing');
+            }
+            rangeBox.value= ''+num;
+            currentNum.innerHTML = s_to_ms(num)
+
+        }
+    });
+//    var loadingProgress ='<p class="mui-progressbar mui-progressbar-infinite"></p>';
+    var loadingProgress = document.createElement('p');
+
+    var audioPlayerBox = mui('.audioPlayerBox')[0];
+    audioPlayerBox.appendChild(loadingProgress);
+    loadingProgress.setAttribute('class','mui-progressbar mui-progressbar-infinite ');
+</script>
+</body>
+
+</html>

@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html class="pb40">
+<head>
+    <meta charset="UTF-8">
+    <title>添加/删除标签</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link href="css/mui.min.css" rel="stylesheet" />
+    <link href="iconfont/iconfont.css" rel="stylesheet" />
+    <link href="css/app.css" rel="stylesheet" />
+    <link href="css/interview.css" rel="stylesheet" />
+    <link href="css/interview_search.css" rel="stylesheet" />
+    <style>
+
+        .interview_msg_box {
+            width: 80%;
+            padding:8px 10px;
+            padding-right: 40px;
+            position: relative;
+            border:1px solid #ccc;
+            border-radius:5px;
+            background-color: #fff;
+        }
+        .msg_left_ico {
+            margin-right: 10px;
+        }
+        .cen_msg_txt {
+            color: #333;
+            font-size: 12px;
+            line-height: 12px;
+        }
+        .cen_msg_txt p {
+            color: #333;
+            margin-bottom: 8px;
+        }
+        .cen_msg_txt p.txtgray {
+            color: #aaa;
+            margin-bottom: 0;
+        }
+        .msg_del_btn {
+            color: #333;
+            font-size: 26px;
+            line-height: 26px;
+            position: absolute;
+            width: 40px;
+            text-align: center;
+            top: 50%;
+            margin-top: -13px;
+            right: 0;
+            border-left:1px solid #f1f1f1;
+        }
+    </style>
+</head>
+
+<body class="interview_box">
+<header class="mui-bar mui-bar-nav">
+    <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+    <h1 class="mui-title">采访搜索</h1>
+</header>
+<div class="mui-content bcWhite">
+    <div id="slider" class="mui-slider" >
+        <div id="sliderSegmentedControl" class="mui-slider-indicator mui-segmented-control mui-segmented-control-inverted">
+            <a class="mui-control-item noLink mui-active" href="#item1mobile">
+                按采访对象搜索
+            </a>
+            <a class="mui-control-item noLink" href="#item1mobile2">
+                按标签搜索
+            </a>
+        </div>
+        <div id="sliderProgressBar" class="mui-slider-progress-bar mui-col-xs-6" style=""></div>
+        <div class="mui-slider-group">
+            <!--按采访对象搜索-->
+            <div id="item1mobile" class="mui-slider-item mui-control-content mui-active">
+                <!--时间筛选条件-->
+                <div class="time-filter-box scheduleinput">
+                    <ul class="mui-table-view">
+                        <li class="mui-table-view-cell scheduleinputLi clearfix">
+                            <label for="" class="sclabelLeft fl">选择时间</label>
+                            <a href="#chooseState" class="chooseStatebtn">
+                                <span id="statetxt" >全部</span>
+                            </a>
+                            <i class="mui-icon mui-icon-arrowright"></i>
+                        </li>
+                    </ul>
+                </div>
+                <!--时间筛选条件-->
+                <!--搜索框-->
+                <div class="searchByCompanyname searchBycfdx clearfix">
+                    <span class=" mui-icon mui-icon-search"></span>
+                    <div class="label_group selected_label">
+                        <input type="text" placeholder="按采访对象搜索">
+                    </div>
+                    <button type="button" class="mui-btn mui-btn-primary">
+                        取消
+                    </button>
+                </div>
+                <!--搜索框 end-->
+                <!--模糊搜索匹配框-->
+                <div class="fuzzy-search-box">
+                    <div class="qbcf_box">
+                        <ul class="pl_10">
+                            <li class="interview_rec_cell">
+                                <a href="interview_detail.html" class="interview_rec_cell_lk clearfix">
+                                    <div class="fl interview_cell_con">
+                                        <h5 class="interview_tit">2018年4月2日 光线传媒 实地采访</h5>
+                                        <div class="interview_time_box">
+                                            2018.02.07 09:30:45
+                                        </div>
+                                        <ul class="clearfix">
+                                            <li class="interview_label">传媒</li>
+                                            <li class="interview_label">传媒222</li>
+                                        </ul>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="interview_rec_cell">
+                                <a href="interview_detail.html" class="interview_rec_cell_lk clearfix">
+                                    <div class="fl interview_cell_con">
+                                        <h5 class="interview_tit">2018年4月2日 光线传媒 实地采访</h5>
+                                        <div class="interview_time_box">
+                                            2018.02.07 09:30:45
+                                        </div>
+                                        <ul class="clearfix">
+                                            <li class="interview_label">传媒</li>
+                                            <li class="interview_label">传媒222</li>
+                                        </ul>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="interview_rec_cell">
+                                <a href="interview_detail.html" class="interview_rec_cell_lk clearfix">
+                                    <div class="fl interview_cell_con">
+                                        <h5 class="interview_tit">2018年4月2日 光线传媒 实地采访</h5>
+                                        <div class="interview_time_box">
+                                            2018.02.07 09:30:45
+                                        </div>
+                                        <ul class="clearfix">
+                                            <li class="interview_label">传媒</li>
+                                            <li class="interview_label">传媒222</li>
+                                        </ul>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!--模糊搜索匹配框 end-->
+            </div>
+            <!--按标签搜索-->
+            <div id="item1mobile2" class="mui-slider-item mui-control-content">
+                <!--时间筛选条件-->
+                <div class="time-filter-box scheduleinput">
+                    <ul class="mui-table-view">
+                        <li class="mui-table-view-cell scheduleinputLi clearfix">
+                            <label for="" class="sclabelLeft fl">选择时间</label>
+                            <a href="#chooseState2" class="chooseStatebtn">
+                                <span id="statetxt2" >全部</span>
+                            </a>
+                            <i class="mui-icon mui-icon-arrowright"></i>
+                        </li>
+                    </ul>
+                </div>
+                <!--时间筛选条件-->
+                <div class="searchByCompanyname clearfix">
+                    <div class="label_group selected_label">
+                        <input type="text" placeholder="按标签搜索">
+                    </div>
+                    <button type="button" class="mui-btn mui-btn-primary mui-icon mui-icon-search">
+                        搜索
+                    </button>
+                </div>
+
+                <!--系统标签-->
+                <div class="label_group xt_label_group flex_label_gp">
+                    <h5 class="label_group_tit">系统标签</h5>
+                    <div class="hideSomeLabel">
+                        <ul class="xt_label_box clearfix">
+                            <li class="xt_label_cell actived">
+                                <span>传媒</span>
+                            </li>
+                            <li class="xt_label_cell actived">
+                                <span>借壳</span>
+                            </li>
+                            <li class="xt_label_cell actived">
+                                <span>资产重组</span>
+                            </li>
+                            <li class="xt_label_cell">
+                                <span>宏观经济</span>
+                            </li>
+                            <li class="xt_label_cell">
+                                <span>混改</span>
+                            </li>
+                            <li class="xt_label_cell">
+                                <span>人工智能</span>
+                            </li>
+                            <li class="xt_label_cell">
+                                <span>区域规划</span>
+                            </li>
+                            <li class="xt_label_cell">
+                                <span>新能源汽车</span>
+                            </li>
+                            <li class="xt_label_cell">
+                                <span>环境</span>
+                            </li>
+                            <li class="xt_label_cell">
+                                <span>房地产开发</span>
+                            </li>
+                            <li class="xt_label_cell">
+                                <span>新能源汽车</span>
+                            </li>
+                            <li class="xt_label_cell">
+                                <span>通用航空</span>
+                            </li>
+                             <li class="xt_label_cell">
+                                <span>新能源汽车</span>
+                            </li>
+                            <li class="xt_label_cell">
+                                <span>通用航空</span>
+                            </li>
+                             <li class="xt_label_cell">
+                                <span>新能源汽车</span>
+                            </li>
+                            <li class="xt_label_cell">
+                                <span>通用航空</span>
+                            </li>
+                             <li class="xt_label_cell">
+                                <span>新能源汽车</span>
+                            </li>
+                            <li class="xt_label_cell">
+                                <span>通用航空</span>
+                            </li>
+                             <li class="xt_label_cell">
+                                <span>新能源汽车</span>
+                            </li>
+                            <li class="xt_label_cell">
+                                <span>通用航空</span>
+                            </li>
+                             <li class="xt_label_cell">
+                                <span>新能源汽车</span>
+                            </li>
+                            <li class="xt_label_cell">
+                                <span>通用航空</span>
+                            </li>
+                             <li class="xt_label_cell">
+                                <span>新能源汽车</span>
+                            </li>
+                            <li class="xt_label_cell">
+                                <span>通用航空</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--更多-->
+                    <div class="more_label_btn">
+                        <span class="more_txt">更多 </span>
+                        <span class="mui-icon mui-icon-arrowdown"></span>
+                    </div>
+                </div>
+                <!--系统标签 end-->
+
+                <!--自定义标签-->
+                <div class="label_group zdy_label_group flex_label_gp">
+                    <h5 class="label_group_tit">自定义标签</h5>
+                    <div class="hideSomeLabel">
+                        <ul class="zdy_label_box clearfix">
+                            <li class="xt_label_cell">
+                                <span>自定义标签1</span>
+                            </li>
+                            <li class="xt_label_cell">
+                                <span>自定义标签2</span>
+                            </li>
+                            <li class="xt_label_cell">
+                                <span>自定义标签3</span>
+                            </li>
+                            <li class="xt_label_cell">
+                                <span>自定义标签4</span>
+                            </li>
+                            <li class="xt_label_cell">
+                                <span>自定义标签5</span>
+                            </li>
+                            <li class="xt_label_cell">
+                                <span>自定义标签6</span>
+                            </li>
+                            <li class="xt_label_cell">
+                                <span>自定义标签7</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--更多-->
+                    <div class="more_label_btn">
+                        <span class="more_txt">更多 </span>
+                        <span class="mui-icon mui-icon-arrowdown"></span>
+                    </div>
+                </div>
+                <!--自定义标签 end-->
+            </div>
+        </div>
+    </div>
+
+
+
+</div>
+
+<!--时间筛选条件-->
+<div id="chooseState" class="mui-popover timeselectbox">
+    <ul class="mui-table-view mui-table-view-radio">
+        <li class="mui-table-view-cell mui-selected">
+            <a class="mui-navigate-right mui-selected noLink" href="#chooseState">
+                全部
+            </a>
+        </li>
+        <li class="mui-table-view-cell">
+            <a class="mui-navigate-right noLink" href="#chooseState">
+                最近一个星期
+            </a>
+        </li>
+        <li class="mui-table-view-cell ">
+            <a class="mui-navigate-right noLink" href="#chooseState">
+                最近一个月
+            </a>
+        </li>
+        <li class="mui-table-view-cell">
+            <a class="mui-navigate-right noLink" href="#chooseState">
+                最近三个月
+            </a>
+        </li>
+        <li class="mui-table-view-cell">
+            <a class="mui-navigate-right noLink" href="#chooseState">
+                最近半年
+            </a>
+        </li>
+        <li class="mui-table-view-cell">
+            <a class="mui-navigate-right noLink" href="#chooseState">
+                最近一年
+            </a>
+        </li>
+    </ul>
+</div>
+<div id="chooseState2" class="mui-popover timeselectbox">
+    <ul class="mui-table-view mui-table-view-radio">
+        <li class="mui-table-view-cell mui-selected">
+            <a class="mui-navigate-right mui-selected noLink" href="#chooseState2">
+                全部
+            </a>
+        </li>
+        <li class="mui-table-view-cell">
+            <a class="mui-navigate-right noLink" href="#chooseState2">
+                最近一个星期
+            </a>
+        </li>
+        <li class="mui-table-view-cell ">
+            <a class="mui-navigate-right noLink" href="#chooseState2">
+                最近一个月
+            </a>
+        </li>
+        <li class="mui-table-view-cell">
+            <a class="mui-navigate-right noLink" href="#chooseState2">
+                最近三个月
+            </a>
+        </li>
+        <li class="mui-table-view-cell">
+            <a class="mui-navigate-right noLink" href="#chooseState2">
+                最近半年
+            </a>
+        </li>
+        <li class="mui-table-view-cell">
+            <a class="mui-navigate-right noLink" href="#chooseState2">
+                最近一年
+            </a>
+        </li>
+    </ul>
+</div>
+
+</body>
+<script src="js/mui.min.js"></script>
+<script src="js/vue.min.js"></script>
+<script src="js/app.js"></script>
+<script src="js/label1.js"></script>
+<script>
+    (function ($) {
+        function fn(labelBox) {
+            var labelBox_ul = $(labelBox)[0];
+            var xt_label_box_h  = labelBox_ul.offsetHeight;
+            var more_label_btn = labelBox_ul.parentNode.nextElementSibling;          
+            if(xt_label_box_h>72){
+                labelBox_ul.parentNode.classList.add('actived');
+                more_label_btn.style.display='block'
+            }else{
+                more_label_btn.style.display='none'
+            }
+            more_label_btn.addEventListener('tap',function () {
+                if(labelBox_ul.parentNode.classList.contains('actived')){
+                    more_label_btn.getElementsByClassName('more_txt')[0].innerHTML='收起';
+                    labelBox_ul.parentNode.classList.remove('actived')
+                }else{
+                    labelBox_ul.parentNode.classList.add('actived');
+                    more_label_btn.getElementsByClassName('more_txt')[0].innerHTML='更多';
+                }
+ 
+            })
+        }
+        fn('.xt_label_box ');
+        fn('.zdy_label_box ');
+
+
+        //状态选择
+        function selectState(infoId,selectCell) {
+            var info = document.getElementById(infoId);
+            document.querySelector(selectCell).addEventListener('selected',function(e){
+                info.innerHTML = e.detail.el.innerText;
+            });
+        }
+        selectState('statetxt','#chooseState .mui-table-view.mui-table-view-radio');
+        selectState('statetxt2','#chooseState2 .mui-table-view.mui-table-view-radio');
+
+    })(mui)
+
+</script>
+
+</html>

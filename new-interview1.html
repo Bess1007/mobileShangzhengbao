@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<link href="css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="css/app.css" />
+		<link href="css/mui.imageviewer.css" rel="stylesheet" />
+		<style>
+			html,
+			body {
+				height: 100%;
+				margin: 0px;
+				padding: 0px;
+				overflow: hidden;
+				-webkit-touch-callout: none;
+				-webkit-user-select: none;
+			}
+		
+			.mui-content {
+				height: 100%;
+				padding: 44px 0px 50px 0px;
+				overflow: auto;
+				background-color: #eaeaea;
+			}
+			
+		</style>
+	</head>
+
+	<body contextmenu="return false;">
+		<header class="mui-bar mui-bar-nav " style="height: 44px;">
+			<a class="mui-icon mui-icon-left-nav mui-pull-left" style="color: #fff;" href="interview.html"></a>
+			<a class="mui-icon iconfont icon-play mui-icon-left-nav mui-pull-left" style="color: #fff; display: none;" href=""></a>
+			<a class="mui-icon iconfont icon-zanting mui-icon-left-nav mui-pull-left" style="color: #fff; display: none;" href=""></a>
+			<h1 class="mui-title">新采访</h1>
+			<a class="mui-btn mui-btn-link mui-pull-right">上传</a>
+		</header>
+		<div class="mui-content" style="background: #fff;">
+			<div class="text-input" style="height: 100%;width: 100%;">
+				<input type="text" name="" id="" value="" placeholder="在这里输入标题" / style="padding: 20px;font-family: 'microsoft yahei';">
+				<textarea  cols="50" rows="5" id="textarea" style="height: 100%;width: 100%;padding: 10px 20px;border: 0;font-family: 'microsoft yahei';color: #9E9E9E;" onfocus="if(value=='在这里输入内容'){value=''}"  
+    onblur="if (value ==''){value='在这里输入内容'}" >在这里输入内容</textarea>  
+			</div>
+		</div>
+		<p class="mui-progressbar mui-progressbar-infinite" style="margin-top: 2px;position: absolute;display: none;"></p>
+		<nav class="mui-bar mui-bar-tab">
+			<a id="defaultTab" class="mui-tab-item">
+				<span class="mui-icon iconfont icon-tupian" style="font-size: 27px;"></span>
+			</a>
+			<a class="mui-tab-item">
+				<span class="mui-icon iconfont icon-cidailine" style="font-size: 33px;"></span>
+			</a>
+			<!--语音输入-->
+			<a class="mui-tab-item">
+				<span class="mui-icon iconfont icon-luyin"></span>
+			</a>
+		</nav>
+		<script src="js/mui.min.js"></script>
+	</body>
+
+</html>

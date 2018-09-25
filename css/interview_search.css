@@ -1,0 +1,188 @@
+/*5-16新增*/
+#slider {
+    padding-top: 47px;
+}
+#sliderSegmentedControl {
+    position: fixed;
+    top: 44px;
+    left: 0;
+    display: block;
+    border-bottom-color:#f5f5f5!important;
+}
+#sliderSegmentedControl:after {
+    content: '';
+    position: absolute;
+    height: 26px;
+    width: 2px;
+    background-color: #f0f0f0;
+    top: 50%;
+    margin-top: -13px;
+    left: 50%;
+}
+#sliderProgressBar {
+    top: 84px;
+    background-color: #1b92e6;
+    display: none;
+}
+#sliderProgressBar:before {
+    content: '';
+    position: absolute;
+    height: 3px;
+    width: 30%;
+    background-color: #f8f8f8;
+    left: -1px;
+    top: -1px;
+}
+#sliderProgressBar:after {
+    content: '';
+    position: absolute;
+    height: 3px;
+    width: 30%;
+    background-color: #f8f8f8;
+    right: -1px;
+    top: -1px;
+}
+.mui-segmented-control.mui-segmented-control-inverted .mui-control-item.mui-active {
+    color: #1b92e6;
+}
+.mui-slider .mui-segmented-control.mui-segmented-control-inverted~.mui-slider-group .mui-slider-item {
+    border: 0;
+}
+.mui-segmented-control .mui-control-item {
+    width: 50%;
+    display: inline-block;
+    float: left;
+    line-height: 44px;
+}
+
+.mui-content {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+}
+::-webkit-input-placeholder { /* WebKit browsers */
+    color: #999; font-size: 14px;opacity: 0.7;font-family: "微软雅黑";padding-left: 0px;
+}
+::-ms-input-placeholder { /* WebKit browsers */
+    color: #999; font-size: 14px;opacity: 0.7;font-family: "微软雅黑";padding-left: 0px;
+}
+.searchByCompanyname {
+    padding-top: 20px;
+}
+.searchByCompanyname .label_group {
+    width: 100%;
+    padding-right: 90px;
+    margin-right: -80px;
+    float: left;
+}
+.searchByCompanyname .label_group input {
+    border-radius:0;
+}
+.searchByCompanyname button {
+    float: left;
+    height: 36px;
+    border: 0;
+    border-radius:0;
+    background-color: #1b92e6;
+}
+.scheduleinput {
+    padding-left: 28px;
+    background-color: #fff;
+    margin-bottom: 10px;
+}
+.time-filter-box {
+    border-top:1px solid #f0f0f0;
+    border-bottom:1px solid #ddd;
+
+}
+.time-filter-box .scheduleinputLi {
+    height: 54px;
+    line-height: 54px;
+    padding: 0;
+    padding-right: 20px;
+    position: relative;
+}
+.time-filter-box a.chooseStatebtn {
+    width: 100%;
+    padding: 0;
+    padding-left: 75px;
+    padding-right: 20px;
+    text-align: right;
+    height: 54px;
+    line-height: 54px;
+    float: left;
+    margin: 0;
+    margin-left: -75px;
+    background-color: transparent;
+}
+.time-filter-box .mui-icon-arrowright {
+    position: absolute;
+    height: 54px;
+    line-height: 54px;
+    width: 20px;
+    text-align: center;
+    top: 0;
+    right: 20px;
+    color: #b3b3b3;
+}
+.chooseStatebtn span {
+    font-size: 14px;
+    color: #b3b3b3;
+}
+.searchBycfdx {
+    position: relative;
+    padding-top: 0;
+    border-bottom:1px solid #ddd;
+    margin-top: 20px;
+    margin-left: 10px;
+
+}
+.searchBycfdx .label_group input[type=text] {
+    border: 0;
+    padding-left: 40px;
+}
+.searchBycfdx button {
+    background-color: transparent;
+    color: #1b92e6;
+    float: right;
+    padding-right: 15px;
+}
+.searchBycfdx button:enabled:active {
+    background-color: transparent;
+    border: 0;
+}
+.searchBycfdx .mui-icon-search {
+    position: absolute;
+    top: 50%;
+    left: 6px;
+  /*  height: 30px;
+    line-height: 30px;*/
+    margin-top: -20px;
+    height: 36px;
+    line-height: 36px;
+
+    padding-left: 10px;
+    font-size: 20px;
+    color: #7d7d7d;
+}
+.searchBycfdx .label_group {
+    padding-bottom: 0;
+    margin-bottom:0;
+}
+.searchBycfdx .label_group {
+    padding-right: 60px;
+    margin-right: -55px;
+}
+.timeselectbox .mui-table-view-radio {
+    padding: 15px;
+}
+.timeselectbox .mui-table-view-cell a {
+    line-height: 30px;
+}
+.timeselectbox {
+    left: 50%!important;
+    margin-left: -140px;
+}

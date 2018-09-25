@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html class="bcWhite">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title>收到稿件</title>
+    <link href="../css/mui.min.css" rel="stylesheet" />
+    <link href="../css/app.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../iconfont/iconfont.css">
+    <link rel="stylesheet" href="../css/interview.css">
+    <link rel="stylesheet" href="../css/schedule.css">
+    <style>
+       .mui-content {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            width: 100%;
+            overflow-y: scroll;
+            -webkit-overflow-scrolling: touch;
+        }
+        .interview_time_box {
+            color: #777;
+        }
+    </style>
+</head>
+
+<body>
+<header class="mui-bar mui-bar-nav bcWhiteNav   ">
+    <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+    <h1 class="mui-title bc-white-inp">收到稿件</h1>
+    <a href="#batchManagement" class="mui-icon mui-pull-right" style="color: #000;font-size: 16px;line-height: 26px;">处理</a>
+</header>
+<div class="mui-content bcWhite">
+    <!--接收稿件展示列表-->
+    <div class="rec-manus-box">
+        <!--稿件数-->
+        <div class="rec-manus-num">
+            <span class="iconfont icon-xieyi"></span>
+            <span>收到<i class="txtred">100</i>份稿件</span>
+        </div>
+        <!--稿件数 end-->
+        <!--稿件列表-->
+        <ul class="pl_10">
+            <li class="interview_rec_cell">
+                <a href="manuscript.html" class="interview_rec_cell_lk clearfix">
+                    <!--<span class="interview_left_ico fl iconfont icon-meiticaifang"></span>-->
+                    <div class="fl interview_cell_con">
+                        <h5 class="interview_tit">2018年4月2日09:30:45 光线传媒 实地采访</h5>
+                        <div class="interview_time_box">
+                            附件：3
+                        </div>
+                        <div class="interview_time_box">
+                            发件人：范子萌
+                        </div>
+                    </div>
+                </a>
+                <a href="#ope_box" class="nolink interview_ope iconfont icon-gengduo2"></a>
+            </li>
+        </ul>
+        <!--稿件列表 end-->
+    </div>
+    <!--接收稿件展示列表-->
+
+    <!--批量管理-->
+    <div id="batchManagement" class="mui-modal b-m-box">
+        <header class="m-header mui-bar mui-bar-nav">
+            <a class="mui-icon  mui-pull-left noLink" id="allCheckBox" style="font-size: 14px;line-height: 28px;">全选</a>
+            <h1 class="mui-title">批量操作</h1>
+            <a class="mui-icon  mui-pull-right" href="#batchManagement" style="font-size: 14px;line-height: 28px;">取消</a>
+        </header>
+        <div class="mui-content">
+            <ul class="mui-table-view">
+                <li class="mui-table-view-cell mui-checkbox mui-left">
+                    <input name="checkbox" type="checkbox" class="input-checkBox">
+                    <div class="fl interview_cell_con">
+                        <h5 class="interview_tit">2018年4月2日09:30:45 光线传媒 实地采访</h5>
+                        <div class="interview_time_box">
+                            发件人：范子萌
+                        </div>
+                    </div>
+                </li>
+                <li class="mui-table-view-cell mui-checkbox mui-left">
+                    <input name="checkbox" type="checkbox" class="input-checkBox">
+                    <div class="fl interview_cell_con">
+                        <h5 class="interview_tit">2018年4月2日09:30:45 光线传媒 实地采访</h5>
+                        <div class="interview_time_box">
+                            发件人：范子萌
+                        </div>
+                    </div>
+                </li>
+            </ul>
+
+            <footer class="bottomEdit">
+                <div class="bottomEditBox" style="width: 126px;">
+                    <a class="bottom_editBtn" href="javascript:;">
+                        <span class="mui-icon mui-icon-checkmarkempty bottom_ico" style="font-size: 30px;"></span>
+                        <p>录用</p>
+                    </a>
+                    <a class="bottom_delBtn" href="javascript:;">
+                        <span class="mui-icon mui-icon-closeempty bottom_ico" style="font-size: 30px;"></span>
+                        <p>不录用</p>
+                    </a>
+                </div>
+            </footer>
+        </div>
+    </div>
+    <!--批量管理 end-->
+</div>
+
+<!--标记为录用或不录用-->
+<div id="ope_box" class="myope_box mui-popover mui-popover-action mui-popover-bottom">
+    <ul class="mui-table-view">
+        <li class="mui-table-view-cell">
+            <a href="#ope_box">标记录用</a>
+        </li>
+        <li class="mui-table-view-cell">
+            <a href="#ope_box">标记不录用</a>
+        </li>
+    </ul>
+    <ul class="mui-table-view">
+        <li class="mui-table-view-cell">
+            <a href="#ope_box"><b>取消</b></a>
+        </li>
+    </ul>
+</div>
+<!--标记为录用或不录用 end-->
+
+
+<script src="../js/mui.min.js"></script>
+<script src="../js/mui.picker.min.js"></script>
+<script src="../js/app.js"></script>
+<script>
+    document.getElementById('allCheckBox').addEventListener('tap',function(e) {
+        if(this.classList.contains('actived')){
+            this.classList.remove('actived')
+        }else{
+            this.classList.add('actived')
+        }
+
+        var checkboxs = mui('#batchManagement .input-checkBox');
+
+        var num = 0;
+
+        var tempNum = 0;
+
+        if (this.classList.contains('actived')) {
+            checkboxs.each(function(e) {
+                var ele = this;
+                ele.checked=true
+            })
+        } else {
+            checkboxs.each(function(e) {
+                var ele = this;
+                ele.checked=false
+            })
+
+        }
+    })
+
+
+</script>
+</body>
+
+</html>

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>Title</title>
+    <link href="../css/mui.min.css" rel="stylesheet" />
+    <link href="../iconfont/iconfont.css" rel="stylesheet" />
+    <link href="../css/app.css" rel="stylesheet" />
+    <link href="../css/dongcha.css" rel="stylesheet"/>
+    <style>
+        ::-webkit-input-placeholder { /* WebKit browsers */
+            color: #999; font-size: 14px;opacity: 0.7;font-family: "微软雅黑";padding-left: 0px;
+        }
+        ::-ms-input-placeholder { /* WebKit browsers */
+            color: #999; font-size: 14px;opacity: 0.7;font-family: "微软雅黑";padding-left: 0px;
+        }
+        .mui-bar {
+            transition: all .4s ease-in-out;
+            opacity: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="mui-bar mui-bar-nav dc-nav-search">
+        <a href="dc-search-company.html" class="dc-input-link actived" >
+            <span class="mui-icon mui-icon-search"></span>
+            <input type="search" placeholder="请输入公司、人名等关键词" class="dc-nav-input">
+        </a>
+        <a href="dc-relationship.html" class="dc-input-link" >
+            <span class="mui-icon mui-icon-search"></span>
+            <input type="search" placeholder="请依次添加两个公司或个人" class="dc-nav-input">
+        </a>
+    </div>
+
+    <div class="mui-content" style="padding-top: 0;">
+        <div class="dc-seach-hd" >
+            <div class="dc-logo">
+                <img src="../images/dc-logo.png" alt="">
+                <span>洞 察</span>
+            </div>
+            <div id="segmentedControl" class="dc-tab mui-segmented-control">
+                <a href="#hd_search1" class="mui-control-item dc-tab-cell mui-active">查公司</a>
+                <a href="#hd_search2" class="mui-control-item dc-tab-cell">查关系</a>
+            </div>
+           <div class="dc-searchinputbox ">
+               <a href="dc-search-company.html" id="hd_search1" class="mui-control-content mui-active dc-hd-search">
+                   <span class="mui-icon mui-icon-search"></span>
+                   <input type="search" placeholder="请输入公司、人名等关键词" class="dc-nav-input">
+               </a>
+               <a href="dc-relationship.html" id="hd_search2" class="mui-control-content dc-hd-search">
+                   <span class="mui-icon mui-icon-search"></span>
+                   <input type="search" placeholder="请依次添加2个公司或个人" class="dc-nav-input">
+               </a>
+           </div>
+            <div class="dc-hot-search">
+                <span class="hot-search-tit">热搜</span>
+                <a href="">腾讯梦想</a>
+                <a href="">小米</a>
+                <a href="">猫眼微影</a>
+                <a href="">善林金融</a>
+                <a href="">北京小米</a>
+            </div>
+        </div>
+
+        <!--项目线索-->
+        <div class="xmxs-tit">
+            <span class="xmxs-line"></span>
+            <div class="xmxs-imgbx"><img src="../images/dc-tit-txt.png" alt="" class="dc-tit-txt"></div>
+        </div>
+        <div class="xmxs-con">
+            <a href="xmxs-zydq.html" class="xmxs-cell">
+                <div class="xmxs-cell-tit  clearfix">
+                    <span class="iconfont icon-xiangmu fl"></span>
+                    <span class="right-xm-tit fl">
+                        <i class="xm-type">质押到期</i>
+                        <i class="xm-time">2018-02-22</i>
+                    </span>
+                </div>
+                <div class="xmxs-cell-txt">
+                    未来两个月内，将有125家公司的股权质押到期，共涉及353个股东的2345万股。其中您关注的公司中，将有5家公司的股权质押到期，共涉及8个股东的345万股。
+                </div>
+            </a>
+            <a href="xmxs-xsjj.html" class="xmxs-cell">
+                <div class="xmxs-cell-tit  clearfix">
+                    <span class="iconfont icon-xiangmu fl"></span>
+                    <span class="right-xm-tit fl">
+                        <i class="xm-type">限售解禁</i>
+                        <i class="xm-time">2018-02-22</i>
+                    </span>
+                </div>
+                <div class="xmxs-cell-txt">
+                    未来两个月内，将有125家公司的股权质押到期，共涉及353个股东的2345万股。其中您关注的公司中，将有5家公司的股权质押到期，共涉及8个股东的345万股。
+                </div>
+            </a>
+            <a href="xmxs-jcypl.html" class="xmxs-cell">
+                <div class="xmxs-cell-tit  clearfix">
+                    <span class="iconfont icon-xiangmu fl"></span>
+                    <span class="right-xm-tit fl">
+                        <i class="xm-type">减持预披露</i>
+                        <i class="xm-time">2018-02-22</i>
+                    </span>
+                </div>
+                <div class="xmxs-cell-txt">
+                    未来两个月内，将有125家公司的股权质押到期，共涉及353个股东的2345万股。其中您关注的公司中，将有5家公司的股权质押到期，共涉及8个股东的345万股。
+                </div>
+            </a>
+        </div>
+    </div>
+
+
+    <script src="../js/mui.min.js"></script>
+    <script src="../js/app.js"></script>
+    <script>
+        (function(){
+            //获取滚动条当前位置
+            function getScrollTop(){
+                var scrollTop = 0, bodyScrollTop = 0, documentScrollTop = 0;
+                if(document.body){
+                    bodyScrollTop = document.body.scrollTop;
+                }
+                if(document.documentElement){
+                    documentScrollTop = document.documentElement.scrollTop;
+                }
+                scrollTop = (bodyScrollTop - documentScrollTop > 0) ? bodyScrollTop : documentScrollTop;
+                return scrollTop;
+            }
+            //设置背景色的A的函数
+            var setCoverOpacity = function() {
+                if(getScrollTop() > 130){
+                    document.getElementsByClassName('mui-bar')[0].style.opacity = '1';
+                }else if(getScrollTop() <130 ){
+                    document.getElementsByClassName('mui-bar')[0].style.opacity = '0';
+                }
+
+            }
+            //初始化函数
+            setCoverOpacity();
+            //绑定滚动监听事件
+            window.addEventListener('scroll',setCoverOpacity,false);
+
+            //tab切换悬浮input框
+            for(var i = 0;i<2;i++){
+              mui('.dc-tab-cell')[i].index = i;
+            }
+            mui('body').on('tap','.dc-tab-cell',function () {
+                dc_index = this.index;
+                mui('.dc-input-link')[0].classList.remove('actived');
+                mui('.dc-input-link')[1].classList.remove('actived');
+                mui('.dc-input-link')[this.index].classList.add('actived');
+            })
+        }())
+    </script>
+</body>
+</html>

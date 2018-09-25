@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en" class="bcWhite">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>融资融券</title>
+    <link href="../../css/mui.min.css" rel="stylesheet" />
+    <link href="../../iconfont/iconfont.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../dc-company/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link href="../../css/app.css" rel="stylesheet" />
+    <link href="../dc-company/css/dc-company.css" rel="stylesheet"/>
+    <script src="../dc-company/js/companyCommon.js"></script>
+    <script src="../../js/echarts.js"></script>
+    <style>
+
+    </style>
+</head>
+<body>
+<header class="mui-bar mui-bar-nav">
+    <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+    <h1 class="mui-title bc-white-inp">融资融券</h1>
+</header>
+<div class="mui-content bcWhite">
+    <!--时间范围、周期选择-->
+    <div class="rzrq-select clearfix">
+        <div class="select-cell">
+            <span>单位：万元</span>
+        </div>
+        <div class="select-cell" style="margin-right: 0;">
+            <span>时间范围:</span>
+            <div class="select-con">
+                <span class="seelct-rs">3M</span>
+                <i class="r-arrow-ico mui-icon mui-icon-arrowdown"></i>
+                <ul class="selectLis">
+                    <li class="se-cell actived">3M</li>
+                    <li class="se-cell">6M</li>
+                    <li class="se-cell">1Y</li>
+                    <li class="se-cell">3Y</li>
+                    <li class="se-cell">5Y</li>
+                </ul>
+            </div>
+        </div>
+        <div class="select-cell">
+            <span>周期:</span>
+            <div class="select-con">
+                <span class="seelct-rs">日</span>
+                <i class="r-arrow-ico mui-icon mui-icon-arrowdown"></i>
+                <ul class="selectLis">
+                    <li class="se-cell actived">日</li>
+                    <li class="se-cell">周</li>
+                    <li class="se-cell">月</li>
+                    <li class="se-cell">季</li>
+                    <li class="se-cell">年</li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+    <div class="infobody clearfix fnine-info-cont" style="padding: 0.1rem 0.05rem;">
+        <div id="rzrqChart" style="width: 100%;height:252px;"></div>
+        <div id="rzrqChart2" style="width: 100%;height:252px;margin-top: 10px;"></div>
+    </div>
+    <div class="fixedcolumn-table clearfix">
+        <span class="mui-icon mui-icon-forward rightdir"></span>
+        <div class="left-col-table">
+            <table class="">
+                <tr><td><div class="tCell">时间</div></td></tr>
+                <tr><td><div class="tCell">2016-01-09</div></td></tr>
+                <tr><td><div class="tCell">2016-01-09</div></td></tr>
+                <tr><td><div class="tCell">2016-01-09</div></td></tr>
+                <tr><td><div class="tCell">2016-01-09</div></td></tr>
+                <tr><td><div class="tCell">2016-01-09</div></td></tr>
+                <tr><td><div class="tCell">2016-01-09</div></td></tr>
+                <tr><td><div class="tCell">2016-01-09</div></td></tr>
+                <tr><td><div class="tCell">2016-01-09</div></td></tr>
+                <tr><td><div class="tCell">2016-01-09</div></td></tr>
+                <tr><td><div class="tCell">2016-01-09</div></td></tr>
+                <tr><td><div class="tCell">2016-01-09</div></td></tr>
+                <tr><td><div class="tCell">2016-01-09</div></td></tr>
+            </table>
+        </div>
+        <div class="right-con-table">
+            <table>
+                <tr>
+                    <td><div class="tCell">融资余额</div></td>
+                    <td><div class="tCell">融资占流通市值比(%)</div></td>
+                    <td><div class="tCell">融券余额</div></td>
+                    <td><div class="tCell">融券占流通市值比(%)</div></td>
+                </tr>
+                <tr>
+                    <td><div class="tCell">498639</div></td>
+                    <td><div class="tCell">2.95</div></td>
+                    <td><div class="tCell">478.12</div></td>
+                    <td><div class="tCell">0.003</div></td>
+                </tr>
+                <tr>
+                    <td><div class="tCell">498639</div></td>
+                    <td><div class="tCell">2.95</div></td>
+                    <td><div class="tCell">478.12</div></td>
+                    <td><div class="tCell">0.003</div></td>
+                </tr>
+                <tr>
+                    <td><div class="tCell">498639</div></td>
+                    <td><div class="tCell">2.95</div></td>
+                    <td><div class="tCell">478.12</div></td>
+                    <td><div class="tCell">0.003</div></td>
+                </tr>
+                <tr>
+                    <td><div class="tCell">498639</div></td>
+                    <td><div class="tCell">2.95</div></td>
+                    <td><div class="tCell">478.12</div></td>
+                    <td><div class="tCell">0.003</div></td>
+                </tr>
+                <tr>
+                    <td><div class="tCell">498639</div></td>
+                    <td><div class="tCell">2.95</div></td>
+                    <td><div class="tCell">478.12</div></td>
+                    <td><div class="tCell">0.003</div></td>
+                </tr>
+                <tr>
+                    <td><div class="tCell">498639</div></td>
+                    <td><div class="tCell">2.95</div></td>
+                    <td><div class="tCell">478.12</div></td>
+                    <td><div class="tCell">0.003</div></td>
+                </tr>
+                <tr>
+                    <td><div class="tCell">498639</div></td>
+                    <td><div class="tCell">2.95</div></td>
+                    <td><div class="tCell">478.12</div></td>
+                    <td><div class="tCell">0.003</div></td>
+                </tr>
+                <tr>
+                    <td><div class="tCell">498639</div></td>
+                    <td><div class="tCell">2.95</div></td>
+                    <td><div class="tCell">478.12</div></td>
+                    <td><div class="tCell">0.003</div></td>
+                </tr>
+                <tr>
+                    <td><div class="tCell">498639</div></td>
+                    <td><div class="tCell">2.95</div></td>
+                    <td><div class="tCell">478.12</div></td>
+                    <td><div class="tCell">0.003</div></td>
+                </tr>
+                <tr>
+                    <td><div class="tCell">498639</div></td>
+                    <td><div class="tCell">2.95</div></td>
+                    <td><div class="tCell">478.12</div></td>
+                    <td><div class="tCell">0.003</div></td>
+                </tr>
+                <tr>
+                    <td><div class="tCell">498639</div></td>
+                    <td><div class="tCell">2.95</div></td>
+                    <td><div class="tCell">478.12</div></td>
+                    <td><div class="tCell">0.003</div></td>
+                </tr>
+                <tr>
+                    <td><div class="tCell">498639</div></td>
+                    <td><div class="tCell">2.95</div></td>
+                    <td><div class="tCell">478.12</div></td>
+                    <td><div class="tCell">0.003</div></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>
+
+<script src="../../js/mui.min.js"></script>
+<script src="../../js/app.js"></script>
+<script>
+    /*固定两个表格一行高度*/
+    var leftTrLen = mui('.left-col-table tr').length;
+    console.log('lefttrlen:'+leftTrLen);
+    for(var i =0;i<leftTrLen;i++){
+        var leftTrH = mui('.left-col-table tr')[i].offsetHeight;
+        var rightTrH = mui('.right-con-table tr')[i].offsetHeight;
+        if(leftTrH < rightTrH){
+            mui('.left-col-table tr')[i].style.height = rightTrH+'px';
+            mui('.right-con-table tr')[i].style.height = rightTrH+'px'
+        }else if(leftTrH > rightTrH){
+            mui('.left-col-table tr')[i].style.height = leftTrH+'px';
+            mui('.right-con-table tr')[i].style.height = leftTrH+'px'
+        }
+    }
+    /*选择时间范围*/
+    document.onclick = function(){
+        this.getElementsByClassName('selectLis')[0].classList.remove('actived');
+        this.getElementsByClassName('selectLis')[1].classList.remove('actived')
+    };
+    mui('body').on('tap','.select-con',function (e) {
+        //取消冒泡
+        e = e || window.event;
+        if(document.all){
+            e.cancelBubble = true;
+        }else{
+            e.stopPropagation();
+        }
+
+        if(this.getElementsByClassName('selectLis')[0].classList.contains('actived')){
+            this.getElementsByClassName('selectLis')[0].classList.remove('actived')
+        }else{
+            this.getElementsByClassName('selectLis')[0].classList.add('actived')
+        }
+    });
+    mui('body').on('tap','.select-con .se-cell',function () {
+        var innerTxt = this.innerText;
+        var nodeLen = this.parentNode.getElementsByClassName('se-cell').length;
+        for(var i =0;i<nodeLen;i++){
+            this.parentNode.getElementsByClassName('se-cell')[i].classList.remove('actived');
+            this.classList.add('actived')
+        }
+        var txtBox = this.parentNode.parentNode.getElementsByClassName('seelct-rs')[0];
+        txtBox.innerText = innerTxt;
+        console.log(txtBox);
+    })
+    /*echarts*/
+    var myChart1 = echarts.init(document.getElementById('rzrqChart'));
+    var myChart2 = echarts.init(document.getElementById('rzrqChart2'));
+    option = {
+        grid:{
+            x:50,
+            x2:30,
+            y:40
+        },
+        legend: {
+            data: ['融资余额','融券余额(右)'],
+            itemWidth:18,
+            itemHeight:3,
+            icon: 'rect',
+            y:'bottom'
+        },
+        xAxis: [{
+            type:'category',
+            axisTick:{
+                show:false
+            },
+            axisLine:{
+                lineStyle:{
+                    color:'#b8b9ba'
+                }
+            },
+            axisLabel: {
+                textStyle:{
+                    fontSize:'12',
+                    color:'#9fa4ab'
+                }
+            },
+            data:['2017-10-01','2017-11-01','2017-12-01']
+        }],
+        yAxis: [{
+            type:'value',
+            /*name:'融资余额',*/
+            min: 70000,
+            max: 90000,
+            interval: 5000,
+            axisTick:{
+                show:false
+            },
+            axisLine:{
+                show:false
+            },
+            axisLabel: {
+                formatter: '{value}',
+                textStyle:{
+                    fontSize:'12',
+                    color:'#9fa4ab'
+                }
+            },
+            splitLine:{
+                lineStyle:{
+                    color:'#b8b9ba'
+                }
+            }
+        },{
+            type:'value',
+            /*name:'融券余额',*/
+            min: 0,
+            max: 50,
+            interval: 10,
+            axisTick:{
+                show:false
+            },
+            axisLine:{
+                show:false
+            },
+            axisLabel: {
+                formatter: '{value}',
+                textStyle:{
+                    fontSize:'12',
+                    color:'#9fa4ab'
+                }
+            },
+            splitLine:{
+                show:false
+            }
+        }],
+        title: {
+            text: '融资 融券 余额变化',
+            left: 'center',
+            top: 0,
+            textStyle: {
+                color: '#333',
+                fontWeight:'bold',
+                fontSize:'13'
+            }
+        },
+        series: [{
+            name:'融资余额',
+            type:'line',
+            data:[71000,81000,78900]
+
+        },{
+            name:'融券余额(右)',
+            type:'line',
+            yAxisIndex: 1,
+            data:[31,30.3,30.2]
+        }],
+        label: {
+            normal: {
+                show: true,
+                position: 'top',
+                textStyle: {
+                    color: 'black'
+                }
+            }
+        },
+        color: ['#0f88cb','#ff4242']
+    };
+    option2 = {
+        grid:{
+            x:50,
+            x2:30,
+            y:40
+        },
+        legend: {
+            data: ['融资余额','融券余额(右)'],
+            itemWidth:18,
+            itemHeight:3,
+            icon: 'rect',
+            y:'bottom'
+        },
+        xAxis: [{
+            type:'category',
+            axisTick:{
+                show:false
+            },
+            axisLine:{
+                lineStyle:{
+                    color:'#b8b9ba'
+                }
+            },
+            axisLabel: {
+                textStyle:{
+                    fontSize:'12',
+                    color:'#9fa4ab'
+                }
+            },
+            data:['2017-10-01','2017-11-01','2017-12-01']
+        }],
+        yAxis: [{
+            type:'value',
+            /*name:'融资余额',*/
+            min: 70000,
+            max: 90000,
+            interval: 5000,
+            axisTick:{
+                show:false
+            },
+            axisLine:{
+                show:false
+            },
+            axisLabel: {
+                formatter: '{value}',
+                textStyle:{
+                    fontSize:'12',
+                    color:'#9fa4ab'
+                }
+            },
+            splitLine:{
+                lineStyle:{
+                    color:'#b8b9ba'
+                }
+            }
+        },{
+            type:'value',
+            /*name:'融券余额',*/
+            min: 0,
+            max: 50,
+            interval: 10,
+            axisTick:{
+                show:false
+            },
+            axisLine:{
+                show:false
+            },
+            axisLabel: {
+                formatter: '{value}',
+                textStyle:{
+                    fontSize:'12',
+                    color:'#9fa4ab'
+                }
+            },
+            splitLine:{
+                show:false
+            }
+        }],
+        title: {
+            text: '融资 融券 余额占流通市场比变化',
+            left: 'center',
+            top: 0,
+            textStyle: {
+                color: '#333',
+                fontWeight:'bold',
+                fontSize:'13'
+            }
+        },
+        series: [{
+            name:'融资余额',
+            type:'line',
+            data:[71000,81000,78900]
+
+        },{
+            name:'融券余额(右)',
+            type:'line',
+            yAxisIndex: 1,
+            data:[31,30.3,30.2]
+        }],
+        label: {
+            normal: {
+                show: true,
+                position: 'top',
+                textStyle: {
+                    color: 'black'
+                }
+            }
+        },
+        color: ['#0f88cb','#ff4242']
+    };
+    myChart1.setOption(option);
+    myChart2.setOption(option2);
+    /*echarts*/
+</script>
+</body>
+</html>

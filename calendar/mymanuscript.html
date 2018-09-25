@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html class="bcWhite">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title>我的稿件</title>
+    <link href="../css/mui.min.css" rel="stylesheet" />
+    <link href="../css/app.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../iconfont/iconfont.css">
+    <link rel="stylesheet" type="text/css" href="../css/mui.picker.min.css" />
+    <link rel="stylesheet" href="../css/schedule.css">
+    <link rel="stylesheet" href="../css/interview.css">
+    <style>
+    </style>
+</head>
+
+<body>
+<header class="mui-bar mui-bar-nav bcWhiteNav   ">
+    <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+    <h1 class="mui-title manuscript-filter"><span id="manuscriptFilterRs">所有稿件</span><i class="mui-icon mui-icon-arrowdown"></i></h1>
+    <a href="manuscriptEdit.html" class="mui-pull-right mui-icon mui-icon-plusempty" style="font-weight: bold;"></a>
+</header>
+<div class="mui-content bcWhite">
+    <!--稿件筛选框-->
+    <div class="manuscript-filter-box" style="display: none">
+        <div class="manuscript-fcell clearfix">
+            <span class="fl">所有稿件</span>
+            <span class="fcell-rightico fr iconfont icon-youjian"></span>
+        </div>
+        <div class="manuscript-fcell clearfix">
+            <span class="fl">未发送稿件</span>
+            <span class="fcell-rightico fr iconfont icon-xiao57" style="font-size: 17px;"></span>
+        </div>
+        <div class="manuscript-fcell clearfix">
+            <span class="fl">编辑已阅稿件</span>
+            <span class="fcell-rightico fr iconfont icon-tag"></span>
+        </div>
+        <div class="manuscript-fcell clearfix">
+            <span class="fl">有附件稿件</span>
+            <span class="fcell-rightico fr iconfont icon-fujian"></span>
+        </div>
+    </div>
+    <!--稿件筛选框 end-->
+    <!--搜索框-->
+    <div class="m-search-box">
+        <span class="iconfont icon-sousuo"></span> <span> 搜索 </span>
+    </div>
+    <!--搜索框 end-->
+    <!--高级搜索框-->
+    <div class="advanced-search-box">
+        <!--半透明黑色背景-->
+        <div class="translucet-bc"></div>
+        <!--高级搜索内容框-->
+        <div class="advanced-sbox">
+            <div class="top-searchinp">
+                <div class="left-sc-ico iconfont icon-sousuo"></div>
+                <div class="cen-sc-inp"><input type="text" placeholder="搜索"></div>
+                <div class="right-sc-cancel">取消</div>
+            </div>
+            <div class="cen-search-sel">
+                <div class="cen-search-opt actived">全部</div>
+                <div class="cen-search-opt ">标题</div>
+                <div class="cen-search-opt ">正文</div>
+                <span class="right-arr-ico mui-icon mui-icon-arrowdown"></span>
+            </div>
+            <div class="hide-advanced-box">
+                <ul class="manuscriptshow-switch">
+                    <li class="mui-table-view-cell">
+                        <span>只显示已发送稿件</span>
+                        <div class="mui-switch mui-switch-blue mui-switch-mini">
+                            <div class="mui-switch-handle"></div>
+                        </div>
+                    </li>
+                    <li class="mui-table-view-cell">
+                        <span>只显示未关联采访的稿件</span>
+                        <div class="mui-switch mui-switch-blue mui-switch-mini">
+                            <div class="mui-switch-handle"></div>
+                        </div>
+                    </li>
+                    <li class="mui-table-view-cell">
+                        <span>只显示未被采纳的稿件</span>
+                        <div class="mui-switch mui-switch-blue mui-switch-mini">
+                            <div class="mui-switch-handle"></div>
+                        </div>
+                    </li>
+                </ul>
+                <!--选择时间范围-->
+                <ul class="time-range">
+                    <li id='demo1' data-options='{"type":"date","beginYear":1900}'  class="mui-table-view-cell scheduleinputLi clearfix scbtn ">
+                        <label for="" class="sclabelLeft fl">开始时间</label>
+                        <div id='result' class="ui-alert frscTimeRight fr txtMust" name="开始时间"></div>
+                        <i class="mui-icon mui-icon-arrowright"></i>
+                    </li>
+                    <li id='demo2' data-options='{}'  class="mui-table-view-cell scheduleinputLi clearfix scbtn ">
+                        <label for="" class="sclabelLeft fl">结束时间</label>
+                        <div id='result2' class="ui-alert frscTimeRight fr txtMust" name="结束时间"></div>
+                        <i class="mui-icon mui-icon-arrowright"></i>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--高级搜索框 end-->
+
+    <!--我的稿件列表-->
+    <ul class="manuscript-list mui-table-view">
+        <li class="manuscript-cell mui-table-view-cell">
+            <div class="mui-slider-right mui-disabled">
+                <a href="javascript:;" class="mui-btn mui-btn-grey">发送</a>
+                <a href="manuscriptEdit.html" class="mui-btn mui-btn-yellow">编辑</a>
+                <a href="javascript:;" class="mui-btn mui-btn-red">删除</a>
+            </div>
+            <div class="mui-slider-handle">
+                <a href="" class="mui-table-cell manuscript-list-cell">
+                    <span class="left-mns-ico">上</span>
+                    <span class="cen-mns-txt">
+                        <i class="mns-tit">上证云平台 推送测试</i>
+                        <i class="mns-con">这篇稿件暂无内容</i>
+                        <i class="mns-labels">
+                            <span>已采纳</span>
+                            <span>编辑已阅</span>
+                        </i>
+                   </span>
+                    <span class="right-mns-lab">
+                       <i class="symbols">
+                           <span class="iconfont icon-androidattach"></span><!--附件符号-->
+                           <span class="iconfont icon-yifasong"></span><!--已发送符号-->
+                       </i>
+                       <span class="mns-date">6-6</span>
+                   </span>
+                </a>
+            </div>
+        </li>
+        <li class="manuscript-cell mui-table-view-cell">
+            <div class="mui-slider-right mui-disabled">
+                <a href="javascript:;" class="mui-btn mui-btn-grey">发送</a>
+                <a href="javascript:;" class="mui-btn mui-btn-yellow">编辑</a>
+                <a href="javascript:;" class="mui-btn mui-btn-red">删除</a>
+            </div>
+            <div class="mui-slider-handle">
+                <a href="" class="mui-table-cell manuscript-list-cell">
+                    <span class="left-mns-ico">上</span>
+                    <span class="cen-mns-txt">
+                       <i class="mns-tit">上证云平台 推送测试</i>
+                       <i class="mns-con">这篇稿件暂无内容</i>
+                   </span>
+                    <span class="right-mns-lab">
+                       <i class="symbols">
+                           <span class="iconfont icon-androidattach"></span><!--附件符号-->
+                           <span class="iconfont icon-weifasong"></span><!--未发送符号-->
+                       </i>
+                       <span class="mns-date">6-6</span>
+                   </span>
+                </a>
+            </div>
+        </li>
+        <li class="manuscript-cell mui-table-view-cell">
+            <div class="mui-slider-right mui-disabled">
+                <a href="javascript:;" class="mui-btn mui-btn-grey">发送</a>
+                <a href="javascript:;" class="mui-btn mui-btn-yellow">编辑</a>
+                <a href="javascript:;" class="mui-btn mui-btn-red">删除</a>
+            </div>
+            <div class="mui-slider-handle">
+                <a href="" class="mui-table-cell manuscript-list-cell">
+                    <span class="left-mns-ico">上</span>
+                    <span class="cen-mns-txt">
+                       <i class="mns-tit">上证云平台 推送测试</i>
+                       <i class="mns-con">这篇稿件暂无内容</i>
+                   </span>
+                    <span class="right-mns-lab">
+                       <i class="symbols"></i>
+                       <span class="mns-date">6-6</span>
+                   </span>
+                </a>
+            </div>
+        </li>
+        <li class="manuscript-cell mui-table-view-cell">
+            <div class="mui-slider-right mui-disabled">
+                <a href="javascript:;" class="mui-btn mui-btn-grey">发送</a>
+                <a href="javascript:;" class="mui-btn mui-btn-yellow">编辑</a>
+                <a href="javascript:;" class="mui-btn mui-btn-red">删除</a>
+            </div>
+            <div class="mui-slider-handle">
+                <a href="" class="mui-table-cell manuscript-list-cell">
+                    <span class="left-mns-ico">上</span>
+                    <span class="cen-mns-txt">
+                       <i class="mns-tit">上证云平台 推送测试</i>
+                       <i class="mns-con">这篇稿件暂无内容</i>
+                   </span>
+                    <span class="right-mns-lab">
+                       <i class="symbols"></i>
+                       <span class="mns-date">6-6</span>
+                   </span>
+                </a>
+            </div>
+        </li>
+        <li class="manuscript-cell mui-table-view-cell">
+            <div class="mui-slider-right mui-disabled">
+                <a href="javascript:;" class="mui-btn mui-btn-grey">发送</a>
+                <a href="javascript:;" class="mui-btn mui-btn-yellow">编辑</a>
+                <a href="javascript:;" class="mui-btn mui-btn-red">删除</a>
+            </div>
+            <div class="mui-slider-handle">
+                <a href="" class="mui-table-cell manuscript-list-cell">
+                    <span class="left-mns-ico">上</span>
+                    <span class="cen-mns-txt">
+                       <i class="mns-tit">上证云平台 推送测试</i>
+                       <i class="mns-con">这篇稿件暂无内容</i>
+                   </span>
+                    <span class="right-mns-lab">
+                       <i class="symbols"></i>
+                       <span class="mns-date">6-6</span>
+                   </span>
+                </a>
+            </div>
+        </li>
+        <li class="manuscript-cell mui-table-view-cell">
+            <div class="mui-slider-right mui-disabled">
+                <a href="javascript:;" class="mui-btn mui-btn-grey">发送</a>
+                <a href="javascript:;" class="mui-btn mui-btn-yellow">编辑</a>
+                <a href="javascript:;" class="mui-btn mui-btn-red">删除</a>
+            </div>
+            <div class="mui-slider-handle">
+                <a href="" class="mui-table-cell manuscript-list-cell">
+                    <span class="left-mns-ico">上</span>
+                    <span class="cen-mns-txt">
+                       <i class="mns-tit">上证云平台 推送测试</i>
+                       <i class="mns-con">这篇稿件暂无内容</i>
+                   </span>
+                    <span class="right-mns-lab">
+                       <i class="symbols"></i>
+                       <span class="mns-date">6-6</span>
+                   </span>
+                </a>
+            </div>
+        </li>
+        <li class="manuscript-cell mui-table-view-cell">
+            <div class="mui-slider-right mui-disabled">
+                <a href="javascript:;" class="mui-btn mui-btn-grey">发送</a>
+                <a href="javascript:;" class="mui-btn mui-btn-yellow">编辑</a>
+                <a href="javascript:;" class="mui-btn mui-btn-red">删除</a>
+            </div>
+            <div class="mui-slider-handle">
+                <a href="" class="mui-table-cell manuscript-list-cell">
+                    <span class="left-mns-ico">上</span>
+                    <span class="cen-mns-txt">
+                       <i class="mns-tit">上证云平台 推送测试</i>
+                       <i class="mns-con">这篇稿件暂无内容</i>
+                   </span>
+                    <span class="right-mns-lab">
+                       <i class="symbols"></i>
+                       <span class="mns-date">6-6</span>
+                   </span>
+                </a>
+            </div>
+        </li>
+        <li class="manuscript-cell mui-table-view-cell">
+            <div class="mui-slider-right mui-disabled">
+                <a href="javascript:;" class="mui-btn mui-btn-grey">发送</a>
+                <a href="javascript:;" class="mui-btn mui-btn-yellow">编辑</a>
+                <a href="javascript:;" class="mui-btn mui-btn-red">删除</a>
+            </div>
+            <div class="mui-slider-handle">
+                <a href="" class="mui-table-cell manuscript-list-cell">
+                    <span class="left-mns-ico">上</span>
+                    <span class="cen-mns-txt">
+                       <i class="mns-tit">上证云平台 推送测试</i>
+                       <i class="mns-con">这篇稿件暂无内容</i>
+                   </span>
+                    <span class="right-mns-lab">
+                       <i class="symbols"></i>
+                       <span class="mns-date">6-6</span>
+                   </span>
+                </a>
+            </div>
+        </li>
+        <li class="manuscript-cell mui-table-view-cell">
+            <div class="mui-slider-right mui-disabled">
+                <a href="javascript:;" class="mui-btn mui-btn-grey">发送</a>
+                <a href="javascript:;" class="mui-btn mui-btn-yellow">编辑</a>
+                <a href="javascript:;" class="mui-btn mui-btn-red">删除</a>
+            </div>
+            <div class="mui-slider-handle">
+                <a href="" class="mui-table-cell manuscript-list-cell">
+                    <span class="left-mns-ico">上</span>
+                    <span class="cen-mns-txt">
+                       <i class="mns-tit">上证云平台 推送测试</i>
+                       <i class="mns-con">这篇稿件暂无内容</i>
+                   </span>
+                    <span class="right-mns-lab">
+                       <i class="symbols"></i>
+                       <span class="mns-date">6-6</span>
+                   </span>
+                </a>
+            </div>
+        </li>
+        <li class="manuscript-cell mui-table-view-cell">
+            <div class="mui-slider-right mui-disabled">
+                <a href="javascript:;" class="mui-btn mui-btn-grey">发送</a>
+                <a href="javascript:;" class="mui-btn mui-btn-yellow">编辑</a>
+                <a href="javascript:;" class="mui-btn mui-btn-red">删除</a>
+            </div>
+            <div class="mui-slider-handle">
+                <a href="" class="mui-table-cell manuscript-list-cell">
+                    <span class="left-mns-ico">上</span>
+                    <span class="cen-mns-txt">
+                       <i class="mns-tit">上证云平台 推送测试</i>
+                       <i class="mns-con">这篇稿件暂无内容</i>
+                   </span>
+                    <span class="right-mns-lab">
+                       <i class="symbols"></i>
+                       <span class="mns-date">6-6</span>
+                   </span>
+                </a>
+            </div>
+        </li>
+    </ul>
+    <!--我的稿件列表 end-->
+</div>
+
+<script src="../js/mui.min.js"></script>
+<script src="../js/mui.picker.min.js"></script>
+<script src="../js/app.js"></script>
+<script>
+    document.body.addEventListener('touchstart', function () { });
+
+    /*稿件筛选*/
+    mui('body').on('tap','.manuscript-filter',function () {
+        if(this.classList.contains('actived')){
+            this.classList.remove('actived');
+            mui('.manuscript-filter-box')[0].style.display = 'none'
+        }else {
+            this.classList.add('actived');
+            mui('.manuscript-filter-box')[0].style.display = 'block'
+        }
+    })
+    mui('.manuscript-filter-box').on('tap','.manuscript-fcell',function () {
+        var innertxt = this.getElementsByClassName('fl')[0].innerText;
+        mui('#manuscriptFilterRs')[0].innerText = innertxt;
+        mui('.manuscript-filter')[0].classList.remove('actived');
+        mui('.manuscript-filter-box')[0].style.display = 'none';
+    })
+    /*稿件筛选 end*/
+    /*cen-search-sel选项切换*/
+    mui('.cen-search-sel').on('tap','.cen-search-opt',function () {
+        var len = this.parentNode.getElementsByClassName('cen-search-opt').length;
+        for(var i = 0;i<len;i++){
+            this.parentNode.getElementsByClassName('cen-search-opt')[i].classList.remove('actived');
+        }
+        this.classList.add('actived')
+    })
+    /*cen-search-sel选项切换 end*/
+
+    /*高级搜索框的显示与隐藏*/
+    mui('.m-search-box')[0].addEventListener('tap',function () {
+        mui('.advanced-search-box')[0].style.display = 'block'
+    });
+    mui('.right-sc-cancel')[0].addEventListener('tap',function () {/*点击‘取消’*/
+        mui('.cen-sc-inp input')[0].value = ''
+    });
+    mui('.translucet-bc')[0].addEventListener('tap',function () {/*点击黑色半透明背景*/
+        mui('.advanced-search-box')[0].style.display = 'none'
+    });
+    /*高级搜索框的显示与隐藏 end*/
+
+    /*搜索内容框内高级搜索筛选内容展开收起*/
+        mui('body').on('tap','.right-arr-ico ',function () {
+            if(this.classList.contains('actived')){
+                this.classList.remove('actived');
+                mui('.hide-advanced-box')[0].style.display = 'none'
+            }else{
+                this.classList.add('actived');
+                mui('.hide-advanced-box')[0].style.display = 'block'
+            }
+        })
+    /*搜索内容框内高级搜索筛选内容展开收起 end*/
+
+    /*时间范围选择*/
+    var $timeStart = document.getElementById('demo1');
+    var $timeEnd = document.getElementById('demo2');
+    $timeStart.addEventListener('tap', function() {
+        var optionsJson = this.getAttribute('data-options') || '{}';
+        var options = JSON.parse(optionsJson);
+        var id = this.getAttribute('id');
+        var picker = new mui.DtPicker(options);
+        picker.show(function(rs) {
+            mui('#result')[0].innerText = rs.text;
+            picker.dispose();
+        });
+    }, false);
+    $timeEnd.addEventListener('tap', function() {
+        var timestart =  mui('#result')[0].innerText;
+        var picker = new mui.DtPicker({
+            type: "date",
+            beginDate: new Date(timestart),
+            endDate: new Date(2021, 12, 31),
+            labels: ['年', '月', '日'],
+        })
+        picker.show(function(rs) {
+            mui('#result2')[0].innerText = rs.text;
+            picker.dispose();
+        });
+    }, false);
+    /*时间范围选择 end*/
+</script>
+</body>
+</html>

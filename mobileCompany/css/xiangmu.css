@@ -1,0 +1,40 @@
+/*登陆页面*/
+.login-box {
+	width: 100%;
+	height: 100%;
+	/*position: absolute;*/
+	padding: 0px 40px 50px 40px;
+	background: rgba(40, 57, 101, .4);
+}
+.login-content{background: #FFF;min-height:100%;background: url(../img/comy-bg1.png);background-size:cover;background-position-x: center;}
+/*2145行*/
+/*项目页面的图标*/
+.circle{
+	font-weight:bold;
+	width:35px;
+	height:35px;
+	padding-top:5px;
+	/*margin-left: 30px;*/
+	margin-bottom: 10px;                  
+	font-size: 15px;
+	color:white;
+	/*background-color: blue;*/
+	border-radius: 50%;
+	display: inline-block;
+}
+/*包含历史页面的*/
+.history-date ul {
+	margin: 0;
+	padding: 0;
+	background: url(../img/line04.gif) repeat-y 31% 30px;
+	overflow: hidden;
+	position: relative;
+}
+.history-date ul li {
+	background: url(../img/icon07.gif) no-repeat 30% 35px;
+	padding-bottom: 50px;
+	padding-top: 30px;
+	zoom: 1;
+	list-style: none;
+}
+

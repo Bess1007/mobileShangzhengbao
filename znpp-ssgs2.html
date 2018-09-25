@@ -1,0 +1,547 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>智能匹配-上市公司列表</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<link href="css/mui.min.css" rel="stylesheet" />
+		<link href="css/app.css" rel="stylesheet" />
+		<style>
+            .linkageFilter {
+                width: 100%;
+                position: fixed;
+                top: 44px;
+                left: 0;
+                z-index: 99;
+            }
+            .linkageFilterHdBox {
+                background-color: #fff;
+                border-bottom:1px solid #eee;
+            }
+            .linkageFilterHd_Node {
+                width:33.33333%;
+                text-align: center;
+                line-height: 42px;
+                height: 42px;
+                color: #333;
+                font-size: 13px;
+                position: relative;
+                padding-right: 32px;
+                padding-left: 18px;
+            }
+            .linkageFilterHd_Node_txt {
+                width: 100%;
+                text-align: center;
+                display: block;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+            }
+            .linkageFilterHd_Node.actived {
+                color: #1d8fe1;
+            }
+            .linkageFilterHd_Node.actived .afterlfn_arrow {
+                color: #1d8fe1;
+            }
+            .linkageFilterHd_Node.actived .afterlfn_arrow:before {
+                content: '\e580';
+            }
+            .afterlfn_arrow {
+                font-size: 12px;
+                color: #222;
+                position: absolute;
+                right: 0;
+                top: 0;
+                width: 32px;
+                text-align: left;
+                line-height: 42px;
+                height: 42px;
+            }
+            .linkageFilter_cont_box {
+                position: relative;
+                display: none;
+            }
+            .linkageFilter_cont {
+                position: absolute;
+                top: 0;
+                left: 0;
+                z-index: 99;
+                background-color: #fff;
+                width: 100%;
+            }
+            .linkageFilter_cont_bc_close {
+                background-color: rgba(0,0,0,.3);
+                position: fixed;
+                top: 90px;
+                left: 0;
+                width: 100%;
+                z-index: 98;
+            }
+            .linkageFilter_cont_bc_top_close {
+                background-color: transparent;
+                position: fixed;
+                top:0px;
+                left: 0;
+                width: 100%;
+                height: 86px;
+                z-index: 101;
+            }
+            .linkageFilter_cont_box>.linkageFilter_cont .linkageFilter_cont_node {
+                width: 100%;
+                height: 100%;
+                display:none;
+            }
+            .linkageFilter_cont_box>.linkageFilter_cont .linkageFilter_cont_node.actived {
+                display:block;
+            }
+            /****更多筛选--筛选选项****/
+            .ser_moreF {
+                padding-bottom: 100px;
+                height: 100%;
+                position: relative;
+                background-color: #eef1f3;
+
+            }
+            .ser_moreF_btns {
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                padding: 20px 10px;
+                width: 100%;
+                background-color: #fff;
+                padding-top: 0;
+                height: 100px;
+            }
+            .ser_more_reset,.ser_more_sure {
+                width: 50%;
+                padding:0 10px;
+
+            }
+            .ser_more_reset button,.ser_more_sure button {
+                height: 35px;
+                line-height: 35px;
+                font-size: 14px;
+                width: 100%;
+                text-align: center;
+                display:block;
+                padding: 0;
+                border: 0;
+            }
+            .ser_more_reset button{
+                background-color: #bbb;
+                color: #fff;
+            }
+            .ser_more_sure button {
+                background-color: #1d8fe1;
+                color: #fff;
+            }
+            .ser_bt_txt {
+                background-color: #fff;
+                line-height: 45px;
+                height: 45px;
+                font-size: 14px;
+                width: 100%;
+                text-align: center;
+                color: #999;
+            }
+            .dropD_box {
+                background-color: #fff;
+                margin-bottom: 10px;
+            }
+            .dropD_tit {
+                padding-left: 12px;
+                padding-right: 44px;
+                height: 36px;
+                line-height: 36px;
+                font-size: 14px;
+                position: relative;
+                color: #333;
+                border-bottom:1px solid #eee;
+            }
+            .dropD_tit_ico.actived:before{
+                content: '\e580';
+            }
+            .dropD_tit_ico {
+                position: absolute;
+                width: 44px;
+                height: 36px;
+                line-height: 36px;
+                top: 0;
+                right: 0;
+                text-align: center;
+                color: #333;
+                font-size: 14px;
+            }
+            .dropD_con {
+                display:none;
+                padding:12px;
+                padding-bottom: 0;
+
+            }
+            .dropD_con.actived {
+                display: block;
+            }
+            .dropD_opt {
+                display: block;
+                padding:0 15px;
+                height: 34px;
+                line-height: 34px;
+                background-color: #fff;
+                color: #333;
+                border:1px solid #efefef;
+                margin-right: 10px;
+                margin-bottom: 10px;
+                float: left;
+                border-radius:3px;
+            }
+            .dropD_opt.actived {
+                background-color: #1d8fe1;
+                color: #fff;
+            }
+
+            .sortFilterNode:last-child .sort_left_txt {
+                border-bottom: 0;
+            }
+
+
+            .linkageFilterHd_Node_txt {
+                width: auto;
+                text-align: center;
+                display: inline-block;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+            }
+            .afterlfn_arrow {
+                font-size: 12px;
+                color: #222;
+                position: absolute;
+                right: auto;
+                top: 0;
+                width: 32px;
+                line-height: 42px;
+                height: 42px;
+                display: inline-block;
+                text-align: center;
+            }
+
+            .mystyle-input-group {
+                height: 100%;
+                background-color: transparent;
+            }
+            .mystyle-input-group:before,.mystyle-input-group:after,.mui-input-group .mui-input-row:after {
+                display: none;
+            }
+            .mui-checkbox input[type=checkbox], .mui-radio input[type=radio] {
+                top: 50%;
+                margin-top: -13px;
+                left: 50%;
+                margin-left: -14px;
+            }
+            .mui-input-group .mui-input-row{
+                width: 40px;
+                height: 40px;
+                margin-right: 8px;
+            }
+            .mui-checkbox input[type=checkbox]:checked:before, .mui-radio input[type=radio]:checked:before {
+                color: #1d8fe1;
+            }
+            .ser_moreF {
+                padding-bottom: 75px;
+            }
+            .ser_moreF_btns {
+                height: 75px;
+                padding-top: 20px;
+            }
+            .dropD_con {
+                padding-right: 0;
+            }
+            .ssbk-box .dropD_box {
+                margin-bottom: 0;
+            }
+            .dropD_tit {
+                line-height: 40px;
+                height: 40px;
+            }
+            .dropD_tit_ico {
+                height: 40px;
+                line-height: 40px;
+            }
+            .aXmfkInfo .pNewsTxt {
+                font-size: 14px;
+            }
+            .liXmfkInfo {
+                font-size: 13px;
+            }
+            .liXmfkInfo p,.liXmfkInfo span,.liXmfkInfo i {
+                font-size: 13px;
+            }
+            .linkageFilterHdBox {
+                background-color: transparent;
+                height: 44px;
+            }
+            .linkageFilter {
+                top: 0;
+            }
+            .linkageFilter_cont_bc_top_close {
+                height: 44px;
+            }
+            .bcWhiteNav {
+                border-bottom: 0;
+            }
+            .linkageFilter {
+                left: 44px;
+            }
+            .linkageFilterHd_Node,.linkageFilter_cont_box>.linkageFilter_cont .linkageFilter_cont_node {
+                position: relative;
+                left: -44px;
+            }
+		</style>
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav bcWhiteNav">
+		    <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+		    <h1 class="mui-title">上市公司列表</h1>
+		</header>
+        <div class="mui-content">
+            <!--行业筛选-->
+            <div class="linkageFilter_cont_bc_top_close closeLf" style="display: none"></div>
+            <div class="linkageFilter">
+                <ul class="linkageFilterHdBox clearfix">
+                    <li class="linkageFilterHd_Node fr" style="width: 80px;">
+                        <span class="linkageFilterHd_Node_txt">行业</span>
+                        <span class="afterlfn_arrow mui-icon mui-icon-arrowdown"></span>
+                    </li>
+                </ul>
+                <!--筛选框-->
+                <div class="linkageFilter_cont_box ">
+
+                    <div class="linkageFilter_cont_bc_close closeLf"></div>
+                    <ul class="linkageFilter_cont ">
+
+
+                        <!--行业选择-->
+                        <li class="linkageFilter_cont_node">
+                            <div class="ser_moreF">
+                                <!--按钮-->
+                                <div class="ser_moreF_btns">
+                                    <div class=" clearfix">
+                                        <div class="fl ser_more_reset"><button type="button">重置</button></div>
+                                        <div class="fl ser_more_sure"><button type="button">确定</button></div>
+                                    </div>
+                                </div>
+                                <!--按钮 end-->
+                                <form class="mui-input-group mystyle-input-group">
+                                    <ul style="height: 100%;overflow: auto">
+                                        <!--标签1-->
+                                        <li class="dropD_box">
+                                            <div class="dropD_tit ">
+                                                <div class="mui-input-row mui-checkbox mui-left fl" >
+                                                    <input name="checkbox" value="" type="checkbox" >
+                                                </div>
+                                                <span class="dropD_tit_txt">标签1</span>
+                                                <span class="dropD_tit_ico mui-icon mui-icon-arrowdown"></span><!--加actived表示展开状态-->
+                                            </div>
+                                            <ul class="dropD_con clearfix multiselect"><!--加actived展开-->
+                                                <li class="dropD_box">
+                                                    <div class="dropD_tit ">
+                                                        <div class="mui-input-row mui-checkbox mui-left fl" >
+                                                            <input name="checkbox" value="" type="checkbox" >
+                                                        </div>
+                                                        <span class="dropD_tit_txt">标签101</span>
+                                                        <span class="dropD_tit_ico mui-icon mui-icon-arrowdown"></span>
+                                                    </div>
+                                                    <ul class="dropD_con clearfix multiselect">
+                                                        <li class="dropD_box">
+                                                            <div class="dropD_tit ">
+                                                                <div class="mui-input-row mui-checkbox mui-left fl" >
+                                                                    <input name="checkbox" value="" type="checkbox" >
+                                                                </div>
+                                                                <span class="dropD_tit_txt">标签10101</span>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li class="dropD_box">
+                                                    <div class="dropD_tit ">
+                                                        <div class="mui-input-row mui-checkbox mui-left fl" >
+                                                            <input name="checkbox" value="Item 1" type="checkbox" >
+                                                        </div>
+                                                        <span class="dropD_tit_txt">标签102</span>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <!--标签1 end-->
+
+                                        <!--标签2-->
+                                        <li class="dropD_box">
+                                            <div class="dropD_tit ">
+                                                <div class="mui-input-row mui-checkbox mui-left fl" >
+                                                    <input name="checkbox" value="" type="checkbox" >
+                                                </div>
+                                                <span class="dropD_tit_txt">标签2</span>
+                                                <span class="dropD_tit_ico mui-icon mui-icon-arrowdown"></span>
+                                            </div>
+                                            <ul class="dropD_con clearfix multiselect">
+                                                <li class="dropD_box">
+                                                    <div class="dropD_tit ">
+                                                        <div class="mui-input-row mui-checkbox mui-left fl" >
+                                                            <input name="checkbox" value="" type="checkbox" >
+                                                        </div>
+                                                        <span class="dropD_tit_txt">标签201</span>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <!--标签2 end-->
+                                    </ul>
+                                </form>
+                            </div>
+                        </li>
+                        <!--行业选择 end-->
+                    </ul>
+                </div>
+                <!--筛选框 end-->
+            </div>
+            <!--行业筛选 end-->
+
+            <!--上市公司表格内容-->
+            <ul class="xmfkInfobox">
+                <li class="liXmfkInfo">
+                    <a href="" class="aXmfkInfo">
+                        <span class="mui-icon mui-icon-forward"></span>
+                        <p class="pNewsTxt">
+                           尔康制药
+                        </p>
+                        <p>
+                            股票代码：<span>300267</span>
+                        </p>
+                        <p>
+                            标签：<span>药用辅料</span>
+                        </p>
+                    </a>
+                </li>
+                <li class="liXmfkInfo">
+                    <a href="" class="aXmfkInfo">
+                        <span class="mui-icon mui-icon-forward"></span>
+                        <p class="pNewsTxt">
+                            尔康制药
+                        </p>
+                        <p>
+                            股票代码：<span>300267</span>
+                        </p>
+                        <p>
+                            标签：<span>药用辅料</span>
+                        </p>
+                    </a>
+                </li>
+                <li class="liXmfkInfo">
+                    <a href="" class="aXmfkInfo">
+                        <span class="mui-icon mui-icon-forward"></span>
+                        <p class="pNewsTxt">
+                            尔康制药
+                        </p>
+                        <p>
+                            股票代码：<span>300267</span>
+                        </p>
+                        <p>
+                            标签：<span>药用辅料</span>
+                        </p>
+                    </a>
+                </li>
+            </ul>
+            <!--上市公司表格内容 end-->
+        </div>
+        <script src="js/mui.min.js"></script>
+		<script src="js/app.js"></script>
+        <!--筛选相关代码-->
+        <script>
+            //获取设备高度
+            var winheight = window.screen.availHeight;
+
+            /*s设置 linkageFilter_cont_bc_close 高度*/
+            mui('.linkageFilter_cont_bc_close')[0].style.height=winheight+'px';
+            /*设置 linkageFilter_cont 高度*/
+            mui('.linkageFilter_cont')[0].style.height=winheight-150+'px';
+
+
+            /*筛选*/
+            (function threeFilter() {
+                /*点击两种遮罩，关闭下拉框和顶部透明遮罩*/
+                var topMask = mui('.linkageFilter_cont_bc_top_close')[0];/*顶部透明遮罩*/
+                var bottomMask = mui('.linkageFilter_cont_bc_close')[0];/*底部黑色半透明遮罩*/
+                var bigOptionBox =  mui('.linkageFilter_cont_box ')[0];/*大的下拉框*/
+                //定义关闭下拉框的函数
+                function closeLinkageFilter() {
+                    mui('.linkageFilter_cont_box ')[0].style.display='none';
+                    topMask.style.display='none';//隐藏顶部透明遮罩
+
+                    /*解除所有筛选tit的actived（地区/行业/更多筛选）*/
+                    var len = mui('.linkageFilter_cont .linkageFilter_cont_node').length;
+                    for(var i=0;i<len;i++){
+                        mui('.linkageFilterHdBox .linkageFilterHd_Node')[i].classList.remove('actived');
+                    }
+                }
+                //定义打开下拉框的函数
+                function openLinkageFilter() {
+                    bigOptionBox.style.display='block';
+                    topMask.style.display='block';//显示顶部透明遮罩
+                }
+
+                /*点击 筛选tit时，下拉框显示&&出现相对应的筛选box(区域筛选box/行业筛选box/更多筛选)*/
+                mui('.linkageFilterHdBox').on('tap','.linkageFilterHd_Node',function () {
+                    /*显示下拉框*/
+                    openLinkageFilter();
+                    /*当前tit 状态actived*/
+                    this.classList.add('actived');
+
+                    /*切换到与当前对应的筛选box*/
+                    var id = document.getElementsByClassName('linkageFilterHdBox')[0];
+                    var liS = document.getElementsByClassName('linkageFilterHd_Node');
+                    for(var j = 0 ; j < liS.length ; j++){
+                        liS[j].index = j;
+                    }
+                    var index_ = this.index;/*************************************获取当前index*/
+                    /*显示与 当前index 对应的 linkageFilter_cont 下的 linkageFilter_cont_node */
+                    var len = mui('.linkageFilter_cont .linkageFilter_cont_node').length;
+                    for(var i=0;i<len;i++){
+                        mui('.linkageFilter_cont .linkageFilter_cont_node')[i].classList.remove('actived');
+                    }
+                    mui('.linkageFilter_cont .linkageFilter_cont_node')[index_].classList.add('actived');
+
+
+
+
+                });
+                /******更多筛选*****/
+                (function moreFilterFun() {
+                    /*上收下拉*/
+
+                    mui('body').on('tap','.dropD_tit_ico ',function (e) {
+                        e.stopPropagation()
+                        if(this.classList.contains('actived')){
+                            this.classList.remove('actived');
+                            this.parentNode.parentNode.children[1].classList.remove('actived');
+                        }else{
+                            this.classList.add('actived');
+                            this.parentNode.parentNode.children[1].classList.add('actived');
+                        }
+                    })
+
+                })();
+                /******更多筛选 end*****/
+
+                /*******点击两种遮罩关闭 下拉框******/
+                mui('body').on('tap','.closeLf',function () {
+                    closeLinkageFilter();
+                })
+
+            })()
+            /*筛选 end*/
+        </script>
+	</body>
+</html>

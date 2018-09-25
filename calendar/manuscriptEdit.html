@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html class="bcWhite">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title>稿件编辑</title>
+    <link href="../css/mui.min.css" rel="stylesheet" />
+    <link href="../css/app.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../iconfont/iconfont.css">
+    <link rel="stylesheet" type="text/css" href="../css/mui.picker.min.css" />
+    <link rel="stylesheet" href="../css/schedule.css">
+    <link rel="stylesheet" href="../css/interview.css">
+    <style>
+    </style>
+</head>
+
+<body>
+<header class="mui-bar mui-bar-nav " style="position: relative">
+    <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+    <h1 class="mui-title manuscript-filter"><span id="manuscriptFilterRs">稿件编辑</span></h1>
+    <a href="manuscriptAddinfo.html" class="mui-pull-right mui-icon mui-icon-info" style="font-weight: bold;color: #fff;"></a>
+</header>
+<div class="mui-content bcWhite" style="position: absolute;top: 0;bottom: 0;left: 0;width: 100%;overflow-y: auto;-webkit-overflow-scroll:touch;padding-bottom: 60px;">
+    <div class="edit-tb-box">
+        <div class="edit-tb-cell"><label for="">标题:</label></div>
+        <div class="edit-tb-cell mui-input-row"><input type="text" class="mui-input-clear"></div>
+    </div>
+    <div class="edit-tb-box">
+        <div class="edit-tb-cell"><label for="">关联采访:</label></div>
+        <div class="edit-tb-cell">
+            <div class="glcf-box">
+                <a href="#glcfOpts" class="glcf-tit">该稿件关联的采访问题</a>
+                <span class="add-attachment iconfont icon-fujian"></span>
+            </div>
+        </div>
+
+    </div>
+    <!--附件-->
+    <div class="glcf-attachments">
+        <div class="attachment-cell clearfix">
+            <div class="left-att-ico mui-icon mui-icon-image"></div>
+            <div class="cen-att-con">
+                <p class="att-name">1.png</p>
+                <p class="att-size">50.0KB</p>
+            </div>
+            <div class="right-att-delete mui-icon mui-icon-closeempty"></div>
+        </div>
+        <div class="attachment-cell clearfix">
+            <div class="left-att-ico mui-icon mui-icon-videocam"></div><!--视频附件-->
+            <div class="cen-att-con">
+                <p class="att-name">2.mp4</p>
+                <p class="att-size">50.0KB</p>
+            </div>
+            <div class="right-att-delete mui-icon mui-icon-closeempty"></div>
+        </div>
+        <div class="attachment-cell clearfix">
+            <div class="left-att-ico mui-icon mui-icon-mic"></div><!--语音附件-->
+            <div class="cen-att-con">
+                <p class="att-name">3.mp3</p>
+                <p class="att-size">50.0KB</p>
+            </div>
+            <div class="right-att-delete mui-icon mui-icon-closeempty"></div>
+        </div>
+    </div>
+    <!--附件 end-->
+
+    <!--正文-->
+    <textarea name="" id="" cols="30" rows="10" placeholder="稿件正文" style="width: 100%;height: 600px;padding: 10px;"></textarea>
+    <!--正文 end-->
+
+	<!--保存按钮-->
+	<div class="save-attachment m-edit-send-btn iconfont icon-icon-"></div>
+	<!--保存按钮 end-->
+    <!--发送按钮-->
+    <span class="add-attachment m-edit-send-btn iconfont icon-tuisong1"></span>
+    <!--发送按钮 end-->
+
+</div>
+<!--对采访记录进行操作-->
+<div id="glcfOpts" class="mui-popover mui-popover-action mui-popover-bottom" style="height: auto;">
+    <ul class="mui-table-view">
+        <li class="mui-table-view-cell">
+            <a href="select-interview.html">选择采访记录</a>
+        </li>
+        <li class="mui-table-view-cell">
+            <a href="#">修改</a>
+        </li>
+        <li class="mui-table-view-cell">
+            <a href="#">删除</a>
+        </li>
+    </ul>
+    <ul class="mui-table-view">
+        <li class="mui-table-view-cell">
+            <a href="#glcfOpts"><b>取消</b></a>
+        </li>
+    </ul>
+</div>
+<!--对采访记录进行操作-->
+<script src="../js/mui.min.js"></script>
+<script src="../js/mui.picker.min.js"></script>
+<script src="../js/app.js"></script>
+<script>
+
+</script>
+</body>
+</html>

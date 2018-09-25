@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>拟IPO信息表-编辑</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+		<!--标准mui.css-->
+		<link rel="stylesheet" href="css/mui.min.css">
+        <link href="css/mui.picker.css" rel="stylesheet" />
+        <link href="css/mui.poppicker.css" rel="stylesheet" />
+		<!--App自定义的css-->
+		<link rel="stylesheet" type="text/css" href="css/app.css" />
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<h1 class="mui-title">拟IPO项目信息表</h1>
+			<span class="mui-btn mui-btn-link mui-pull-right">保存</span>
+		</header>
+		<div class="mui-content ">
+            <section>
+                <form action="" class="chaxform" name="myForm"  id="validataF">
+                    <div class="field ">
+                        <label> 公司名称：</label>
+                        <div class="ui inputBox">
+                            <input type="text" name="fname" class="inputRequired">
+                            <div class="ui corner label">
+                                <i class="asterisk icon">*</i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="filed">
+                        <label>所在省份和城市：</label>
+                        <div class="ui inputBox">
+                            <button id='showCityPicker' class="mui-btn mui-btn-block" type='button'>二级联动示例 ...</button>
+                            <div id='cityResult' class="ui-alert"></div>
+                            <i class="asterrisk icon">*</i>
+                        </div>
+                    </div>
+                   <!-- <div class="field">
+                        <label> 所在省份：</label>
+                        <div class="ui inputBox">
+                            <input type="text" name="fname" class="inputRequired">
+                            <div class="ui corner label">
+                                <i class="asterisk icon">*</i>
+                            </div>
+                        </div>
+                    </div>-->
+                  <!--  <div class="field ">
+                        <label> 所在城市：</label>
+                        <div class="ui inputBox">
+                            <input type="text" name="fname" class="inputRequired">
+                            <div class="ui corner label">
+                                <i class="asterisk icon">*</i>
+                            </div>
+                        </div>
+                    </div>-->
+                    <div class="field ">
+                        <label> 董事长：</label>
+                        <div class="ui inputBox">
+                            <input type="text" name="fname" class="inputRequired">
+                            <div class="ui corner label">
+                                <i class="asterisk icon">*</i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="field">
+                        <label> 董事长手机：</label>
+                        <div class="ui inputBox">
+                            <input type="text" name="">
+                        </div>
+                    </div>
+                    <div class="field">
+                        <label> 董事长座机：</label>
+                        <div class="ui inputBox">
+                            <input type="text" name="">
+                        </div>
+                    </div>
+                    <div class="field">
+                        <label> 董事会秘书：</label>
+                        <div class="ui inputBox">
+                            <input type="text" name="" class="inputRequired">
+                            <div class="ui corner label">
+                                <i class="asterisk icon">*</i>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="field">
+                        <label> 秘书手机：</label>
+                        <div class="ui inputBox">
+                            <input type="text" name="" class="inputRequired">
+                            <div class="ui corner label">
+                                <i class="asterisk icon">*</i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="field">
+                        <label> 秘书座机：</label>
+                        <div class="ui inputBox">
+                            <input type="text" name="">
+                        </div>
+                    </div>
+                    <div class="field">
+                        <label> IPO联系人：</label>
+                        <div class="ui inputBox">
+                            <input type="text" name="">
+                        </div>
+                    </div>
+                    <div class="field">
+                        <label> IPO联系人手机：</label>
+                        <div class="ui inputBox">
+                            <input type="text" name="">
+                        </div>
+                    </div>
+                    <div class="field">
+                        <label> IPO联系人座机：</label>
+                        <div class="ui inputBox">
+                            <input type="text" name="">
+                        </div>
+                    </div>
+                    <div class="field">
+                        <label> 有无诉讼：</label>
+                        <div class="ui inputBox">
+                            <input type="text" name="">
+                        </div>
+                    </div>
+                    <div class="field">
+                        <label> 公司所属行业：</label>
+                        <div class="ui inputBox">
+                            <input type="text" name="">
+                        </div>
+                    </div>
+                    <div class="field">
+                        <label> 细分行业：</label>
+                        <div class="ui inputBox">
+                            <input type="text" name="">
+                        </div>
+                    </div>
+                    <div class="field">
+                        <label> 是否改制：</label>
+                        <div class="ui inputBox">
+                            <input type="text" name="">
+                        </div>
+                    </div>
+                    <div class="field">
+                        <label> 股本总额（万股）：</label>
+                        <div class="ui inputBox">
+                            <input type="text" name="">
+                        </div>
+                    </div>
+                    <div class="field">
+                        <label> 主营业务：</label>
+                        <div class="ui inputBox">
+                            <input type="text" name="" class="inputRequired">
+                            <div class="ui corner label">
+                                <i class="asterisk icon">*</i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="field">
+                        <label> 主要产品：</label>
+                        <div class="ui inputBox">
+                            <textarea name="" id="" cols="30" rows="10" class="inputRequired"></textarea>
+                            <div class="ui corner label">
+                                <i class="asterisk icon">*</i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="field">
+                        <label> 上市计划及进度：</label>
+                        <div class="ui inputBox">
+                            <textarea name="" id="" cols="30" rows="10"></textarea>
+                        </div>
+                    </div>
+                    <div class="field">
+                        <label> 核心优势：</label>
+                        <div class="ui inputBox">
+                            <textarea name="" id="" cols="30" rows="10" class="inputRequired"></textarea>
+                            <div class="ui corner label">
+                                <i class="asterisk icon">*</i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="field" style="border-top: 1px dashed #aaa;border-bottom: 1px dashed #aaa;">
+                        <label class="txtblue"> 近三年主要财务数据：</label>
+                        <div style="padding: 10px 10px;">
+                            <div id="segmentedControl" class="bbccc mui-segmented-control mui-segmented-control-inverted mui-segmented-control-primary">
+                                <a class="mui-control-item mui-active" href="#item1">
+                                    2014年
+                                </a>
+                                <a class="mui-control-item" href="#item2">
+                                    2015年
+                                </a>
+                                <a class="mui-control-item" href="#item3">
+                                    2016年
+                                </a>
+                            </div>
+                        </div>
+
+                        <div style="height:560px;position: relative;">
+                            <div id="item1" class="mui-control-content mui-active">
+                                <div id="scroll1" class="mui-scroll-wrapper">
+                                    <div class="mui-scroll ipo-scroll">
+                                        <div class="field">
+                                            <label> 总资产（万元）：</label>
+                                            <div class="ui inputBox">
+                                                <input type="text">
+                                            </div>
+                                        </div>
+                                        <div class="field">
+                                            <label> 净资产（万元）：</label>
+                                            <div class="ui inputBox">
+                                                <input type="text">
+                                            </div>
+                                        </div>
+                                        <div class="field">
+                                            <label> 营业收入（万元）：</label>
+                                            <div class="ui inputBox">
+                                                <input type="text">
+                                            </div>
+                                        </div>
+                                        <div class="field">
+                                            <label> 营业成本（万元）：</label>
+                                            <div class="ui inputBox">
+                                                <input type="text">
+                                            </div>
+                                        </div>
+                                        <div class="field">
+                                            <label> 归属于母公司股东的净利润（万元）：</label>
+                                            <div class="ui inputBox">
+                                                <input type="text">
+                                            </div>
+                                        </div>
+                                        <div class="field">
+                                            <label> 扣除非经常性损益后归属于母公司股东净利润（万元）：</label>
+                                            <div class="ui inputBox">
+                                                <input type="text">
+                                            </div>
+                                        </div>
+                                        <div class="field">
+                                            <label> 经营活动现金流量净额（万元）：</label>
+                                            <div class="ui inputBox">
+                                                <input type="text">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="item2" class="mui-control-content">
+                                <div id="scroll2" class="mui-scroll-wrapper">
+                                    <div class="mui-scroll ipo-scroll">
+                                        2
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="item3" class="mui-control-content">
+                                <div id="scroll3" class="mui-scroll-wrapper">
+                                    <div class="mui-scroll ipo-scroll">
+                                        3
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="field">
+                        <label> 备注：</label>
+                        <div class="ui inputBox">
+                            <textarea name="" id="" cols="30" rows="10"></textarea>
+                        </div>
+                    </div>
+                    <div class="field">
+                    <label> 上传附件：</label>
+                    <div class="ui inputBox">
+                            <span class="input-file">浏览
+                            	<input type="file" name="file" multiple="multiple">
+                            </span>
+                    </div>
+                    <div class="ui inputBox">
+                        <ul class="mui-table-view">
+                            <li class="mui-table-view-cell">附件1
+                                <span class="mui-badge" style="background: #ddd;">x</span>
+                            </li>
+                            <li class="mui-table-view-cell">附件2
+                                <span class="mui-badge" style="background: #ddd;">x</span>
+                            </li>
+                            <li class="mui-table-view-cell">附件3
+                                <span class="mui-badge" style="background: #ddd;">x</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                    <button type="submit" class="form_submitbtn">提交</button>
+                </form>
+            </section>
+        </div>
+		<script src="js/mui.min.js"></script>
+		<script src="js/app.js"></script>
+        <script src="js/mui.picker.js"></script>
+        <script src="js/mui.poppicker.js"></script>
+        <script src="js/city.data.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+</html>

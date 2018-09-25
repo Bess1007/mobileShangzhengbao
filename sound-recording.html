@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+	    <title>录音动画</title>
+	    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+	    <meta name="apple-mobile-web-app-capable" content="yes">
+	    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+	    <link href="css/mui.min.css" rel="stylesheet" />
+	    <link href="iconfont/iconfont.css" rel="stylesheet" />
+	    <link href="company/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+	    <link href="css/app.css" rel="stylesheet" />
+	    <link href="css/record.css" rel="stylesheet" />
+	    <script>
+	    	(function(doc, win) {
+			    var _root = doc.documentElement,
+			        resizeEvent = 'orientationchange' in window ? 'orientationchange' : 'resize',
+			        resizeCallback = function() {
+			            var clientWidth = _root.clientWidth,
+			                fontSize = 100;
+			            if (!clientWidth) return;
+			            if (clientWidth < 750) {
+			                fontSize = 100 * (clientWidth / 375);
+			            } else {
+			                fontSize = 100 * (750 / 375);
+			            }
+			            _root.style.fontSize = fontSize + 'px';
+			        };
+			    if (!doc.addEventListener) return;
+			    win.addEventListener(resizeEvent, resizeCallback, false);
+			    doc.addEventListener('DOMContentLoaded', resizeCallback, false);
+			})(document, window);
+			
+		
+	    </script>
+		<style>
+			html{
+    			font-size: 625%; font-size: 100px;
+    			background-color: #fff;
+			}
+			body{
+				font-size: .14rem;
+			}
+		
+		</style>
+	</head>
+	<body>
+		<header class="mui-bar mui-bar-nav">
+    		<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+    		<h1 class="mui-title">录音动画</h1>    	
+		</header>
+		<div class="mui-content">
+			<!--底部操作按钮-->
+			<ul class="record-btn">
+				<li class="record-btn-cell"><span class="rec-btn">完成</span></li>
+				<li class="record-btn-cell"><span class="rec-btn fa fa-pause" id="rec-control-btn"></span></li>
+				<li class="record-btn-cell"><span class="rec-btn">删除</span></li>			
+			</div>
+			<!--底部操作按钮 end-->
+			
+			<div class="fixrecbox">
+				<!--顶部录音动画-->
+				<div class="record-animation-box">
+						<span class="rec-end">完成</span>
+					<div class="rec-timeshow">
+						<!--<span class="minute">0</span>分
+						<span class="second">0</span>秒-->
+						<span class="rec-time">00:00</span>
+					</div>
+					<div class="rec-linemove">
+						<!--时间刻度线-->
+						<div class="rec-scaleline">
+							<ul class="scaleline-ulbox clearfix">
+								<li class="scaleline-cell clearfix">
+									<i class="scale-time">00:20</i>
+									<span class="scalepoint"></span>
+									<span class="scalepoint"></span>
+									<span class="scalepoint"></span>
+									<span class="scalepoint"></span>
+									<span class="scalepoint"></span>
+								</li>
+								<li class="scaleline-cell clearfix">
+									<i class="scale-time">00:40</i>
+									<span class="scalepoint"></span>
+									<span class="scalepoint"></span>
+									<span class="scalepoint"></span>
+									<span class="scalepoint"></span>
+									<span class="scalepoint"></span>
+								</li>
+								<li class="scaleline-cell clearfix">
+									<i class="scale-time">01:00</i>
+									<span class="scalepoint"></span>
+									<span class="scalepoint"></span>
+									<span class="scalepoint"></span>
+									<span class="scalepoint"></span>
+									<span class="scalepoint"></span>
+								</li>
+								<li class="scaleline-cell clearfix">
+									<i class="scale-time">01:20</i>
+									<span class="scalepoint"></span>
+									<span class="scalepoint"></span>
+									<span class="scalepoint"></span>
+									<span class="scalepoint"></span>
+									<span class="scalepoint"></span>
+								</li>
+								<li class="scaleline-cell clearfix">
+									<i class="scale-time">01:40</i>
+									<span class="scalepoint"></span>
+									<span class="scalepoint"></span>
+									<span class="scalepoint"></span>
+									<span class="scalepoint"></span>
+									<span class="scalepoint"></span>
+								</li>
+								<li class="scaleline-cell clearfix">
+									<i class="scale-time">02:00</i>
+									<span class="scalepoint"></span>
+									<span class="scalepoint"></span>
+									<span class="scalepoint"></span>
+									<span class="scalepoint"></span>
+									<span class="scalepoint"></span>
+								</li>
+							</ul>
+						</div>
+						<!--时间刻度线 end-->
+						
+						<!--进程指针-->
+						<div class="rec-needle"></div>
+						<!--进程指针 end-->
+						
+						<div id="preloader_1">				
+							<span></span>
+							<span></span>
+							<span></span>
+						  	<span></span>
+						  	<span></span>  
+						  	<span></span>
+							<span></span>
+							<span></span>
+						  	<span></span>
+						  	<span></span>  
+						  	<span></span>
+							<span></span>
+							<span></span>
+						  	<span></span>
+						  	<span></span> 
+						  	<span></span>
+							<span></span>
+							<span></span>
+						  	<span></span>
+						  	<span></span>  
+						  	<span></span>
+							<span></span>
+							<span></span>
+						  	<span></span>
+						  	<span></span>  
+						  	<span></span>
+							<span></span>
+							<span></span>
+						  	<span></span>
+						  	<span></span> 
+						</div>	
+						<ul class="wavelinebox clearfix">
+							<!--<li class="waveline-cell" style="height: .10rem;"></li>
+							<li class="waveline-cell" style="height: .05rem;"></li>
+							<li class="waveline-cell" style="height: .01rem;"></li>
+							<li class="waveline-cell" style="height: .15rem;"></li>
+							<li class="waveline-cell" style="height: .20rem;"></li>
+							<li class="waveline-cell" style="height: .05rem;"></li>-->
+						</ul>
+					</div>
+				</div>
+				<!--顶部录音动画 end-->
+			</div>
+			
+			<!--主要内容区-->
+			<div class="rec-main">
+				主要内容区
+			</div>
+			<!--主要内容区 end-->
+			
+			
+		
+		
+		</div>
+		
+		<script src="js/mui.min.js"></script>
+		<script>		
+			
+			
+			/******录音动画*******/
+			var timer = null;
+			var rec_time = 0
+			/*转换秒为分:秒*/
+			function s_to_ms(s){
+    		//计算分钟
+    		//算法：将秒数除以60，然后下舍入，既得到分钟数
+    			var m;
+    			m  =   Math.floor(s/60);
+    		//计算秒
+    		//算法：取得秒%60的余数，既得到秒数
+    			s  =   s%60;
+    		//将变量转换为字符串
+    		m    +=    '';
+    		s    +=    '';
+    		//如果只有一位数，前面增加一个0
+    		m  =   (m.length==1)?'0'+m:m;
+    		s  =   (s.length==1)?'0'+s:s;
+    		return m+':'+s;
+			}
+			/*转换秒为分:秒 end*/
+			var rec_timeshow = document.getElementsByClassName('rec-timeshow')[0];/*录音时间box*/
+			var rec_needle = document.getElementsByClassName("rec-needle")[0];/*指针*/
+			var rec_scaleline = document.getElementsByClassName("rec-scaleline")[0];/*时间刻度线*/
+			var rec_control_btn = document.getElementById("rec-control-btn");
+			var scaleline_ulbox = document.getElementsByClassName('scaleline-ulbox')[0];
+			var wavelinebox = document.getElementsByClassName("wavelinebox")[0];
+			var n =0;
+			var ns = 0;
+			
+			mui("body").on('tap','#rec-control-btn',function(){
+					if(this.classList.contains('fa-pause')){
+						this.classList.remove('fa-pause');
+						this.classList.add("fa-play");
+					
+						window.clearInterval(timer);
+						
+					}else{
+						this.classList.remove('fa-play');
+						this.classList.add("fa-pause");
+					 	timer =	setInterval(recauto,200);
+						
+					}
+				})
+			
+			/*动态添加声纹*/
+			/*function addwaveline() {
+				var waveheight = Math.floor(Math.random()*21+1)/100;
+				if(waveheight>0.01){
+					var wavecell = '<li class="waveline-cell biggerwave" style="height: '+waveheight+'rem;"></li>';
+				}else{
+					var wavecell = '<li class="waveline-cell" style="height: '+waveheight+'rem;"></li>';
+				}					
+				wavelinebox.insertAdjacentHTML("beforeend",wavecell);
+			}*/
+			/*动态添加声纹 end*/
+			
+				 timer = setInterval(recauto,200);
+				function recauto(){
+				
+					n++;
+				
+					if(n%5 ==0){
+						/*console.log(s_to_ms(n/5))*/
+						rec_timeshow.innerText =s_to_ms(n/5); 
+			
+					};
+					
+					/*50s为界限*/
+					if(n/5 < 50){
+						/*指针*/
+						rec_needle.style.left = 0.007*n+'rem';
+							
+						/*addwaveline();
+						wavelinebox.style.width = 0.007*n+'rem';*/		
+						
+					}else{		
+						rec_needle.style.left = 1.75+'rem';				
+						rec_scaleline.style.left = -0.007*ns+'rem';
+					/*	addwaveline();
+						wavelinebox.style.width = 0.007*n+'rem';
+						wavelinebox.style.left = -0.007*ns+'rem';*/
+						
+						ns++;
+						
+					}
+					
+					/*动态添加时间刻度线*/
+					if(n%100 ==0){
+						var timescalenum = s_to_ms(120+n/5);
+					var lis = '<li class="scaleline-cell clearfix">\n' +
+					'<i class="scale-time">'+timescalenum+'</i>\n' +
+					'<span class="scalepoint"></span>\n' +
+					'<span class="scalepoint"></span>\n' +
+					'<span class="scalepoint"></span>\n' +
+					'<span class="scalepoint"></span>\n' +
+					'<span class="scalepoint"></span>\n' +
+					'</li>';	
+					scaleline_ulbox.insertAdjacentHTML("beforeend",lis);
+					}
+				}
+		</script>
+	</body>
+</html>

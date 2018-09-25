@@ -1,0 +1,178 @@
+<!doctype html>
+<html class="pb40 ">
+	<head>
+		<meta charset="UTF-8">
+		<title>添加/删除标签</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<link href="css/mui.min.css" rel="stylesheet" />
+		<link href="iconfont/iconfont.css" rel="stylesheet" />
+		<link href="css/app.css" rel="stylesheet" />
+		<link href="css/interview.css" rel="stylesheet" />
+        <style>
+
+        </style>
+	</head>
+
+	<body class="interview_box">
+		<header class="mui-bar mui-bar-nav">
+            <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+		    <h1 class="mui-title">添加/删除标签</h1>
+        </header>
+        <div class="mui-content">
+         <!--   <div class="lab_sc_tit">按标签查找</div>
+            <div class="clearfix lab_box">
+                <a href="" class="lab_cell">传媒</a>
+                <a href="" class="lab_cell">借壳</a>
+                <a href="" class="lab_cell">资产重组</a>
+                <a href="" class="lab_cell">房地产</a>
+                <a href="" class="lab_cell">环保工程</a>
+                <a class="lab_cell">传媒</a>
+                <a href="" class="lab_cell">借壳</a>
+                <a href="" class="lab_cell">资产重组</a>
+                <a href="" class="lab_cell">房地产</a>
+                <a href="" class="lab_cell">环保工程</a>
+            </div>-->
+            <!--已选标签-->
+            <div class="label_group selected_label">
+                <h5 class="label_group_tit">已选标签</h5>
+                <div class="selected_label_cell">
+                    <span>传媒</span>
+                    <span class="deleteLabel_btn mui-icon mui-icon-closeempty"></span>
+                </div>
+                <div class="selected_label_cell">
+                    <span>借壳</span>
+                    <span class="deleteLabel_btn mui-icon mui-icon-closeempty"></span>
+                </div>
+                <div class="selected_label_cell">
+                    <span>资产重组</span>
+                    <span class="deleteLabel_btn mui-icon mui-icon-closeempty"></span>
+                </div>
+            </div>
+            <!--已选标签 end-->
+
+            <!--系统标签-->
+            <div class="label_group xt_label_group flex_label_gp">
+                <h5 class="label_group_tit">系统标签</h5>
+                <div class="hideSomeLabel">
+                    <ul class="xt_label_box clearfix">
+                        <li class="xt_label_cell actived">
+                            <span>传媒</span>
+                        </li>
+                        <li class="xt_label_cell actived">
+                            <span>借壳</span>
+                        </li>
+                        <li class="xt_label_cell actived">
+                            <span>资产重组</span>
+                        </li>
+                        <li class="xt_label_cell">
+                            <span>宏观经济</span>
+                        </li>
+                        <li class="xt_label_cell">
+                            <span>混改</span>
+                        </li>
+                        <li class="xt_label_cell">
+                            <span>人工智能</span>
+                        </li>
+                        <li class="xt_label_cell">
+                            <span>区域规划</span>
+                        </li>
+                        <li class="xt_label_cell">
+                            <span>新能源汽车</span>
+                        </li>
+                        <li class="xt_label_cell">
+                            <span>环境</span>
+                        </li>
+                        <li class="xt_label_cell">
+                            <span>房地产开发</span>
+                        </li>
+                        <li class="xt_label_cell">
+                            <span>新能源汽车</span>
+                        </li>
+                        <li class="xt_label_cell">
+                            <span>通用航空</span>
+                        </li>
+                    </ul>
+                </div>
+                <!--更多-->
+                <div class="more_label_btn">
+                    <span class="more_txt">更多 </span>
+                    <span class="mui-icon mui-icon-arrowdown"></span>
+                </div>
+            </div>
+            <!--系统标签 end-->
+
+            <!--自定义标签-->
+            <div class="label_group zdy_label_group flex_label_gp">
+                <h5 class="label_group_tit">自定义标签</h5>
+                <div class="hideSomeLabel">
+                    <ul class="zdy_label_box clearfix">
+                        <li class="xt_label_cell">
+                            <span>自定义标签1</span>
+                        </li>
+                        <li class="xt_label_cell">
+                            <span>自定义标签2</span>
+                        </li>
+                        <li class="xt_label_cell">
+                            <span>自定义标签3</span>
+                        </li>
+                        <li class="xt_label_cell">
+                            <span>自定义标签4</span>
+                        </li>
+                        <li class="xt_label_cell">
+                            <span>自定义标签5</span>
+                        </li>
+                        <li class="xt_label_cell">
+                            <span>自定义标签6</span>
+                        </li>
+                        <li class="xt_label_cell">
+                            <span>自定义标签7</span>
+                        </li>
+                    </ul>
+                </div>
+                <!--更多-->
+                <div class="more_label_btn">
+                    <span class="more_txt">更多 </span>
+                    <span class="mui-icon mui-icon-arrowdown"></span>
+                </div>
+            </div>
+            <!--自定义标签 end-->
+        </div>
+
+
+	</body>
+    <script src="js/mui.min.js"></script>
+    <script src="js/vue.min.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/label1.js"></script>
+    <script>
+        (function ($) {
+           function fn(labelBox) {
+               var labelBox_ul = $(labelBox)[0];
+               var xt_label_box_h  = labelBox_ul.offsetHeight;
+               var more_label_btn = labelBox_ul.closest('.hideSomeLabel').nextElementSibling;
+               console.log(more_label_btn);
+               if(xt_label_box_h>=72){
+                   labelBox_ul.closest('.hideSomeLabel').classList.add('actived');
+                   more_label_btn.style.display='block'
+               }else{
+                   more_label_btn.style.display='none'
+               }
+               more_label_btn.addEventListener('tap',function () {
+                   if(labelBox_ul.closest('.hideSomeLabel').classList.contains('actived')){
+                       more_label_btn.getElementsByClassName('more_txt')[0].innerHTML='收起';
+                       labelBox_ul.closest('.hideSomeLabel').classList.remove('actived')
+                   }else{
+                       labelBox_ul.closest('.hideSomeLabel').classList.add('actived');
+                       more_label_btn.getElementsByClassName('more_txt')[0].innerHTML='更多';
+                   }
+
+               })
+           };
+            fn('.xt_label_box ');
+            fn('.zdy_label_box ')
+        })(mui)
+    </script>
+
+</html>

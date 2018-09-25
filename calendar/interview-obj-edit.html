@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html class="bcWhite">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title>编辑采访对象</title>
+    <link href="../css/mui.min.css" rel="stylesheet" />
+    <link href="../css/app.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../iconfont/iconfont.css">
+    <link rel="stylesheet" href="../css/schedule.css">
+    <style>
+
+    </style>
+</head>
+
+<body>
+<header class="mui-bar mui-bar-nav bcWhiteNav   ">
+    <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+    <h1 class="mui-title bc-white-inp">编辑采访对象</h1>
+</header>
+<div class="mui-content bcWhite" style="padding-bottom: 40px;">
+   <ul class="interview-obj-box">
+       <li class="interview-obj-cell">
+           <label for="">姓名</label>
+           <input type="text" placeholder="姓名">
+       </li>
+       <li class="interview-obj-cell right-select">
+           <label for="">公司</label>
+           <input type="text" placeholder="公司" id="chooseTxt1" >
+           <a href="#choose1" class="choose-btn mui-icon mui-icon-arrowdown"></a>
+       </li>
+       <!--选择上市公司时对应的职位-->
+       <li class="interview-obj-cell right-select">
+           <label for="">职位</label>
+           <input type="text" placeholder="职位" id="chooseTxt2" >
+           <a href="#choose2" class="choose-btn mui-icon mui-icon-arrowdown"></a>
+       </li>
+       <!--选择基金公司时对应的职位-->
+       <li class="interview-obj-cell all-select">
+           <label for="">职位</label>
+           <input type="text" placeholder="职位" id="chooseTxt3">
+           <a href="#choose3" class="choose-btn mui-icon mui-icon-arrowdown"></a>
+       </li>
+   </ul>
+    <!--按钮-->
+    <div class="interview-obj-btns clearfix">
+        <button class="obj-del-btn">删除</button>
+        <button>确定</button>
+    </div>
+    <!--按钮 end-->
+
+    <!--公司选择-->
+    <div id="choose1" class="mui-popover">
+        <ul class="mui-table-view mui-table-view-radio">
+            <li class="mui-table-view-cell">
+                <a class="mui-navigate-right noLink" href="#choose1">
+                    上市公司
+                </a>
+            </li>
+            <li class="mui-table-view-cell ">
+                <a class="mui-navigate-right noLink" href="#choose1">
+                    基金公司
+                </a>
+            </li>
+        </ul>
+    </div>
+    <!--上市公司对应职位选项-->
+    <div id="choose2" class="mui-popover">
+        <ul class="mui-table-view mui-table-view-radio">
+            <li class="mui-table-view-cell">
+                <a class="mui-navigate-right noLink" href="#choose2">
+                    董事长
+                </a>
+            </li>
+            <li class="mui-table-view-cell ">
+                <a class="mui-navigate-right noLink" href="#choose2">
+                    董秘
+                </a>
+            </li>
+            <li class="mui-table-view-cell ">
+                <a class="mui-navigate-right noLink" href="#choose2">
+                    证券事务代表
+                </a>
+            </li>
+        </ul>
+    </div>
+    <!--基金公司对应职位选项-->
+    <div id="choose3" class="mui-popover">
+        <ul class="mui-table-view mui-table-view-radio">
+            <li class="mui-table-view-cell">
+                <a class="mui-navigate-right noLink" href="#choose3">
+                    投资总监
+                </a>
+            </li>
+            <li class="mui-table-view-cell">
+                <a class="mui-navigate-right noLink" href="#choose3">
+                    基金经理
+                </a>
+            </li>
+            <li class="mui-table-view-cell">
+                <a class="mui-navigate-right noLink" href="#choose3">
+                    研究员
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
+<script src="../js/mui.min.js"></script>
+<script src="../js/app.js"></script>
+<script>
+    /*弹框选择*/
+    function selectState(infoId,selectCell) {
+        var info = document.getElementById(infoId);
+        document.querySelector(selectCell).addEventListener('selected',function(e){
+            info.value = e.detail.el.innerText;
+        });
+    }
+    selectState('chooseTxt1','#choose1');
+    selectState('chooseTxt2','#choose2');
+    selectState('chooseTxt3','#choose3');
+</script>
+</body>
+
+</html>

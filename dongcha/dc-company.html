@@ -1,0 +1,1640 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>洞察-公司主页</title>
+    <link href="../css/mui.min.css" rel="stylesheet" />
+    <link href="../iconfont/iconfont.css" rel="stylesheet" />
+    <link rel="stylesheet" href="dc-company/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link href="../css/app.css" rel="stylesheet" />
+    <link href="dc-company/css/dc-company.css" rel="stylesheet"/>
+    <script src="dc-company/js/companyCommon.js"></script>
+    <script src="../js/echarts.js"></script>
+    <style>
+        ::-webkit-input-placeholder { /* WebKit browsers */
+            color: #999; font-size: 12px;opacity: 0.7;font-family: "微软雅黑";padding-left: 0px;
+        }
+        ::-ms-input-placeholder { /* WebKit browsers */
+            color: #999; font-size: 12px;opacity: 0.7;font-family: "微软雅黑";padding-left: 0px;
+        }
+        /*顶部选项卡相关css改*/
+        .mui-slider-indicator.mui-segmented-control {
+            z-index: 2;
+            background-color: #fff;
+            border-bottom:1px solid #bfbfbf;
+        }
+        .mui-slider .mui-segmented-control.mui-segmented-control-inverted~.mui-slider-group .mui-slider-item {
+            border: 0;
+        }
+        .mui-segmented-control .mui-control-item {
+            height: 42px;
+            line-height: 42px;
+
+        }
+        .mui-segmented-control.mui-segmented-control-inverted~.mui-slider-progress-bar {
+         display: none;
+        }
+        .mui-segmented-control.mui-segmented-control-inverted .mui-control-item.mui-active {
+            /*color: #0081ff;*/
+            color: #000;
+            /*font-weight:bold;*/
+            position: relative;
+        }
+        .mui-segmented-control.mui-segmented-control-inverted .mui-control-item.mui-active:after {
+            content: '';
+            position: absolute;
+            width: 26px;
+            height: 3px;
+            background-color: #0081ff;
+            bottom: 0;
+            left: 50%;
+            margin-left: -13px;
+            border-radius:2px;
+        }
+        .mui-fullscreen .mui-segmented-control~.mui-slider-group {
+            top: 0;
+        }
+
+        .mui-slider {
+            z-index: auto;
+        }
+        #sliderSegmentedControl {
+            position: fixed;
+            top: 0;
+            left: 60px;
+            right: 60px;
+            display: block;
+            width:auto;
+            z-index: 10;
+            background-color: #fff;
+            border-bottom: 0;
+            font-size: 17px;
+        }
+        .mui-segmented-control.mui-segmented-control-inverted .mui-control-item {
+            color: #888;
+            height: 44px;
+            line-height: 44px;
+        }
+
+        /*******************1-27新增添加关注公司类型*******************/
+        #pop1 {
+            padding-top: .85rem;
+        }
+        .refresh-sure-box {
+            width: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: .85rem;
+
+        }
+        .refresh_sure {
+            width: 100%;
+            height: .40rem;
+            line-height: .40rem;
+            border-bottom:.01rem solid #eee;
+        }
+        .classify_refresh_btn,.classify_sure_btn {
+            width: .80rem;
+            text-align: center;
+            font-size: .13rem;
+            color: #1b82d2;
+        }
+        .classify_refresh_btn .mui-icon-loop {
+            font-size: .13rem;
+            font-weight:bold;
+        }
+        .classify-new-group {
+            display: block;
+            height: .42rem;
+            line-height: .42rem;
+            width: 100%;
+            text-align: center;
+            color: #333;
+            font-size: .14rem;
+            border-bottom:.01rem solid #eee;
+        }
+        .select_group.mui-table-view.mui-table-view-radio {
+            margin: 0;
+        }
+        .select_group .mui-table-view-cell {
+            display:block;
+            background-color: #fff;
+            text-align: left;
+            padding-right: .15rem;color: #333;
+        }
+        .select_group .mui-table-view-cell.mui-selected {
+            color: #1b82d2;
+        }
+        .select_group.mui-table-view-radio .mui-table-view-cell>a:not(.mui-btn){
+            width: 120%;
+            padding-left: .50rem;
+            font-size: .14rem;
+        }
+        .mui-popover.mui-popover-action .select_group.mui-table-view .mui-table-view-cell:after {
+            height: 0;
+        }
+        /*******************1-27新增添加关注公司类型 end*******************/
+    </style>
+</head>
+<body>
+    <header class="mui-bar mui-bar-nav bcWhiteNav">
+        <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+        <h1 class="mui-title bc-white-inp" style="right: 46px;">企业详情</h1>
+    </header>
+
+    <div class="mui-content c-detail-box">
+
+        <div id="slider" class="mui-slider mui-fullscreen">
+            <div id="sliderSegmentedControl" class="mui-slider-indicator mui-segmented-control mui-segmented-control-inverted">
+                <a class="mui-control-item mui-active" href="#item1mobile">
+                    企业背景
+                </a>
+                <a class="mui-control-item " href="#item2mobile">
+                    深度F9
+                </a>
+            </div>
+            <div class="mui-slider-group">
+                <!-- 企业背景 -->
+                <div id="item1mobile" class="mui-slider-item mui-control-content mui-active">
+                    <!--底部导航-->
+                    <footer>
+                        <ul class="foottableul">
+                            <li class="tcli" style="width: 33.333%;">
+                                <a href="javascript:;" id="companyPayAtt" class="aJsfun">
+                                    <span class="cIco fa fa-heart textred infocollectHeart"></span>
+                                    <div>已关注</div>
+                                </a>
+                            </li>
+                            <li class="tcli" style="width: 33.333%;">
+                                <a href="">
+                                    <span class="cIco fa fa-file-text-o"></span>
+                                    <div>信用报告</div>
+                                </a>
+                            </li>
+                            <li class="tcli " style="width: 33.333%;">
+                                <a href="">
+                                    <span class="cIco fa fa-share-square-o"></span>
+                                    <div> 分 享 </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </footer>
+                    <!--底部导航end-->
+                    <div id="scroll1" class="mui-scroll-wrapper" style="padding-bottom: .65rem;">
+                        <div class="mui-scroll">
+                            <div class="companyHead" style="margin-bottom: 0;">
+                                <div class=" logImg tc">
+                                    <img src="../images/default.png" alt="" width="100%" height="auto">
+                                </div>
+                                <div class=" tc pl12">
+                                    <div class="companynamebox"><span class="cname">平安银行股份有限公司</span></div>
+                                    <div class="infozt">
+                                        存续
+                                    </div>
+                                    <div class="infozt ss-state">
+                                        A股
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="companypart2 company-hd-infos" style="margin-bottom: 0.01rem;">
+                                <div class="tc r-line" style="width: 33.33%;">
+                                    <h5>尹洪卫</h5>
+                                    <p class="txtgray">法人</p>
+                                </div>
+                                <div class="tc r-line" style="width: 33.33%;">
+                                    <h5>41403.7833</h5>
+                                    <p class="txtgray">注册资本</p>
+                                </div>
+                                <div class="tc r-line" style="width: 33.33%;">
+                                    <h5>1998.07.20</h5>
+                                    <p class="txtgray">注册时间</p>
+                                </div>
+                               <!-- <div class="tc r-line" style="width: 25%;">
+                                    <h5>99</h5>
+                                    <p class="txtgray">评分</p>
+                                </div>-->
+                            </div>
+                            <!--联系方式-->
+                            <div class="companypart3">
+                                <ul class="mui-table-view">
+                                    <li class="mui-table-view-cell mui-collapse">
+                                        <a href="javascript:;" class="mui-navigate-right">
+                                            <div class="touchw clearfix">
+                                                <span class="fa fa-phone lico"></span><span>0755-22168838</span>
+                                                <i class="txtblue">联系方式</i>
+                                            </div>
+                                        </a>
+                                        <div class="mui-collapse-content com-ipe">
+                                            <div class="jb-info lx-info-box">
+                                                <ul>
+                                                    <li><span class="mui-icon iconfont icon-ziti lico" style="font-size: .23rem ;"></span>暂无网址</li>
+                                                    <li><span class="fa fa-envelope-open lico"></span>pabdsh@pingan.com.cn</li>
+                                                    <li class="mui-table-view-cell arrowright-box">
+                                                        <span class="fa fa-map-marker lico" style="font-size: .23rem;top: .04rem;"></span>
+                                                        深圳市罗湖区深南东路5047号
+                                                        <span class="arrow-right-ico fa fa-angle-right"></span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!--联系方式 end-->
+
+                            <!--公司族谱-->
+                            <div class="commonStyleBox companyNewsBox">
+                                <div class="infoHead" style="border-bottom: 0;">公司族谱</div>
+                                <div class="infobody clearfix gszubox">
+                                    <a href="#" class="fl zp-imgbox">
+                                        <div class="zp-imgbox-cell">
+                                            <img src="../images/zupu.png" alt="" class="fl">
+                                            <span class="fl">公司族谱</span>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="fl zp-imgbox">
+                                        <div class="zp-imgbox-cell">
+                                            <img src="../images/glgx.png" alt="" class="fl" style="width: 40%;">
+                                            <span class="fl">关联关系</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <!--公司族谱 end-->
+
+                            <!--公司动态-->
+                            <div class="commonStyleBox companyDynamic">
+                                <div class="infoHead">公司动态</div>
+                                <div class="infobody clearfix">
+                                    <a class="infoeles" href="dc-company/companyDynamic1.html">
+                                        <span class="fico iconfont icon-gonggao" style="font-size: .24rem;"></span>
+                                        <span class="infoinner">公司公告</span>
+                                    </a>
+                                    <a class="infoeles" href="dc-company/companyDynamic1.html">
+                                        <span class="fico iconfont icon-xinwen1"></span>
+                                        <span class="infoinner">公司新闻</span>
+                                    </a>
+                                    <a class="infoeles" href="dc-company/companyDynamic1.html">
+                                        <span class="fico iconfont icon-zixun "></span>
+                                        <span class="infoinner">公司研报</span>
+                                    </a>
+                                    <a class="infoeles" href="dc-company/companyDynamic1.html">
+                                        <span class="fico iconfont icon-xieyi"></span>
+                                        <span class="infoinner">上证资讯</span>
+                                    </a>
+                                    <a class="infoeles" href="dc-company/companyDynamic5.html">
+                                        <span class="fico iconfont icon-tishi1" ></span>
+                                        <span class="infoinner">停牌提示</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <!--公司动态 end-->
+
+                            <!--公司基本信息-->
+                            <div class="commonStyleBox companyBaseInfo">
+                                <div class="infoHead">基本信息</div>
+                                <div class="infobody clearfix">
+                                    <a class="infoeles" href="dc-company/companyBaseInfo1.html">
+                                        <span class="fico iconfont icon-xiangmu1" style="font-size: .26rem;"></span>
+                                        <span class="infoinner">公司概况</span>
+                                    </a>
+                                    <a class="infoeles" href="dc-company/companyBaseInfo2.html">
+                                        <span class="fico iconfont icon-fangke" style="font-size: .24rem;"></span>
+                                        <span class="infoinner">股东信息</span>
+                                    </a>
+                                    <a class="infoeles" href="dc-company/companyBaseInfo3.html">
+                                        <span class="fico iconfont icon-fenzhijigou1" style="font-size: .30rem;"></span>
+                                        <span class="infoinner">分支机构</span>
+                                    </a>
+                                    <a class="infoeles" href="dc-company/companyBaseInfo4.html">
+                                        <span class="fico iconfont icon-duiwaitouzi" style="font-size: .26rem;opacity: .8"></span>
+                                        <span class="infoinner">法定代表人对外投资</span>
+                                    </a>
+                                    <a class="infoeles" href="dc-company/companyBaseInfo5.html">
+                                        <span class="fico iconfont icon-qingkuangyuxiansuotongbao" style="font-size: .24rem;"></span>
+                                        <span class="infoinner">法定代表人其他公司任职</span>
+                                    </a>
+                                    <a class="infoeles" href="dc-company/companyBaseInfo6.html">
+                                        <span class="fico iconfont icon-yewu2" style="font-size: .24rem;"></span>
+                                        <span class="infoinner">主营业务</span>
+                                    </a>
+                                    <a class="infoeles" href="fnine/fnine-cwsj.html">
+                                        <span class="fico iconfont icon-rongzi1"></span>
+                                        <span class="infoinner">财务数据</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <!--公司基本信息 end-->
+
+                            <!--风险信息-->
+                            <div class="commonStyleBox companyRiskInfo">
+                                <div class="infoHead">风险信息</div>
+                                <div class="infobody clearfix">
+                                    <a class="infoeles" href="dc-company/companyRiskInfo1.html">
+                                        <span class="fico iconfont icon-gubenjiegou1" style="font-size: .28rem;"></span>
+                                        <span class="infoinner">股本结构</span>
+                                    </a>
+                                    <a class="infoeles" href="dc-company/companyRiskInfo2.html">
+                                        <span class="fico iconfont icon-jingyinggaikuang"></span>
+                                        <span class="infoinner">股本变动</span>
+                                    </a>
+                                    <a class="infoeles" href="dc-company/companyRiskInfo3.html">
+                                        <span class="fico iconfont icon-biangeng1" style="font-size: .26rem ;"><i>7</i></span>
+                                        <span class="infoinner">工商变更</span>
+                                    </a>
+                                    <a class="infoeles graypart" href="dc-company/companyRiskInfo4.html">
+                                        <span class="fico iconfont icon-beizhihangren" style="font-size: .26rem ;"><i>0</i></span>
+                                        <span class="infoinner">被执行人信息</span>
+                                    </a>
+                                    <a class="infoeles graypart" href="dc-company/companyRiskInfo5.html">
+                                        <span class="fico iconfont icon-shixinren" style="font-size: .26rem ;"><i>0</i></span>
+                                        <span class="infoinner">失信人信息</span>
+                                    </a>
+                                    <a class="infoeles graypart" href="dc-company/companyRiskInfo6.html">
+                                        <span class="fico iconfont icon-guquanchuzhi" style="font-size: .26rem ;"><i>0</i></span>
+                                        <span class="infoinner">股权出质历史信息</span>
+                                    </a>
+                                    <a class="infoeles" href="dc-company/companyRiskInfo7.html">
+                                        <span class="fico iconfont icon-diya"><i>0</i></span>
+                                        <span class="infoinner">动产抵押</span>
+                                    </a>
+                                    <a class="infoeles graypart" href="dc-company/companyRiskInfo8.html">
+                                        <span class="fico iconfont icon-wuliaoguanli" style="font-size: .26rem ;"><i>0</i></span>
+                                        <span class="infoinner">动产抵押物信息</span>
+                                    </a>
+                                    <a class="infoeles" href="dc-company/companyRiskInfo9.html">
+                                        <span class="fico iconfont icon-hangzhengchufacopy"><i>2</i></span>
+                                        <span class="infoinner">企业行政处罚历史信息</span>
+                                    </a>
+                                    <a class="infoeles graypart" href="dc-company/companyRiskInfo10.html">
+                                        <span class="fico iconfont icon-dongjiedingdan" style="font-size: .24rem ;"><i>0</i></span>
+                                        <span class="infoinner">股权冻结历史信息</span>
+                                    </a>
+                                    <a class="infoeles graypart" href="dc-company/companyRiskInfo11.html">
+                                        <span class="fico iconfont icon-task"><i>0</i></span>
+                                        <span class="infoinner">清算信息</span>
+                                    </a>
+                                    <a class="infoeles" href="dc-company/companyRiskInfo12.html">
+                                        <span class="fico iconfont icon-touzi"><i>7</i></span>
+                                        <span class="infoinner">对外投资</span>
+                                    </a>
+                                    <a class="infoeles" href="dc-company/companyRiskInfo13.html">
+                                        <span class="fico iconfont icon-beizhixignren " style="opacity: .8;font-size: .24rem;"><i>7</i></span>
+                                        <span class="infoinner">关联公司被执行人信息</span>
+                                    </a>
+                                    <a class="infoeles" href="dc-company/companyRiskInfo14.html">
+                                        <span class="fico iconfont icon-xuebitu_fayuanshixinrenyanzheng " style="opacity: .8;"><i>7</i></span>
+                                        <span class="infoinner">关联失信人信息</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <!--风险信息 end-->
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 深度F9 -->
+                <div id="item2mobile" class="mui-slider-item mui-control-content ">
+                    <div id="scroll2" class="mui-scroll-wrapper">
+                        <div class="mui-scroll">
+                            <!--1、盈利预测-->
+                            <div class="fnine-boxcell">
+                                <div class="infoHead">
+                                    <span>盈利预测</span>
+                                    <a href="fnine/fnine-ylyc.html" class="fr mui-icon">详情</a>
+                                </div>
+                                <div class="infobody clearfix fnine-info-cont">
+                                    <div class="left-ylyc-img">
+                                        <div class="ylyc-point">
+                                            <div class="fl txtgray">上月评级</div>
+                                            <div class="fr txtgray">最新评级</div>
+                                            <div class="yl-grade lastmon" style="width: 40%;">
+                                                <span class="t-line"></span><!--横线-->
+                                                <span class="v-line"></span><!--竖线-->
+                                                <span class="point-circle"></span>
+                                            </div>
+                                            <div class="yl-grade newest" style="width: 60%;">
+                                                <span class="t-line"></span><!--横线-->
+                                                <span class="v-line"></span><!--竖线-->
+                                                <span class="point-circle"></span>
+                                            </div>
+                                        </div>
+                                        <div class="ylyc-img-box">
+                                            <span class="yc-buy">买</span>
+                                            <img src="../images/ylyc-bgimg.png" alt="">
+                                            <span class="yc-sell">卖</span>
+                                        </div>
+                                    </div>
+                                    <div class="cen-ylyc-days">180天内</div>
+                                    <div class="right-ylyc-jg">
+                                        <h5>2家有效预测机构</h5>
+                                        <div class="clearfix">
+                                            <div class="fl up-num"><span class="iconfont icon-shangsheng"></span><span>0</span></div>
+                                            <div class="fr down-num"><span>2</span><span class="iconfont icon-shangsheng"></span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--1、盈利预测 end-->
+
+                            <!--2、股本结构-->
+                            <div class="fnine-boxcell">
+                                <div class="infoHead">
+                                    <span>股本结构</span>
+                                    <a href="fnine/fnine-gbjg.html" class="fr mui-icon">详情</a>
+                                </div>
+                                <div class="infobody clearfix fnine-info-cont">
+                                    <ul class="fnine-gbjg">
+                                        <li class="clearfix">
+                                            <span class="fl">总股本</span>
+                                            <span class="fr">13.57亿股</span>
+                                        </li>
+                                        <li class="clearfix">
+                                            <span class="fl">流通A股</span>
+                                            <span class="fr">13.57亿股</span>
+                                        </li>
+                                        <li class="clearfix">
+                                            <span class="fl">流通A股占比</span>
+                                            <span class="fr">100.00%</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!--2、股本结构-->
+
+                            <!--3、限售解禁-->
+                            <div class="fnine-boxcell">
+                                <div class="infoHead">
+                                    <span>限售解禁</span>
+                                    <a href="fnine/fnine-gdxq.html?tar=4" class="fr mui-icon ">详情</a>
+                                </div>
+                                <div class="infobody clearfix fnine-info-cont">
+                                    <ul class="fnine-gbjg">
+                                        <li class="clearfix">
+                                            <span class="fl">解禁时间</span>
+                                            <span class="fr">2019-01-18</span>
+                                        </li>
+                                        <li class="clearfix">
+                                            <span class="fl">数量</span>
+                                            <span class="fr">2904.00万股</span>
+                                        </li>
+                                        <li class="clearfix">
+                                            <span class="fl">占总股本</span>
+                                            <span class="fr">36.75%</span>
+                                        </li>
+                                        <li class="clearfix">
+                                            <span class="fl">类型</span>
+                                            <span class="fr">首发</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!--3、限售解禁end-->
+
+                            <!--4、公司股东-->
+                            <div class="fnine-boxcell">
+                                <div class="infoHead">
+                                    <span>股东</span>
+                                    <a href="fnine/fnine-gdxq.html" class="fr mui-icon ">详情</a>
+                                </div>
+                                <div class="infobody clearfix fnine-info-cont">
+                                    <ul class="fnine-gbjg">
+                                        <li class="clearfix">
+                                            <span class="fl">股东户数</span>
+                                            <a href="fnine/fnine-gdxq.html?tar=3" class="fr gd-right-link">6.97万户</a>
+                                        </li>
+                                        <li class="clearfix">
+                                            <span class="fl">户均持股</span>
+                                            <a href="fnine/fnine-gdxq.html?tar=3&gdhsTar=1" class="fr gd-right-link">1.95万股</a>
+                                        </li>
+                                        <li class="clearfix">
+                                            <span class="fl">第一大股东</span>
+                                            <span class="fr">中国平安保险(集团)股份有限公司-集团本级-自有资金</span>
+                                        </li>
+                                    </ul>
+                                    <ul class="gd-infobox">
+                                        <!--<li class="gdxq-cell">
+                                            <a href="" class="gdxq-cell-link clearfix">
+                                                <span class="fl iconfont icon-qunzu"></span>
+                                                <span class="fl t-txt">股东人数与股价比较</span>
+                                                <span class="fr mui-icon mui-icon-arrowright"></span>
+                                            </a>
+                                        </li>-->
+                                        <li class="gdxq-cell">
+                                            <a href="fnine/fnine-gdxq.html?tar=2" class="gdxq-cell-link clearfix">
+                                                <span class="fl iconfont icon-duiwaitouzi"></span>
+                                                <span class="fl t-txt">机构投资者</span>
+                                                <span class="fr mui-icon mui-icon-arrowright"></span>
+                                            </a>
+                                        </li>
+                                        <li class="gdxq-cell">
+                                            <a href="fnine/fnine-gdxq.html?tar=1" class="gdxq-cell-link clearfix">
+                                                <span class="fl iconfont icon-shidaliutonggudong"></span>
+                                                <span class="fl t-txt">十大流通股东</span>
+                                                <span class="fr mui-icon mui-icon-arrowright"></span>
+                                            </a>
+                                        </li>
+                                        <li class="gdxq-cell">
+                                            <a href="fnine/fnine-gdxq.html" class="gdxq-cell-link clearfix">
+                                                <span class="fl iconfont icon-shidagudong"></span>
+                                                <span class="fl t-txt">十大股东</span>
+                                                <span class="fr mui-icon mui-icon-arrowright"></span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!--4、公司股东 end-->
+
+                            <!--5、重要股东增减持-->
+                            <div class="fnine-boxcell">
+                                <div class="infoHead">
+                                    <span>重要股东增减持</span>
+                                    <a href="fnine/fnine-zygdzjc.html" class="fr mui-icon ">详情</a>
+                                </div>
+                                <div class="infobody clearfix fnine-info-cont">
+                                    <table class="gdzjc-table">
+                                        <tr class="t-hd">
+                                            <td>姓名</td>
+                                            <td>变动</td>
+                                            <td>均价</td>
+                                            <td>日期</td>
+                                        </tr>
+                                        <tr>
+                                            <td>高鹏</td>
+                                            <td>增持6357</td>
+                                            <td>32.53</td>
+                                            <td>2017-06-19</td>
+                                        </tr>
+                                        <tr>
+                                            <td>任汇川</td>
+                                            <td>增持12.36万</td>
+                                            <td>35.91</td>
+                                            <td>2017-05-11</td>
+                                        </tr>
+                                        <tr>
+                                            <td>叶素兰</td>
+                                            <td>增持3.09万</td>
+                                            <td>33.59</td>
+                                            <td>2017-05-11</td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                            <!--5、重要股东增减持 end-->
+
+                            <!--6、主营构成-->
+                            <div class="fnine-boxcell">
+                                <div class="infoHead">
+                                    <span>主营构成</span>
+                                    <a href="fnine/fnine-cwsj.html?tar=6" class="fr mui-icon ">详情</a>
+                                </div>
+                                <div class="infobody clearfix fnine-info-cont">
+                                    <div id="zygc_chart" style="width: 100%;height: 150px;"></div>
+                                </div>
+                            </div>
+                            <!--6、主营构成 end-->
+
+                            <!--7、董监高-->
+                            <div class="fnine-boxcell">
+                                <div class="infoHead">
+                                    <span>董事会与高管</span>
+                                    <a href="fnine/fnine-djg.html" class="fr mui-icon ">详情</a>
+                                </div>
+                                <div class="infobody clearfix fnine-info-cont">
+                                    <ul class="fnine-gbjg">
+                                        <li class="clearfix">
+                                            <span class="fl">董事会 主席</span>
+                                            <span class="fr">成卫</span>
+                                        </li>
+                                        <li class="clearfix">
+                                            <span class="fl">高管 总经理</span>
+                                            <span class="fr">庞庆平</span>
+                                        </li>
+                                        <li class="clearfix">
+                                            <span class="fl">监事会 主席</span>
+                                            <span class="fr">李俊涛</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!--7、董监高 end-->
+
+                            <!--8、业绩表现-->
+                            <div class="fnine-boxcell fnine-yjbx-box">
+                                <div class="infoHead">
+                                    <span>业绩表现</span>
+                                    <a href="fnine/fnine-cwsj.html?tar=1" class="fr mui-icon ">详情</a>
+                                </div>
+                                <div class="infobody clearfix fnine-info-cont">
+                                    <div id="segmentedControl" class="mui-segmented-control mui-segmented-control-inverted mui-segmented-control-primary">
+                                        <a class="noLink mui-control-item mui-active" href="#item1">主营收入</a>
+                                        <a class="noLink mui-control-item" href="#item2">净利润</a>
+                                        <a class="noLink mui-control-item" href="#item3">每股收益</a>
+                                    </div>
+                                    <div id="item1" class="mui-control-content mui-active">
+                                       <div class="yjbx-chart">
+                                           <div id="yjbx1" style="width: 3.42rem;height: 170px;"></div>
+                                           <p>单位（亿元）</p>
+                                       </div>
+                                    </div>
+                                    <div id="item2" class="mui-control-content">
+                                        <div class="yjbx-chart">
+                                            <div id="yjbx2" style="width: 3.42rem;height: 1.70rem;"></div>
+                                            <p>单位（亿元）</p>
+                                        </div>
+                                    </div>
+                                    <div id="item3" class="mui-control-content">
+                                        <div class="yjbx-chart">
+                                            <div id="yjbx3" style="width: 3.42rem;height: 1.70rem;"></div>
+                                            <p>单位（亿元）</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--8、业绩表现 end-->
+
+                            <!--9、分红送转-->
+                            <div class="fnine-boxcell fnine-yjbx-box">
+                                <div class="infoHead">
+                                    <span>分红送转</span>
+                                    <a href="fnine/fnine-fhsz.html" class="fr mui-icon ">详情</a>
+                                </div>
+                                <div class="infobody clearfix fnine-info-cont">
+                                    <div id="fhszChart" style="width: 100%;height: 200px;"></div>
+                                    <!--table-->
+                                    <div class="fhsz-table">
+                                        <table>
+                                            <tr class="t-head">
+                                                <td>除权日</td>
+                                                <td>方案</td>
+                                                <td>股息率</td>
+                                            </tr>
+                                            <tr>
+                                                <td>2017-07-21</td>
+                                                <td>10派1.58（含税）</td>
+                                                <td>1.44%</td>
+                                            </tr>
+                                            <tr>
+                                                <td>2016-06-16</td>
+                                                <td>10转增2股派1.53元（含税）</td>
+                                                <td>1.47%</td>
+                                            </tr>
+                                            <tr>
+                                                <td>2015-04-13</td>
+                                                <td>10转增2股派1.53元（含税）</td>
+                                                <td>1.47%</td>
+                                            </tr>
+                                            <tr>
+                                                <td>2015-04-13</td>
+                                                <td>10转增2股派1.53元（含税）</td>
+                                                <td>1.47%</td>
+                                            </tr>
+                                            <tr>
+                                                <td>2015-04-13</td>
+                                                <td>10转增2股派1.53元（含税）</td>
+                                                <td>1.47%</td>
+                                            </tr>
+                                            <tr>
+                                                <td>2015-04-13</td>
+                                                <td>10转增2股派1.53元（含税）</td>
+                                                <td>1.47%</td>
+                                            </tr>
+                                            <tr>
+                                                <td>2015-04-13</td>
+                                                <td>10转增2股派1.53元（含税）</td>
+                                                <td>1.47%</td>
+                                            </tr>
+                                            <tr>
+                                                <td>2015-04-13</td>
+                                                <td>10转增2股派1.53元（含税）</td>
+                                                <td>1.47%</td>
+                                            </tr>
+                                            <tr>
+                                                <td>2015-04-13</td>
+                                                <td>10转增2股派1.53元（含税）</td>
+                                                <td>1.47%</td>
+                                            </tr>
+                                            <tr>
+                                                <td>2015-04-13</td>
+                                                <td>10转增2股派1.53元（含税）</td>
+                                                <td>1.47%</td>
+                                            </tr>
+                                            <tr>
+                                                <td>2015-04-13</td>
+                                                <td>10转增2股派1.53元（含税）</td>
+                                                <td>1.47%</td>
+                                            </tr>
+                                            <tr>
+                                                <td>2015-04-13</td>
+                                                <td>10转增2股派1.53元（含税）</td>
+                                                <td>1.47%</td>
+                                            </tr>
+                                            <tr>
+                                                <td>2015-04-13</td>
+                                                <td>10转增2股派1.53元（含税）</td>
+                                                <td>1.47%</td>
+                                            </tr>
+                                            <tr>
+                                                <td>2015-04-13</td>
+                                                <td>10转增2股派1.53元（含税）</td>
+                                                <td>1.47%</td>
+                                            </tr>
+                                            <tr>
+                                                <td>2015-04-13</td>
+                                                <td>10送3.5股转增5派3.0元（含税）</td>
+                                                <td>0.55%</td>
+                                            </tr>
+                                            <tr>
+                                                <td>2015-04-13</td>
+                                                <td>10送3股</td>
+                                                <td>-</td>
+                                            </tr>
+                                            <tr>
+                                                <td>2015-04-13</td>
+                                                <td>10转增2股派1.53元（含税）</td>
+                                                <td>1.47%</td>
+                                            </tr>
+                                        </table>
+                                        <div class="load-more">
+                                            <span>点击加载</span>
+                                            <span class="mui-icon mui-icon-arrowdown"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--9、分红送转 end-->
+
+                            <!--10、融资融券-->
+                            <div class="fnine-boxcell fnine-yjbx-box">
+                                <div class="infoHead">
+                                    <span>融资融券</span>
+                                    <a href="fnine/fnine-rzrq.html" class="fr mui-icon ">详情</a>
+                                </div>
+                                <div class="infobody clearfix fnine-info-cont" style="padding: 0.1rem 0.05rem;">
+                                    <div id="rzrqChart" style="width: 100%;height:252px;"></div>
+                                </div>
+                            </div>
+                            <!--10、融资融券 end-->
+
+                            <!--11、大宗交易-->
+                            <div class="fnine-boxcell">
+                                <div class="infoHead">
+                                    <span>大宗交易</span>
+                                    <a href="fnine/fnine-dzjy.html" class="fr mui-icon ">详情</a>
+                                </div>
+                                <div class="infobody clearfix fnine-info-cont">
+                                    <table class="gdzjc-table">
+                                        <tbody>
+                                        <tr class="t-hd">
+                                            <td>成交价</td>
+                                            <td>交易金额(万元)</td>
+                                            <td>溢价</td>
+                                            <td>日期</td>
+                                        </tr>
+                                        <tr>
+                                            <td>61.65</td>
+                                            <td>4932.00</td>
+                                            <td>-7.56%</td>
+                                            <td>2017-06-19</td>
+                                        </tr>
+                                        <tr>
+                                            <td>61.65</td>
+                                            <td>4932.00</td>
+                                            <td>-7.56%</td>
+                                            <td>2017-06-19</td>
+                                        </tr>
+                                        <tr>
+                                            <td>61.65</td>
+                                            <td>4932.00</td>
+                                            <td>-7.56%</td>
+                                            <td>2017-06-19</td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <!--11、大宗交易 end-->
+
+                            <!--12、龙虎榜-->
+                            <div class="fnine-boxcell">
+                                <div class="infoHead">
+                                    <span>龙虎榜</span>
+                                    <a href="fnine/fnine-lhb.html" class="fr mui-icon ">详情</a>
+                                </div>
+                                <div class="infobody clearfix fnine-info-cont">
+                                    <table class="gdzjc-table"><!--显示最新三条龙虎榜信息-->
+                                        <tbody>
+                                        <tr class="t-hd">
+                                            <td>上榜日期</td>
+                                            <td>涨跌幅</td>
+                                            <td>原因</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2018-03-28</td>
+                                            <td>10.03%</td>
+                                            <td>涨跌幅偏离值达7%</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2018-03-28</td>
+                                            <td>10.03%</td>
+                                            <td>涨跌幅偏离值达7%</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2018-03-28</td>
+                                            <td>10.03%</td>
+                                            <td>涨跌幅偏离值达7%</td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <!--12、龙虎榜 end-->
+
+                            <!--13、上市以来募资统计-->
+                            <div class="fnine-boxcell">
+                                <div class="infoHead">
+                                    <span>上市以来募资统计</span>
+                                    <a href="fnine/fnine-ssylmztj.html" class="fr mui-icon ">详情</a>
+                                </div>
+                                <div class="infobody clearfix fnine-info-cont mztj-con">
+                                    <div class="fl left-chart" id="mztjChart" style="width: 58%;height: 230px;"></div>
+                                    <div class="fr" style="width: 1.44rem;">
+                                        <!--直接融资-->
+                                        <div class="right-legend">
+                                            <div class="right-legend-cell zjrz-legend">
+                                                <div class="legend-hd ">
+                                                    <div class="clearfix">
+                                                        <span class="left-rect-icon icon-c1"></span>
+                                                        <span class="legend-txt">直接融资</span>
+                                                    </div>
+                                                    <p>1215234.04(万元)</p>
+                                                </div>
+                                                <ul class="legend-con">
+                                                    <li class="legend-con-cell">
+                                                       <div class="clearfix">
+                                                           <span class="left-rect-icon icon-c2"></span>
+                                                           <span class="legend-txt">
+                                                            <i class="fl">首发</i>
+                                                            <i class="fr">2.83%</i>
+                                                        </span>
+                                                       </div>
+                                                        <p>74700.00(万元)</p>
+                                                    </li>
+                                                    <li class="legend-con-cell">
+                                                        <div class="clearfix">
+                                                            <span class="left-rect-icon icon-c3"></span>
+                                                            <span class="legend-txt">
+                                                           <i class="fl">其他债券</i>
+                                                           <i class="fr">16.50%</i>
+                                                        </span>
+                                                        </div>
+                                                        <p>435000.00(万元)</p>
+                                                    </li>
+                                                    <li class="legend-con-cell">
+                                                        <div class="clearfix">
+                                                            <span class="left-rect-icon icon-c4"></span>
+                                                            <span class="legend-txt">
+                                                           <i class="fl">公开增发</i>
+                                                           <i class="fr">4.63%</i>
+                                                        </span>
+                                                        </div>
+                                                        <p>122094.60(万元)</p>
+                                                    </li>
+                                                    <li class="legend-con-cell">
+                                                        <div class="clearfix">
+                                                            <span class="left-rect-icon icon-c5"></span>
+                                                            <span class="legend-txt">
+                                                           <i class="fl">其他</i>
+                                                           <i class="fr">22.13%</i>
+                                                        </span>
+                                                        </div>
+                                                        <p>583439.44(万元)</p>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <!--间接融资-->
+                                            <div class="right-legend-cell jjrz-legend">
+                                                <div class="legend-hd">
+                                                    <div class="clearfix">
+                                                        <span class="left-rect-icon icon-c6"></span>
+                                                        <span class="legend-txt">间接融资</span>
+                                                    </div>
+                                                    <p>1420706.24(万元)</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--13、上市以来募资统计 end-->
+
+                            <!--14、股权质押-->
+                            <div class="fnine-boxcell">
+                                <div class="infoHead">
+                                    <span>股权质押</span>
+                                    <a href="fnine/fnine-gqzy.html" class="fr mui-icon ">详情</a>
+                                </div>
+                                <div class="infobody clearfix fnine-info-cont mztj-con">
+                                    <div id="gqzyChart" style="width: 100%;height: 233px;"></div>
+                                </div>
+                            </div>
+                            <!--14、股权质押 end-->
+
+                            <!--15、行业分析-->
+                            <div class="fnine-boxcell">
+                                <div class="infoHead">
+                                    <span>行业分析</span>
+                                    <a href="fnine/fnine-hyfx.html" class="fr mui-icon ">详情</a>
+                                </div>
+                                <div class="infobody clearfix fnine-info-cont mztj-con" style="padding: 0.1rem;margin-bottom: 1.70rem;">
+                                    <div class="hyfx-hd-info">
+                                        <div class="block1 clearfix">
+                                            <span>所属行业：银行</span>
+                                            <span class="txtgray">(申万二级)</span>
+                                            <span class="fr txtgray">2018-03-31</span>
+                                        </div>
+                                        <div class="block2 clearfix">
+                                            <div class="fl left-rk">
+                                                <span class="txtgray">平安银行每股收益</span><span>0.33元</span>，<span class="txtgray">行业排名</span><span class="txtred">10/26</span>
+                                            </div>
+                                            <div class="right-filter-box">
+                                                <div class="hyfx-filter">
+                                                    <i class="right-arrow-ico"></i>
+                                                    <span class="hyfx-filter-cell">每股收益</span>
+                                                    <span class="hyfx-filter-cell">市盈率</span>
+                                                    <span class="hyfx-filter-cell">市净率</span>
+                                                    <span class="hyfx-filter-cell">净利润</span>
+                                                    <span class="hyfx-filter-cell">营业收入</span>
+                                                    <span class="hyfx-filter-cell">总市值</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="hyfx-pm">
+                                        <div class="pm-cell aveRank">
+                                            <div class="pm-left">行业平均</div>
+                                            <div class="pm-center">
+                                                <div class="center-crossbar" style="width: 36%;"></div>
+                                            </div>
+                                            <div class="pm-right">0.33元</div>
+                                        </div>
+                                        <ul class="pm-list">
+                                            <li class="pm-cell">
+                                                <div class="pm-left">1.招商银行</div>
+                                                <div class="pm-center">
+                                                    <div class="center-crossbar"></div>
+                                                </div>
+                                                <div class="pm-right">0.90元</div>
+                                            </li>
+                                            <li class="pm-cell">
+                                                <div class="pm-left">2.兴业银行</div>
+                                                <div class="pm-center">
+                                                    <div class="center-crossbar" style="width: 89%;"></div>
+                                                </div>
+                                                <div class="pm-right">0.85元</div>
+                                            </li>
+                                            <li class="pm-cell">
+                                                <div class="pm-left">3.上海银行</div>
+                                                <div class="pm-center">
+                                                    <div class="center-crossbar" style="width: 62%;"></div>
+                                                </div>
+                                                <div class="pm-right">0.56元</div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--15、行业分析 end-->
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--关注公司类型弹框-->
+    <div id="pop1" class="box mui-popover mui-popover-action mui-popover-bottom " style="background-color: #fff;height: 60%;overflow: hidden">
+        <!--刷新&确定&创建新群组-->
+        <div class="refresh-sure-box">
+            <!--刷新&确定-->
+            <div class="refresh_sure clearfix">
+                <span class="fl classify_refresh_btn">刷新 <i class="mui-icon mui-icon-loop"></i></span>
+                <a href="#pop1" class="fr classify_sure_btn">确定</a>
+            </div>
+            <!--创建新群组-->
+            <a href="#newGrop" class="classify-new-group">+创建新群组</a>
+        </div>
+
+        <!--选择分组-->
+        <div class="mui-scroll-wrapper" style="top: 0.85rem;z-index:-1">
+            <div class="mui-scroll">
+                <ul class="select_group mui-table-view mui-table-view-radio">
+                    <li class="mui-table-view-cell "><!--mui-selected 为选中状态-->
+                        <a class="mui-navigate-right noLink ">
+                            竞争对手
+                        </a>
+                    </li>
+                    <li class="mui-table-view-cell ">
+                        <a class="mui-navigate-right noLink">
+                            客户
+                        </a>
+                    </li>
+                    <li class="mui-table-view-cell">
+                        <a class="mui-navigate-right noLink">
+                            供应商
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+    <!--关注公司类型弹框 end-->
+
+    <!--新建群组弹框-->
+    <div id="newGrop" class="mui-modal">
+        <header class="mui-bar mui-bar-nav" style="position: relative">
+            <a class="mui-icon mui-icon-closeempty mui-pull-left" href="#newGrop"></a>
+            <h1 class="mui-title">新建群组</h1>
+            <a class="mui-pull-right" href="#newGrop" style="font-size: .14rem;line-height: .44rem;">确定</a>
+        </header>
+        <div class="mui-content bc_white" style="position: absolute;top: 0;bottom: 0;overflow-y: scroll;-webkit-overflow-scroll:touch;">
+            <div class="group-ico blue-groupIco">
+                <span class="iconfont icon-qunzu"></span>
+            </div>
+            <div style="padding: 0 .20rem;">
+                <input type="text" placeholder="群组名称" class="newGroup-input">
+                <input type="text" placeholder="群组信息描述（可选）" class="newGroup-input">
+            </div>
+        </div>
+    </div>
+    <!--新建群组弹框 end-->
+
+    <script src="../js/mui.min.js"></script>
+    <script src="../js/app.js"></script>
+    <script>
+        /*echarts*/
+        // 基于准备好的dom，初始化echarts实例
+        var myChart = echarts.init(document.getElementById('zygc_chart'));
+        var myChart2 = echarts.init(document.getElementById('yjbx1'));
+        var myChart3 = echarts.init(document.getElementById('yjbx2'));
+        var myChart4 = echarts.init(document.getElementById('yjbx3'));
+        var myChart5 = echarts.init(document.getElementById('fhszChart'));
+        var myChart6 = echarts.init(document.getElementById('rzrqChart'));
+        var myChart7 = echarts.init(document.getElementById('mztjChart'));
+        var myChart8 = echarts.init(document.getElementById('gqzyChart'));
+        option = {
+            color: ['#df98c0','#0c9cd9','#fccf17','#68c0b0','#f36d40'],
+
+            tooltip: {
+                trigger: 'item',
+                formatter: "{a} <br/>{b}: {c} ({d}%)"
+            },
+            legend: {
+                type:'scroll',
+                orient: 'vertical',
+                right: 10,
+                top: 0,
+                data:['高压板块','中低压及配网板块','国际业务板块','运维服务板块及其他','其他业务'],
+              /*  formatter: function (name) {
+                    return echarts.format.truncateText(name, 140, '14px Microsoft Yahei', '…');
+                },*/
+                tooltip: {
+                    show: true
+                },
+                icon: 'rect',
+                itemWidth: 10,
+                itemHeight: 10
+            },
+            series: [
+                {
+                    name:'主营构成',
+                    type:'pie',
+                    radius: ['70%', '100%'],
+                    center: ['25%', '50%'],
+                    avoidLabelOverlap: false,
+                    label: {
+                        normal: {
+                            show: false,
+                            position: 'center'
+                        },
+                        emphasis: {
+                            show: true,
+                            textStyle: {
+                                fontSize: '18',
+                                fontWeight: 'bold'
+                            }
+                        }
+                    },
+                    labelLine: {
+                        normal: {
+                            show: false
+                        }
+                    },
+                    data:[
+                        {value:335, name:'高压板块'},
+                        {value:310, name:'中低压及配网板块'},
+                        {value:234, name:'国际业务板块'},
+                        {value:135, name:'运维服务板块及其他'},
+                        {value:1548, name:'其他业务'}
+                    ]
+                }
+            ]
+        };
+        option2 = {
+            xAxis: {
+                axisLine:{
+                    lineStyle:{
+                        color:'#eeeeee'
+                    }
+                },
+                axisTick:{
+                  show:false
+                },
+                splitLine:{
+                    show:false
+                },
+                axisLabel:{
+                    textStyle:{
+                        fontSize:'10',
+                        color:'#9aa0a8'
+                    },
+                    interval:0
+                },
+                type: 'category',
+                data: ['2008', '2009', '2010', '2011', '2012', '2013', '2014','2015','2016','2017']
+            },
+            yAxis: {
+                type: 'value',
+                splitLine:{
+                    show:false
+                },
+                axisLine:{
+                    lineStyle:{
+                        color:'#eeeeee'
+                    }
+                },
+                axisTick:{
+                    show:false
+                },
+                axisLabel:{
+                    textStyle:{
+                        fontSize:'12',
+                        color:'#b1b1b1'
+                    }
+                }
+            },
+            grid:{
+                x:40,
+                x2:10,
+                y:20,
+                y2:30
+            },
+            tooltip : {
+                trigger: 'axis'
+            },
+            series: [{
+                data: [17.43,18.30,17.68,18.5,19.67,26.90,36.78,41.56,67.85,87.91],
+                type: 'bar',
+                barWidth: 20,
+                itemStyle:{
+                    normal:{
+                        color:'#4f9ce7'
+                    }
+                }
+            }]
+        };
+        option3 = {
+            xAxis: {
+                axisLine:{
+                    lineStyle:{
+                        color:'#eeeeee'
+                    }
+                },
+                axisTick:{
+                    show:false
+                },
+                splitLine:{
+                    show:false
+                },
+                axisLabel:{
+                    textStyle:{
+                        fontSize:'12',
+                        color:'#9aa0a8'
+                    },
+                    interval:0
+                },
+                type: 'category',
+                data: ['2015','2016','2017']
+            },
+            yAxis: {
+                type: 'value',
+                name:'（元）',
+                splitLine:{
+                    show:false
+                },
+                axisLine:{
+                    lineStyle:{
+                        color:'#eeeeee'
+                    }
+                },
+                axisTick:{
+                    show:false
+                },
+                axisLabel:{
+                    textStyle:{
+                        fontSize:'12',
+                        color:'#b1b1b1'
+                    }
+                },
+                nameTextStyle:{
+                    color:'#b1b1b1'
+                }
+            },
+            grid:{
+                x:40,
+                x2:10,
+                y:30,
+                y2:60
+            },
+            tooltip : {
+                trigger: 'axis'
+            },
+            legend: {
+                data:['每股公积金','每股未分配利润'],
+                itemWidth:10,
+                itemHeight:10,
+                icon: 'rect',
+                y:'bottom'
+            },
+            series: [{
+                name:'每股公积金',
+                data: [4.0,3.2,3.2],
+                type: 'bar',
+                barWidth: 20,
+                itemStyle:{
+                    normal:{
+                        color:['#6ea6e8']
+                    }
+                }
+            },
+                {
+                    name:'每股未分配利润',
+                    data: [3.65,3.72,5.0],
+                    type: 'bar',
+                    barWidth: 20,
+                    itemStyle:{
+                        normal:{
+                            color:['#c5dbf6']
+                        }
+                    }
+                }
+            ]
+        };
+        option4 = {
+            grid:{
+                x:50,
+                x2:30,
+                y:40
+            },
+            legend: {
+                data: ['融资余额','融券余额'],
+                itemWidth:18,
+                itemHeight:3,
+                icon: 'rect',
+                y:'bottom'
+            },
+            xAxis: [{
+                type:'category',
+                axisTick:{
+                    show:false
+                },
+                axisLine:{
+                    lineStyle:{
+                        color:'#b8b9ba'
+                    }
+                },
+                axisLabel: {
+                    textStyle:{
+                        fontSize:'12',
+                        color:'#9fa4ab'
+                    }
+                },
+                data:['2017-10-01','2017-11-01','2017-12-01']
+            }],
+            yAxis: [{
+                type:'value',
+                name:'融资余额',
+                min: 70000,
+                max: 90000,
+                interval: 5000,
+                axisTick:{
+                    show:false
+                },
+                axisLine:{
+                    show:false
+                },
+                axisLabel: {
+                    formatter: '{value}',
+                    textStyle:{
+                        fontSize:'12',
+                        color:'#9fa4ab'
+                    }
+                },
+                splitLine:{
+                    lineStyle:{
+                        color:'#b8b9ba'
+                    }
+                }
+            },{
+                type:'value',
+                name:'融券余额',
+                min: 0,
+                max: 50,
+                interval: 10,
+                axisTick:{
+                    show:false
+                },
+                axisLine:{
+                    show:false
+                },
+                axisLabel: {
+                    formatter: '{value}',
+                    textStyle:{
+                        fontSize:'12',
+                        color:'#9fa4ab'
+                    }
+                },
+                splitLine:{
+                    show:false
+                }
+            }],
+            series: [{
+                name:'融资余额',
+                type:'line',
+                data:[71000,81000,78900]
+
+            },{
+                name:'融券余额',
+                type:'line',
+                yAxisIndex: 1,
+                data:[31,30.3,30.2]
+            }],
+            label: {
+                normal: {
+                    show: true,
+                    position: 'top',
+                    textStyle: {
+                        color: 'black'
+                    }
+                }
+            },
+            color: ['#0f88cb','#ff4242']
+        };
+        option5 = {
+            color: ['#df98c0','#0c9cd9','#fccf17','#68c0b0','#f36d40'],
+
+            legend: {
+                show:false,
+                type:'scroll',
+                orient: 'vertical',
+                right: 10,
+                top: 0,
+                data:['首发','其他债券','公开增发','其他','间接融资'],
+                /*  formatter: function (name) {
+                      return echarts.format.truncateText(name, 140, '14px Microsoft Yahei', '…');
+                  },*/
+                tooltip: {
+                    show: true
+                },
+                icon: 'rect',
+                itemWidth: 10,
+                itemHeight: 10
+            },
+            series: [
+                {
+                    name:'上市以来募资统计',
+                    type:'pie',
+                    radius: ['50%', '80%'],
+                    center: ['50%', '50%'],
+                    avoidLabelOverlap: false,
+                    label: {
+                        normal: {
+                            show: false,
+                            position: 'center'
+                        },
+                        emphasis: {
+                            show: true,
+                            textStyle: {
+                                fontSize: '18',
+                                fontWeight: 'bold'
+                            }
+                        }
+                    },
+                    labelLine: {
+                        normal: {
+                            show: false
+                        }
+                    },
+                    data:[
+                        {value:335, name:'首发'},
+                        {value:310, name:'其他债券'},
+                        {value:234, name:'公开增发'},
+                        {value:135, name:'其他'},
+                        {value:1548, name:'间接融资'}
+                    ]
+                }
+            ]
+        };
+        option6 = {
+            grid:{
+                x:32,
+                x2:0,
+                y:40,
+                y2:35
+            },
+            legend: {
+                data: ['占流通股比','占自由流通股比'],
+                itemWidth:18,
+                itemHeight:3,
+                icon: 'rect',
+                y:'bottom'
+            },
+            xAxis: [{
+                type:'category',
+                axisTick:{
+                    show:false
+                },
+                axisLine:{
+                    lineStyle:{
+                        color:'#b8b9ba'
+                    }
+                },
+                axisLabel: {
+                   show:false
+                },
+                data:['1']
+            }],
+            yAxis: [{
+                type:'value',
+                min: 0,
+                max: 10,
+                interval: 2,
+                axisTick:{
+                    show:false
+                },
+                axisLine:{
+                    show:false
+                },
+                axisLabel: {
+                    formatter: '{value}%',
+                    textStyle:{
+                        fontSize:'12',
+                        color:'#9fa4ab'
+                    }
+                },
+                splitLine:{
+                    lineStyle:{
+                        color:'#b8b9ba'
+                    }
+                }
+            },{
+                type:'value',
+                min: 0,
+                max: 10,
+                interval: 2,
+                axisTick:{
+                    show:false
+                },
+                axisLine:{
+                    show:false
+                },
+                axisLabel: {
+                    show:false,
+                    formatter: '{value}%',
+                    textStyle:{
+                        fontSize:'12',
+                        color:'#9fa4ab'
+                    }
+                },
+                splitLine:{
+                    show:false
+                }
+            }],
+            title: {
+                text: '未解押股份占比',
+                left: 'center',
+                top: 0,
+                textStyle: {
+                    color: '#777',
+                    fontWeight:'normal',
+                    fontSize:'16'
+                }
+            },
+            series: [{
+                name:'占流通股比',
+                type:'bar',
+                data:[5.2],
+                barWidth:'40',
+                barGap:'1'
+
+            },{
+                name:'占自由流通股比',
+                type:'bar',
+                yAxisIndex: 1,
+                data:[8.7],
+                barWidth:'40'
+            }
+        ],
+            label: {
+                normal: {
+                    show: true,
+                    position: 'top',
+                    textStyle: {
+                        color: 'black'
+                    }
+                }
+            },
+            color: ['#0c9cd9','#68c0b0']
+        };
+        myChart.setOption(option);
+        myChart2.setOption(option2);
+        myChart3.setOption(option2);
+        myChart4.setOption(option2);
+        myChart5.setOption(option3);
+        myChart6.setOption(option4);
+        myChart7.setOption(option5);
+        myChart8.setOption(option6);
+        /*echarts end*/
+
+        /*关注*/
+        mui('body').on('tap','.mui-backdrop',function () {
+            mui('#pop1').popover('hide');/*关闭关注类型弹框*/
+        });
+        mui('body').on('tap','#companyPayAtt',function () {
+            var followed =this.getElementsByClassName('infocollectHeart')[0].classList.contains('fa-heart');
+            var infocollectHeart = this.getElementsByClassName('infocollectHeart')[0];
+            if(followed){/*如果已关注*/
+                var btnArray = ['否', '是'];
+                mui.confirm('确认取消关注？','温馨提示', btnArray, function(e) {
+                    if (e.index == 1) {
+                        infocollectHeart.classList.remove('fa-heart');
+                        infocollectHeart.classList.add('fa-heart-o');
+                        infocollectHeart.nextElementSibling.innerHTML='未关注';
+                    }
+                })
+            }else{/*如果未关注*/
+                /*选择关注的公司类型*/
+                mui('#pop1').popover('show');/*显示关注类型弹框*/
+                var select_num = 0;
+                mui('.select_group').on('tap','.mui-table-view-cell ',function () {
+                    select_num++;
+                });
+                mui('body').on('tap','.classify_sure_btn',function () {/*点击确定*/
+                    if(select_num){/*若选择了某项分组*/
+                        infocollectHeart.classList.add('fa-heart');
+                        infocollectHeart.classList.remove('fa-heart-o');
+                        infocollectHeart.nextElementSibling.innerHTML='已关注';
+                        mui.toast('关注成功');
+                    }
+                })
+            }
+        })
+
+        /*分红送转-加载更多*/
+        mui('body').on('tap','.load-more',function () {
+            mui('.fhsz-table')[0].style.maxHeight = 'inherit';
+                this.style.display = 'none'
+        })
+
+        /*行业分析-过滤下拉选择*/
+        mui('body').on('tap','.hyfx-filter',function () {
+            this.classList.contains('actived')?this.classList.remove('actived'):this.classList.add('actived');
+        });
+        mui('.hyfx-filter').on('tap','.hyfx-filter-cell',function () {
+            mui('.hyfx-filter')[0].insertBefore(this,mui('.hyfx-filter span')[0]);
+        })
+    </script>
+
+    <script>
+        mui('.mui-scroll-wrapper').scroll({
+            indicators: true //是否显示滚动条
+        });
+
+    /*    /!*设置 gddjg_rightCon_list_box 宽度*!/
+
+        var len1 = mui('.gddjg_rightCon_list_box1 .gddjg_rightCon_list_node').length;
+        /!*mui('.gddjg_rightCon_list_box1')[0].style.width=1.14*len1+'rem';*!/
+        var len2 = mui('.gddjg_rightCon_list_box2 .gddjg_rightCon_list_node').length;
+        mui('.gddjg_rightCon_list_box2')[0].style.width=1.14*len2+'rem';
+        /!*设置gddjg_rightCon_list_box 宽度*!/*/
+    </script>
+</body>
+</html>

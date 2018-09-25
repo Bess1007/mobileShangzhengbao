@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>跟踪调查表-编辑</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+	<!--标准mui.css-->
+	<link rel="stylesheet" href="css/mui.min.css">
+	<!--App自定义的css-->
+	<link rel="stylesheet" type="text/css" href="css/app.css" />
+	<link rel="stylesheet" type="text/css" href="iconfont/iconfont.css" />
+	<link href="css/mui.picker.css" rel="stylesheet" />
+	<link href="css/mui.poppicker.css" rel="stylesheet" />
+	<style>
+		.mui-btn {
+			font-size: 16px;
+			padding: 8px;
+			margin: 3px;
+		}
+		h5.mui-content-padded {
+			margin-left: 3px;
+			margin-top: 20px !important;
+		}
+		h5.mui-content-padded:first-child {
+			margin-top: 12px !important;
+		}
+		.ui-alert {
+			text-align: center;
+			padding: 20px 10px;
+			font-size: 16px;
+		}
+		.companySelectBtn {
+			position: relative;
+			font-size: 16px;
+			height: 30px;
+			line-height: 30px;
+			padding: 0;
+			margin: 0;
+			margin-bottom:8px;
+		}
+		.companyTxtInner {
+			padding: 0;
+			position: absolute;
+			width: 100%;
+			height:100%;
+			line-height:28px;
+			top:0;
+			left: 0;
+			text-align: left;
+		}
+	</style>
+</head>
+<body>
+<header class="mui-bar mui-bar-nav bcWhiteNav">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+	<h1 class="mui-title">跟踪调查表</h1>
+	<span class="mui-btn mui-btn-link mui-pull-right saveForm" >保存</span>
+</header>
+<div class="mui-content">
+	<!--公司基本信息-->
+	<div class="companybaseInnfo followCommonBox">
+		<!-- <div class="commonBoxHead">公司基本信息</div>-->
+		<div class="commonBoxBody bjBody">
+			<ul>
+				<li>
+					<span><i class="txtred">*</i>公司名称：</span>
+					<div class="textgray">
+						<!--<input type="text" class="inputRequired">-->
+						<button id='showUserPicker' class="mui-btn mui-btn-block companySelectBtn" type='button'>
+							<div id='userResult' class="ui-alert companyTxtInner"></div>
+						</button>
+					</div>
+				</li>
+				<li>
+					<span><i class="txtred">*</i>股票代码：</span>
+					<div class="textgray">
+						<input type="text" class="inputRequired" id="companyCode" readonly>
+					</div>
+				</li>
+				<li>
+					<span><i class="txtred">*</i>办公地点：</span>
+					<div class="textgray">
+						<input type="text" class="inputRequired">
+					</div>
+				</li>
+				<li>
+					<span><i class="txtred">*</i>董事长：</span>
+					<div class="textgray">
+						<input type="text" class="inputRequired">
+					</div>
+				</li>
+				<li>
+					<span><i class="txtred">*</i>董事长电话：</span>
+					<div class="textgray">
+						<input type="text" class="inputRequired">
+					</div>
+				</li>
+				<li>
+					<span><i class="txtred">*</i>董事长秘书：</span>
+					<div class="textgray">
+						<input type="text" class="inputRequired">
+					</div>
+				</li>
+				<li>
+					<span><i class="txtred">*</i>董事长秘书电话：</span>
+					<div class="textgray">
+						<input type="text" class="inputRequired">
+					</div>
+				</li>
+				<li>
+					<span>分管投资高管：</span>
+					<div class="textgray">
+						<input type="text">
+					</div>
+				</li>
+				<li>
+					<span>分管投资高管电话：</span>
+					<div class="textgray">
+						<input type="text">
+					</div>
+				</li>
+                <li>
+                    <span>备注：</span>
+                    <div class="textgray">
+                        <input type="text">
+                    </div>
+                </li>
+			</ul>
+		</div>
+	</div>
+	<!--公司基本信息end-->
+
+	<!--公司经营情况-->
+	<div class="gsjyqk followCommonBox">
+		<div class="commonBoxHead">公司经营情况</div>
+		<div class="commonBoxBody clearfix">
+            <a href="gzdc-list-ddqk-bj.html" class="infoeles">
+                <span class="fico iconfont icon-jingying1"></span>
+                <span>日常经营</span>
+            </a>
+			<a href="gzdc-list-ddqk-bj.html" class="infoeles">
+				<span class="fico iconfont icon-dingdan"></span>
+				<span>订单情况</span>
+			</a>
+			<a href="" class="infoeles">
+				<span class="fico iconfont icon-jingyinggaikuang"></span>
+				<span>业绩情况</span>
+			</a>
+            <a href="" class="infoeles">
+                <span class="fico iconfont icon-product"></span>
+                <span>新产品产销</span>
+            </a>
+			<a href="" class="infoeles">
+				<span class="fico iconfont icon-xiangmu"></span>
+				<span>项目情况</span>
+			</a>
+		</div>
+	</div>
+	<!--公司经营情况end-->
+
+	<!--重大事项方面-->
+	<div class="zdsxfm followCommonBox">
+		<div class="commonBoxHead">重大事项方面</div>
+		<div class="commonBoxBody clearfix">
+			<a href="" class="infoeles">
+				<span class="fico iconfont icon-rongzi"></span>
+				<span>再融资</span>
+			</a>
+			<a href="" class="infoeles">
+				<span class="fico iconfont icon-gongsishougou"></span>
+				<span>重组收购</span>
+			</a>
+			<a href="" class="infoeles">
+				<span class="fico iconfont icon-guquan"></span>
+				<span>股权激励</span>
+			</a>
+			<a href="" class="infoeles">
+				<span class="fico iconfont icon-gudongquanyi"></span>
+				<span>股东增减</span>
+			</a>
+		</div>
+	</div>
+	<!--重大事项方面end-->
+</div>
+
+<script src="js/mui.min.js"></script>
+<script src="js/app.js"></script>
+<script src="js/mui.picker.js"></script>
+<script src="js/mui.poppicker.js"></script>
+<script>
+    (function($, doc) {
+        $.init();
+        $.ready(function() {
+            /**
+             * 获取对象属性的值
+             * 主要用于过滤三级联动中，可能出现的最低级的数据不存在的情况，实际开发中需要注意这一点；
+             * @param {Object} obj 对象
+             * @param {String} param 属性名
+             */
+            var _getParam = function(obj, param) {
+                return obj[param] || '';
+            };
+            //普通示例
+            var userPicker = new $.PopPicker();
+            userPicker.setData([{
+                value: '000001',
+                text: '公司名称1'
+            }, {
+                value: '000002',
+                text: '公司名称2'
+            }, {
+                value: '000003',
+                text: '公司名称3'
+            }]);
+            var showUserPickerButton = doc.getElementById('showUserPicker');
+            var userResult = doc.getElementById('userResult');
+            showUserPickerButton.addEventListener('tap', function(event) {
+                userPicker.show(function(items) {
+                    /*userResult.innerText = JSON.stringify(items[0]);*/
+                    userResult.innerText = items[0].text;
+                    document.getElementById('companyCode').value=items[0].value;
+
+                    //返回 false 可以阻止选择框的关闭
+                    //return false;
+                });
+            }, false);
+        });
+    })(mui, document);
+</script>
+</body>
+
+</html>

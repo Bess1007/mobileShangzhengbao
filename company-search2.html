@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>上海证券报-公司搜索单页</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+		<link rel="stylesheet" href="css/mui.min.css"/>
+		<link rel="stylesheet" href="css/app.css"/>
+		<link rel="stylesheet" href="iconfont/iconfont.css"/>
+		<link rel="stylesheet" href="css/company.css"/>
+		<style>
+
+		</style>
+	</head>
+
+	<body>
+			<div class="mui-bar mui-bar-nav bcWhiteNav">
+				<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+				<h1 class="mui-title">
+					<input type="text" class="company_hd_sc" placeholder="输入公司名称/公司股票代码" >
+				</h1>
+			</div>
+			<div class="mui-content" style="margin-bottom: 50px;">
+				<div class="matchCompany_num">
+					<span class="iconfont icon-jieshao"></span>
+					共有<i class="textred fwBold">100</i>家公司：
+				</div>
+				<ul class="searchCompany_rs">
+					<!--<li class="searchCompany_rsCell ">
+						<div class="clearfix">
+							<div class="leftCompanyIcoBox fl">
+								<span class="leftCompanyIco bc_red">平</span>
+							</div>
+							<div class="fl rightCompanyInfo">
+								<div class="info_cnameBox clearfix">
+									<span class="chooseC fr">选择</span>
+									<span class="info_cname fl">平安银行股份有限公司</span>
+								</div>
+								<div class="info_cnameBox clearfix info_fddbr">
+									<span class="info_cname fl">股票代码：000001</span>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li class="searchCompany_rsCell ">
+						<div class="clearfix">
+							<div class="leftCompanyIcoBox fl">
+								<span class="leftCompanyIco bc_orange">平</span>
+							</div>
+							<div class="fl rightCompanyInfo">
+								<div class="info_cnameBox clearfix">
+									<span class="chooseC fr">选择</span>
+									<span class="info_cname fl">平安银行股份有限公司</span>
+								</div>
+								<div class="info_cnameBox clearfix info_fddbr">
+									<span class="info_cname fl">股票代码：000001</span>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li class="searchCompany_rsCell ">
+						<div class="clearfix">
+							<div class="leftCompanyIcoBox fl">
+								<span class="leftCompanyIco bc_yellow">平</span>
+							</div>
+							<div class="fl rightCompanyInfo">
+								<div class="info_cnameBox clearfix">
+									<span class="chooseC fr">选择</span>
+									<span class="info_cname fl">平安银行股份有限公司</span>
+								</div>
+								<div class="info_cnameBox clearfix info_fddbr">
+									<span class="info_cname fl">股票代码：000001</span>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li class="searchCompany_rsCell ">
+						<div class="clearfix">
+							<div class="leftCompanyIcoBox fl">
+								<span class="leftCompanyIco bc_green">平</span>
+							</div>
+							<div class="fl rightCompanyInfo">
+								<div class="info_cnameBox clearfix">
+									<span class="chooseC fr">选择</span>
+									<span class="info_cname fl">平安银行股份有限公司</span>
+								</div>
+								<div class="info_cnameBox clearfix info_fddbr">
+									<span class="info_cname fl">股票代码：000001</span>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li class="searchCompany_rsCell ">
+						<div class="clearfix">
+							<div class="leftCompanyIcoBox fl">
+								<span class="leftCompanyIco bc_cyan">平</span>
+							</div>
+							<div class="fl rightCompanyInfo">
+								<div class="info_cnameBox clearfix">
+									<span class="chooseC fr">选择</span>
+									<span class="info_cname fl">平安银行股份有限公司</span>
+								</div>
+								<div class="info_cnameBox clearfix info_fddbr">
+									<span class="info_cname fl">股票代码：000001</span>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li class="searchCompany_rsCell ">
+						<div class="clearfix">
+							<div class="leftCompanyIcoBox fl">
+								<span class="leftCompanyIco bc_blue">平</span>
+							</div>
+							<div class="fl rightCompanyInfo">
+								<div class="info_cnameBox clearfix">
+									<span class="chooseC fr">选择</span>
+									<span class="info_cname fl">平安银行股份有限公司</span>
+								</div>
+								<div class="info_cnameBox clearfix info_fddbr">
+									<span class="info_cname fl">股票代码：000001</span>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li class="searchCompany_rsCell ">
+						<div class="clearfix">
+							<div class="leftCompanyIcoBox fl">
+								<span class="leftCompanyIco bc_purple">平</span>
+							</div>
+							<div class="fl rightCompanyInfo">
+								<div class="info_cnameBox clearfix">
+									<span class="chooseC fr">选择</span>
+									<span class="info_cname fl">平安银行股份有限公司</span>
+								</div>
+								<div class="info_cnameBox clearfix info_fddbr">
+									<span class="info_cname fl">股票代码：000001</span>
+								</div>
+							</div>
+						</div>
+					</li>-->
+				</ul>
+			</div>
+		    <script src="js/mui.min.js"></script>
+            <script src="js/app.js"></script>
+            <script src="js/jquery-1.11.3.min.js"></script>
+			<script>
+				var colorClassArr = ['bc_red','bc_orange','bc_yellow','bc_green','bc_cyan','bc_blue','bc_purple'];
+				var len = 100;
+				for(var i=0;i<len;i++){
+				    var Remainder = i%7;
+				    var reCell = '<li class="searchCompany_rsCell ">\n' +
+                        '\t\t\t\t\t\t<div class="clearfix">\n' +
+                        '\t\t\t\t\t\t\t<div class="leftCompanyIcoBox fl">\n' +
+                        '\t\t\t\t\t\t\t\t<span class="leftCompanyIco '+colorClassArr[Remainder]+'">平</span>\n' +
+                        '\t\t\t\t\t\t\t</div>\n' +
+                        '\t\t\t\t\t\t\t<div class="fl rightCompanyInfo">\n' +
+                        '\t\t\t\t\t\t\t\t<div class="info_cnameBox clearfix">\n' +
+                        '\t\t\t\t\t\t\t\t\t<span class="chooseC fr">选择</span>\n' +
+                        '\t\t\t\t\t\t\t\t\t<span class="info_cname fl">平安银行股份有限公司</span>\n' +
+                        '\t\t\t\t\t\t\t\t</div>\n' +
+                        '\t\t\t\t\t\t\t\t<div class="info_cnameBox clearfix info_fddbr">\n' +
+                        '\t\t\t\t\t\t\t\t\t<span class="info_cname fl">股票代码：000001</span>\n' +
+                        '\t\t\t\t\t\t\t\t</div>\n' +
+                        '\t\t\t\t\t\t\t</div>\n' +
+                        '\t\t\t\t\t\t</div>\n' +
+                        '\t\t\t\t\t</li>';
+
+                    $('.searchCompany_rs').append(reCell);
+				}
+
+			</script>
+	</body>
+
+</html>

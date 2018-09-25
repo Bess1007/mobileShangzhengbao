@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>音频demo</title>
+    <meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"/>
+    <!--<link rel="stylesheet" href="css/wx-audio.css">-->
+    <style>
+    	.wx-audio-content .wx-audio-left .wx-audio-state {
+    		height:auto;
+    	}
+    </style>
+</head>
+<body>
+
+<audio src="http://jq22.qiniudn.com/ocean_drive_01.mp3" controls="controls"></audio>
+<!--<div id="textaudio1" class="audiobox" style="margin-top: 60px"></div>
+<div id="textaudio2" class="audiobox" style="margin-top: 60px"></div>-->
+</body>
+<script src="js/mui.min.js"></script>
+<!--<script src="js/wx-audio.js"></script>-->
+<!--<script>
+    //获取所有的audio
+    /*var audios = mui('.audiobox');
+    var audios_len = audios.length;
+    for(var i = 0;i < audios_len;i++){
+
+    }*/
+
+    var wxAudio1 = new Wxaudio({
+        ele: '#textaudio1',
+        title: '',
+        disc: '',
+        src: 'http://jq22.qiniudn.com/ocean_drive_01.mp3',
+        width: '320px'
+    });
+    var wxAudio2 = new Wxaudio({
+        ele: '#textaudio2',
+        title: 'Jar Of Love',
+        disc: 'Break Me Up',
+        src: 'http://jq22.qiniudn.com/ocean_drive_01.mp3',
+        width: '320px'
+    });
+    function play() {
+        wxAudio1.audioPlay();
+        wxAudio2.audioPause();
+        /*if(wxAudio.isplaying === true){
+            wxAudio2.isplaying = false
+        }*/
+    }
+
+    /*function cutM () {
+        var src = 'http://jq22com.qiniudn.com/jq22m1.mp3'
+        var title = 'ocean'
+        var disc = 'ocean111'
+        wxAudio.audioCut(src, title, disc)
+    }*/
+    //获取所有的wx-audio-left
+    var wx_audio_left = mui('.wx-audio-left');
+    var audio_left_len = wx_audio_left.length;
+    for(var i = 0;i< audio_left_len;i++){
+        mui('.wx-audio-state')[i].index = i;
+    }
+    var audioarr = [wxAudio1,wxAudio2];
+    mui('body').on('tap','.wx-audio-state',function () {
+       var indexof = this.index;
+        for(var j = 0;j < audio_left_len;j++){
+            if(j !==indexof){
+                audioarr[j].audioPause()
+            }
+        }
+    })
+
+
+</script>
+-->
+</html>

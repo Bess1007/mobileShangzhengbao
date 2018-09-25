@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<link href="css/mui.min.css" rel="stylesheet" />
+		<link href="css/mui.indexedlist.css" rel="stylesheet" />
+		<link href="css/app.css" rel="stylesheet" />
+		<style>
+			html,
+			body {
+				height: 100%;
+				overflow: hidden;
+			}
+			.mui-content {
+				background-color: #f2f2f2;
+			}
+			.mui-bar {
+				-webkit-box-shadow: none;
+				box-shadow: none;
+			}
+			input[type=search] {
+				border-radius: 0;
+				border-color: #f4f4f4;
+			}
+			.mui-search {
+				padding:0 7px;
+				margin:5px 0;
+				border-bottom: 0;
+			}
+			.mui-search.mui-active:before {
+				left: 10px;
+			}
+			.mui-indexed-list-bar {
+				color: #999999;
+				background-color: #fff;
+			}
+			.mui-indexed-list-bar.active {
+				background-color: #fff;
+			}
+			.mui-indexed-list-bar span {
+				display: block;
+				text-align: center;
+				font-size: 11px;
+				padding: 0px;
+				margin: 0px;
+				color: #aaa;
+				height: 23.24px;
+				line-height: 23.24px;
+			}
+		</style>
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<h1 class="mui-title">选择编辑人</h1>
+			<a class="mui-btn mui-btn-link mui-pull-right">
+				完成
+			</a>
+		</header>
+		<div class="mui-content">
+			<div id='list' class="mui-indexed-list">
+				<div class="mui-indexed-list-search mui-input-row mui-search">
+					<input type="search" class="mui-input-clear mui-indexed-list-search-input" placeholder="搜索">
+				</div>
+				<div class="mui-indexed-list-bar">
+					<span>A</span>
+					<span>B</span>
+					<span>C</span>
+					<span>D</span>
+					<span>E</span>
+					<span>F</span>
+					<span>G</span>
+					<span>H</span>
+					<span>I</span>
+					<span>J</span>
+					<span>K</span>
+					<span>L</span>
+					<span>M</span>
+					<span>N</span>
+					<span>O</span>
+					<span>P</span>
+					<span>Q</span>
+					<span>R</span>
+					<span>S</span>
+					<span>T</span>
+					<span>U</span>
+					<span>V</span>
+					<span>W</span>
+					<span>X</span>
+					<span>Y</span>
+					<span>Z</span>
+				</div>
+				<div class="mui-indexed-list-alert"></div>
+				<div class="mui-indexed-list-inner">
+					<div class="mui-indexed-list-empty-alert">没有数据</div>
+					<ul class="mui-table-view">
+						<li data-group="A" class="mui-table-view-divider mui-indexed-list-group">A</li>
+						<li data-value="A" data-tags="Admin" class="mui-input-row mui-radio mui-left mui-table-view-cell mui-indexed-list-item mui-checkbox mui-left">
+							<input name="radio1" type="radio">Admin【ID:1】</li>
+						<li data-value="A" data-tags="Admin" class="mui-input-row mui-radio mui-left mui-table-view-cell mui-indexed-list-item mui-checkbox mui-left">
+							<input name="radio1" type="radio">Admin2【ID:2】</li>
+						<li data-group="S" class="mui-table-view-divider mui-indexed-list-group">S</li>
+						<li data-value="SZ" data-tags="SunZhi" class="mui-input-row mui-radio mui-left mui-table-view-cell mui-indexed-list-item mui-checkbox mui-left">
+							<input name="radio1" type="radio">孙志【ID:3】</li>
+						<li data-value="SZ" data-tags="SunZhi2" class="mui-input-row mui-radio mui-left mui-table-view-cell mui-indexed-list-item mui-checkbox mui-left">
+							<input name="radio1" type="radio">孙志2【ID:4】</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<script src="js/mui.min.js"></script>
+		<script src="js/app.js"></script>
+		<script src="js/mui.indexedlist.js"></script>
+		<!--<script src="../js/mui.grouplist.testdata.js"></script>-->
+		<script type="text/javascript" charset="utf-8">
+			mui.init();
+			mui.ready(function() {
+				var header = document.querySelector('header.mui-bar');
+				var list = document.getElementById('list');
+				var done = document.getElementById('done');
+				//calc hieght
+				list.style.height = (document.body.offsetHeight - header.offsetHeight) + 'px';
+				//create
+				window.indexedList = new mui.IndexedList(list);
+			});
+		</script>
+	</body>
+
+</html>

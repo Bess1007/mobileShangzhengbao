@@ -1,0 +1,545 @@
+<!doctype html>
+<html class="pb40 ">
+<head>
+    <meta charset="UTF-8">
+    <title>编辑日程</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link href="css/mui.min.css" rel="stylesheet" />
+    <link href="iconfont/iconfont.css" rel="stylesheet" />
+    <link href="css/app.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="css/mui.picker.min.css" />
+    <link href="css/schedule.css" rel="stylesheet" />
+
+    <style>
+        .mui-content {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            width: 100%;
+            /* 使之可以滚动 */
+            overflow-y: scroll;
+            /* 增加该属性，可以增加弹性 */
+            -webkit-overflow-scrolling: touch;
+        }
+    </style>
+</head>
+
+<body class="interview_box">
+<header class="mui-bar mui-bar-nav scheduleHd">
+    <a class="mui-action-back mui-pull-left">取消</a>
+    <h1 class="mui-title">编辑日程</h1>
+    <span class=" mui-pull-right" id="submitNewSchedule">确定</span>
+</header>
+<div class="mui-content">
+    <!--选择类型-->
+    <div class="scheduleTypeBox">
+        <div class="scheduleType actived">
+            <span class="iconfont icon-chuangxinhuodong"></span>
+            <p>创新活动</p>
+        </div>
+        <div class="scheduleType">
+            <span class="iconfont icon-xieyi"></span>
+            <p>创新协议</p>
+        </div>
+        <div class="scheduleType">
+            <span class="iconfont icon-zhuanjia" style="font-size: 24px;"></span>
+            <p>引进专家</p>
+        </div>
+    </div>
+    <!--选择类型 end-->
+
+    <!--选择类型对应的日程填写内容-->
+    <div class="scheduleCon">
+        <ul class="">
+            <!--创新活动-->
+            <li class="scheduleConCell actived">
+
+                <div class="scheduleinput">
+                    <ul class="mui-table-view">
+                        <li class="mui-table-view-cell scheduleinputLi clearfix">
+                            <input type="text" placeholder="请输入主题*" class="mustInput valMust" name="主题" value="日程标题1">
+                        </li>
+                        <li id='demo1' data-options='{}'  class="mui-table-view-cell scheduleinputLi clearfix scbtn ">
+                            <label for="" class="sclabelLeft fl">开始时间 <span class="txtred">*</span></label>
+                            <div id='result' class="ui-alert frscTimeRight fr mustInput txtMust" name="开始时间">2018-04-04 12:00</div>
+                            <i class="mui-icon mui-icon-arrowright"></i>
+                        </li>
+                        <li id='demo2' data-options='{}'  class="mui-table-view-cell scheduleinputLi clearfix scbtn ">
+                            <label for="" class="sclabelLeft fl">结束时间 <span class="txtred">*</span></label>
+                            <div id='result2' class="ui-alert frscTimeRight fr mustInput txtMust" name="结束时间">2018-04-06 12:00</div>
+                            <i class="mui-icon mui-icon-arrowright"></i>
+                        </li>
+                        <li class="mui-table-view-cell scheduleinputLi clearfix">
+                            <label for="" class="sclabelLeft fl">选择状态 <span class="txtred">*</span></label>
+                            <a href="#chooseState" class="chooseStatebtn">
+                                <span id="statetxt" class="mustInput txtMust" name="状态">完成</span>
+                            </a>
+                            <i class="mui-icon mui-icon-arrowright"></i>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="scheduleinput">
+                    <ul class="mui-table-view">
+                        <li class="mui-table-view-cell scheduleinputLi clearfix linkLi">
+                            <a href="" class="clearfix lisLink">
+                                <label for="" class="sclabelLeft fl" >选择公司</label>
+                                <input type="text" value="公司1;公司2;公司3;">
+                                <i class="mui-icon mui-icon-arrowright"></i>
+                            </a>
+                        </li>
+                        <li class="mui-table-view-cell scheduleinputLi clearfix linkLi">
+                            <a href="" class="clearfix lisLink" >
+                                <label for="" class="sclabelLeft fl">参与人员</label>
+                                <input type="text" class="fl " value="参与人员1;参与人员2;参与人员3;">
+                                <i class="mui-icon mui-icon-arrowright"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!--活动记录&备注-->
+                <div class="scheduleinput">
+                    <ul class="mui-table-view">
+                        <li class="mui-table-view-cell scheduleinputLi scheduletextareaLi clearfix ">
+                            <textarea name="" id="" cols="30" rows="10" placeholder="活动记录">活动记录123</textarea>
+                        </li>
+                        <li class="mui-table-view-cell scheduleinputLi scheduletextareaLi clearfix ">
+                            <textarea name="" id="" cols="30" rows="10" placeholder="备注">备注123</textarea>
+                        </li>
+                    </ul>
+                </div>
+
+            </li>
+            <!--创新协议-->
+            <li class="scheduleConCell">
+                <div class="scheduleinput">
+                    <ul class="mui-table-view">
+                        <li class="mui-table-view-cell scheduleinputLi clearfix">
+                            <input type="text" placeholder="请输入主题*" class="mustInput valMust" name="主题" value="">
+                        </li>
+                        <li id='demo3' data-options='{}'  class="mui-table-view-cell scheduleinputLi clearfix scbtn ">
+                            <label for="" class="sclabelLeft fl">开始时间 <span class="txtred">*</span></label>
+                            <div id='result3' class="ui-alert frscTimeRight fr mustInput txtMust" name="开始时间"></div>
+                            <i class="mui-icon mui-icon-arrowright"></i>
+                        </li>
+                        <li id='demo4' data-options='{}'  class="mui-table-view-cell scheduleinputLi clearfix scbtn ">
+                            <label for="" class="sclabelLeft fl">结束时间 <span class="txtred">*</span></label>
+                            <div id='result4' class="ui-alert frscTimeRight fr mustInput txtMust" name="结束时间"></div>
+                            <i class="mui-icon mui-icon-arrowright"></i>
+                        </li>
+                        <li class="mui-table-view-cell scheduleinputLi clearfix">
+                            <label for="" class="sclabelLeft fl">选择状态 <span class="txtred">*</span></label>
+                            <a href="#chooseState2" class="chooseStatebtn">
+                                <span id="statetxt2" class="mustInput txtMust" name="状态">完成</span>
+                            </a>
+                            <i class="mui-icon mui-icon-arrowright"></i>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="scheduleinput">
+                    <ul class="mui-table-view">
+                        <li class="mui-table-view-cell scheduleinputLi clearfix linkLi">
+                            <a href="" class="clearfix lisLink">
+                                <label for="" class="sclabelLeft fl" >选择公司</label>
+                                <input type="text" value="jshdjh kjgskjgskjgskjgskjgskjgskjgskjgskjgskjgskjgskjgskjgskjgskjgskjgskjgskjgs">
+                                <i class="mui-icon mui-icon-arrowright"></i>
+                            </a>
+                        </li>
+                        <li class="mui-table-view-cell scheduleinputLi clearfix linkLi">
+                            <a href="" class="clearfix lisLink" >
+                                <label for="" class="sclabelLeft fl">参与人员</label>
+                                <input type="text" class="fl " value="jshdjh kjgskjgskjgskjgskjgskjgskjgskjgskjgskjgskjgskjgskjgskjgskjgskjgskjgskjgs">
+                                <i class="mui-icon mui-icon-arrowright"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!--详情记录&备注-->
+                <div class="scheduleinput">
+                    <ul class="mui-table-view">
+                        <li class="mui-table-view-cell scheduleinputLi scheduletextareaLi clearfix ">
+                            <textarea name="" id="" cols="30" rows="10" placeholder="详情记录"></textarea>
+                        </li>
+                        <li class="mui-table-view-cell scheduleinputLi scheduletextareaLi clearfix ">
+                            <textarea name="" id="" cols="30" rows="10" placeholder="备注"></textarea>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+
+            <!--引进专家-->
+            <li class="scheduleConCell">
+                <div class="scheduleinput">
+                    <ul class="mui-table-view">
+                        <li class="mui-table-view-cell scheduleinputLi clearfix">
+                            <input type="text" placeholder="请输入主题*" class="mustInput valMust" name="主题" value="">
+                        </li>
+                        <li id='demo5' data-options='{}'  class="mui-table-view-cell scheduleinputLi clearfix scbtn ">
+                            <label for="" class="sclabelLeft fl">联系时间 <span class="txtred">*</span></label>
+                            <div class="ui-alert frscTimeRight fr mustInput txtMust" name="联系时间"></div>
+                            <i class="mui-icon mui-icon-arrowright"></i>
+                        </li>
+                    </ul>
+                </div>
+
+                <!--姓名&性别&年龄范围&联系方式-->
+                <div class="scheduleinput">
+                    <ul class="mui-table-view">
+                        <li class="mui-table-view-cell scheduleinputLi clearfix">
+                            <input type="text" placeholder="专家姓名*" class="mustInput valMust" name="专家姓名" value="">
+                        </li>
+                        <li class="mui-table-view-cell scheduleinputLi clearfix">
+                            <label for="" class="sclabelLeft fl">性&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;别 <span class="txtred">*</span></label>
+                            <a href="#chooseState4" class="chooseStatebtn">
+                                <span id="statetxt4" class="mustInput txtMust" name="性别">男</span>
+                            </a>
+                            <i class="mui-icon mui-icon-arrowright"></i>
+                        </li>
+                        <li class="mui-table-view-cell scheduleinputLi clearfix">
+                            <label for="" class="sclabelLeft fl">年龄范围 <span class="txtred">*</span></label>
+                            <a href="#chooseState5" class="chooseStatebtn">
+                                <span id="statetxt5" class="mustInput txtMust" name="年龄范围">20-30</span>
+                            </a>
+                            <i class="mui-icon mui-icon-arrowright"></i>
+                        </li>
+                        <li class="mui-table-view-cell scheduleinputLi clearfix">
+                            <input type="text" placeholder="联系方式*" class="mustInput valMust" name="联系方式" value="">
+                        </li>
+                    </ul>
+                </div>
+
+                <!--申万一级&专注领域-->
+                <div class="scheduleinput">
+                    <ul class="mui-table-view">
+                        <li class="mui-table-view-cell scheduleinputLi clearfix">
+                            <label for="" class="sclabelLeft fl">申万一级 <span class="txtred">*</span></label>
+                            <a href="#chooseState3" class="chooseStatebtn">
+                                <span id="statetxt3" class="mustInput txtMust">综合</span>
+                            </a>
+                            <i class="mui-icon mui-icon-arrowright"></i>
+                        </li>
+                        <li class="mui-table-view-cell scheduleinputLi scheduletextareaLi clearfix">
+                            <textarea name="专注领域" id="" cols="30" rows="10" placeholder="专注领域*" class="mustInput valMust"  value="">专注领域123</textarea>
+                        </li>
+                    </ul>
+                </div>
+
+                <!--选择 公司&参与人员-->
+                <div class="scheduleinput">
+                    <ul class="mui-table-view">
+                        <li class="mui-table-view-cell scheduleinputLi clearfix linkLi">
+                            <a href="" class="clearfix lisLink">
+                                <label for="" class="sclabelLeft fl" >选择公司</label>
+                                <input type="text" value="jshdjh kjgskjgskjgskjgskjgskjgskjgskjgskjgskjgskjgskjgskjgskjgskjgskjgskjgskjgs">
+                                <i class="mui-icon mui-icon-arrowright"></i>
+                            </a>
+                        </li>
+                        <li class="mui-table-view-cell scheduleinputLi clearfix linkLi">
+                            <a href="" class="clearfix lisLink" >
+                                <label for="" class="sclabelLeft fl">参与人员</label>
+                                <input type="text" class="fl " value="jshdjh kjgskjgskjgskjgskjgskjgskjgskjgskjgskjgskjgskjgskjgskjgskjgskjgskjgskjgs">
+                                <i class="mui-icon mui-icon-arrowright"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!--会访记录&备注-->
+                <div class="scheduleinput">
+                    <ul class="mui-table-view">
+                        <li class="mui-table-view-cell scheduleinputLi scheduletextareaLi clearfix ">
+                            <textarea name="" id="" cols="30" rows="10" placeholder="会访记录" value=""></textarea>
+                        </li>
+                        <li class="mui-table-view-cell scheduleinputLi scheduletextareaLi clearfix ">
+                            <textarea name="" id="" cols="30" rows="10" placeholder="备注" value=""></textarea>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<!--创新活动状态选择-->
+<div id="chooseState" class="mui-popover">
+    <ul class="mui-table-view mui-table-view-radio">
+        <li class="mui-table-view-cell mui-selected">
+            <a class="mui-navigate-right mui-selected noLink" href="#chooseState">
+                完成
+            </a>
+        </li>
+        <li class="mui-table-view-cell ">
+            <a class="mui-navigate-right noLink" href="#chooseState">
+                取消
+            </a>
+        </li>
+        <li class="mui-table-view-cell">
+            <a class="mui-navigate-right noLink" href="#chooseState">
+                延迟
+            </a>
+        </li>
+    </ul>
+</div>
+
+<!--创新活动状态选择-->
+<div id="chooseState2" class="mui-popover">
+    <ul class="mui-table-view mui-table-view-radio">
+        <li class="mui-table-view-cell mui-selected">
+            <a class="mui-navigate-right mui-selected noLink" href="#chooseState2">
+                完成
+            </a>
+        </li>
+        <li class="mui-table-view-cell ">
+            <a class="mui-navigate-right noLink" href="#chooseState2">
+                取消
+            </a>
+        </li>
+        <li class="mui-table-view-cell">
+            <a class="mui-navigate-right noLink" href="#chooseState2">
+                延迟
+            </a>
+        </li>
+    </ul>
+</div>
+
+<!--申万一级选择-->
+<div id="chooseState3" class="mui-popover">
+    <ul class="mui-table-view mui-table-view-radio">
+        <li class="mui-table-view-cell mui-selected">
+            <a class="mui-navigate-right mui-selected noLink" href="#chooseState3">
+                综合
+            </a>
+        </li>
+        <li class="mui-table-view-cell">
+            <a class="mui-navigate-right mui-selected noLink" href="#chooseState3">
+                有色金属
+            </a>
+        </li>
+        <li class="mui-table-view-cell">
+            <a class="mui-navigate-right mui-selected noLink" href="#chooseState3">
+                银行
+            </a>
+        </li>
+        <li class="mui-table-view-cell">
+            <a class="mui-navigate-right mui-selected noLink" href="#chooseState3">
+                医药生物
+            </a>
+        </li>
+        <li class="mui-table-view-cell">
+            <a class="mui-navigate-right mui-selected noLink" href="#chooseState3">
+                休闲服务
+            </a>
+        </li>
+        <li class="mui-table-view-cell">
+            <a class="mui-navigate-right mui-selected noLink" href="#chooseState3">
+                通信
+            </a>
+        </li>
+        <li class="mui-table-view-cell">
+            <a class="mui-navigate-right mui-selected noLink" href="#chooseState3">
+                食品饮料
+            </a>
+        </li>
+        <li class="mui-table-view-cell">
+            <a class="mui-navigate-right mui-selected noLink" href="#chooseState3">
+                商业贸易
+            </a>
+        </li>
+        <li class="mui-table-view-cell">
+            <a class="mui-navigate-right mui-selected noLink" href="#chooseState3">
+                轻工制造
+            </a>
+        </li>
+
+    </ul>
+</div>
+
+<!--性别选择-->
+<div id="chooseState4" class="mui-popover">
+    <ul class="mui-table-view mui-table-view-radio">
+        <li class="mui-table-view-cell mui-selected">
+            <a class="mui-navigate-right mui-selected noLink" href="#chooseState4">
+                男
+            </a>
+        </li>
+        <li class="mui-table-view-cell">
+            <a class="mui-navigate-right mui-selected noLink" href="#chooseState4">
+                女
+            </a>
+        </li>
+    </ul>
+</div>
+
+<!--年龄范围选择-->
+<div id="chooseState5" class="mui-popover">
+    <ul class="mui-table-view mui-table-view-radio">
+        <li class="mui-table-view-cell mui-selected">
+            <a class="mui-navigate-right mui-selected noLink" href="#chooseState5">
+                20-30
+            </a>
+        </li>
+        <li class="mui-table-view-cell">
+            <a class="mui-navigate-right mui-selected noLink" href="#chooseState5">
+                30-40
+            </a>
+        </li>
+        <li class="mui-table-view-cell">
+            <a class="mui-navigate-right mui-selected noLink" href="#chooseState5">
+                40-50
+            </a>
+        </li>
+        <li class="mui-table-view-cell">
+            <a class="mui-navigate-right mui-selected noLink" href="#chooseState5">
+                50以上
+            </a>
+        </li>
+    </ul>
+</div>
+
+</body>
+<script src="js/mui.min.js"></script>
+<script src="js/app.js"></script>
+<script>
+    (function ($) {
+        //tab切换
+        for(var i=0;i<$('.scheduleTypeBox .scheduleType').length;i++){
+            $('.scheduleTypeBox .scheduleType')[i].index = i;
+            $('.scheduleTypeBox .scheduleType')[i].addEventListener('tap',function () {
+                $('.scheduleTypeBox .scheduleType').each(function (index,element) {
+                    this.classList.remove('actived');
+                });
+                this.classList.add('actived');
+                var num = this.index;
+                $('.scheduleCon .scheduleConCell').each(function () {
+                    this.classList.remove('actived')
+                });
+                $('.scheduleCon .scheduleConCell')[num].classList.add('actived');
+
+
+            })
+        }
+
+
+
+    //状态选择
+        function selectState(infoId,selectCell) {
+            var info = document.getElementById(infoId);
+            document.querySelector(selectCell).addEventListener('selected',function(e){
+                info.innerHTML = e.detail.el.innerText;
+            });
+        }
+        selectState('statetxt','#chooseState .mui-table-view.mui-table-view-radio');
+        selectState('statetxt2','#chooseState2 .mui-table-view.mui-table-view-radio');
+        selectState('statetxt3','#chooseState3 .mui-table-view.mui-table-view-radio');
+        selectState('statetxt4','#chooseState4 .mui-table-view.mui-table-view-radio');
+        selectState('statetxt5','#chooseState5 .mui-table-view.mui-table-view-radio');
+
+    })(mui)
+</script>
+
+<script src="js/mui.picker.min.js"></script>
+<script>
+    (function($) {
+        $.init();
+        var result = $('#result')[0];
+        var btns = $('.scbtn');
+        btns.each(function(i, btn) {
+            btn.addEventListener('tap', function() {
+                var optionsJson = this.getAttribute('data-options') || '{}';
+                var options = JSON.parse(optionsJson);
+                var id = this.getAttribute('id');
+                /*
+                 * 首次显示时实例化组件
+                 * 示例为了简洁，将 options 放在了按钮的 dom 上
+                 * 也可以直接通过代码声明 optinos 用于实例化 DtPicker
+                 */
+                var picker = new $.DtPicker(options);
+                picker.show(function(rs) {
+                    /*
+                     * rs.value 拼合后的 value
+                     * rs.text 拼合后的 text
+                     * rs.y 年，可以通过 rs.y.vaue 和 rs.y.text 获取值和文本
+                     * rs.m 月，用法同年
+                     * rs.d 日，用法同年
+                     * rs.h 时，用法同年
+                     * rs.i 分（minutes 的第二个字母），用法同年
+                     */
+                    btn.getElementsByClassName('ui-alert')[0].innerText = rs.text;
+                   /* result.innerText = rs.text;*/
+                    /*
+                     * 返回 false 可以阻止选择框的关闭
+                     * return false;
+                     */
+                    /*
+                     * 释放组件资源，释放后将将不能再操作组件
+                     * 通常情况下，不需要示放组件，new DtPicker(options) 后，可以一直使用。
+                     * 当前示例，因为内容较多，如不进行资原释放，在某些设备上会较慢。
+                     * 所以每次用完便立即调用 dispose 进行释放，下次用时再创建新实例。
+                     */
+                    picker.dispose();
+                });
+            }, false);
+        });
+    })(mui);
+</script>
+
+<script>
+    /*必填项*/
+    (function ($) {
+        var requiredCell = $('body .scheduleConCell .mustInput');
+        var len = requiredCell.length;
+        for(var i=0;i<len;i++){
+            requiredCell[i].addEventListener('blur',function(){
+                if(this.value == null || this.value.trim() ==""){
+                    this.closest('li').style.borderBottom  = "1px solid #D95C5C";
+                }else{
+                    this.closest('li').style.border = "0";
+                    this.closest('li').style.borderBottom = "1px solid #d9d9d9";
+                }
+            })
+        }
+
+     /*  function test() {
+           for(var j=0;j<$('.scheduleType').length;j++){
+               if($('.scheduleType')[j].classList.contains('actived')==true){
+                   return 'num is'+j;
+               }
+           }
+       }
+
+       console.log(test())*/
+
+//点击确定，提示未填的必选项
+    $('#submitNewSchedule')[0].addEventListener('tap',function () {
+        function getNum() {
+            for(var i=0;i<$('body .scheduleType ').length;i++){
+                if($('body .scheduleType ')[i].classList.contains('actived')){
+                    return i;
+                }
+            }
+        }
+
+        var schType = getNum();//获得当前选择填报的日程类型
+
+        var requiredCell = $('body .scheduleConCell ')[schType].getElementsByClassName('mustInput');
+        console.log(requiredCell.length);
+        for(var j=0;j<requiredCell.length;j++){
+            if(requiredCell[j].classList.contains('valMust') &&( requiredCell[j].value ==''|| requiredCell[j].value.trim() =="")){
+               mui.alert(requiredCell[j].getAttribute('name')+'不能为空');
+                requiredCell[j].closest('li').style.borderBottom  = "1px solid #D95C5C";
+            }else if(requiredCell[j].classList.contains('txtMust') && requiredCell[j].innerHTML ==''){
+                mui.alert(requiredCell[j].getAttribute('name')+'不能为空');
+                requiredCell[j].closest('li').style.borderBottom  = "1px solid #D95C5C";
+            }
+        }
+    })
+    })(mui)
+
+</script>
+
+</html>

@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>上海证券报</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+		<link rel="stylesheet" href="css/mui.min.css"/>
+		<link rel="stylesheet" href="css/app.css"/>
+		<link rel="stylesheet" href="iconfont/iconfont.css"/>
+		<link rel="stylesheet" href="css/xiangmu.css"/>
+		<style>
+			.mui-navigate-right-dy:after {
+				top: 50%;
+				display: none;
+				}
+			.dy-jq-box .mui-table-view.mui-grid-view .mui-table-view-cell .mui-media-body {
+				font-size: 12px;
+				}
+			.mui-table-view-cell a {
+				font-size: 14px;
+				}
+			.mui-slider .mui-slider-group .mui-slider-item img {
+			width: 36%;
+			}
+			.mui-content-dy {
+				background: #f2f7fc;
+				height: auto;
+				}
+            .mui-table-view-cell-xminfo{
+                padding-left: 20px;
+                position: relative;
+            }
+            .mui-table-view-cell-xminfo:before {
+                content: '';
+                position: absolute;
+                width: 4px;
+                height: 13px!important;
+                top: 11px;
+                left: 12px;
+                background-color: #1d8fe1;
+            }
+            .failure-project-watermark{
+            	position: relative;
+            }
+            .failure-project-watermark:before {
+            	content:'';
+            	width: 60px;
+            	height: 60px;
+    			position: absolute;
+    			top: 50%;
+    			margin-top: -30px;
+    			left: 50%;
+    			background: url(images/failureproject-wm.png) no-repeat;
+    			background-size:cover;    		
+            }
+		</style>
+	</head>
+
+	<body>
+        <header class="mui-bar mui-bar-nav registerhd">
+            <h1 id="title" class="mui-title">项 目</h1>
+         </header>
+        <div class="mui-content  indexChange" style="margin-bottom: 50px;" id="content">
+            <!--十大填报项目&我申请的项目-->
+            <!--<div class="projectList">
+					<div id="Gallery" class="mui-slider mui-content-dy slide-box">
+						<div class="mui-slider-group">
+							<div class="mui-content-dy-box mui-slider-item">
+								<ul class="flexUl clearfix">
+
+									<li class="flexLi">
+                                        <a href="ipo-list.html">
+                                            <span class="bcgradientblue">IPO</span>
+                                            <i>拟IPO项目信息</i>
+                                        </a>
+									</li>
+                                    <li class="flexLi">
+                                        <a href="gqzy-list.html">
+                                            <span class="bcgradientred">押</span>
+                                            <i>股权质押</i>
+                                        </a>
+                                    </li>
+                                    <li class="flexLi">
+                                        <a href="bgmf-list.html">
+                                            <span class="bcgradientpurple">卖</span>
+                                            <i>并购卖方</i>
+                                        </a>
+                                    </li>
+                                    <li class="flexLi">
+                                        <a href="bgbuyf-list.html">
+                                            <span class="bcgradientorange">买</span>
+                                            <i>并购买方</i>
+                                        </a>
+                                    </li>
+                                    <li class="flexLi">
+                                        <a href="tdgdzcj-list.html">
+                                            <span class="bcgradientgreen">减</span>
+                                            <i>特定股东增持减</i>
+                                        </a>
+                                    </li>
+                                    <li class="flexLi">
+                                        <a href="gqjl-list.html">
+                                            <span class="bcgradientyellow">励</span>
+                                            <i>股权激励</i>
+                                        </a>
+                                    </li>
+								</ul>
+							</div>
+							<div class="mui-content-dy-box mui-slider-item">
+                                <ul class="flexUl clearfix">
+                                    <li class="flexLi">
+                                        <a href="cybgjj-list.html">
+                                            <span class="bcgradientdarkyellow">金</span>
+                                            <i>产业并购基金</i>
+                                        </a>
+                                    </li>
+                                    <li class="flexLi">
+                                        <a href="xdxm-list.html">
+                                            <span class="bcgradientlightorange">贷</span>
+                                            <i>信贷项目信息</i>
+                                        </a>
+                                    </li>
+                                    <li class="flexLi">
+                                        <a href="zqxm-list.html">
+                                            <span class="bcgradientlightred">债</span>
+                                            <i>债权项目信息</i>
+                                        </a>
+                                    </li>
+                                    <li class="flexLi">
+                                        <a href="tzlc-list.html">
+                                            <span class="bcgradientgold">财</span>
+                                            <i>投资理财项目</i>
+                                        </a>
+                                    </li>
+                                    <li class="flexLi">
+                                        <a href="myProject.html">
+                                            <span class="bcgradientdarkblue">项</span>
+                                            <i>我的项目</i>
+                                        </a>
+                                    </li>
+                                    <li class="flexLi">
+                                        <a href="gzdc.html">
+                                            <span class="bcgradientdarkblue2">踪</span>
+                                            <i>跟踪调查表</i>
+                                        </a>
+                                    </li>
+                                </ul>
+							</div>
+						</div>
+						<div class="mui-slider-indicator">
+							<div class="mui-indicator mui-active"></div>
+							<div class="mui-indicator"></div>
+						</div>
+					</div>
+				</div>-->
+            <!--1-9改-->
+            <div class="allProjectBox">
+                <ul class="flexUl clearfix">
+                	<li class="flexLi">
+                        <a href="dongcha/dongcha-index.html">
+                            <span class="bcgradientblue">洞察</span>
+                            <i>洞察</i>
+                        </a>
+                    </li>
+                	<li class="flexLi">
+                        <a href="sound-recording.html">
+                            <span class="bcgradientblue">录音</span>
+                            <i>录音动画</i>
+                        </a>
+                    </li>
+                	<li class="flexLi">
+                        <a href="mobileCompany/company/companyDetails.html">
+                            <span class="bcgradientblue">日历</span>
+                            <i>公司模块</i>
+                        </a>
+                    </li>
+  					<li class="flexLi">
+                        <a href="calendar.html">
+                            <span class="bcgradientblue">日历</span>
+                            <i>日历</i>
+                        </a>
+                    </li>
+                    <li class="flexLi">
+                        <a href="interview_search.html">
+                            <span class="bcgradientblue">采访</span>
+                            <i>采访</i>
+                        </a>
+                    </li>
+                    <li class="flexLi">
+                        <a href="ipo-list.html">
+                            <span class="bcgradientblue">IPO</span>
+                            <i>拟IPO</i>
+                        </a>
+                    </li>
+                    <li class="flexLi">
+                        <a href="gqzy-list.html">
+                            <span class="bcgradientred"><i class="iconfont icon-guquanzhiya" style="padding-top: 2px;"></i></span>
+                            <i>股权质押</i>
+                        </a>
+                    </li>
+                    <li class="flexLi">
+                        <a href="bgmf-list.html">
+                            <span class="bcgradientpurple"><i class="iconfont icon-maifang1" style="font-size: 24px;"></i></span>
+                            <i>并购卖方</i>
+                        </a>
+                    </li>
+                    <li class="flexLi">
+                        <a href="bgbuyf-list.html">
+                            <span class="bcgradientorange"><i class="iconfont icon-maifang" style="font-size: 24px;"></i></span>
+                            <i>并购买方</i>
+                        </a>
+                    </li>
+                    <li class="flexLi">
+                        <a href="tdgdzcj-list.html">
+                            <span class="bcgradientgreen"><i class="iconfont icon-zengjianfuwuneironghuochanpin" style="font-size: 30px;padding-top: 2px;"></i></span>
+                            <i>增减持</i>
+                        </a>
+                    </li>
+                    <li class="flexLi">
+                        <a href="gqjl-list.html">
+                            <span class="bcgradientyellow"><i class="iconfont icon-icon_wenhuajili" style="padding-top: 2px;"></i></span>
+                            <i>股权激励</i>
+                        </a>
+                    </li>
+                    <li class="flexLi">
+                        <a href="cybgjj-list.html">
+                            <span class="bcgradientdarkyellow"><i class="iconfont icon-hebing" style="padding-top: 2px;"></i></span>
+                            <i>产业并购</i>
+                        </a>
+                    </li>
+                    <li class="flexLi">
+                        <a href="xdxm-list.html">
+                            <span class="bcgradientlightorange"><i class="iconfont icon-xindai" style="font-size: 24px;padding-top: 3px;"></i></span>
+                            <i>信贷项目</i>
+                        </a>
+                    </li>
+                    <li class="flexLi">
+                        <a href="zqxm-list.html">
+                            <span class="bcgradientlightred"><i class="iconfont icon-jingying1"></i></span>
+                            <i>债权项目</i>
+                        </a>
+                    </li>
+                    <li class="flexLi">
+                        <a href="tzlc-list.html">
+                            <span class="bcgradientgold"><i class="iconfont icon-touzilicai" style="font-size: 22px;"></i></span>
+                            <i>投资理财</i>
+                        </a>
+                    </li>
+                    <li class="flexLi">
+                        <a href="gzdc.html">
+                            <span class="bcgradientdarkblue2"><i class="iconfont icon-see-icon-m3-research"></i></span>
+                            <i>跟踪调查</i>
+                        </a>
+                    </li>
+                    <li class="flexLi">
+                        <a href="myProject.html">
+                            <span class="bcgradientdarkblue"><i class="iconfont icon-wodexiangmu"></i></span>
+                            <i>我的项目</i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!--十大填报项目&我申请的项目 end-->
+				
+            <!--发布项目展示&项目信息反馈-->
+			<!--	<a href="sharing12-21/tdgdzjc-fenx.html">股权质押分享</a>-->
+            <!--发布项目展示-->
+            <div class="fbxmzs">
+                    <ul class="mui-table-view mui-table-view-chevron">
+                        <li class="mui-table-view-cell mui-table-view-cell-xminfo xmtit-bc-blue">
+                            <a href="xiangmu-fabu.html" class="mui-navigate-right">项目信息</a>
+                        </li>
+                    </ul>
+                    <ul class="mui-table-view mui-table-view-chevron">
+                        <li class="mui-table-view-cell mui-media failure-project-watermark">
+                        
+                            <a class="mui-navigate-right mui-navigate-right-dy listA" href="projectApply.html">
+                                <div class="clla_al">
+                                    <span class="dataspan">
+                                        <span class="day_tit">拟</span>
+                                        <span class="day_under">IPO</span>
+                                    </span>
+                                </div>
+                                <div class="mui-media-body mui-ellipsis dy-list-box">
+                                    嘉禾盛世孙志测试最新嘉禾盛世孙志测试最新嘉禾盛世孙志测试最新
+                                    <p>
+                                        <span class="xmzt jcz">接触中</span>
+                                        <i class="gznum"><i class="mui-icon mui-icon-star-filled"></i>36</i>
+                                        <span class="fbxmDate">2017-09-17</span>
+                                    </p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="mui-table-view-cell mui-media">
+                            <a class="mui-navigate-right mui-navigate-right-dy listA" href="">
+                                <div class="clla_al">
+                                     <span class="dataspan">
+                                        <span class="day_tit">并购</span>
+                                        <span class="day_under">买方</span>
+                                    </span>
+                                </div>
+                                <div class="mui-media-body mui-ellipsis dy-list-box">
+                                    华东某农牧业拟上市公司项目
+                                    <p>
+                                        <span class="xmzt gzz">关注中</span>
+                                        <i class="gznum"><i class="mui-icon mui-icon-star-filled"></i>36</i>
+                                        <span class="fbxmDate">2017-09-17</span>
+                                    </p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="mui-table-view-cell mui-media">
+                            <a class="mui-navigate-right mui-navigate-right-dy listA" href="">
+                                <div class="clla_al">
+                                     <span class="dataspan">
+                                        <span class="day_tit">股权</span>
+                                        <span class="day_under">质押</span>
+                                    </span>
+                                </div>
+                                <div class="mui-media-body mui-ellipsis dy-list-box">
+                                    嘉禾盛世孙志测试最新嘉禾盛世孙志测试最新嘉禾盛世孙志测试最新
+                                    <p>
+                                        <span class="xmzt dgz">待关注</span>
+                                        <i class="gznum"><i class="mui-icon mui-icon-star-filled"></i>36</i>
+                                        <span class="fbxmDate">2017-09-17</span>
+                                    </p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="mui-table-view-cell mui-media">
+                            <a class="mui-navigate-right mui-navigate-right-dy listA" href="">
+                                <div class="clla_al">
+                                     <span class="dataspan">
+                                        <span class="day_tit">特定股东</span>
+                                        <span class="day_under">增持减</span>
+                                    </span>
+                                </div>
+                                <div class="mui-media-body mui-ellipsis dy-list-box">
+                                    华东某农牧业拟上市公司项目
+                                    <p>
+                                        <span class="xmzt tpz">谈判中</span>
+                                        <i class="gznum"><i class="mui-icon mui-icon-star-filled"></i>36</i>
+                                        <span class="fbxmDate">2017-09-17</span>
+                                    </p>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            <!--发布项目展示end-->
+            <div style="height: 5px;"></div>
+            <!--项目信息反馈-->
+            <div class="xmxxfk">
+                    <ul class="mui-table-view mui-table-view-chevron">
+                        <li class="mui-table-view-cell mui-table-view-cell-xminfo xmtit-bc-blue">
+                            <a href="xiangmu-fk.html" class="mui-navigate-right">我的项目</a>
+                        </li>
+                    </ul>
+                    <!--<ul class="mui-table-view mui-table-view-chevron">
+                        <li class="mui-table-view-cell mui-media">
+                            <a class="mui-navigate-right mui-navigate-right-dy listA" href="xiangmu-fk-xq.html">
+                                <div class="mui-media-body mui-ellipsis dy-list-box">
+                                    您申请接触【EST2】拟IPO项目已批准
+                                    <p>
+                                        <span class="xmzt dsh">待审核</span>
+                                        <span class="xmzt jcz">接触中</span>
+                                        <i class="custom-btn btn-5 inlineB infohandle"><span>处理</span></i>
+                                        <span class="fbxmDate">2017-08-14</span>
+                                    </p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="mui-table-view-cell mui-media">
+                            <a class="mui-navigate-right mui-navigate-right-dy listA" href="xiangmu-fk-xq.html">
+                                <div class="mui-media-body mui-ellipsis dy-list-box">
+                                    中国联通公司求证项目
+                                    <p>
+                                        <span class="xmzt jcz">接触中</span>
+                                        <i class="custom-btn btn-5 inlineB infohandle"><span>处理</span></i>
+                                        <span class="fbxmDate">2017-08-14</span>
+                                    </p>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>-->
+                    <ul class="xmfkInfobox">
+                        <li class="liXmfkInfo">
+                            <a href="xiangmu-fk-xq.html" class="aXmfkInfo">
+                                <span class="mui-icon mui-icon-forward"></span>
+                                <span class="box_timeT">
+                                    <span class="iNewsClass ggInfo">拟IPO项目</span>
+                                    <i class="iNewsTime">2017-11-10</i>
+                                </span>
+                                <p class="pNewsTxt">
+                                    您申请接触【EST2】拟IPO项目已批准
+                                </p>
+                                <p>
+                                    项目状态：<span>谈判中</span>
+                                </p>
+                                <p>
+                                    关注人数：<span>26</span>
+                                </p>
+                                <span class="newsSource">【上海证券报】张有春</span>
+                            </a>
+                        </li>
+                        <li class="liXmfkInfo">
+                            <a href="xiangmu-fk-xq.html" class="aXmfkInfo">
+                                <span class="mui-icon mui-icon-forward"></span>
+                                <span class="box_timeT">
+                                    <span class="iNewsClass ggInfo">拟IPO项目</span>
+                                    <i class="iNewsTime">2017-11-10</i>
+                                </span>
+                                <p class="pNewsTxt">
+                                    您申请接触【EST2】拟IPO项目已批准
+                                </p>
+                                <p>
+                                    项目状态：<span>谈判中</span>
+                                </p>
+                                <p>
+                                    关注人数：<span>26</span>
+                                </p>
+                                <span class="newsSource">【上海证券报】张有春</span>
+                            </a>
+                        </li>
+                        <li class="liXmfkInfo">
+                            <a href="xiangmu-fk-xq.html" class="aXmfkInfo">
+                                <span class="mui-icon mui-icon-forward"></span>
+                                <span class="box_timeT">
+                                    <span class="iNewsClass ggInfo">拟IPO项目</span>
+                                    <i class="iNewsTime">2017-11-10</i>
+                                </span>
+                                <p class="pNewsTxt">
+                                    您申请接触【EST2】拟IPO项目已批准
+                                </p>
+                                <p>
+                                    项目状态：<span>谈判中</span>
+                                </p>
+                                <p>
+                                    关注人数：<span>26</span>
+                                </p>
+                                <span class="newsSource">【上海证券报】张有春</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            <!--项目信息反馈end-->
+			<!--公司页面（公司调研---行业调研）end-->
+			
+			</div>
+    <script src="js/mui.min.js"></script>
+    <script type="text/javascript">
+        mui.init({
+				swipeBack:true,//启用右滑关闭功能,在哪个页面写，就支持那个页面
+				keyEventBind:{
+					backbutton: true //打开back按键监听
+				}
+			});
+        mui.plusReady(function () {
+                //读取本地存储，检查是否为首次启动
+                var showGuide = plus.storage.getItem("lauchFlag");
+                if(showGuide){
+                    /*setInterval(function () {
+                        mui.openWindow({
+
+                            url:'login.html',
+
+                            id:'login.html'
+
+                        });
+                    },1000)*/
+                }
+            })
+        /*  setInterval(function () {
+              mui.openWindow({
+
+                  url:'login.html',
+
+                  id:'login.html'
+
+              });
+          },1000)*/
+		</script>
+    <script src="js/app.js"></script>
+    </body>
+
+</html>

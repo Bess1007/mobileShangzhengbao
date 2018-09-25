@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>查看手机通讯录</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+		<!--标准mui.css-->
+		<link rel="stylesheet" href="css/mui.min.css">
+		<!--App自定义的css-->
+		<link rel="stylesheet" type="text/css" href="css/app.css" />
+        <style>
+            .newFriendSearchbox {
+                margin-top: 16px;
+                padding-bottom: 6px;
+                background: #fff!important;
+            }
+            .newFriendSearchbox input {
+                border-radius:0;
+                border:0;
+                border-bottom:1px solid #999;
+            }
+            .mail-list {
+                margin-top:16px;
+                background-color: #fff;
+
+                padding-top: 0;
+            }
+            .sr_tit {
+                border-bottom:1px solid #ccc;
+                padding-bottom: 5px;
+                color: #aaa;
+                font-size: 14px;
+            }
+            .sr_cont {
+                padding: 12px;
+                padding-top: 0;
+            }
+            .sr_cont li a{
+                display:block;
+                padding:8px 0;
+                border-bottom:1px solid #ddd;
+            }
+            .fname {
+                color: #333;
+            }
+            .layimNav {
+                background:#36373c;
+                height: 50px;line-height: 50px;
+                padding-top: 3px;
+            }
+            .sr_con_cell {
+                padding:8px 0;
+                border-bottom:1px solid #ddd;
+                padding-right: 80px;
+                position: relative;
+            }
+            .sr_add {
+                position: absolute;
+                right: 0;
+                top: 13px;
+                width: 80px;
+                height: 32px;
+                text-align: center;
+                line-height: 32px;
+                background-color: #29a1f7;
+                color: #fff;
+                font-size:14px;
+                border-radius:2px;
+            }
+           .sr_add.alreadyAdded {
+               background-color: transparent;
+               color: #000;
+           }
+            .initialLabel {
+                padding-left: 12px;
+                background-color: #ebebeb;
+                color: #666;
+                font-size: 14px;
+                text-align: left;
+                height: 22px;
+                line-height: 22px;
+            }
+        </style>
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav " >
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<h1 class="mui-title">查看手机通讯录</h1>
+		</header>
+		<div class="mui-content ">
+            <div class="mui-input-row mui-search newFriendSearchbox" >
+                <input type="search" class="mui-input-clear" placeholder="搜索">
+            </div>
+            <div class="mail-list">
+                <div class="mail-list-cell">
+                    <div class="initialLabel">A</div>
+                    <div class="sr_cont">
+                    <ul>
+                        <li class="sr_con_cell">
+                            <!--添加-->
+                            <span class="sr_add alreadyAdded ">已添加</span>
+                            <!--添加 end-->
+                            <p class="fname">闲心</p>
+                            <p class="ftel">手机号：<i>13000000000</i></p>
+                        </li>
+                        <li class="sr_con_cell">
+                            <!--添加-->
+                            <span class="sr_add ">添加</span>
+                            <!--添加 end-->
+                            <p class="fname">闲心2</p>
+                            <p class="ftel">手机号：<i>13000000000</i></p>
+                        </li>
+                    </ul>
+                </div>
+                </div>
+                <div class="mail-list-cell">
+                    <div class="initialLabel">B</div>
+                    <div class="sr_cont">
+                        <ul>
+                            <li class="sr_con_cell">
+                                <!--添加-->
+                                <span class="sr_add alreadyAdded ">已添加</span>
+                                <!--添加 end-->
+                                <p class="fname">闲心</p>
+                                <p class="ftel">手机号：<i>13000000000</i></p>
+                            </li>
+                            <li class="sr_con_cell">
+                                <!--添加-->
+                                <span class="sr_add ">添加</span>
+                                <!--添加 end-->
+                                <p class="fname">闲心2</p>
+                                <p class="ftel">手机号：<i>13000000000</i></p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+		<script src="js/mui.min.js"></script>
+		<script src="js/app.js"></script>
+    </body>
+</html>

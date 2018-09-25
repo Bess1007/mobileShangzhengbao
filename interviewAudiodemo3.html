@@ -1,0 +1,65 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"/>
+    <link  href="http://yanshi.sucaihuo.com/jquery/20/2079/demo/css/barstyle.csscss/barstyle.css" rel="stylesheet">
+
+    <title>jquery播放进度条插件，可拖动</title>
+</head>
+<style type="text/css">
+    .test{
+        width:400px;
+        height:20px;
+        position:fixed;
+        left:50%;
+        top:50%;
+        margin-left:-200px;
+        margin-top:5px;
+    }
+    .contral{
+        width:50px;
+        height:30px;
+        line-height:30px;
+        background:#3498DB;
+        cursor:pointer;
+        color:#fff;
+        position:fixed;
+        left:50%;
+        top:50%;
+        margin-left:-25px;
+        margin-top:-45px;
+        text-align:center;
+    }
+</style>
+<body>
+
+<div class="contral">停止</div>
+<div class="test"></div>
+
+
+<script src="http://yanshi.sucaihuo.com/jquery/20/2079/demo/js/jquery.min.js"></script>
+<script src="http://yanshi.sucaihuo.com/jquery/20/2079/demo/js/jquery-PlayBar.min.js"></script>
+<script>
+    $(function(){
+        var action=true;
+        $('.contral').click(function(){
+            if(action){
+                $.playBar.Stop();
+                action=false;
+                $(this).html("开始");
+            }else{
+                $.playBar.Begin();
+                action=true;
+                $(this).html("停止");
+            }
+        });
+        $.playBar.addBar($('.test'),400*60);//第一个参数是需要显示播放器的容器，第二个参数为时间，单位毫秒
+        $.playBar.changeBarColor("#72dfff");//设置进度条颜色
+
+    });
+</script>
+
+</body>
+</html>

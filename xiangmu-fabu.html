@@ -1,0 +1,280 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>发布项目列表页</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<link href="css/mui.min.css" rel="stylesheet" />
+	<link href="css/app.css" rel="stylesheet" />
+	<style>
+
+		.mui-plus .plus{
+			display: inline;
+		}
+
+		.plus{
+			display: none;
+		}
+
+		#topPopover {
+			position: fixed;
+			top: 16px;
+			right: 6px;
+		}
+		#topPopover .mui-popover-arrow {
+			left: auto;
+			right: 6px;
+		}
+		span.mui-icon {
+			font-size: 14px;
+			color: #007aff;
+			margin-left: -15px;
+			padding-right: 10px;
+		}
+		.mui-popover {
+			height: 196px;
+		}
+		.mui-content {
+			padding-left:0;
+			padding-right: 0;
+		}
+		.mui-popover .mui-scroll-wrapper {overflow: hidden}
+		.mui-navigate-right-dy:after {
+			top: 50%;
+			display: none;
+		}
+		.dy-jq-box .mui-table-view.mui-grid-view .mui-table-view-cell .mui-media-body {
+			font-size: 12px;
+
+		}
+		.mui-table-view-cell a {
+			font-size: 14px;
+		}
+		.mui-slider .mui-slider-group .mui-slider-item img {
+			width: 36%;
+		}
+		.mui-content-dy {
+			background: #f2f7fc;
+			height: auto;
+		}
+
+		/*12-1新增筛选样式*/
+		.fk-filterBox .inlineB {
+			float: left;
+			width: 50%;
+			position: relative;
+		}
+		.fk-filterBox .inlineB select {
+			width: 100%;
+			height: 40px;
+		}
+		.fk-filterBox .inlineB .mui-icon {
+			position: absolute;
+			top:0;
+			right: 12px;
+			height: 40px;
+			line-height:40px;
+			width: 24px;
+			text-align: center;
+			font-size: 16px;
+		}
+	</style>
+</head>
+
+<body>
+<header class="mui-bar mui-bar-nav">
+	<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+	<h1 class="mui-title">发布项目</h1>
+	<a class="mui-icon mui-icon-search mui-pull-right" style="color: #fff;"  href="#topPopover"></a>
+</header>
+<div class="mui-content">
+	<div class="fk-filterBox clearfix">
+				<span class="inlineB" style="padding-right: 4px;">
+					<i class="mui-icon mui-icon-arrowdown"></i>
+					<select name="" id="" >
+						<option value="">选择项目类型</option>
+						<option value="">拟IPO项目</option>
+						<option value="">股权质押项目</option>
+						<option value="">并购卖方</option>
+						<option value="">并购买方</option>
+						<option value="">特定股东增减持</option>
+						<option value="">股权激励</option>
+						<option value="">产业并购基金</option>
+						<option value="">信贷项目信息</option>
+						<option value="">债权项目信息</option>
+						<option value="">投资理财项目</option>
+					</select>
+				</span>
+				<span class="inlineB" style="padding-left: 4px;">
+					<i class="mui-icon mui-icon-arrowdown"></i>
+					<select name="" id="" >
+						<option value="">选择项目状态</option>
+						<option value="">待关注</option>
+						<option value="">关注中</option>
+						<option value="">接触中</option>
+						<option value="">谈判中</option>
+						<option value="">待接触</option>
+						<option value="">待谈判</option>
+						<option value="">发布成功</option>
+						<option value="">待提交</option>
+						<option value="">待审核</option>
+						<option value="">待发布</option>
+						<option value="">退回</option>
+						<option value="">成功</option>
+					</select>
+				</span>
+	</div>
+	<div class="fbxmzs">
+		<ul class="mui-table-view mui-table-view-chevron">
+			<li class="mui-table-view-cell mui-table-view-cell-xminfo">
+				<a href="#">发布的项目（20）</a>
+			</li>
+		</ul>
+		<ul class="mui-table-view mui-table-view-chevron">
+			<li class="mui-table-view-cell mui-media">
+				<a class="mui-navigate-right mui-navigate-right-dy listA" href="projectApply.html">
+					<div class="clla_al">
+						<span class="dataspan">
+							<span class="day_tit">拟</span>
+							<span class="day_under">IPO</span>
+						</span>
+					</div>
+					<div class="mui-media-body mui-ellipsis dy-list-box">
+						嘉禾盛世孙志测试最新嘉禾盛世孙志测试最新嘉禾盛世孙志测试最新
+						<p>
+							<span class="xmzt tpz">谈判中</span>
+							<i class="gznum"><i class="mui-icon mui-icon-star-filled"></i>36</i>
+							<span class="fbxmDate">2017-09-17</span>
+						</p>
+					</div>
+				</a>
+			</li>
+			<li class="mui-table-view-cell mui-media">
+				<a class="mui-navigate-right mui-navigate-right-dy listA" href="">
+					<div class="clla_al">
+						<span class="dataspan">
+							<span class="day_tit">并购</span>
+							<span class="day_under">买方</span>
+						</span>
+					</div>
+					<div class="mui-media-body mui-ellipsis dy-list-box">
+						华东某农牧业拟上市公司项目
+						<p>
+							<span class="xmzt gzz">关注中</span>
+							<i class="gznum"><i class="mui-icon mui-icon-star-filled"></i>36</i>
+							<span class="fbxmDate">2017-09-17</span>
+						</p>
+					</div>
+				</a>
+			</li>
+			<li class="mui-table-view-cell mui-media">
+				<a class="mui-navigate-right mui-navigate-right-dy listA" href="">
+					<div class="clla_al">
+						<span class="dataspan">
+							<span class="day_tit">特定股东</span>
+							<span class="day_under">增持减</span>
+						</span>
+					</div>
+					<div class="mui-media-body mui-ellipsis dy-list-box">
+						华东某农牧业拟上市公司项目
+						<p>
+							<span class="xmzt jcz">接触中</span>
+							<i class="gznum"><i class="mui-icon mui-icon-star-filled"></i>36</i>
+							<span class="fbxmDate">2017-09-17</span>
+						</p>
+					</div>
+				</a>
+			</li>
+			<li class="mui-table-view-cell mui-media">
+				<a class="mui-navigate-right mui-navigate-right-dy listA" href="">
+					<div class="clla_al">
+						<span class="dataspan">
+							<span class="day_tit">特定股东</span>
+							<span class="day_under">增持减</span>
+						</span>
+					</div>
+					<div class="mui-media-body mui-ellipsis dy-list-box">
+						华东某农牧业拟上市公司项目
+						<p>
+							<span class="xmzt cg">成 功</span>
+							<i class="gznum"><i class="mui-icon mui-icon-star-filled"></i>36</i>
+							<span class="fbxmDate">2017-09-17</span>
+						</p>
+					</div>
+				</a>
+			</li>
+		</ul>
+	</div>
+</div>
+<style>
+	::-webkit-input-placeholder { /* WebKit browsers */
+		color: #999; font-size: 14px;opacity: 0.7;font-family: "微软雅黑";padding-left: 0px;
+	}
+	::-ms-input-placeholder { /* WebKit browsers */
+		color: #999; font-size: 14px;opacity: 0.7;font-family: "微软雅黑";padding-left: 0px;
+	}
+
+	.mui-popover .mui-popover-arrow {
+		top: -26px;
+	}
+	.searchTypeBox {
+		border-bottom:1px solid #619be8;
+	}
+	.searchTypeBox li {
+		width: 50%;
+		float: left;
+		text-align: center;
+		height: 34px;
+		line-height: 34px;
+		padding:0 5px;
+	}
+	.xm-searchBox {
+		border-radius:0;
+		position: relative;
+	}
+	.xm-searchBox input {
+		margin: 0;
+		padding:0 10px;
+		border: 0;
+		padding-left: 36px;
+		text-align: left;
+		height: 40px;
+
+	}
+	.inputSico {
+		position: absolute;
+		bottom: 0px;
+		line-height: 40px;
+		left: 8px;
+		font-size: 20px;
+	}
+	.searchTypeBox li.actived {
+		background-color: rgba(16,95,241,.7);
+		color: #fff;
+	}
+</style>
+<!--选择项目状态-->
+<div id="topPopover" class="mui-popover xm-searchBox" style="width: 100%;height:auto;right: 0;">
+	<ul class="searchTypeBox clearfix">
+		<li class="actived">标题搜索</li>
+		<li class="">概要搜索</li>
+	</ul>
+	<input type="search" placeholder="请输入检索关键字">
+	<i class="mui-icon mui-icon-search inputSico"></i>
+</div>
+<!--选择项目状态end-->
+<script src="js/mui.min.js"></script>
+<script src="js/app.js"></script>
+<script>
+	mui('.searchTypeBox').on('tap','li',function () {
+	    mui('.searchTypeBox li')[0].classList.remove('actived');
+	    mui('.searchTypeBox li')[1].classList.remove('actived');
+        this.classList.add('actived');
+    })
+</script>
+
+</body>
+
+</html>

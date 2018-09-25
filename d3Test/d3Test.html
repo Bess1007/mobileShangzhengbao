@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>d3.jsTest</title>
+</head>
+<body>
+<p>hello world 1</p>
+<p>hello world 2</p>
+<script type="text/javascript" src="https://d3js.org/d3.v4.min.js"></script>
+<script>
+    /*d3.select("body").selectAll("p").text("www.ourd3js.com");*/
+    //选择<body>中所有的<p>，其文本内容为 www.ourd3js.com，选择集保存在变量 p 中
+    var p = d3.select("body").selectAll("p").text("www.ourd3js.com");
+
+    //修改段落的颜色和字体大小
+    p.style("color","red").style("font-size","72px");
+
+    /*这里涉及到一个概念：选择集：使用d3.selectAll()选择元素后返回的对象，就是选择集*/
+    /*另外，D3能够连续不断地调用函数，形如：d3.select().selectAll.text() 这称为链式语法*/
+
+    /********D3.js入门系列--2选择元素和绑定元素******/
+    /*1.如何选择元素： 在D3中，用于选择元素的函数有两个：d3.select();d3.selectAll()  这两个函数返回的结果称为选择集。*/
+    /*选择集的常见用法如下：*/
+    var body = d3.select('body');/*选择文档中的body元素*/
+    var p1 = body.select('p');//选择body中的第一个p元素
+    var pall = body.selectAll('p');//选择body中的所有p元素
+    var svg = body.select('svg');//选择body中的svg元素
+    var rects = svg.selectAll('rect');//选择svg中所有的rect元素
+
+    /*2.如何绑定数据*/
+    /*D3有一个很独特的功能：能将数据绑定到*/
+
+
+
+</script>
+</body>
+</html>

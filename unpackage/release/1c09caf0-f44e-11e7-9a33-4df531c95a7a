@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Error>
+  <Code>NoSuchKey</Code>
+  <Message>The specified key does not exist.</Message>
+  <RequestId>5A580B18F3623E6F4CD498A0</RequestId>
+  <HostId>bdpkg.oss-cn-hangzhou.aliyuncs.com</HostId>
+  <Key>20180108/1c09caf0-f44e-11e7-9a33-4df531c95a7a/Pandora.apk</Key>
+</Error>

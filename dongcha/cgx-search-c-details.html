@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>查关系</title>
+    <link href="../css/mui.min.css" rel="stylesheet" />
+    <link href="../iconfont/iconfont.css" rel="stylesheet" />
+    <link href="../css/app.css" rel="stylesheet" />
+    <link href="../css/dongcha.css" rel="stylesheet"/>
+    <style>
+
+    </style>
+</head>
+<body>
+    <header class="mui-bar mui-bar-nav bcWhiteNav">
+        <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+        <h1 class="mui-title bc-white-inp">企业详情</h1>
+    </header>
+    <a class="achor" style="position: relative;top: -86px;display: block; height: 0; overflow: hidden;"></a>
+    <div class="mui-content c-detail-box" style="padding-top: 86px;">
+        <div class="com-detils-nav clearfix">
+            <a href="#det1" class="actived">基本信息</a>
+            <a href="#det2">任职人员</a>
+            <a href="#det3">股东信息</a>
+            <a href="#det4">向外投资</a>
+        </div>
+<!--注：基本信息、任职人员、点击不会链接到企业详情；股东信息、向外投资、分支机构点击可以链接到企业详情-->
+        <!--基本信息-->
+        <div class="c-det-cell" id="det1">
+            <div class="c-det-cell-inner c-jbxx match-company-list-box cgx-rs-list">
+                <div class="mh-cell ">
+                    <div class="mh-top-box clearfix">
+                        <img src="../images/default.png" alt="">
+                        <div class="right-company-det">
+                            <ul>
+                                <li class="cgx-cell-li optional-opt"><!--若可选class加optional-opt-->
+                                    <!--<span class="opt-btn"><i class=" mui-icon mui-icon-plusempty"></i><i>选择</i></span>--><!--未选时的选择按钮-->
+                                    <span class="opt-btn selected"><i>已选择</i></span><!--已选时的选择按钮-->
+                                    <a href="cgx-search-c-details.html" class="cgx-rs-li-cell comp-name">黑龙江龙兴国际资源开发集团有限公司</a>
+                                </li>
+                                <li class="cgx-cell-li optional-opt"><!--若可选class加optional-opt-->
+                                    <span class="opt-btn"><i class=" mui-icon mui-icon-plusempty"></i><i>选择</i></span><!--未选时的选择按钮-->
+                                    <!-- <span class="opt-btn selected"><i>已选择</i></span>--><!--已选时的选择按钮-->
+                                    <a href="cgx-search-c-details.html" class="cgx-rs-li-cell">法定代表人：马云</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--任职人员-->
+        <div class="c-det-cell" id="det2">
+            <div class="c-det-cell-inner">
+                <div class="c-det-cell-tit">任职人员</div>
+                <ul class="det-list-box">
+                    <li class="det-list-cell">
+                        <div class="left-det-name">
+                            <p class="top-name">李明</p>
+                            <p class="bt-pos">董事</p>
+                        </div>
+                        <span class="opt-btn"><i class=" mui-icon mui-icon-plusempty"></i><i>选择</i></span><!--未选时的选择按钮-->
+                        <!--<span class="opt-btn selected"><i>已选择</i></span>--><!--已选时的选择按钮-->
+                    </li>
+                    <li class="det-list-cell">
+                        <div class="left-det-name">
+                            <p class="top-name">李树田</p>
+                            <p class="bt-pos">董事</p>
+                        </div>
+                        <span class="opt-btn"><i class=" mui-icon mui-icon-plusempty"></i><i>选择</i></span><!--未选时的选择按钮-->
+                        <!--<span class="opt-btn selected"><i>已选择</i></span>--><!--已选时的选择按钮-->
+                    </li>
+                    <li class="det-list-cell">
+                        <div class="left-det-name">
+                            <p class="top-name">刘锐</p>
+                            <p class="bt-pos">董事</p>
+                        </div>
+                        <span class="opt-btn"><i class=" mui-icon mui-icon-plusempty"></i><i>选择</i></span><!--未选时的选择按钮-->
+                        <!--<span class="opt-btn selected"><i>已选择</i></span>--><!--已选时的选择按钮-->
+                    </li>
+                    <li class="det-list-cell">
+                        <div class="left-det-name">
+                            <p class="top-name">马云</p>
+                            <p class="bt-pos">执行董事兼总经理</p>
+                        </div>
+                        <span class="opt-btn"><i class=" mui-icon mui-icon-plusempty"></i><i>选择</i></span><!--未选时的选择按钮-->
+                        <!--<span class="opt-btn selected"><i>已选择</i></span>--><!--已选时的选择按钮-->
+                    </li>
+                    <li class="det-list-cell">
+                        <div class="left-det-name">
+                            <p class="top-name">李明</p>
+                            <p class="bt-pos">董事</p>
+                        </div>
+                        <span class="opt-btn"><i class=" mui-icon mui-icon-plusempty"></i><i>选择</i></span><!--未选时的选择按钮-->
+                        <!--<span class="opt-btn selected"><i>已选择</i></span>--><!--已选时的选择按钮-->
+                    </li>
+                    <li class="det-list-cell">
+                        <div class="left-det-name">
+                            <p class="top-name">李树田</p>
+                            <p class="bt-pos">董事</p>
+                        </div>
+                        <span class="opt-btn"><i class=" mui-icon mui-icon-plusempty"></i><i>选择</i></span><!--未选时的选择按钮-->
+                        <!--<span class="opt-btn selected"><i>已选择</i></span>--><!--已选时的选择按钮-->
+                    </li>
+                    <li class="det-list-cell">
+                        <div class="left-det-name">
+                            <p class="top-name">刘锐</p>
+                            <p class="bt-pos">董事</p>
+                        </div>
+                        <span class="opt-btn"><i class=" mui-icon mui-icon-plusempty"></i><i>选择</i></span><!--未选时的选择按钮-->
+                        <!--<span class="opt-btn selected"><i>已选择</i></span>--><!--已选时的选择按钮-->
+                    </li>
+                    <li class="det-list-cell">
+                        <div class="left-det-name">
+                            <p class="top-name">马云</p>
+                            <p class="bt-pos">执行董事兼总经理</p>
+                        </div>
+                        <span class="opt-btn"><i class=" mui-icon mui-icon-plusempty"></i><i>选择</i></span><!--未选时的选择按钮-->
+                        <!--<span class="opt-btn selected"><i>已选择</i></span>--><!--已选时的选择按钮-->
+                    </li>
+                    <li class="det-list-cell">
+                        <div class="left-det-name">
+                            <p class="top-name">李明</p>
+                            <p class="bt-pos">董事</p>
+                        </div>
+                        <span class="opt-btn"><i class=" mui-icon mui-icon-plusempty"></i><i>选择</i></span><!--未选时的选择按钮-->
+                        <!--<span class="opt-btn selected"><i>已选择</i></span>--><!--已选时的选择按钮-->
+                    </li>
+                    <li class="det-list-cell">
+                        <div class="left-det-name">
+                            <p class="top-name">李树田</p>
+                            <p class="bt-pos">董事</p>
+                        </div>
+                        <span class="opt-btn"><i class=" mui-icon mui-icon-plusempty"></i><i>选择</i></span><!--未选时的选择按钮-->
+                        <!--<span class="opt-btn selected"><i>已选择</i></span>--><!--已选时的选择按钮-->
+                    </li>
+                    <li class="det-list-cell">
+                        <div class="left-det-name">
+                            <p class="top-name">刘锐</p>
+                            <p class="bt-pos">董事</p>
+                        </div>
+                        <span class="opt-btn"><i class=" mui-icon mui-icon-plusempty"></i><i>选择</i></span><!--未选时的选择按钮-->
+                        <!--<span class="opt-btn selected"><i>已选择</i></span>--><!--已选时的选择按钮-->
+                    </li>
+                    <li class="det-list-cell">
+                        <div class="left-det-name">
+                            <p class="top-name">马云</p>
+                            <p class="bt-pos">执行董事兼总经理</p>
+                        </div>
+                        <span class="opt-btn"><i class=" mui-icon mui-icon-plusempty"></i><i>选择</i></span><!--未选时的选择按钮-->
+                        <!--<span class="opt-btn selected"><i>已选择</i></span>--><!--已选时的选择按钮-->
+                    </li>
+                    <li class="det-list-cell">
+                        <div class="left-det-name">
+                            <p class="top-name">李明</p>
+                            <p class="bt-pos">董事</p>
+                        </div>
+                        <span class="opt-btn"><i class=" mui-icon mui-icon-plusempty"></i><i>选择</i></span><!--未选时的选择按钮-->
+                        <!--<span class="opt-btn selected"><i>已选择</i></span>--><!--已选时的选择按钮-->
+                    </li>
+                    <li class="det-list-cell">
+                        <div class="left-det-name">
+                            <p class="top-name">李树田</p>
+                            <p class="bt-pos">董事</p>
+                        </div>
+                        <span class="opt-btn"><i class=" mui-icon mui-icon-plusempty"></i><i>选择</i></span><!--未选时的选择按钮-->
+                        <!--<span class="opt-btn selected"><i>已选择</i></span>--><!--已选时的选择按钮-->
+                    </li>
+                    <li class="det-list-cell">
+                        <div class="left-det-name">
+                            <p class="top-name">刘锐</p>
+                            <p class="bt-pos">董事</p>
+                        </div>
+                        <span class="opt-btn"><i class=" mui-icon mui-icon-plusempty"></i><i>选择</i></span><!--未选时的选择按钮-->
+                        <!--<span class="opt-btn selected"><i>已选择</i></span>--><!--已选时的选择按钮-->
+                    </li>
+                    <li class="det-list-cell">
+                        <div class="left-det-name">
+                            <p class="top-name">马云</p>
+                            <p class="bt-pos">执行董事兼总经理</p>
+                        </div>
+                        <span class="opt-btn"><i class=" mui-icon mui-icon-plusempty"></i><i>选择</i></span><!--未选时的选择按钮-->
+                        <!--<span class="opt-btn selected"><i>已选择</i></span>--><!--已选时的选择按钮-->
+                    </li>
+                    <li class="det-list-cell">
+                        <div class="left-det-name">
+                            <p class="top-name">李明</p>
+                            <p class="bt-pos">董事</p>
+                        </div>
+                        <span class="opt-btn"><i class=" mui-icon mui-icon-plusempty"></i><i>选择</i></span><!--未选时的选择按钮-->
+                        <!--<span class="opt-btn selected"><i>已选择</i></span>--><!--已选时的选择按钮-->
+                    </li>
+                    <li class="det-list-cell">
+                        <div class="left-det-name">
+                            <p class="top-name">李树田</p>
+                            <p class="bt-pos">董事</p>
+                        </div>
+                        <span class="opt-btn"><i class=" mui-icon mui-icon-plusempty"></i><i>选择</i></span><!--未选时的选择按钮-->
+                        <!--<span class="opt-btn selected"><i>已选择</i></span>--><!--已选时的选择按钮-->
+                    </li>
+                    <li class="det-list-cell">
+                        <div class="left-det-name">
+                            <p class="top-name">刘锐</p>
+                            <p class="bt-pos">董事</p>
+                        </div>
+                        <span class="opt-btn"><i class=" mui-icon mui-icon-plusempty"></i><i>选择</i></span><!--未选时的选择按钮-->
+                        <!--<span class="opt-btn selected"><i>已选择</i></span>--><!--已选时的选择按钮-->
+                    </li>
+                    <li class="det-list-cell">
+                        <div class="left-det-name">
+                            <p class="top-name">马云</p>
+                            <p class="bt-pos">执行董事兼总经理</p>
+                        </div>
+                        <span class="opt-btn"><i class=" mui-icon mui-icon-plusempty"></i><i>选择</i></span><!--未选时的选择按钮-->
+                        <!--<span class="opt-btn selected"><i>已选择</i></span>--><!--已选时的选择按钮-->
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!--股东信息-->
+        <div class="c-det-cell" id="det3">
+            <div class="c-det-cell-inner">
+                <div class="c-det-cell-tit">股东信息</div>
+                <ul class="det-list-box">
+                    <li class="det-list-cell">
+                        <a href="" class="left-det-name">
+                            <p class="top-name">李明</p>
+                            <p class="bt-pos">董事</p>
+                        </a>
+                        <span class="opt-btn"><i class=" mui-icon mui-icon-plusempty"></i><i>选择</i></span><!--未选时的选择按钮-->
+                        <!--<span class="opt-btn selected"><i>已选择</i></span>--><!--已选时的选择按钮-->
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!--向外投资-->
+        <div class="c-det-cell" id="det4">
+            <div class="c-det-cell-inner">
+                <div class="c-det-cell-tit">向外投资</div>
+                <ul class="det-list-box">
+                    <li class="det-list-cell">
+                        <a href="" class="left-det-name">
+                            <p class="top-name">黑龙江省人民政府国有资产监督管理委员会</p>
+                            <p class="bt-pos">法人：马云</p>
+                        </a>
+                        <span class="opt-btn"><i class=" mui-icon mui-icon-plusempty"></i><i>选择</i></span><!--未选时的选择按钮-->
+                        <!--<span class="opt-btn selected"><i>已选择</i></span>--><!--已选时的选择按钮-->
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!--分支机构-->
+        <div class="c-det-cell">
+            <div class="c-det-cell-inner">
+                <div class="c-det-cell-tit">分支机构</div>
+                <ul class="det-list-box">
+                    <li class="det-list-cell">
+                        <a href="" class="left-det-name">
+                            <p class="top-name">黑龙江龙兴国际资源开发集团有限公司北京分公司</p>
+                        </a>
+                        <span class="opt-btn"><i class=" mui-icon mui-icon-plusempty"></i><i>选择</i></span><!--未选时的选择按钮-->
+                        <!--<span class="opt-btn selected"><i>已选择</i></span>--><!--已选时的选择按钮-->
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+    <script src="../js/mui.min.js"></script>
+    <script src="../js/app.js"></script>
+    <script>
+        var scrollMove = function (scrollTo, time) {
+            var scrollFrom = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop;
+            var count = 0;
+            var every = 10;
+            scrollTo = parseInt(scrollTo);
+            time /= every;
+
+            var interval = setInterval(function () {
+                count++;
+                document.documentElement.scrollTop = document.body.scrollTop = (scrollTo - scrollFrom) / time * count + scrollFrom;
+                if (count >= time) {
+                    clearInterval(interval);
+                }
+            }, every);
+        };
+
+        var navlen = mui('.com-detils-nav a').length;
+        for(var i=0;i<navlen;i++){
+            mui('.com-detils-nav a')[i].index = i;
+        }
+        mui('body').on('tap','.com-detils-nav a',function () {
+            for(var i = 0;i<navlen;i++){
+                mui('.com-detils-nav a')[i].classList.remove('actived');
+            }
+            this.classList.add('actived');
+            scrollMove(document.getElementsByClassName('c-det-cell')[this.index].offsetTop, 500);
+        })
+    </script>
+</body>
+</html>

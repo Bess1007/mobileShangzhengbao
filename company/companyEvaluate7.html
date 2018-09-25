@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>上海证券报-公司-ZETA</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+    <link rel="stylesheet" href="../css/mui.min.css"/>
+    <link rel="stylesheet" href="../css/app.css"/>
+    <link rel="stylesheet" href="../iconfont/iconfont.css"/>
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.css"/>
+    <link rel="stylesheet" href="../css/company.css"/>
+    <style>
+
+    </style>
+</head>
+
+<body>
+<header class="mui-bar mui-bar-nav bcWhiteNav">
+    <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+    <h1 class="mui-title">ZETA</h1>
+</header>
+<div class="mui-content">
+    <div class="textInd">
+        <p>
+            ZETA信用风险模型是继Z模型后的第二代信用评分模型 ，变量由原始模型的五个增加到了7个，适应范围更宽，对不良借款人的辨认精度也大大提高。
+        </p>
+    </div>
+    <div style="width: 320px ;height: 200px;margin: 0 auto" class="yingyunnengli_chart" id="zeta"></div>
+    <div class="textInd">
+        <p>
+            ZETA = ax1 + bx2 + cx3 + dx4 + ex5 + fx6 + gx7 模型中的a、b、c、d、e、f、g，分别是无法获得ZETA模型中其变量各自的系数。 x1、x2、x3、x4、x5、x6、x7分别表示模型中的7个变量， 7个变量是：资产收益率、收益稳定性指标 、债务偿付能力指标、累计盈利能力指标、流动性指标、资本化程度的指标、规模指标。
+        </p>
+    </div>
+    <div class="underChartBox">
+        <ul class="mui-table-view">
+            <li class="mui-table-view-cell mui-collapse mui-active  ">
+                <a class="mui-navigate-right" href="#" style="font-size: 15px;">ZETA值相关指标（单位：万元）</a>
+                <div class="mui-collapse-content">
+                    <div class="cBox">
+                        <div class="changebox" style="border: 0;">
+                            <div class="nodeBox">
+                                <ul class="chartTopTable" >
+                                    <li>
+                                        <span class="titTxt">资产总计：</span>
+                                        <i class="numTxt">1317038.553</i>
+                                    </li>
+                                    <li>
+                                        <span class="titTxt">流动负债总计：</span>
+                                        <i class="numTxt">208790.2306</i>
+                                    </li>
+                                    <li>
+                                        <span class="titTxt">应付利息：</span>
+                                        <i class="numTxt">0</i>
+                                    </li>
+                                    <li>
+                                        <span class="titTxt">交易性金融资产：</span>
+                                        <i class="numTxt">0</i>
+                                    </li>
+                                    <li>
+                                        <span class="titTxt">流动资产合计：</span>
+                                        <i class="numTxt">1108248.3224</i>
+                                    </li>
+                                    <li>
+                                        <span class="titTxt">利润总额：</span>
+                                        <i class="numTxt">91071.7401</i>
+                                    </li>
+                                    <li>
+                                        <span class="titTxt">负债总计：</span>
+                                        <i class="numTxt">804050.9904</i>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+</body>
+<script src="../js/mui.min.js"></script>
+<script src="../js/app.js"></script>
+<script src="../js/echarts.js"></script>
+<script>
+
+    var myChart = echarts.init(document.getElementById('zeta'));
+    myChart.setOption(
+        option = {
+            tooltip : {
+                formatter: "{a} <br/>{b} : {c}%"
+            },
+            toolbox: {
+                show : false,
+                feature : {
+                    mark : {show: true},
+                    restore : {show: true},
+                    saveAsImage : {show: true}
+                }
+            },
+            series : [
+                {
+                    name:'ZETA信用风险模型',
+                    type:'gauge',
+                    startAngle: 180,
+                    endAngle: 0,
+                    center : ['50%', '90%'],    // 默认全局居中
+                    radius : 160,
+                    axisLine: {            // 坐标轴线
+                        lineStyle: {       // 属性lineStyle控制线条样式
+                            width: 80,
+                            color: [[0.38, '#f34b0f'], [0.61, '#ece016'], [1, '#21d90d']]
+                        }
+                    },
+                    axisTick: {            // 坐标轴小标记
+                        splitNumber: 1,   // 每份split细分多少段
+                        length :5,        // 属性length控制线长
+                    },
+                    axisLabel: {           // 坐标轴文本标签，详见axis.axisLabel
+                        formatter: function(v){
+                            switch (v+''){
+                                case '20': return '破产区';
+                                case '50': return '灰色区';
+                                case '80': return '安全区';
+                                default: return '';
+                            }
+                        },
+                        textStyle: {       // 其余属性默认使用全局文本样式，详见TEXTSTYLE
+                            color: '#fff',
+                            fontSize: 15,
+                            fontWeight: 'bolder'
+                        }
+                    },
+                    pointer: {
+                        width:10,
+                        length: '80%',
+                        color: 'rgba(255, 255, 255, 0.3)'
+                    },
+                    title : {
+                        show : true,
+                        offsetCenter: [0, '-60%'],       // x, y，单位px
+                        textStyle: {       // 其余属性默认使用全局文本样式，详见TEXTSTYLE
+                            color: '#fff',
+                            fontSize: 18
+                        }
+                    },
+                    detail : {
+                        show : false,
+                        backgroundColor: 'rgba(0,0,0,0)',
+                        borderWidth: 0,
+                        borderColor: '#ccc',
+                        width: 100,
+                        height: 40,
+                        offsetCenter: [0, -40],       // x, y，单位px
+                        formatter:'{value}%',
+                        textStyle: {       // 其余属性默认使用全局文本样式，详见TEXTSTYLE
+                            fontSize : 50
+                        }
+                    },
+                    data:[{value: 30, name: '评级'}]
+                }
+            ]
+        }
+    )
+
+</script>
+</html>

@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="en" class="bcWhite">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>股东详情</title>
+    <link href="../../css/mui.min.css" rel="stylesheet" />
+    <link href="../../iconfont/iconfont.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../dc-company/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link href="../../css/app.css" rel="stylesheet" />
+    <link href="../dc-company/css/dc-company.css" rel="stylesheet"/>
+    <style>
+        /*tab头固定*/
+        .mui-segmented-control {
+            position: fixed!important;
+            top: 44px;
+            left: 0;
+            z-index: 10;
+            background-color: #fff;
+        }
+        .mui-segmented-control.mui-segmented-control-inverted {
+            border-bottom:1px solid #f0f0f0;
+        }
+        .mui-control-content {
+            padding-top: 37px;
+        }
+        .mui-segmented-control .mui-control-item {
+            line-height: 34px;
+            height: 34px;
+        }
+        .mui-segmented-control.mui-segmented-control-inverted .mui-control-item {
+            color: #333;
+        }
+        .mui-segmented-control.mui-segmented-control-inverted .mui-control-item.mui-active {
+            border-bottom:0;
+            color: #333;
+            position: relative;
+        }
+        .mui-segmented-control.mui-segmented-control-inverted .mui-control-item.mui-active:after {
+            content: '';
+            position: absolute;
+            width: 40px;
+            height: 2px;
+            background-color: #0081ff;
+            bottom: 0;
+            left: 50%;
+            margin-left: -20px;
+        }
+    </style>
+    <script src="../dc-company/js/companyCommon.js"></script>
+    <script src="../../js/mui.min.js"></script>
+    <script src="../../js/jquery-1.11.3.min.js"></script>
+    <script src="../../js/echarts.js"></script>
+    <script src="../../js/app.js"></script>
+</head>
+<body>
+<header class="mui-bar mui-bar-nav ">
+    <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+    <h1 class="mui-title bc-white-inp" style="right: 46px;">股东详情</h1>
+</header>
+
+<div class="mui-content bcWhite gdxq-box">
+
+
+    <div id="segmentedControl" class="mui-scroll-wrapper mui-slider-indicator mui-segmented-control mui-segmented-control-inverted" >
+        <div class="mui-scroll">
+            <a class="noLink mui-control-item mui-active" href="#item1">十大股东明细</a>
+            <a class="noLink mui-control-item " href="#item2">十大流通股东</a>
+            <a class="noLink mui-control-item " href="#item3">机构投资者</a>
+            <a class="noLink mui-control-item " href="#item4">股东户数</a>
+            <a class="noLink mui-control-item " href="#item5">限售解禁时间表</a>
+        </div>
+    </div>
+
+    <!--十大股东明细-->
+    <div id="item1" class="mui-control-content mui-active">
+        <div class="fnine-boxcell">
+            <div class="infoHead">
+                <span>2018一季报</span>
+            </div>
+            <table class="gdzjc-table">
+                <tbody>
+                <tr class="t-hd">
+                    <td><div class="tCell">名称</div></td>
+                    <td><div class="tCell">数量</div></td>
+                    <td><div class="tCell">占比%</div></td>
+                    <td><div class="tCell"></div></td>
+                </tr>
+                <tr>
+                    <td><div class="tCell">中国平安保险(集团)股份有限公司-集团本级-自有资金</div></td>
+                    <td><div class="tCell">85.10亿</div></td>
+                    <td><div class="tCell">49.56</div></td>
+                    <td><div class="tCell">平</div></td>
+                </tr>
+                <tr>
+                    <td><div class="tCell">中国平安保险(集团)股份有限公司-集团本级-自有资金</div></td>
+                    <td><div class="tCell">85.10亿</div></td>
+                    <td><div class="tCell">49.56</div></td>
+                    <td><div class="tCell txtred">增</div></td>
+                </tr>
+                <tr>
+                    <td><div class="tCell">中国平安保险(集团)股份有限公司-集团本级-自有资金</div></td>
+                    <td><div class="tCell">85.10亿</div></td>
+                    <td><div class="tCell">49.56</div></td>
+                    <td><div class="tCell txtgreen">减</div></td>
+                </tr>
+                <tr>
+                    <td><div class="tCell">合计</div></td>
+                    <td><div class="tCell">113.00亿</div></td>
+                    <td><div class="tCell">65.80</div></td>
+                    <td><div class="tCell">平</div></td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="fnine-boxcell">
+            <div class="infoHead">
+                <span>2017年报</span>
+            </div>
+            <table class="gdzjc-table">
+                <tbody>
+                <tr class="t-hd">
+                    <td><div class="tCell">名称</div></td>
+                    <td><div class="tCell">数量</div></td>
+                    <td><div class="tCell">占比%</div></td>
+                    <td><div class="tCell"></div></td>
+                </tr>
+                <tr>
+                    <td><div class="tCell">中国平安保险(集团)股份有限公司-集团本级-自有资金</div></td>
+                    <td><div class="tCell">85.10亿</div></td>
+                    <td><div class="tCell">49.56</div></td>
+                    <td><div class="tCell">平</div></td>
+                </tr>
+                <tr>
+                    <td><div class="tCell">中国平安保险(集团)股份有限公司-集团本级-自有资金</div></td>
+                    <td><div class="tCell">85.10亿</div></td>
+                    <td><div class="tCell">49.56</div></td>
+                    <td><div class="tCell txtred">增</div></td>
+                </tr>
+                <tr>
+                    <td><div class="tCell">中国平安保险(集团)股份有限公司-集团本级-自有资金</div></td>
+                    <td><div class="tCell">85.10亿</div></td>
+                    <td><div class="tCell">49.56</div></td>
+                    <td><div class="tCell txtgreen">减</div></td>
+                </tr>
+                <tr>
+                    <td><div class="tCell">合计</div></td>
+                    <td><div class="tCell">113.00亿</div></td>
+                    <td><div class="tCell">65.80</div></td>
+                    <td><div class="tCell">平</div></td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <!--十大流通股东-->
+    <div id="item2" class="mui-control-content ">
+        <div class="fnine-boxcell">
+            <div class="infoHead">
+                <span>2018一季报</span>
+            </div>
+            <table class="gdzjc-table">
+                <tbody>
+                <tr class="t-hd">
+                    <td><div class="tCell">名称</div></td>
+                    <td><div class="tCell">数量</div></td>
+                    <td><div class="tCell">占比%</div></td>
+                    <td><div class="tCell"></div></td>
+                </tr>
+                <tr>
+                    <td><div class="tCell">中国平安保险(集团)股份有限公司-集团本级-自有资金</div></td>
+                    <td><div class="tCell">85.10亿</div></td>
+                    <td><div class="tCell">49.56</div></td>
+                    <td><div class="tCell">平</div></td>
+                </tr>
+                <tr>
+                    <td><div class="tCell">中国平安保险(集团)股份有限公司-集团本级-自有资金</div></td>
+                    <td><div class="tCell">85.10亿</div></td>
+                    <td><div class="tCell">49.56</div></td>
+                    <td><div class="tCell txtred">增</div></td>
+                </tr>
+                <tr>
+                    <td><div class="tCell">中国平安保险(集团)股份有限公司-集团本级-自有资金</div></td>
+                    <td><div class="tCell">85.10亿</div></td>
+                    <td><div class="tCell">49.56</div></td>
+                    <td><div class="tCell txtgreen">减</div></td>
+                </tr>
+                <tr>
+                    <td><div class="tCell">合计</div></td>
+                    <td><div class="tCell">113.00亿</div></td>
+                    <td><div class="tCell">65.80</div></td>
+                    <td><div class="tCell">平</div></td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="fnine-boxcell">
+            <div class="infoHead">
+                <span>2017年报</span>
+            </div>
+            <table class="gdzjc-table">
+                <tbody>
+                <tr class="t-hd">
+                    <td><div class="tCell">名称</div></td>
+                    <td><div class="tCell">数量</div></td>
+                    <td><div class="tCell">占比%</div></td>
+                    <td><div class="tCell"></div></td>
+                </tr>
+                <tr>
+                    <td><div class="tCell">中国平安保险(集团)股份有限公司-集团本级-自有资金</div></td>
+                    <td><div class="tCell">85.10亿</div></td>
+                    <td><div class="tCell">49.56</div></td>
+                    <td><div class="tCell">平</div></td>
+                </tr>
+                <tr>
+                    <td><div class="tCell">中国平安保险(集团)股份有限公司-集团本级-自有资金</div></td>
+                    <td><div class="tCell">85.10亿</div></td>
+                    <td><div class="tCell">49.56</div></td>
+                    <td><div class="tCell txtred">增</div></td>
+                </tr>
+                <tr>
+                    <td><div class="tCell">中国平安保险(集团)股份有限公司-集团本级-自有资金</div></td>
+                    <td><div class="tCell">85.10亿</div></td>
+                    <td><div class="tCell">49.56</div></td>
+                    <td><div class="tCell txtgreen">减</div></td>
+                </tr>
+                <tr>
+                    <td><div class="tCell">合计</div></td>
+                    <td><div class="tCell">113.00亿</div></td>
+                    <td><div class="tCell">65.80</div></td>
+                    <td><div class="tCell">平</div></td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <!--机构投资者-->
+    <div id="item3" class="mui-control-content ">
+        <div class="fnine-boxcell">
+            <div class="infoHead">
+                <span>2018一季报</span>
+            </div>
+            <div class="jgtzz-tb">
+                <div class="tb-gray-hd table-box">
+                    <div class="gd-tb-cell"><span class="tb-txt-cell">名称</span></div>
+                    <div class="gd-tb-cell"><span class="tb-txt-cell">数量</span></div>
+                    <div class="gd-tb-cell"><span class="tb-txt-cell">占比%</span></div>
+                </div>
+                <div class="jgtz-tb-box">
+                    <div class="table-box tb-body">
+                        <div class="gd-tb-cell"><span class="tb-txt-cell">中国平安保险(集团)股份有限公司</span></div>
+                        <div class="gd-tb-cell"><span class="tb-txt-cell">82.58亿</span></div>
+                        <div class="gd-tb-cell"><span class="tb-txt-cell">48.81</span></div>
+                        <span class="rigth-arr-ico mui-icon mui-icon-arrowright"></span>
+                    </div>
+                    <ul class="hide-down-info">
+                        <li class="hide-tb-cell table-box tb-body">
+                            <div class="gd-tb-cell"><span class="tb-txt-cell">中国平安保险(集团)股份有限公司</span></div>
+                            <div class="gd-tb-cell"><span class="tb-txt-cell">82.58亿</span></div>
+                            <div class="gd-tb-cell"><span class="tb-txt-cell">48.81</span></div>
+                        </li>
+                        <li class="hide-tb-cell table-box tb-body">
+                            <div class="gd-tb-cell"><span class="tb-txt-cell">中国平安保险(集团)股份有限公司</span></div>
+                            <div class="gd-tb-cell"><span class="tb-txt-cell">82.58亿</span></div>
+                            <div class="gd-tb-cell"><span class="tb-txt-cell">48.81</span></div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="jgtz-tb-box">
+                    <div class="table-box tb-body">
+                        <div class="gd-tb-cell"><span class="tb-txt-cell">中国平安保险(集团)股份有限公司</span></div>
+                        <div class="gd-tb-cell"><span class="tb-txt-cell">82.58亿</span></div>
+                        <div class="gd-tb-cell"><span class="tb-txt-cell">48.81</span></div>
+                        <span class="rigth-arr-ico mui-icon mui-icon-arrowright"></span>
+                    </div>
+                    <ul class="hide-down-info">
+                        <li class="hide-tb-cell table-box tb-body">
+                            <div class="gd-tb-cell"><span class="tb-txt-cell">中国平安保险(集团)股份有限公司</span></div>
+                            <div class="gd-tb-cell"><span class="tb-txt-cell">82.58亿</span></div>
+                            <div class="gd-tb-cell"><span class="tb-txt-cell">48.81</span></div>
+                        </li>
+                        <li class="hide-tb-cell table-box tb-body">
+                            <div class="gd-tb-cell"><span class="tb-txt-cell">中国平安保险(集团)股份有限公司</span></div>
+                            <div class="gd-tb-cell"><span class="tb-txt-cell">82.58亿</span></div>
+                            <div class="gd-tb-cell"><span class="tb-txt-cell">48.81</span></div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--股东户数-->
+    <div id="item4" class="mui-control-content ">
+        <table class="tb-toplabel">
+            <tr>
+                <td class="top-tab-cell actived">股东总户数</td>
+                <td class="top-tab-cell">户均持股数</td>
+                <td class="top-tab-cell">前十名股东持股比例</td>
+            </tr>
+        </table>
+        <div class="gdhs-con-cell">
+            <!--时间范围、周期选择-->
+            <div class="rzrq-select clearfix">
+                <div class="select-cell" style="margin-right: 0;">
+                    <span>时间范围:</span>
+                    <div class="select-con">
+                        <span class="seelct-rs">1Y</span>
+                        <i class="r-arrow-ico mui-icon mui-icon-arrowdown"></i>
+                        <ul class="selectLis">
+                            <li class="se-cell ">3M</li>
+                            <li class="se-cell">6M</li>
+                            <li class="se-cell actived">1Y</li>
+                            <li class="se-cell">3Y</li>
+                            <li class="se-cell">5Y</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+            <div class="infobody clearfix fnine-info-cont" style="padding: 0.1rem 0.05rem;">
+                <div id="rzrqChart" style="width: 3.75rem;height:230px;"></div>
+            </div>
+            <div class="fixedcolumn-table clearfix">
+                <span class="mui-icon mui-icon-forward rightdir"></span>
+                <div class="left-col-table">
+                    <table class="">
+                        <tr><td><div class="tCell">截止日期</div></td></tr>
+                        <tr><td><div class="tCell">2016-01-09</div></td></tr>
+                        <tr><td><div class="tCell">2016-01-09</div></td></tr>
+                        <tr><td><div class="tCell">2016-01-09</div></td></tr>
+                        <tr><td><div class="tCell">2016-01-09</div></td></tr>
+                        <tr><td><div class="tCell">2016-01-09</div></td></tr>
+                    </table>
+                </div>
+                <div class="right-con-table">
+                    <table>
+                        <tr>
+                            <td><div class="tCell">总户数</div></td>
+                            <td><div class="tCell">A股户数</div></td>
+                            <td><div class="tCell">总股本/总户数</div></td>
+                            <td><div class="tCell">流通A股/A股户数</div></td>
+                            <td><div class="tCell">前十名股东持股比例(%)</div></td>
+                            <td><div class="tCell">公告日期</div></td>
+                            <td><div class="tCell">报告期</div></td>
+                        </tr>
+                        <tr>
+                            <td><div class="tCell">421677</div></td>
+                            <td><div class="tCell">421677</div></td>
+                            <td><div class="tCell">40719</div></td>
+                            <td><div class="tCell">40121</div></td>
+                            <td><div class="tCell">65.80</div></td>
+                            <td><div class="tCell">2018-04-20</div></td>
+                            <td><div class="tCell">2018-03-31</div></td>
+                        </tr>
+                        <tr>
+                            <td><div class="tCell">421677</div></td>
+                            <td><div class="tCell">421677</div></td>
+                            <td><div class="tCell">40719</div></td>
+                            <td><div class="tCell">40121</div></td>
+                            <td><div class="tCell">65.80</div></td>
+                            <td><div class="tCell">2018-04-20</div></td>
+                            <td><div class="tCell">2018-03-31</div></td>
+                        </tr>
+                        <tr>
+                            <td><div class="tCell">421677</div></td>
+                            <td><div class="tCell">421677</div></td>
+                            <td><div class="tCell">40719</div></td>
+                            <td><div class="tCell">40121</div></td>
+                            <td><div class="tCell">65.80</div></td>
+                            <td><div class="tCell">2018-04-20</div></td>
+                            <td><div class="tCell">2018-03-31</div></td>
+                        </tr>
+                        <tr>
+                            <td><div class="tCell">421677</div></td>
+                            <td><div class="tCell">421677</div></td>
+                            <td><div class="tCell">40719</div></td>
+                            <td><div class="tCell">40121</div></td>
+                            <td><div class="tCell">65.80</div></td>
+                            <td><div class="tCell">2018-04-20</div></td>
+                            <td><div class="tCell">2018-03-31</div></td>
+                        </tr>
+                        <tr>
+                            <td><div class="tCell">421677</div></td>
+                            <td><div class="tCell">421677</div></td>
+                            <td><div class="tCell">40719</div></td>
+                            <td><div class="tCell">40121</div></td>
+                            <td><div class="tCell">65.80</div></td>
+                            <td><div class="tCell">2018-04-20</div></td>
+                            <td><div class="tCell">2018-03-31</div></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--限售解禁时间表-->
+
+    <div id="item5" class="mui-control-content ">
+        <div class="jgtzz-tb xsjj-box">
+            <div class="tb-gray-hd table-box">
+                <div class="gd-tb-cell"><span class="tb-txt-cell">解禁时间</span></div>
+                <div class="gd-tb-cell"><span class="tb-txt-cell">解禁数量(万股)</span></div>
+                <div class="gd-tb-cell"><span class="tb-txt-cell">解禁股占总股本比例</span></div>
+                <div class="gd-tb-cell"><span class="tb-txt-cell"></span></div>
+            </div>
+            <div class="jgtz-tb-box">
+                <div class="table-box tb-body">
+                    <div class="gd-tb-cell"><span class="tb-txt-cell">2018-05-21</span></div>
+                    <div class="gd-tb-cell"><span class="tb-txt-cell">25224.80</span></div>
+                    <div class="gd-tb-cell"><span class="tb-txt-cell">1.47</span></div>
+                    <div class="gd-tb-cell">
+                        <a href="javascript:;" onclick="mui.openWindow({url:'fnine-gdxq-xsjj.html',id:'fnine-gdxq-xsjj.html'});" class="rigth-more-ico ">详情</a>
+                    </div>
+                </div>
+                <div class="table-box tb-body">
+                    <div class="gd-tb-cell"><span class="tb-txt-cell">2018-05-21</span></div>
+                    <div class="gd-tb-cell"><span class="tb-txt-cell">25224.80</span></div>
+                    <div class="gd-tb-cell"><span class="tb-txt-cell">1.47</span></div>
+                    <div class="gd-tb-cell">
+                        <a href="javascript:;" onclick="mui.openWindow({url:'fnine-gdxq-xsjj.html',id:'fnine-gdxq-xsjj.html'});" class="rigth-more-ico ">详情</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script>
+    window.onload = function () {
+        /*机构投资者单行toggle*/
+        mui('body').on('tap','.rigth-arr-ico ',function () {
+            var oldparent = this.parentNode.parentNode;
+            var downInfo = oldparent.getElementsByClassName('hide-down-info')[0];
+            if(oldparent.classList.contains('actived')){
+                oldparent.classList.remove('actived')
+            }else{
+                oldparent.classList.add('actived')
+            }
+        });
+
+
+        /*股东户数-顶部tab选择*/
+        mui('.tb-toplabel').on('tap', '.top-tab-cell ', function () {
+            var len = this.parentNode.getElementsByClassName('top-tab-cell').length;
+            var siblinsnodes = this.parentNode.getElementsByClassName('top-tab-cell');
+            for (var i = 0; i < len; i++) {
+                siblinsnodes[i].classList.remove('actived')
+            }
+            this.classList.add('actived')
+        });
+
+        /*******从一个页面跳转到此页面指定tab******/
+        function GetQueryString(name)
+        {
+            var reg = new RegExp("(^|&)"+ name +"=([^&]*)(&|$)");
+            var r = window.location.search.substr(1).match(reg);
+            if(r!=null)return  unescape(r[2]); return null;
+        }
+        var tar=GetQueryString("tar");
+        var tabLen = mui('#segmentedControl .mui-control-item').length;
+        if(tar !=null && tar >= 0)
+        {
+            for(var i = 0;i< tabLen;i++){
+                document.getElementsByClassName('mui-control-item')[i].classList.remove('mui-active');
+                document.getElementsByClassName('mui-control-content')[i].classList.remove('mui-active');
+            }
+            document.getElementsByClassName('mui-control-content')[tar].classList.add('mui-active');
+            document.getElementsByClassName('mui-control-item')[tar].classList.add('mui-active');
+        }
+
+        var gdhsTar = GetQueryString("gdhsTar");
+        var gdhsTarLen = mui('.tb-toplabel .top-tab-cell').length;
+        if(gdhsTar !=null && gdhsTar>=0){
+
+            //切换到股东户数下的tab2
+            console.log('gdhsTar:'+gdhsTar)
+            for (var i = 0; i < gdhsTarLen; i++) {
+                mui('.tb-toplabel .top-tab-cell')[i].classList.remove('actived')
+            }
+            mui('.tb-toplabel .top-tab-cell')[gdhsTar].classList.add('actived')
+        }
+        /*******从一个页面跳转到此页面指定tab end******/
+
+
+        /*选择时间范围*/
+        document.onclick = function(){
+            this.getElementsByClassName('selectLis')[0].classList.remove('actived');
+        };
+        mui('body').on('tap','.select-con',function (e) {
+            //取消冒泡
+            e = e || window.event;
+            if(document.all){
+                e.cancelBubble = true;
+            }else{
+                e.stopPropagation();
+            }
+
+            if(this.getElementsByClassName('selectLis')[0].classList.contains('actived')){
+                this.getElementsByClassName('selectLis')[0].classList.remove('actived')
+            }else{
+                this.getElementsByClassName('selectLis')[0].classList.add('actived')
+            }
+        });
+        mui('body').on('tap','.select-con .se-cell',function () {
+            var innerTxt = this.innerText;
+            var nodeLen = this.parentNode.getElementsByClassName('se-cell').length;
+            for(var i =0;i<nodeLen;i++){
+                this.parentNode.getElementsByClassName('se-cell')[i].classList.remove('actived');
+                this.classList.add('actived')
+            }
+            var txtBox = this.parentNode.parentNode.getElementsByClassName('seelct-rs')[0];
+            txtBox.innerText = innerTxt;
+        })
+        /*echarts*/
+        var myChart1 = echarts.init(document.getElementById('rzrqChart'));
+        option = {
+            grid:{
+                x:50,
+                x2:30,
+                y:10
+            },
+            legend: {
+                data: ['股东总户数','收盘价(右)'],
+                itemWidth:18,
+                itemHeight:3,
+                icon: 'rect',
+                y:'bottom'
+            },
+            xAxis: [{
+                type:'category',
+                axisTick:{
+                    show:false
+                },
+                axisLine:{
+                    lineStyle:{
+                        color:'#b8b9ba'
+                    }
+                },
+                axisLabel: {
+                    textStyle:{
+                        fontSize:'12',
+                        color:'#9fa4ab'
+                    }
+                },
+                data:['2017-10-01','2017-11-01','2017-12-01']
+            }],
+            yAxis: [{
+                type:'value',
+                /*name:'融资余额',*/
+                min: 70000,
+                max: 90000,
+                interval: 5000,
+                axisTick:{
+                    show:false
+                },
+                axisLine:{
+                    show:false
+                },
+                axisLabel: {
+                    formatter: '{value}',
+                    textStyle:{
+                        fontSize:'12',
+                        color:'#9fa4ab'
+                    }
+                },
+                splitLine:{
+                    lineStyle:{
+                        color:'#b8b9ba'
+                    }
+                }
+            },{
+                type:'value',
+                /*name:'融券余额',*/
+                min: 0,
+                max: 50,
+                interval: 10,
+                axisTick:{
+                    show:false
+                },
+                axisLine:{
+                    show:false
+                },
+                axisLabel: {
+                    formatter: '{value}',
+                    textStyle:{
+                        fontSize:'12',
+                        color:'#9fa4ab'
+                    }
+                },
+                splitLine:{
+                    show:false
+                }
+            }],
+            series: [{
+                name:'股东总户数',
+                type:'line',
+                data:[71000,81000,78900]
+
+            },{
+                name:'收盘价(右)',
+                type:'line',
+                yAxisIndex: 1,
+                data:[31,30.3,30.2]
+            }],
+            label: {
+                normal: {
+                    show: true,
+                    position: 'top',
+                    textStyle: {
+                        color: 'black'
+                    }
+                }
+            },
+            color: ['#0f88cb','#ff4242']
+        };
+        myChart1.setOption(option);
+        /*echarts*/
+
+        /*固定两个表格一行高度*/
+        function fixtableHeight() {
+            var leftTrLen = mui('.fixedcolumn-table .left-col-table tr').length;
+            /*  console.log('leftTrLen:'+ mui('.left-col-table tr')[2].offsetHeight)*/
+            for (var i = 0; i < leftTrLen; i++) {
+                var leftTrH = mui('.fixedcolumn-table .left-col-table tr')[i].offsetHeight;
+                var rightTrH = mui('.fixedcolumn-table .right-con-table tr')[i].offsetHeight;
+                if (leftTrH < rightTrH) {
+                    mui('.fixedcolumn-table .left-col-table tr')[i].style.height = rightTrH + 'px';
+                    mui('.fixedcolumn-table .right-con-table tr')[i].style.height = rightTrH + 'px'
+                } else if (leftTrH > rightTrH) {
+                    mui('.fixedcolumn-table .left-col-table tr')[i].style.height = leftTrH + 'px';
+                    mui('.fixedcolumn-table .right-con-table tr')[i].style.height = leftTrH + 'px'
+                }
+            }
+        }
+        fixtableHeight();
+        mui('body').on('tap', '.mui-control-item', function () {
+            fixtableHeight();
+            setTimeout(function () {
+                fixtableHeight()
+            }, 1)
+        });
+    }
+</script>
+</body>
+</html>

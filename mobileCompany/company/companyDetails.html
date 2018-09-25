@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>上海证券报-公司</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+    <link rel="stylesheet" href="../css/mui.min.css"/>
+    <link rel="stylesheet" href="../css/app.css"/>
+    <link rel="stylesheet" href="../iconfont/iconfont.css"/>
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.css"/>
+    <link rel="stylesheet" href="../css/company.css"/>
+    <script src="../js/companyCommon.js"></script>
+    <style>
+        ::-webkit-scrollbar{
+            display:none;
+        }
+        /*popover*/
+        .mui-plus .plus{
+            display: inline;
+        }
+
+        .plus{
+            display: none;
+        }
+
+        #topPopover {
+            position: fixed!important;
+            top: 13.94%!important;
+            right: 0;
+            left: 0!important;
+            background: transparent;
+            /*padding-top: 90px;*/
+            padding-left: .10rem;
+            padding-right: .10rem;
+
+        }
+        #topPopover .mui-popover-arrow {
+            left: auto;
+            right: .06rem;
+            display:none;
+        }
+        p {
+            text-indent: .22rem;
+        }
+        span.mui-icon {
+            font-size: .14rem;
+            color: #007aff;
+            padding-right: .10rem;
+        }
+        .mui-popover {
+            height: 75%;
+        }
+
+        /*******************1-27新增添加关注公司类型*******************/
+        #pop1 {
+            padding-top: .85rem;
+        }
+        .refresh-sure-box {
+            width: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: .85rem;
+
+        }
+        .refresh_sure {
+            width: 100%;
+            height: .40rem;
+            line-height: .40rem;
+            border-bottom:.01rem solid #eee;
+        }
+        .classify_refresh_btn,.classify_sure_btn {
+            width: .80rem;
+            text-align: center;
+            font-size: .13rem;
+            color: #1b82d2;
+        }
+        .classify_refresh_btn .mui-icon-loop {
+            font-size: .13rem;
+            font-weight:bold;
+        }
+        .classify-new-group {
+            display: block;
+            height: .42rem;
+            line-height: .42rem;
+            width: 100%;
+            text-align: center;
+            color: #333;
+            font-size: .14rem;
+            border-bottom:.01rem solid #eee;
+        }
+        .select_group.mui-table-view.mui-table-view-radio {
+            margin: 0;
+        }
+       .select_group .mui-table-view-cell {
+            display:block;
+           background-color: #fff;
+           text-align: left;
+           padding-right: .15rem;color: #333;
+        }
+        .select_group .mui-table-view-cell.mui-selected {
+            color: #1b82d2;
+        }
+        .select_group.mui-table-view-radio .mui-table-view-cell>a:not(.mui-btn){
+            width: 120%;
+            padding-left: .50rem;
+            font-size: .14rem;
+        }
+        .mui-popover.mui-popover-action .select_group.mui-table-view .mui-table-view-cell:after {
+            height: 0;
+        }
+        /*******************1-27新增添加关注公司类型 end*******************/
+    </style>
+</head>
+
+<body>
+<header class="mui-bar mui-bar-nav bcWhiteNav">
+    <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+    <h1 class="mui-title">公司详情</h1>
+</header>
+<div class="mui-content" style="padding-bottom: .65rem;">
+    <!--底部导航-->
+    <footer>
+        <ul class="foottableul">
+            <li class="tcli">
+                <a href="javascript:;" id="companyPayAtt" class="aJsfun">
+                    <span class="cIco fa fa-heart textred infocollectHeart"></span>
+                    <div>已关注</div>
+                </a>
+            </li>
+            <li class="tcli">
+                <a href="">
+                    <span class="cIco fa fa-file-text-o"></span>
+                    <div>信用报告</div>
+                </a>
+            </li>
+            <li class="tcli ">
+                <a href="">
+                    <span class="cIco iconfont  icon-guanyu"></span>
+                    <div>企业链图</div>
+                </a>
+            </li>
+            <li class="tcli ">
+                <a href="">
+                    <span class="cIco fa fa-sitemap"></span>
+                    <div>关联族谱</div>
+                </a>
+            </li>
+        </ul>
+    </footer>
+    <!--底部导航end-->
+    <div class="companyHead">
+        <div class=" logImg tc" >
+            <img src="../images/default.png" alt="" width="100%" height="auto">
+        </div>
+        <div class=" tc pl12">
+            <div class="companynamebox"><span class="cname">平安银行股份有限公司</span></div>
+          <!--  <div class="infos info2">
+                <span class="lightgray">浏览3000</span><span class="verticalline">|</span><span>非上市股份有限公司</span>
+            </div>-->
+
+            <div class="infos info3">
+                <span>谢永林</span><span class="verticalline">|</span><span>1142489.4787万人民币</span><span class="verticalline">|</span><span> 成立于1987-12-22</span>
+            </div>
+            <div class="infozt">
+                在营（开业）
+            </div>
+            <div class="infozt ss-state">
+               上市公司
+            </div>
+        </div>
+    </div>
+    <div class="companypart2">
+        <div class="tc r-line">浏览数量：10000</div>
+        <div class="tc"><span class="fa fa-refresh textgreen mr8"></span>今日已更新</div>
+    </div>
+    <div class="companypart3">
+        <ul class="mui-table-view">
+            <li class="mui-table-view-cell mui-collapse">
+                <a href="javascript:;" class="mui-navigate-right">
+                    <div class="touchw clearfix">
+                        <span class="fa fa-phone lico"></span><span>0755-22168838</span>
+                    </div>
+                </a>
+                <div class="mui-collapse-content com-ipe">
+                    <div class="jb-info lx-info-box">
+                        <ul>
+                            <li><span class="mui-icon iconfont icon-22 lico"></span>暂无网址</li>
+                            <li><span class="fa fa-envelope-open lico"></span>pabdsh@pingan.com.cn</li>
+                            <li><span class="fa fa-map-marker lico" style="font-size: .23rem;top: .04rem;"></span>深圳市罗湖区深南东路5047号</li>
+                        </ul>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <!--新增股东和高管-->
+    <div class="gdDjg">
+        <!--股东-->
+        <div class="shareholder clearfix">
+            <a class="gddjg_leftLabel fl" href="listedCompanyInfo1.html"><span>股东</span></a>
+            <div class="gddjg_rightCon fl">
+                <div style="width: 100%;height: .70rem;overflow-x: auto;overflow-y: hidden">
+                    <ul class="clearfix gddjg_rightCon_list_box gddjg_rightCon_list_box1">
+                       <li class="gddjg_rightCon_list_node fl">
+                           <div class="gddjg_name">
+                               <span class="gddjg_left_head_img bc_cyan"><i>A</i></span>
+                               <div class="gddjg_name_box">
+                                   <span class="gddjg_fullname">中国平安保险（集团）股份有限公司</span>
+                                   <span class="gddjg_id_bd">股东</span>
+                               </div>
+                           </div>
+                           <div class="gddjg_person_details">
+                               <span>持股比例<i class="text_red">48.81%</i></span>
+                           </div>
+                       </li>
+                        <li class="gddjg_rightCon_list_node fl">
+                            <div class="gddjg_name">
+                                <span class="gddjg_left_head_img bc_cyan"><i>A</i></span>
+                                <div class="gddjg_name_box">
+                                    <span class="gddjg_fullname">中国平安保险（集团）股份有限公司</span>
+                                    <span class="gddjg_id_bd">股东</span>
+                                </div>
+                            </div>
+                            <div class="gddjg_person_details">
+                                <span>持股比例<i class="text_red">48.81%</i></span>
+                            </div>
+                        </li>
+                        <li class="gddjg_rightCon_list_node fl">
+                            <div class="gddjg_name">
+                                <span class="gddjg_left_head_img bc_cyan"><i>A</i></span>
+                                <div class="gddjg_name_box">
+                                    <span class="gddjg_fullname">中国平安保险（集团）股份有限公司</span>
+                                    <span class="gddjg_id_bd">股东</span>
+                                </div>
+                            </div>
+                            <div class="gddjg_person_details">
+                                <span>持股比例<i class="text_red">48.81%</i></span>
+                            </div>
+                        </li>
+                        <li class="gddjg_rightCon_list_node fl">
+                            <div class="gddjg_name">
+                                <span class="gddjg_left_head_img bc_cyan"><i>A</i></span>
+                                <div class="gddjg_name_box">
+                                    <span class="gddjg_fullname">中国平安保险（集团）股份有限公司</span>
+                                    <span class="gddjg_id_bd">股东</span>
+                                </div>
+                            </div>
+                            <div class="gddjg_person_details">
+                                <span>持股比例<i class="text_red">48.81%</i></span>
+                            </div>
+                        </li>
+                        <li class="gddjg_rightCon_list_node fl gdgg-checkmore">
+                            <a href="gdqk3.html" class="gddjg_name">
+                                <span class="gddjg_left_head_img bc_cyan"><i>查</i></span>
+                                <div class="gddjg_name_box">
+                                    <span class="gddjg_id ">查看更多<i class="mui-icon mui-icon-arrowright" ></i></span>
+                                </div>
+                            </a>
+                            <div class="gddjg_person_details">
+                                <span>••••••</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!--股东 end-->
+        <!--高管-->
+        <div class="dongjiangao clearfix">
+            <a class="gddjg_leftLabel fl" href="listedCompanyInfo2.html"><span>高管</span></a>
+            <div class="gddjg_rightCon fl">
+                <div style="width: 100%;height: .70rem;overflow-x: auto;overflow-y: hidden">
+                    <ul class="clearfix gddjg_rightCon_list_box gddjg_rightCon_list_box2">
+                        <li class="gddjg_rightCon_list_node fl">
+                            <div class="gddjg_name">
+                                <span class="gddjg_left_head_img bc_cyan2"><i>张</i></span>
+                                <div class="gddjg_name_box">
+                                    <span class="gddjg_fullname">张勇</span>
+                                    <span class="gddjg_id">董事长兼首席财务官</span>
+                                </div>
+                            </div>
+                            <div class="gddjg_person_details">
+                                <span>持股数量：-</span>
+                            </div>
+                        </li>
+                        <li class="gddjg_rightCon_list_node fl">
+                            <div class="gddjg_name">
+                                <span class="gddjg_left_head_img bc_cyan2"><i>武</i></span>
+                                <div class="gddjg_name_box">
+                                    <span class="gddjg_fullname">武卫</span>
+                                    <span class="gddjg_id">董事</span>
+                                </div>
+                            </div>
+                            <div class="gddjg_person_details">
+                                <span>持股数量：-</span>
+                            </div>
+                        </li>
+                        <li class="gddjg_rightCon_list_node fl">
+                            <div class="gddjg_name">
+                                <span class="gddjg_left_head_img bc_cyan2"><i>武</i></span>
+                                <div class="gddjg_name_box">
+                                    <span class="gddjg_fullname">武卫</span>
+                                    <span class="gddjg_id">董事</span>
+                                </div>
+                            </div>
+                            <div class="gddjg_person_details">
+                                <span>持股数量：-</span>
+                            </div>
+                        </li>
+                        <li class="gddjg_rightCon_list_node fl">
+                            <div class="gddjg_name">
+                                <span class="gddjg_left_head_img bc_cyan2"><i>武</i></span>
+                                <div class="gddjg_name_box">
+                                    <span class="gddjg_fullname">武卫</span>
+                                    <span class="gddjg_id">董事</span>
+                                </div>
+                            </div>
+                            <div class="gddjg_person_details">
+                                <span>持股数量：-</span>
+                            </div>
+                        </li>
+                        <li class="gddjg_rightCon_list_node fl gdgg-checkmore">
+                            <a href="listedCompanyInfo2.html" class="gddjg_name">
+                                <span class="gddjg_left_head_img bc_cyan2"><i>查</i></span>
+                                <div class="gddjg_name_box">
+                                    <span class="gddjg_id ">查看更多<i class="mui-icon mui-icon-arrowright" ></i></span>
+                                </div>
+                            </a>
+                            <div class="gddjg_person_details">
+                                <span>••••••</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!--高管 end-->
+    </div>
+    <!--新增股东和董监高 end-->
+
+    <!--企业新闻、公告、研报-->
+    <div class="commonStyleBox companyNewsBox">
+        <div class="infoHead">公司动态</div>
+        <div class="infobody clearfix">
+            <a class="infoeles" href="companyDynamic1.html" >
+                <span class="fico fa fa-newspaper-o "></span>
+                <span class="infoinner">公司新闻</span>
+            </a>
+            <a class="infoeles" href="companyDynamic2.html" >
+                <span class="fico fa fa-bullhorn"></span>
+                <span class="infoinner">公司公告</span>
+            </a>
+            <a class="infoeles" href="companyDynamic3.html" >
+                <span class="fico iconfont icon-zixun "></span>
+                <span class="infoinner">公司研报</span>
+            </a>
+            <a class="infoeles" href="companyDynamic4.html" >
+                <span class="fico fa fa-bar-chart "></span>
+                <span class="infoinner">股票行情</span>
+            </a>
+        </div>
+    </div>
+    <!--企业新闻、公告、研报end-->
+
+    <!--上市公司股本等信息-->
+    <div class="ssgs-info">
+        <ul class="mui-table-view">
+            <li class="mui-table-view-cell mui-collapse mui-active">
+                <a href="javascript:;" class="mui-navigate-right">
+                    <div class="touchw clearfix">
+                       <span class="fl">平安银行(<i class="txtgray" >000001</i>)</span>
+                        <span class="fr companyHq">
+                            <i class="mui-icon mui-icon-arrowthinup"></i><!--上升--><i>11.020.00(0.00%)</i>
+                            <!--  <i class="mui-icon mui-icon-arrowthindown"></i>--><!--下降-->
+                        </span>
+                    </div>
+                </a>
+                <div class="mui-collapse-content com-ipe">
+                    <div class="pdbox">
+                        <div class="ssgs_tit1 graytxt2">
+                            <span class="ssgs_tittxt">深圳A股</span>
+                            <i class="ss_updatetime">2018-04-10 09:15:24</i>
+                        </div>
+                        <div class="gfxqbox1 clearfix">
+                            <div class="fl leftmr">
+                                <table class="gfxqbox-tb">
+                                    <tbody>
+                                    <tr>
+                                        <td class="gf_leftlabel"><span>总市值:</span></td>
+                                        <td class="gf_rigthTxt"><span>1892.2亿</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="gf_leftlabel"><span>总股本:</span></td>
+                                        <td class="gf_rigthTxt"><span>171.7亿</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="gf_leftlabel"><span>流通市值:</span></td>
+                                        <td class="gf_rigthTxt"><span>1864.4亿</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="gf_leftlabel"><span>流通股本:</span></td>
+                                        <td class="gf_rigthTxt"><span>169.2亿</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="gf_leftlabel"><span>市盈率:</span></td>
+                                        <td class="gf_rigthTxt"><span>8.16</span></td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="fl">
+                                <table class="gfxqbox-tb">
+                                    <tbody>
+                                    <tr>
+                                        <td class="gf_leftlabel"><span>市净率:</span></td>
+                                        <td class="gf_rigthTxt"><span>0.94</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="gf_leftlabel"><span>净利润:</span></td>
+                                        <td class="gf_rigthTxt"><span>231.9亿</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="gf_leftlabel"><span>每股收益:</span></td>
+                                        <td class="gf_rigthTxt"><span>1.351</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="gf_leftlabel"><span>营业收入:</span></td>
+                                        <td class="gf_rigthTxt"><span>1058亿</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="gf_leftlabel"><span>行业:</span></td>
+                                        <td class="gf_rigthTxt"><span>银行</span></td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gfxqbox2">
+                        <ul class="clearfix">
+                            <li class="gfxqboxLi">
+                                <a href="listedCompanyInfo1.html" class="gfxqboxLi_lk">
+                                    <span class="ssgs_leftico iconfont icon-guanliyuan_guanliyuanliebiao"></span>
+                                    <span>股东情况</span>
+                                </a>
+                            </li>
+                            <li class="gfxqboxLi">
+                                <a href="listedCompanyInfo2.html" class="gfxqboxLi_lk">
+                                    <span class="ssgs_leftico iconfont icon-qingkuangyuxiansuotongbao"></span>
+                                    <span>高管信息</span>
+                                </a>
+                            </li>
+                            <li class="gfxqboxLi">
+                                <a href="listedCompanyInfo3.html" class="gfxqboxLi_lk">
+                                    <span class="ssgs_leftico iconfont icon-rongzi1"></span>
+                                    <span>公司财务</span>
+                                </a>
+                            </li>
+                            <li class="gfxqboxLi">
+                                <a href="listedCompanyInfo4.html" class="gfxqboxLi_lk">
+                                    <span class="ssgs_leftico iconfont icon-jingying1"></span>
+                                    <span>公司分红</span>
+                                </a>
+                            </li>
+                            <li class="gfxqboxLi">
+                                <a href="listedCompanyInfo5.html" class="gfxqboxLi_lk">
+                                    <span class="ssgs_leftico iconfont icon-hangqing"></span>
+                                    <span>市场</span>
+                                </a>
+                            </li>
+                            <li class="gfxqboxLi">
+                                <a href="listedCompanyInfo6.html" class="gfxqboxLi_lk">
+                                    <span class="ssgs_leftico iconfont icon-quanbu"></span>
+                                    <span>行业</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <!--上市公司股本等信息end-->
+
+    <!--公司概况-->
+    <div class="commonStyleBox companySurvey">
+        <div class="infoHead">公司概况</div>
+        <div class="infobody clearfix">
+            <a class="infoeles" href="companySurvey1.html" >
+                <span class="fico fa fa-building-o"></span>
+                <span class="infoinner">公司概况</span>
+            </a>
+            <a class="infoeles" href="companySurvey2.html">
+                <span class="fico iconfont icon-xiangmu"></span>
+                <span class="infoinner">主营构成</span>
+            </a>
+            <a class="infoeles" href="companySurvey3.html">
+                <span class="fico fa fa-codepen"></span>
+                <span class="infoinner">主营构成分析</span>
+            </a>
+        </div>
+    </div>
+    <!--风险信息-->
+    <div class="commonStyleBox companyRiskInfo">
+        <div class="infoHead">风险信息</div>
+        <div class="infobody clearfix">
+            <a class="infoeles" href="companyRiskInfo1.html">
+                <span class="fico fa fa-exchange"><i>7</i></span>
+                <span class="infoinner">工商变更</span>
+            </a>
+            <a class="infoeles" href="companyRiskInfo2.html">
+                <span class="fico fa fa-street-view"><i>0</i></span>
+                <span class="infoinner">被执行人信息</span>
+            </a>
+            <a class="infoeles graypart" href="companyRiskInfo3.html">
+                <span class="fico fa fa-user-times"><i>0</i></span>
+                <span class="infoinner">失信人信息</span>
+            </a>
+            <a class="infoeles" href="companyRiskInfo4.html">
+                <span class="fico fa fa-server"><i>0</i></span>
+                <span class="infoinner">股权出质历史信息</span>
+            </a>
+            <a class="infoeles" href="companyRiskInfo5.html">
+                <span class="fico fa fa-gg-circle"><i>0</i></span>
+                <span class="infoinner">动产抵押</span>
+            </a>
+            <a class="infoeles" href="companyRiskInfo6.html">
+                <span class="fico fa fa-gg"><i>0</i></span>
+                <span class="infoinner">动产抵押物信息</span>
+            </a>
+            <a class="infoeles" href="companyRiskInfo7.html">
+                <span class="fico fa fa-list-alt"><i>2</i></span>
+                <span class="infoinner">企业行政处罚历史信息</span>
+            </a>
+            <a class="infoeles" href="companyRiskInfo8.html">
+                <span class="fico fa fa-list"><i>0</i></span>
+                <span class="infoinner">股权冻结历史信息</span>
+            </a>
+            <a class="infoeles" href="companyRiskInfo9.html">
+                <span class="fico fa fa-file-o"><i>0</i></span>
+                <span class="infoinner">清算信息</span>
+            </a>
+            <a class="infoeles" href="companyRiskInfo10.html">
+                <span class="fico fa fa-ils"><i>7</i></span>
+                <span class="infoinner">对外投资</span>
+            </a>
+        </div>
+    </div>
+</div>
+
+<!--关注公司类型弹框-->
+<div id="pop1" class="box mui-popover mui-popover-action mui-popover-bottom " style="background-color: #fff;height: 60%;">
+    <!--刷新&确定&创建新群组-->
+    <div class="refresh-sure-box">
+        <!--刷新&确定-->
+        <div class="refresh_sure clearfix">
+            <span class="fl classify_refresh_btn">刷新 <i class="mui-icon mui-icon-loop"></i></span>
+            <a href="#pop1" class="fr classify_sure_btn">确定</a>
+        </div>
+        <!--创建新群组-->
+        <a href="#newGrop" class="classify-new-group">+创建新群组</a>
+    </div>
+
+    <!--选择分组-->
+    <ul class="select_group mui-table-view mui-table-view-radio">
+        <li class="mui-table-view-cell "><!--mui-selected 为选中状态-->
+            <a class="mui-navigate-right noLink ">
+                竞争对手
+            </a>
+        </li>
+        <li class="mui-table-view-cell ">
+            <a class="mui-navigate-right noLink">
+                客户
+            </a>
+        </li>
+        <li class="mui-table-view-cell">
+            <a class="mui-navigate-right noLink">
+                供应商
+            </a>
+        </li>
+    </ul>
+</div>
+<!--关注公司类型弹框 end-->
+
+<!--新建群组弹框-->
+<div id="newGrop" class="mui-modal">
+    <header class="mui-bar mui-bar-nav">
+        <a class="mui-icon mui-icon-closeempty mui-pull-left" href="#newGrop"></a>
+        <h1 class="mui-title">新建群组</h1>
+        <a class="mui-pull-right" href="#newGrop" style="font-size: .14rem;line-height: .44rem;">确定</a>
+    </header>
+    <div class="mui-content bc_white" style="height: 100%;">
+        <div class="group-ico blue-groupIco">
+            <span class="iconfont icon-qunzu"></span>
+        </div>
+        <div style="padding: 0 .20rem;">
+            <input type="text" placeholder="群组名称" class="newGroup-input">
+            <input type="text" placeholder="群组信息描述（可选）" class="newGroup-input">
+        </div>
+    </div>
+</div>
+<!--新建群组弹框 end-->
+</body>
+<script src="../js/mui.min.js"></script>
+<script src="../js/app.js"></script>
+<script>
+    mui('body').on('tap','#companyPayAtt',function () {
+        var followed =this.getElementsByClassName('infocollectHeart')[0].classList.contains('fa-heart');
+        var infocollectHeart = this.getElementsByClassName('infocollectHeart')[0];
+        if(followed){/*如果已关注*/
+            var btnArray = ['否', '是'];
+            mui.confirm('确认取消关注？','温馨提示', btnArray, function(e) {
+                if (e.index == 1) {
+                    infocollectHeart.classList.remove('fa-heart');
+                    infocollectHeart.classList.add('fa-heart-o');
+                    infocollectHeart.nextElementSibling.innerHTML='未关注';
+                }
+            })
+        }else{/*如果未关注*/
+            /*选择关注的公司类型*/
+            mui('#pop1').popover('toggle');/*显示关注类型弹框*/
+            var select_num = 0;
+            mui('.select_group').on('tap','.mui-table-view-cell ',function () {
+                select_num++;
+            });
+            mui('body').on('tap','.classify_sure_btn',function () {/*点击确定*/
+                if(select_num){/*若选择了某项分组*/
+                    infocollectHeart.classList.add('fa-heart');
+                    infocollectHeart.classList.remove('fa-heart-o');
+                    infocollectHeart.nextElementSibling.innerHTML='已关注';
+                    mui.toast('关注成功');
+                }
+            })
+        }
+    })
+    /*关注*/
+
+</script>
+<script>
+    /*设置gddjg_rightCon_list_box 宽度*/
+
+    var len1 = mui('.gddjg_rightCon_list_box1 .gddjg_rightCon_list_node').length;
+    mui('.gddjg_rightCon_list_box1')[0].style.width=1.14*len1+'rem';
+    var len2 = mui('.gddjg_rightCon_list_box2 .gddjg_rightCon_list_node').length;
+    mui('.gddjg_rightCon_list_box2')[0].style.width=1.14*len2+'rem';
+    /*设置gddjg_rightCon_list_box 宽度*/
+
+    /*关闭popover*/
+    mui('.invoiceTit-pop').on('tap','.invoice-pop-btn-cancel',function () {
+        mui('#topPopover').popover('hide');
+    })
+
+
+</script>
+</html>

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>Hello MUI</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+		<!--标准mui.css-->
+		<link rel="stylesheet" href="css/mui.min.css">
+		<!--App自定义的css-->
+		<link rel="stylesheet" type="text/css" href="css/app.css"/>
+		<style>
+			.interview-content .mui-input-row {
+				width: 90%;
+				margin-left: 5%;
+			}
+			.interview-content .mui-input-row input {
+				width: 100%;
+				margin-left: 0;
+			}
+			.filterBox .mui-placeholder {
+				top:12px!important;
+			} 
+	
+			.mui-input-row.mui-search .mui-icon-clear {
+    			top: 16px;
+			}
+		</style>
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav">
+			<h1 class="mui-title">采访</h1>
+		</header>
+		<div class="mui-content interview-content">
+			<div class="filterBox">
+				<div class="mui-input-row mui-search" >
+					<input type="search" class="mui-input-clear" placeholder="输入采访关键词搜索" id="searchInp">
+				</div>
+			</div>
+			<div class="new-interview addNewInterview">
+				<!--<span class="mui-icon mui-icon-plusempty"></span>
+				<p><a href="new-interview1.html">添加新采访</a></p>		-->
+				<span class="interview-tit" data-text="添加新采访">添加新采访</span>
+                <span class="interview-btn">
+                    <i class="mui-icon mui-icon-plusempty"></i>
+                </span>
+			</div>
+            <style>
+                .title.myInterviewTit {
+                    position: relative;
+                    border-bottom:1px solid #f0f2f6;
+                    background-color: #fff;
+                    margin-left:0;
+                    margin-right: 0;
+                    width: 100%;
+                    padding:14px;
+                    padding-left: 24px;
+                    font-size: 13px;
+                    line-height: 13px;
+                    margin-bottom: 0;
+                    color: #323232;
+                }
+                .title.myInterviewTit:before{
+                    content:'';
+                    position:absolute;
+                    width: 4px;
+                    height: 13px;
+                    top: 14px;
+                    left: 12px;
+                    background-color: #1d8fe1;
+                }
+            </style>
+			<div class="title myInterviewTit">
+				我的采访
+			</div>
+
+
+			<ul class="mui-table-view mui-table-view-chevron" id="searchRsox" style="transition: all .3s ease-out;top:0">
+				<span id="godown" style="position: absolute;top:-20px;right: 10px;display:none">
+					<i class="mui-icon mui-icon-arrowdown" style="font-size: 22px;color: #00a2ff;font-weight: bold;"></i>
+					下拉
+				</span>
+				<li class="mui-table-view-cell mui-media">
+					<a class="mui-navigate-right" href="">
+						<img class="mui-media-object mui-pull-left" src="img/cbd.jpg">
+						<div class="mui-media-body">
+							双鹭药业2017-07-30
+							<p class='mui-ellipsis'>烤炉模式的城，到黄昏，如同打翻的调色盘一般.</p>
+						</div>
+					</a>
+				</li>
+				<li class="mui-table-view-cell mui-media">
+					<a class='mui-navigate-right' href="">
+						<img class="mui-media-object mui-pull-left" src="img/yuantiao.jpg">
+						<div class="mui-media-body">
+							中国石油2017-07-27
+							<p class='mui-ellipsis'>静静的看这个世界，最后终于疯了</p>
+						</div>
+					</a>
+				</li>
+				<li class="mui-table-view-cell mui-media">
+					<a class="mui-navigate-right" href="">
+						<img class="mui-media-object mui-pull-left" src="img/shuijiao.jpg">
+						<div class="mui-media-body">
+							幸福2015-09-09
+							<p class='mui-ellipsis'>能和心爱的人一起，是件幸福的事情；可是，打呼噜怎么办？</p>
+						</div>
+					</a>
+				</li>
+				<!--暂无采访-->
+				<!--<li style="width: 100% ;text-align: center;padding: 24px;background-color: #fff;">
+					<img src="images/noMs.png" alt="" width="160">
+					<p style="line-height: 14px;font-size: 14px;margin-top: 15px;color: #323232;">暂无采访</p>
+				</li>-->
+				<!--暂无采访 end-->
+			</ul>
+		</div>
+	</body>
+	<script src="js/mui.min.js"></script>
+	<script>
+		document.getElementById('searchInp').onfocus=function () {
+            document.getElementById('godown').style.display='block';
+            document.getElementById('searchRsox').style.top='-205px';
+        };
+        document.getElementById('godown').onclick = function () {
+			this.style.display='none';
+            document.getElementById('searchRsox').style.top='0'
+        }
+	</script>
+</html>

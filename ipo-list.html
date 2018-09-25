@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>上海证券报</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+		<link rel="stylesheet" href="css/mui.min.css"/>
+		<link rel="stylesheet" href="css/app.css"/>
+        <link rel="stylesheet" href="iconfont/iconfont.css"/>
+        <style>
+            .manageList {
+                display:block;
+                color: #999;
+                font-size: 14px;
+                line-height: 23px;
+                text-align: left;
+                border-radius:50%;
+                float: right;
+                margin-right: 16px;
+            }
+            .lbnum {
+                position: relative;
+            }
+            .selectAllbox {
+                display:inline-block;
+                line-height: 38px;
+                position: absolute;
+                top:-7px;
+                right: 8px;
+                display:none;
+            }
+            #doneIt {
+                color: #0088f0;
+                font-size: 14px;
+            }
+            .mui-icon-trash {
+                color: #e60012;
+            }
+            #slcAbox label {
+                font-size: 14px;
+            }
+            .mui-input-group .mui-input-row {
+                display:none;
+            }
+        </style>
+	</head>
+	<body>
+		<header class="mui-bar mui-bar-nav">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<h1 id="title" class="mui-title">拟IPO项目</h1>
+			<a class="mui-btn mui-btn-link mui-pull-right" href="ipo-bj1.html">
+				<span class="iconfont icon-iconfontxinzeng" style="font-size: 20px;position: relative;top: -2px;"></span>
+			</a>
+		</header>
+			<div class="mui-content mui-content-dy merge-content" >
+			<!--填报项目列表begin-->
+				<div class="mui-content-dy-box merge-jq-box-off">
+					<div class="filterBox">
+						<div class="mui-input-row mui-search" >
+							<input type="search" class="mui-input-clear" placeholder="输入公司名称搜索">
+						</div>
+					</div>
+					<div class="lbnum"><i>项目列表（20）</i>
+                        <span class="manageList">管理</span>
+                        <div class="selectAllbox" id="slcAbox">
+                            <div class="mui-input-row mui-checkbox mui-right fl">
+                                <label>全选</label>
+                                <input name="checkbox" value="Item0" type="checkbox" id="allChecks">
+                            </div>
+                            <span class="mui-icon mui-icon-trash"></span>
+                            <span id="doneIt">完成</span>
+                        </div>
+                    </div>
+					<!--项目列表-->
+					<ul class="xmListbox" id="xmListbox1">
+						<li class="xmListCell mui-input-group">
+                            <div class="mui-input-row mui-checkbox mui-right">
+                                <input name="checkbox" value="Item1" type="checkbox" class="checkInput">
+                            </div>
+							<a href="ipo-ck1.html" class="cellInner">
+								<h5 class="xmCompanyname">测试公司名称1</h5>
+								<ul>
+									<li>
+										<label>所在省市：</label><span class="txtgray">安徽省合肥市</span>
+									</li>
+									<li class="clearfix">
+										<div class="fl mr24"><label>创建人：</label><span class="txtgray">王兰君</span></div>
+										<div class="fl"><label>当前处理人：</label><span class="txtgray">XXX</span></div>
+									</li>
+									<li class="clearfix">
+										<div class="fl mr24"><label>创建日期：</label><span class="txtgray">2017-6-7</span></div>
+										<div class="fl"><label>修改日期：</label><span class="txtgray">2017-6-7</span></div>
+									</li>
+									<li>
+										<label>状态：</label><span class="txtgray">未提交</span>
+									</li>
+								</ul>
+							</a>
+						</li>
+                        <li class="xmListCell mui-input-group">
+                            <div class="mui-input-row mui-checkbox mui-right">
+                                <input name="checkbox" value="Item1" type="checkbox" class="checkInput">
+                            </div>
+                            <a href="ipo-ck1.html" class="cellInner">
+                                <h5 class="xmCompanyname">测试公司名称2</h5>
+                                <ul>
+                                    <li>
+                                        <label>所在省市：</label><span class="txtgray">安徽省合肥市</span>
+                                    </li>
+                                    <li class="clearfix">
+                                        <div class="fl mr24"><label>创建人：</label><span class="txtgray">王兰君</span></div>
+                                        <div class="fl"><label>当前处理人：</label><span class="txtgray">XXX</span></div>
+                                    </li>
+                                    <li class="clearfix">
+                                        <div class="fl mr24"><label>创建日期：</label><span class="txtgray">2017-6-7</span></div>
+                                        <div class="fl"><label>修改日期：</label><span class="txtgray">2017-6-7</span></div>
+                                    </li>
+                                    <li>
+                                        <label>状态：</label><span class="txtgray">未提交</span>
+                                    </li>
+                                </ul>
+                            </a>
+                        </li>
+                        <li class="xmListCell mui-input-group">
+                            <div class="mui-input-row mui-checkbox mui-right">
+                                <input name="checkbox" value="Item1" type="checkbox" class="checkInput">
+                            </div>
+                            <a href="ipo-ck1.html" class="cellInner">
+                                <h5 class="xmCompanyname">测试公司名称3</h5>
+                                <ul>
+                                    <li>
+                                        <label>所在省市：</label><span class="txtgray">安徽省合肥市</span>
+                                    </li>
+                                    <li class="clearfix">
+                                        <div class="fl mr24"><label>创建人：</label><span class="txtgray">王兰君</span></div>
+                                        <div class="fl"><label>当前处理人：</label><span class="txtgray">XXX</span></div>
+                                    </li>
+                                    <li class="clearfix">
+                                        <div class="fl mr24"><label>创建日期：</label><span class="txtgray">2017-6-7</span></div>
+                                        <div class="fl"><label>修改日期：</label><span class="txtgray">2017-6-7</span></div>
+                                    </li>
+                                    <li>
+                                        <label>状态：</label><span class="txtgray">未提交</span>
+                                    </li>
+                                </ul>
+                            </a>
+                        </li>
+					</ul>
+				</div>
+			</div>
+		<script src="js/mui.min.js"></script>
+		<script src="js/app.js"></script>
+		<script>
+            mui.init({
+                gestureConfig : {
+                    longtap:true
+                }
+            });
+            /*长按删除*/
+            mui('body').on('longtap','.xmListCell',function () {
+                var btnArray = ['否', '是'];
+                var child= this;
+                mui.confirm('确认删除？', '', btnArray, function(e) {
+                    if (e.index == 1) {
+                        child.parentNode.removeChild(child);
+                        mui.toast('删除成功');
+                    }
+                })
+            });
+            /*长按删除end*/
+
+            /*管理--删除*/
+            mui('body').on('tap','.manageList',function () {/*点击管理--出现全选、删除和完成还有每块头部的check*/
+                this.style.display='none';
+                var selectAllbox =document.getElementsByClassName('selectAllbox')[0];
+                selectAllbox.style.display='inline-block';
+                for(var i=0;i<mui('body .xmListCell .mui-input-row').length;i++){
+                    mui('.xmListCell .mui-input-row')[i].style.display='block';
+                }
+            });
+            mui('body').on('change','#slcAbox #allChecks',function () {
+                var value = this.checked;
+                var cks=document.getElementsByName("checkbox");
+
+                for(var i=0;i<cks.length;i++){/*全选全不选*/
+                    if(value == true){
+                        cks[i].setAttribute('checked','checked')
+                    }else{
+                        cks[i].removeAttribute('checked')
+                    }
+                }
+            });
+            mui('body').on('tap','.mui-icon-trash',function () {    /*点垃圾桶删除已选中的*/
+                var len = mui('.xmListCell').length;/*列表元素总数*/
+
+                /*判断选中的元素总数是否大于1*/
+                var checkInput = document.getElementsByClassName("checkInput");
+                var num = 0;
+                for(var i=0;i<checkInput.length;i++){
+                    if(checkInput[i].checked == true){
+                        num++
+                    }
+                }
+               /* console.log('选中的'+num);*/
+                if(num >=1){ /*判断选中的元素总数是否大于等于1,弹出弹框*/
+                    var btnArray = ['否', '是'];
+                    mui.confirm('确认删除？', '', btnArray, function(e) {
+                        if (e.index == 1) {
+                            /*删除已选中的*/
+                               for(var i=0;i<len;i++){
+                                   var child= document.getElementsByClassName('xmListCell');
+                                   console.log(child);
+                                   /*var checkinput = child[i].children[0].children[0].checked;*/
+                                   if(child.length>0){/*加判断：xmListCell是否还有*/
+                                       var checkinputC = checkInput[i].checked;
+                                    // console.log('打印出'+checkinput);
+                                       if(checkinputC){
+                                         /*  document.getElementsByClassName('xmListbox')[0].removeChild(child[i]);
+                                           i--;*/
+                                         child[i].style.display='none'
+                                       }
+                                   }
+
+                               }
+
+                            mui.toast('删除成功');
+                        }
+                    })
+                }
+            });
+            mui('body').on('tap','#doneIt',function () {    /*点击完成*/
+                mui('.manageList')[0].style.display='inline-block';
+                var selectAllbox =document.getElementsByClassName('selectAllbox')[0];
+                selectAllbox.style.display='none';
+                for(var i=0;i<mui('body .xmListCell .mui-input-row').length;i++){
+                    mui('.xmListCell .mui-input-row')[i].style.display='none';
+                }
+            })
+            /*管理--删除end*/
+		</script>
+	</body>
+
+</html>

@@ -1,0 +1,290 @@
+/***2018-4-4新增日程***/
+@charset "utf-8";
+.scheduleHd {
+    background-color: #f7f7f7;
+    color: #000;
+}
+.mui-bar.scheduleHd .mui-title {
+    color: #000;
+    right: 66px;
+    left: 66px;
+}
+.scheduleHd .mui-action-back {
+    border:1px solid #ccc;
+    border-radius:5px;
+    padding: 0 12px;
+    height: 30px;
+    text-align: center;
+    font-size: 13px;
+    line-height: 30px;
+    color: #000;
+    margin-top: 7px;
+}
+.scheduleHd .mui-pull-right {
+    border:1px solid #1b92e6;
+    background-color: #1b92e6;
+    border-radius:5px;
+    padding: 0 12px;
+    height: 30px;
+    text-align: center;
+    font-size: 13px;
+    line-height: 30px;
+    color: #fff;
+    margin-top: 7px;
+}
+.scheduleTypeBox {
+    display: table;
+    text-align: center;
+    padding: 15px 0;
+    width: 100%;
+    background-color: #fff;
+    height: 74px;
+    position: fixed;
+    top: 44px;
+    left: 0;
+    z-index: 100;
+}
+.scheduleType {
+    display: table-cell;
+    text-align: center;
+}
+.scheduleType span {
+    display: block;
+    font-size:20px;
+    margin-bottom: 8px;
+    line-height: 24px;
+}
+.scheduleType p {
+    font-size: 12px;
+    line-height: 12px;
+}
+.scheduleType.actived span,.scheduleType.actived p{
+    color: #1b92e6;
+}
+.scheduleCon {
+    margin-top: 84px;
+}
+.scheduleConCell {
+    display: none;
+}
+.scheduleConCell.actived{
+    display: block;
+}
+.scheduleinput {
+    padding-left: 28px;
+    background-color: #fff;
+    margin-bottom: 10px;
+}
+.scheduleinputLi {
+    border-bottom:1px solid #d9d9d9;
+    height: 54px;
+    line-height: 54px;
+    padding: 0;
+    padding-right: 20px;
+    position: relative;
+}
+.scheduleinputLi .mui-icon-arrowright {
+    position: absolute;
+    height: 54px;
+    line-height: 54px;
+    width: 20px;
+    text-align: center;
+    top: 0;
+    right: 20px;
+    color: #b3b3b3;
+}
+.scheduleinputLi .frscTimeRight {
+    margin-right: 20px;color: #b3b3b3;
+}
+.scheduleinputLi input {
+    border: 0;
+    margin-bottom: 0;
+    padding: 0;
+    height:auto;
+    line-height: 54px;
+    font-size: 14px;
+   /* height:15px;
+    line-height: 15px;*/
+}
+::-webkit-input-placeholder { /* WebKit browsers */
+    color: #b3b3b3; font-size: 14px;font-family: "微软雅黑";padding-left: 0px;
+}
+::-ms-input-placeholder { /* WebKit browsers */
+    color: #b3b3b3; font-size: 14px;font-family: "微软雅黑";padding-left: 0px;
+}
+.sclabelLeft {
+    color: #000;
+}
+.scheduleinputLi .selectbtn {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    line-height: 54px;
+      /*  margin-right: 20px;*/
+    background-color: transparent;
+    text-align: right;
+
+}
+.scheduleinputLi .selectbtn option {
+    text-align: right;
+}
+.scselectbox .sclabelLeft{
+    position: absolute;
+    height: 54px;
+    line-height: 54px;
+    width:auto;
+    left: 0;
+    top: 0;
+}
+.mui-table-view-cell a.chooseStatebtn {
+    width: 100%;
+    padding-left: 75px;
+    text-align: right;
+    height: 54px;
+    line-height: 54px;
+    float: left;
+    margin: 0;
+    margin-left: -75px;
+    background-color: transparent;
+}
+.chooseStatebtn span {
+    font-size: 14px;
+    color: #b3b3b3;
+}
+.scheduleinput .scheduleinputLi:last-child{
+    border-bottom: 0;
+}
+.chooseStatebtn input {
+    background-color: transparent;
+}
+.scheduleinputLi a.lisLink {
+    overflow: inherit;
+    height: 54px;
+    line-height: 54px;
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    color: #000;
+    padding-right: 40px;
+}
+.lisLink input{
+    text-align: right;
+}
+.scheduleinputLi.linkLi {
+    padding-right: 0;
+}
+.linkLi input {
+    padding-left: 80px;
+    margin-left: -60px;
+    background-color: transparent;
+    color: #b3b3b3;
+    font-size: 14px;
+}
+.scheduletextareaLi {
+    height: 100px;
+    padding-top: 10px;
+}
+.scheduletextareaLi textarea {
+    height: 100px;
+    font-size: 14px;
+}
+
+/*日程详情页*/
+.scheduleDet_con{
+    padding-bottom: 70px;
+}
+.bottomEdit {
+    position: fixed;
+    z-index: 100;
+    bottom: 0;
+    left: 0;
+    height: 70px;
+    width: 100%;
+    background-color: #fff;
+}
+.bottomEditBox {
+    width: 126px;
+    height: 100%;
+    margin:0 auto;
+    display: table;
+    text-align: center;
+}
+.bottom_editBtn,.bottom_delBtn {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+.bottom_ico {
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    text-align: center;
+    line-height: 34px;
+    border:1px solid #bbb;
+    color: #000;
+    border-radius:50%;
+    margin-bottom: 4px;
+    font-size: 18px;
+
+}
+.bottomEditBox p {
+    font-size: 12px;
+    line-height: 12px;
+}
+.schTitBox {
+    color: #fff;
+    min-height: 200px;
+    padding: 20px;
+    font-size: 14px;
+    line-height: 14px;
+    background:url("../images/bc-ico5.png") repeat;
+    background-color: #1b82d2;
+    display: table;
+    width:100%;
+    vertical-align: bottom;
+}
+.schTitBox div {
+    margin-top: 10px;
+}
+.schTitBox .schTit {
+    font-size: 22px;
+    line-height: 30px;
+}
+.schbox {
+    display: table-cell;
+    vertical-align: bottom;
+}
+.schConList {
+    background-color: #fff;
+    margin-bottom: 10px;
+    padding:0 20px;
+}
+.schConListCell {
+    border-bottom:1px solid #d9d9d9;
+    min-height: 54px;
+    line-height: 20px;
+    font-size: 14px;
+    padding: 10px 0;
+}
+.schConList .schConListCell:last-child{
+    border-bottom: 0;
+}
+.schConListCell .rightContxt {
+    width: 100%;
+    padding-left: 85px;
+    margin-left: -60px;
+
+}
+.leftlabel {
+    color: #636363;
+}
+.schConList .bottomContxt {
+    padding-left: 55px;
+    margin-left:0;
+}
+.schConList .topLabel {
+    display: block;
+    padding:5px 0 8px;
+}
+
+

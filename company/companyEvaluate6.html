@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>上海证券报-公司-PV模型</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+    <link rel="stylesheet" href="../css/mui.min.css"/>
+    <link rel="stylesheet" href="../css/app.css"/>
+    <link rel="stylesheet" href="../iconfont/iconfont.css"/>
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.css"/>
+    <link rel="stylesheet" href="../css/company.css"/>
+    <style>
+
+    </style>
+</head>
+
+<body>
+<header class="mui-bar mui-bar-nav bcWhiteNav">
+    <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+    <h1 class="mui-title">PV模型</h1>
+</header>
+<div class="mui-content">
+
+    <div style="width: 100% ;height: 220px;" class="yingyunnengli_chart" id="KMVChart"></div>
+    <div class="underChartBox">
+        <ul class="mui-table-view">
+            <li class="mui-table-view-cell mui-collapse mui-active  ">
+                <a class="mui-navigate-right" href="#" style="font-size: 15px;">最新一期数据</a>
+                <div class="mui-collapse-content">
+                    <div class="cBox">
+                        <div class="changebox">
+                            <div class="nodeBox">
+                                <div class="clittleboxs">
+                                    <div class="timetit">
+                                        <span class="node"><i></i></span>
+                                        <i>2017-08-26</i>
+                                        <span class="Alteration">最新一期数据</span>
+                                    </div>
+                                </div>
+                                <ul class="chartTopTable">
+                                    <li>
+                                        <span class="titTxt">违约距离：</span>
+                                        <i class="numTxt">0.895</i>
+                                    </li>
+                                    <li>
+                                        <span class="titTxt">波动率：</span>
+                                        <i class="numTxt">1.116</i>
+                                    </li>
+                                    <li>
+                                        <span class="titTxt">企业资产市场价值：</span>
+                                        <i class="numTxt">1.117</i>
+                                    </li>
+                                    <li>
+                                        <span class="titTxt">期望违约频率EDF：</span>
+                                        <i class="numTxt">0.185</i>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+</body>
+<script src="../js/mui.min.js"></script>
+<script src="../js/app.js"></script>
+<script src="../js/echarts.js"></script>
+<script>
+    var myChart = echarts.init(document.getElementById('KMVChart'));
+    myChart.setOption(
+        option = {
+            tooltip: {
+                trigger: 'axis'
+            },
+            xAxis: {
+                type: 'category',
+                /*name: 'x',*/
+                splitLine: {show: false},
+                data: ['2017-08-25','2017-08-25','2017-08-26'],
+                axisTick:{
+                    show:false
+                }
+            },
+            grid: {
+                top: 25,
+                height: 150,
+                left: '3%',
+                right: '4%',
+                containLabel: true
+            },
+            yAxis: {
+                type: 'value',
+                axisLabel: {
+                    formatter: function (value, index) {
+                        return value
+                    },
+                    textStyle:{
+                        color:'#333'
+                    }
+                }
+            },
+            legend: {
+                left:'center',
+                top:190,
+                data: ['违约距离DD', '波动率sigma_V']
+            },
+            series: [
+                {
+                    name: '违约距离DD',
+                    type: 'line',
+                    data: [0.3106180857,0.3106180857,0.895306281],
+                    lineStyle:{
+                        normal:{
+                            color:'#ed7d31'
+                        }
+                    }
+
+                },
+                {
+                    name: '波动率sigma_V',
+                    type: 'line',
+                    data: [3.2175714,3.2175714,1.116316799],
+                    lineStyle:{
+                        normal:{
+                            color:'#5b9bd5'
+                        }
+                    }
+                }
+            ]
+        }
+    )
+
+
+</script>
+</html>

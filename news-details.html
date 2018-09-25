@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>新闻详情页</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+		<!--标准mui.css-->
+		<link rel="stylesheet" href="css/mui.min.css">
+		<link rel="stylesheet" href="css/icons-extra.css">
+		<!--App自定义的css-->
+		<link rel="stylesheet" type="text/css" href="css/app.css" />
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<h1 class="mui-title">新闻信息</h1>
+		</header>
+		<div class="mui-content white-bg">
+			<div class="articletitle">
+				<h4>德美化工股东瑞奇投资拟减持不超500万股</h4>
+			</div>
+			<div class="author">
+				<div class="author_left">
+					<div class="mui-pull-left">
+						<span class="mui-icon mui-icon-compose"></span>
+						<span>中国证券网</span>
+					</div>
+				</div>
+				<div class="author_left">
+					<div class="mui-pull-left post-time"><span class="mui-icon iconfont icon-time"></span>2017-08-30 17:57:29</div>
+				</div>
+				<!--11-11新增收藏状态-->
+				<div class="collectionState">
+					<span class="mui-icon-extra mui-icon-extra-heart-filled collectSpan"></span>
+				</div>
+				<!--11-11新增收藏状态end-->
+			</div>
+
+			<div class="details">
+				<p>中国证券网讯（记者 骆民）德美化工30日晚间公告，持有公司股份22,283,789股（占公司总股本比例5.32%）的股东佛山市顺德区瑞奇投资有限公司计划在公告发布之日起十五个交易日之后的六个月内以集中竞价交易方式减持公司股份不超过5,000,000股（占公司总股本比例1.19%）。</p>
+			</div>
+			<h5 class="iconTitle"><span>相关推荐</span></h5>
+			<ul class="mui-table-view" style="position: inherit;">
+				<li class="mui-table-view-cell"><a href="#">关于做好2011年分类评价工作通知<span class="mui-pull-right post-time">2015-06-18</span></a></li>
+				<li class="mui-table-view-cell"><a href="#">关于做好2011年分类评价工作通知<span class="mui-pull-right post-time">2015-06-18</span></a></li>
+				<li class="mui-table-view-cell"><a href="#">关于做好2011年分类评价工作通知<span class="mui-pull-right post-time">2015-06-18</span></a></li>
+			</ul>
+		</div>
+		<script src="js/mui.min.js"></script>
+		<script src="js/jquery-1.11.3.min.js"></script>
+		<script src="js/app.js"></script>
+		<!--新增收藏-->
+		<script>
+			$('.collectionState').on('tap','.collectSpan',function () {
+			if($(this).hasClass('mui-icon-extra-heart-filled')){
+                $(this).removeClass('mui-icon-extra-heart-filled').addClass('mui-icon-extra-heart');
+                mui.toast('已取消收藏');
+			}else{
+                $(this).removeClass('mui-icon-extra-heart').addClass('mui-icon-extra-heart-filled');
+                mui.toast('收藏成功');
+			}
+            })
+
+		</script>
+	</body>
+
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html class="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title>通知</title>
+    <link href="../css/mui.min.css" rel="stylesheet" />
+    <link href="../css/app.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../iconfont/iconfont.css">
+    <style>
+        .notice-box {
+            padding-top: 10px;
+        }
+        .notice-cell {
+            padding: 10px;
+            background-color: #fff;
+            margin-bottom: 1px;
+        }
+        .notice-tbbox {
+            width: 100%;
+            display: table;
+        }
+        .left-tbcell,.notice-time {display: table-cell;}
+        .notice-time {
+            width: 76px;
+        }
+        .notice-tit {
+            font-weight:normal;
+            font-size: 16px;
+            line-height: 24px;
+            color: #000;
+        }
+        .notice-state {
+            font-size: 14px;
+            color: #666;
+            vertical-align: top;
+        }
+        .notice-time {
+            font-size: 14px;
+            text-align: right;
+            color: #666;
+        }
+        .notice-cell.mui-table-view-cell:after {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+<header class="mui-bar mui-bar-nav bcWhiteNav">
+    <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+    <h1 class="mui-title manuscript-filter">通 知</h1>
+</header>
+<div class="mui-content ">
+    <ul class="notice-box">
+        <li class="notice-cell mui-table-view-cell">
+            <div class="mui-slider-right mui-disabled">
+                <a class="mui-btn mui-btn-red">忽略</a>
+            </div>
+            <div class="mui-slider-handle">
+                <div class="notice-tbbox">
+                    <div class="left-tbcell">
+                        <h4 class="notice-tit">
+                            通知标题通知标题通知标题通知标题
+                        </h4>
+                        <p class="notice-state">状态:忽略</p>
+                    </div>
+                    <span class="notice-time">2018-7-4</span>
+                </div>
+            </div>
+        </li>
+        <li class="notice-cell mui-table-view-cell">
+            <div class="mui-slider-right mui-disabled">
+                <a class="mui-btn mui-btn-red">忽略</a>
+            </div>
+            <div class="mui-slider-handle">
+                <div class="notice-tbbox">
+                    <div class="left-tbcell">
+                        <h4 class="notice-tit">
+                            通知标题通知标题通知标题通知标题
+                        </h4>
+                        <p class="notice-state">状态:忽略</p>
+                    </div>
+                    <span class="notice-time">2018-7-4</span>
+                </div>
+            </div>
+        </li>
+    </ul>
+</div>
+
+<script src="../js/mui.min.js"></script>
+<script src="../js/app.js"></script>
+<script>
+
+</script>
+</body>
+</html>

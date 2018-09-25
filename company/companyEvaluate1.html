@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>上海证券报-公司-当前信用评级</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+    <link rel="stylesheet" href="../css/mui.min.css"/>
+    <link rel="stylesheet" href="../css/app.css"/>
+    <link rel="stylesheet" href="../iconfont/iconfont.css"/>
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.css"/>
+    <link rel="stylesheet" href="../css/company.css"/>
+    <style>
+
+    </style>
+</head>
+
+<body>
+<header class="mui-bar mui-bar-nav bcWhiteNav">
+    <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+    <h1 class="mui-title">当前信用评级</h1>
+</header>
+<div class="mui-content">
+    <!--定量评级和定性评级-->
+    <div class="gradeBox clearfix">
+        <div class="leftgrade fl">
+            <!--定量评级-->
+            <div class="dingliang_grade" id="cycle1"></div>
+            <div class="dingxing_grade" id="cycle2"></div>
+            <!--定性评级-->
+            <div class="dingxing_grade"></div>
+        </div>
+        <div class="fr right-grade-img">
+            <img src="../img/levelDesc.png" alt="">
+        </div>
+    </div>
+    <!--定量评级和定性评级end-->
+</div>
+</body>
+<script src="../js/mui.min.js"></script>
+<script src="../js/app.js"></script>
+<script>
+    (function(w) {
+        function Cycle(options) {
+            this.id = options.id;
+            this.width = options.width;
+            this.height = options.height;
+            this.percent = options.percent;
+            this.border = options.border;
+            this.bgColor = options.bgColor;
+            this.barColor = options.barColor;
+            this.textColor = options.textColor;
+            this.grade = options.grade;
+            this.gradeType = options.gradeType;
+        };
+        Cycle.prototype = {
+            contructor: Cycle,
+            init: function() {
+                //创建画布对象
+                var html = "<canvas id='canvas_" + this.id + "' width='" + this.width + "' height='" + this.height + "'></canvas>";
+                document.getElementById(this.id).innerHTML = html;
+            /*    var time = setInterval(function() {
+                    this.percent++;
+                    if(this.percent >= 100) {
+                        clearInterval(time);
+                    }
+                    this.setOptions();
+                }.bind(this), 1000);*/
+                this.setOptions()
+            },
+            setOptions: function() {
+                var degree = this.percent;
+                var txtGrade = this.grade ;
+                var txtGradetype = this.gradeType ;
+                var canvas = document.getElementById('canvas_' + this.id);
+                var context = canvas.getContext('2d');
+                context.clearRect(0, 0, this.width, this.height);
+                //开始绘画
+                context.beginPath();
+                context.lineWidth = this.border;
+                context.strokeStyle = this.bgColor;
+                context.arc(this.width / 2, this.height / 2, (this.width / 2 - this.border / 2), 0, 2 * Math.PI);
+                context.stroke();
+                var deg = degree * 3.6 / 180 * Math.PI
+                context.beginPath();
+                context.lineWidth = this.border;
+                context.strokeStyle = this.barColor;
+                context.arc(this.width / 2, this.height / 2, (this.width / 2 - this.border / 2), 0 - Math.PI / 2, deg - Math.PI / 2);
+                context.stroke();
+                context.beginPath();
+                context.fillStyle = this.textColor;
+                context.font = "32px 微软雅黑";
+                var textgrade = txtGrade;
+                var textgradetype = txtGradetype;
+                var textWidth = context.measureText(textgrade).width;
+                context.fillText(textgrade, this.width / 2 - textWidth / 2, this.height / 2 + 0);
+                context.font = "18px 微软雅黑";
+                var textWidth2 = context.measureText(textgradetype).width;
+                context.fillText(textgradetype, this.width / 2 - textWidth2 / 2, this.height / 2 + 26);
+            }
+        }
+        w.Cycle=Cycle;
+    }(window))
+/*AAA最佳；AA优秀；A良好；BBB较好；BB一般；B关注；CCC重点关注；CC极度关注；C判断性违约；D判断性违约*/
+    var states = {
+        aaa:{
+            state:'AAA',
+            stateTxt:'最佳',
+            stateBc:'#40986b',
+            statePer:'100'
+        },
+        aa:{
+            state:'AA',
+            stateTxt:'优秀',
+            stateBc:'#599f5e',
+            statePer:'90'
+        },
+        a:{
+            state:'A',
+            stateTxt:'良好',
+            stateBc:'#7daa4a',
+            statePer:'80'
+        },
+        bbb:{
+            state:'BBB',
+            stateTxt:'较好',
+            stateBc:'#a8b534',
+            statePer:'70'
+        },
+        bb:{
+            state:'BB',
+            stateTxt:'一般',
+            stateBc:'#c9b724',
+            statePer:'60'
+        },
+        b:{
+            state:'B',
+            stateTxt:'关注',
+            stateBc:'#d8b51c',
+            statePer:'50'
+        },
+        ccc:{
+            state:'CCC',
+            stateTxt:'重点关注',
+            stateBc:'#d8a81c',
+            statePer:'40'
+        },
+        cc:{
+            state:'CC',
+            stateTxt:'极度关注',
+            stateBc:'#d8961c',
+            statePer:'30'
+        },
+        c:{
+            state:'C',
+            stateTxt:'判断性违约',
+            stateBc:'#d87d1e',
+            statePer:'20'
+        },
+        d:{
+            state:'D',
+            stateTxt:'判断性违约',
+            stateBc:'#d54e28',
+            statePer:'10'
+        }
+    }
+    var opts1 = {
+        id: "cycle1",
+        width: "150",
+        height: "150",
+        border: "6",
+        gradeType:'定量评级',
+        textColor: "#666",
+        bgColor: "#ddd",
+        percent:states.aa.statePer,
+        barColor: states.aa.stateBc,
+        grade:states.aa.state
+
+    };
+    var opts2 = {
+        id: "cycle2",
+        width: "150",
+        height: "150",
+        border: "6",
+        bgColor: "#ddd",
+        textColor: "#666",
+        gradeType:'定性评级',
+        percent:states.bbb.statePer,
+        barColor: states.bbb.stateBc,
+        grade:states.bbb.state
+    };
+    new Cycle(opts1).init();
+    new Cycle(opts2).init();
+</script>
+</html>

@@ -1,0 +1,743 @@
+<!doctype html>
+<html class="pb60">
+	<head>
+		<meta charset="UTF-8">
+		<title>采访信息展示</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<link href="css/mui.min.css" rel="stylesheet" />
+		<link href="iconfont/iconfont.css" rel="stylesheet" />
+		<link href="company/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+		<link href="css/app.css" rel="stylesheet" />
+		<link href="css/interview.css" rel="stylesheet" />
+        <style>
+            html {
+                background-color: #fff;
+                padding-bottom: 50px;
+            }
+            .mui-content {
+                background-color: #fff;
+            } 
+            /*选项卡样式改*/
+            .mui-segmented-control .mui-control-item {
+                font-size: 14px;
+            }
+            .mui-segmented-control.mui-segmented-control-inverted .mui-control-item.mui-active {
+                color: #177ef3;
+                border-color: #177ef3;
+            }
+
+            .mui-slider .mui-segmented-control.mui-segmented-control-inverted~.mui-slider-group .mui-slider-item{
+                border:0;
+            }
+            #sliderSegmentedControl {
+                padding-top: 10px;
+            }
+            .mui-slider-group {
+                margin-top: 10px;
+            }
+            .mui-segmented-control.mui-segmented-control-inverted {
+                border-bottom:1px solid #ddd;
+            }
+
+            /*采访搜索*/
+            .interview_msg_box {
+                width: 80%;
+                padding:8px 10px;
+                padding-right: 40px;
+                position: relative;
+                border:1px solid #ccc;
+                border-radius:5px;
+                background-color: #fff;
+            }
+            .msg_left_ico {
+                margin-right: 10px;
+            }
+            .cen_msg_txt {
+                color: #333;
+                font-size: 12px;
+                line-height: 12px;
+            }
+            .cen_msg_txt p {
+                color: #333;
+                margin-bottom: 8px;
+            }
+            .cen_msg_txt p.txtgray {
+                color: #aaa;
+                margin-bottom: 0;
+            }
+            .msg_del_btn {
+                color: #333;
+                font-size: 26px;
+                line-height: 26px;
+                position: absolute;
+                width: 40px;
+                text-align: center;
+                top: 50%;
+                margin-top: -13px;
+                right: 0;
+                border-left:1px solid #f1f1f1;
+            }
+            /*采访搜索 end*/
+        </style>
+	</head>
+
+	<body class="interview_box">
+		<header class="mui-bar mui-bar-nav">
+		    <a class=" mui-icon  mui-pull-left " href="labelManagement.html" style="font-size: 16px;line-height: 26px;">标签管理</a>
+		    <h1 class="mui-title">我的采访</h1>
+            <a class="mui-icon mui-icon-search mui-pull-right" style="color: #fff;" href="#interviewSearch"></a>
+        </header>
+        <!--添加新采访-->
+        <a href="newInterview.html" class="addNewInterview_btn">
+            <span class="mui-icon mui-icon-plusempty"></span>
+        </a>
+        <div class="mui-content " >
+            <div id="slider" class="mui-slider" >
+                <div id="sliderSegmentedControl" class="mui-slider-indicator mui-segmented-control mui-segmented-control-inverted">
+                    <a class="mui-control-item noLink mui-active" href="#item1mobile">
+                        全部采访
+                    </a>
+                    <a class="mui-control-item noLink " href="#item2mobile">
+                        音频
+                    </a>
+                    <a class="mui-control-item noLink" href="#item3mobile">
+                        视频
+                    </a>
+                    <a class="mui-control-item noLink" href="#item4mobile">
+                        照片
+                    </a>
+                </div>
+                <div id="sliderProgressBar" class="mui-slider-progress-bar mui-col-xs-3"></div>
+                <div class="mui-slider-group">
+                    <!--全部采访-->
+                    <div id="item1mobile" class="mui-slider-item mui-control-content mui-active">
+                        <div class="qbcf_box">
+                            <!--管理-->
+                            <div class="interview_rec_mg clearfix">
+                                <div class="fl txtgray"><span>100个采访</span></div>
+                                <a href="#batchOpe" class="fr"><span class="mui-icon mui-icon-list"></span> <span>管理</span></a>
+                            </div>
+                            <!--管理 end-->
+                            <ul class="pl_10">
+                                <li class="interview_rec_cell">
+                                    <a href="interview_detail.html" class="interview_rec_cell_lk clearfix">
+                                        <!--<span class="interview_left_ico fl iconfont icon-meiticaifang"></span>-->
+                                        <div class="fl interview_cell_con">
+                                            <h5 class="interview_tit">2018年4月2日 光线传媒 实地采访</h5>
+                                            <div class="interview_time_box">
+                                                2018.02.07 09:30:45
+                                            </div>
+                                            <ul class="clearfix">
+                                                <li class="interview_label">传媒</li>
+                                                <li class="interview_label">传媒222</li>
+                                            </ul>
+                                        </div>
+                                    </a>
+                                    <a href="#ope_box" class="nolink interview_ope iconfont icon-gengduo2"></a>
+                                </li>
+                                <li class="interview_rec_cell">
+                                    <a href="interview_detail.html" class="interview_rec_cell_lk clearfix">
+                                        <!--<span class="interview_left_ico fl iconfont icon-meiticaifang"></span>-->
+                                        <div class="fl interview_cell_con">
+                                            <h5 class="interview_tit">2018年4月2日 光线传媒 实地采访</h5>
+                                            <div class="interview_time_box">
+                                                2018.02.07 09:30:45
+                                            </div>
+                                            <ul class="clearfix">
+                                                <li class="interview_label">传媒</li>
+                                                <li class="interview_label">传媒222</li>
+                                            </ul>
+                                        </div>
+                                    </a>
+                                    <a href="#ope_box" class="nolink interview_ope iconfont icon-gengduo2"></a>
+                                </li>
+                                <li class="interview_rec_cell">
+                                    <a href="interview_detail.html" class="interview_rec_cell_lk clearfix">
+                                        <!--<span class="interview_left_ico fl iconfont icon-meiticaifang"></span>-->
+                                        <div class="fl interview_cell_con">
+                                            <h5 class="interview_tit">2018年4月2日 光线传媒 实地采访</h5>
+                                            <div class="interview_time_box">
+                                                2018.02.07 09:30:45
+                                            </div>
+                                            <ul class="clearfix">
+                                                <li class="interview_label">传媒</li>
+                                                <li class="interview_label">传媒222</li>
+                                            </ul>
+                                        </div>
+                                    </a>
+                                    <a href="#ope_box" class="nolink interview_ope iconfont icon-gengduo2"></a>
+                                </li>
+                                <li class="interview_rec_cell">
+                                    <a href="interview_detail.html" class="interview_rec_cell_lk clearfix">
+                                        <!--<span class="interview_left_ico fl iconfont icon-meiticaifang"></span>-->
+                                        <div class="fl interview_cell_con">
+                                            <h5 class="interview_tit">2018年4月2日 光线传媒 实地采访</h5>
+                                            <div class="interview_time_box">	
+                                                2018.02.07 09:30:45
+                                            </div>
+                                            <ul class="clearfix">
+                                                <li class="interview_label">传媒</li>
+                                                <li class="interview_label">传媒222</li>
+                                            </ul>
+                                        </div>
+                                    </a>
+                                    <a href="#ope_box" class="nolink interview_ope iconfont icon-gengduo2"></a>
+                                </li>
+                                <li class="interview_rec_cell">
+                                    <a href="interview_detail.html" class="interview_rec_cell_lk clearfix">
+                                        <!--<span class="interview_left_ico fl iconfont icon-meiticaifang"></span>-->
+                                        <div class="fl interview_cell_con">
+                                            <h5 class="interview_tit">2018年4月2日 光线传媒 实地采访</h5>
+                                            <div class="interview_time_box">
+                                                2018.02.07 09:30:45
+                                            </div>
+                                            <ul class="clearfix">
+                                                <li class="interview_label">传媒</li>
+                                                <li class="interview_label">传媒222</li>
+                                            </ul>
+                                        </div>
+                                    </a>
+                                    <a href="#ope_box" class="nolink interview_ope iconfont icon-gengduo2"></a>
+                                </li>
+                                <li class="interview_rec_cell">
+                                    <a href="interview_detail.html" class="interview_rec_cell_lk clearfix">
+                                        <!--<span class="interview_left_ico fl iconfont icon-meiticaifang"></span>-->
+                                        <div class="fl interview_cell_con">
+                                            <h5 class="interview_tit">2018年4月2日 光线传媒 实地采访</h5>
+                                            <div class="interview_time_box">
+                                                2018.02.07 09:30:45
+                                            </div>
+                                            <ul class="clearfix">
+                                                <li class="interview_label">传媒</li>
+                                                <li class="interview_label">传媒222</li>
+                                            </ul>
+                                        </div>
+                                    </a>
+                                    <a href="#ope_box" class="nolink interview_ope iconfont icon-gengduo2"></a>
+                                </li>
+                                <li class="interview_rec_cell">
+                                    <a href="interview_detail.html" class="interview_rec_cell_lk clearfix">
+                                        <!--<span class="interview_left_ico fl iconfont icon-meiticaifang"></span>-->
+                                        <div class="fl interview_cell_con">
+                                            <h5 class="interview_tit">2018年4月2日 光线传媒 实地采访</h5>
+                                            <div class="interview_time_box">
+                                                2018.02.07 09:30:45
+                                            </div>
+                                            <ul class="clearfix">
+                                                <li class="interview_label">传媒</li>
+                                                <li class="interview_label">传媒222</li>
+                                            </ul>
+                                        </div>
+                                    </a>
+                                    <a href="#ope_box" class="nolink interview_ope iconfont icon-gengduo2"></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!--音频-->
+                    <div id="item2mobile" class="mui-slider-item mui-control-content ">
+
+                        <div class="yp_box">
+                            <!--5-10音频改版-->
+
+
+                            <!--2018-05-10所有音频-->
+                            <!--当前展示音频信息对应日期-->
+                            <div class="current-time">2018年05月10日 星期四</div>
+                            <!--当前展示音频信息对应日期 end-->
+                            <ul class="audioinfobox">
+                                <li class="audioinfocell">
+                                    <!--audiotime-->
+                                    <!--<span class="audio-ms">15:11</span>-->
+                                    <span class="audio-ms" style="width:8px;height: 8px;padding-top:0;margin-left:0;left:-5px;background: #1b82d2;border-radius:50%"></span>
+                                    <!--rightcon-->
+                                    <div class="audio-tit">【喜马拉雅否认赴港上市传闻，称暂无IPO计划】</div>
+                                    <div class="audio-play">
+                                        <span class="fa fa-play"></span>
+                                        <span>00:11</span>
+                                    </div>
+                                    <div class="audio-txt">
+                                        针对今日喜马拉雅将赴港上市的市场传闻，喜马拉雅回应，公司暂无IPO计划，而对于青岛城市传媒投资美元基金、喜马拉雅重新搭建VIE架构等信息，喜马拉雅方面暂无回应。
+                                    </div>
+                                </li>
+                                <li class="audioinfocell">
+                                    <!--audiotime-->
+                                    <span class="audio-ms" style="width:8px;height: 8px;padding-top:0;margin-left:0;left:-5px;background: #1b82d2;border-radius:50%"></span>
+                                    <!--rightcon-->
+                                    <div class="audio-tit">【喜马拉雅否认赴港上市传闻，称暂无IPO计划】</div>
+                                    <div class="audio-play">
+                                        <span class="fa fa-play"></span>
+                                        <span>00:11</span>
+                                    </div>
+                                    <div class="audio-txt">
+                                        针对今日喜马拉雅将赴港上市的市场传闻，喜马拉雅回应，公司暂无IPO计划，而对于青岛城市传媒投资美元基金、喜马拉雅重新搭建VIE架构等信息，喜马拉雅方面暂无回应。
+                                    </div>
+                                </li>
+                            </ul>
+                            <!--2018-05-10所有音频 end-->
+
+                            <!--2018-05-09所有音频-->
+                            <!--当前展示音频信息对应日期-->
+                            <div class="current-time">2018年05月09日 星期四</div>
+                            <!--当前展示音频信息对应日期 end-->
+                            <ul class="audioinfobox">
+                                <li class="audioinfocell">
+                                    <!--audiotime-->
+                                    <span class="audio-ms">15:11</span>
+                                    <!--rightcon-->
+                                    <div class="audio-tit">【喜马拉雅否认赴港上市传闻，称暂无IPO计划】</div>
+                                    <div class="audio-play">
+                                        <span class="fa fa-play"></span>
+                                        <span>00:11</span>
+                                    </div>
+                                    <div class="audio-txt">
+                                        针对今日喜马拉雅将赴港上市的市场传闻，喜马拉雅回应，公司暂无IPO计划，而对于青岛城市传媒投资美元基金、喜马拉雅重新搭建VIE架构等信息，喜马拉雅方面暂无回应。
+                                    </div>
+                                </li>
+                                <li class="audioinfocell">
+                                    <!--audiotime-->
+                                    <span class="audio-ms">15:00</span>
+                                    <!--rightcon-->
+                                    <div class="audio-tit">【喜马拉雅否认赴港上市传闻，称暂无IPO计划】</div>
+                                    <div class="audio-play">
+                                        <span class="fa fa-play"></span>
+                                        <span>00:11</span>
+                                    </div>
+                                    <div class="audio-txt">
+                                        针对今日喜马拉雅将赴港上市的市场传闻，喜马拉雅回应，公司暂无IPO计划，而对于青岛城市传媒投资美元基金、喜马拉雅重新搭建VIE架构等信息，喜马拉雅方面暂无回应。
+                                    </div>
+                                </li>
+                            </ul>
+                            <!--2018-05-09所有音频 end-->
+
+                            <!--5-10音频改版 end-->
+
+                        </div>
+                    </div>
+                    <!--视频-->
+                    <div id="item3mobile" class="mui-slider-item mui-control-content ">
+                        <div class="sp_box">
+
+                            <!--视频改版-->
+                            <div class="current-time">2018年05月10日 星期四</div>
+                            <div class="interview-img-box" id="interviewimgbox1">
+                                <div class="innnerimgsbox clearfix">
+                                    <img src="img/cbd.jpg" alt="" class="interview-img" data-preview-src="" data-preview-group="1"  data-content="图片全屏后，双击或双指缩放均可对图片进行放大、缩小操作">
+                                    <img src="img/muwu.jpg" alt="" class="interview-img" data-preview-src="" data-preview-group="1" data-content="这是第一组第二张图片">
+                                    <img src="img/shuijiao.jpg" alt="" class="interview-img" data-preview-src="" data-preview-group="1">
+                                    <img src="img/yuantiao.jpg" alt="" class="interview-img" data-preview-src="" data-preview-group="1">
+                                </div>
+                                <div class="imgslide-control">
+                                    <span class="left-slidebtn mui-icon mui-icon-back"></span>
+                                    <span class="right-slidebtn mui-icon mui-icon-forward"></span>
+                                </div>
+                            </div>
+
+                            <div class="current-time">2018年05月09日 星期三</div>
+                            <div class="interview-img-box" id="interviewimgbox2">
+                                <div class="innnerimgsbox clearfix">
+                                    <img src="img/cbd.jpg" alt="" class="interview-img" data-preview-src="" data-preview-group="2">
+                                    <img src="img/muwu.jpg" alt="" class="interview-img" data-preview-src="" data-preview-group="2">
+                                    <img src="img/shuijiao.jpg" alt="" class="interview-img" data-preview-src="" data-preview-group="2">
+                                    <img src="img/yuantiao.jpg" alt="" class="interview-img" data-preview-src="" data-preview-group="2">
+                                </div>
+                                <div class="imgslide-control">
+                                    <span class="left-slidebtn mui-icon mui-icon-back"></span>
+                                    <span class="right-slidebtn mui-icon mui-icon-forward"></span>
+                                </div>
+                            </div>
+                            <!--视频改版 end-->
+                        </div>
+                    </div>
+                    <!--照片-->
+                    <div id="item4mobile" class="mui-slider-item mui-control-content">
+                        <div class="zp_box">
+
+                            <div class="current-time">2018年05月10日 星期四</div>
+                            <div class="interview-img-box" id="interviewimgbox3">
+                                <div class="innnerimgsbox clearfix">
+                                    <img src="img/cbd.jpg" alt="" class="interview-img" data-preview-src="" data-preview-group="3"  data-content="图片全屏后，双击或双指缩放均可对图片进行放大、缩小操作">
+                                    <img src="img/muwu.jpg" alt="" class="interview-img" data-preview-src="" data-preview-group="3" data-content="这是第一组第二张图片">
+                                    <img src="img/shuijiao.jpg" alt="" class="interview-img" data-preview-src="" data-preview-group="3">
+                                    <img src="img/yuantiao.jpg" alt="" class="interview-img" data-preview-src="" data-preview-group="3">
+                                </div>
+                                <div class="imgslide-control">
+                                    <span class="left-slidebtn mui-icon mui-icon-back"></span>
+                                    <span class="right-slidebtn mui-icon mui-icon-forward"></span>
+                                </div>
+                            </div>
+
+                            <div class="current-time">2018年05月09日 星期三</div>
+                            <div class="interview-img-box" id="interviewimgbox4">
+                                <div class="innnerimgsbox clearfix">
+                                    <img src="img/cbd.jpg" alt="" class="interview-img" data-preview-src="" data-preview-group="4">
+                                    <img src="img/muwu.jpg" alt="" class="interview-img" data-preview-src="" data-preview-group="4">
+                                    <img src="img/shuijiao.jpg" alt="" class="interview-img" data-preview-src="" data-preview-group="4">
+                                    <img src="img/yuantiao.jpg" alt="" class="interview-img" data-preview-src="" data-preview-group="4">
+                                </div>
+                                <div class="imgslide-control">
+                                    <span class="left-slidebtn mui-icon mui-icon-back"></span>
+                                    <span class="right-slidebtn mui-icon mui-icon-forward"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--批量操作弹框-->
+            <div id="batchOpe" class="mui-modal">
+                <header class="mui-bar mui-bar-nav">
+                    <a class="mui-icon  mui-pull-left" href="javascript:selectAll();" style="font-size: 14px;line-height: 28px;">全选</a>
+                    <h1 class="mui-title">批量操作</h1>
+                    <a class="mui-icon  mui-pull-right" href="#batchOpe" style="font-size: 14px;line-height: 28px;">取消</a>
+                </header>
+                <div class="mui-content" style="height: 100%;padding-bottom: 85px;overflow: auto">
+                    <nav class="batchOpe_btns">
+                        <div class="batchOpe_btn">
+                            <span class="iconfont icon-lajitong-copy"></span>
+                            <span>删除</span>
+                        </div>
+                    </nav>
+                    <!--采访列表-->
+                    <ul class="batchOpe_cf_list mui-table-view">
+                        <li class="interview_rec_cell mui-table-view-cell mui-checkbox mui-left">
+                            <input name="checkbox" type="checkbox">
+                            <div class="interview_rec_cell_lk clearfix">
+                                <div class="fl interview_cell_con">
+                                    <h5 class="interview_tit">2018年4月2日 光线传媒 实地采访</h5>
+                                    <div class="interview_time_box">
+                                        2018.02.07 09:30:45
+                                    </div>
+                                    <ul class="clearfix">
+                                        <li class="interview_label">传媒</li>
+                                        <li class="interview_label">传媒222</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!--批量操作弹框 end-->
+        </div>
+
+        <div id="ope_box" class="myope_box mui-popover mui-popover-action mui-popover-bottom">
+            <ul class="mui-table-view">
+                <li class="mui-table-view-cell">
+                    <a href="#">删除</a>
+                </li>
+                <li class="mui-table-view-cell">
+                   	<a href="#">发稿</a>
+                </li>
+                <li class="mui-table-view-cell">
+                    <a href="#">重命名</a>
+                </li>
+                <li class="mui-table-view-cell">
+                    <a href="addAndDelLabel.html">添加/删除标签</a>
+                </li>
+            </ul>
+            <ul class="mui-table-view">
+                <li class="mui-table-view-cell">
+                    <a href="#ope_box"><b>取消</b></a>
+                </li>
+            </ul>
+        </div>
+        <div id="ope_box2" class="myope_box mui-popover mui-popover-action mui-popover-bottom">
+            <ul class="mui-table-view">
+                <li class="mui-table-view-cell">
+                    <a href="#">删除</a>
+                </li>
+                <li class="mui-table-view-cell">
+                    <a href="#">重命名</a>
+                </li>
+                <li class="mui-table-view-cell">
+                    <a href="#">语音转文字</a>
+                </li>
+            </ul>
+            <ul class="mui-table-view">
+                <li class="mui-table-view-cell">
+                    <a href="#ope_box"><b>取消</b></a>
+                </li>
+            </ul>
+        </div>
+        <div id="ope_box3" class="myope_box mui-popover mui-popover-action mui-popover-bottom">
+            <ul class="mui-table-view">
+                <li class="mui-table-view-cell">
+                    <a href="#">删除</a>
+                </li>
+                <li class="mui-table-view-cell">
+                    <a href="#">重命名</a>
+                </li>
+            </ul>
+            <ul class="mui-table-view">
+                <li class="mui-table-view-cell">
+                    <a href="#ope_box"><b>取消</b></a>
+                </li>
+            </ul>
+        </div>
+
+        <!--采访搜索-->
+        <div id="interviewSearch" class="mui-modal">
+            <header class="mui-bar mui-bar-nav">
+                <a class=" mui-icon mui-icon-left-nav mui-pull-left" href="#interviewSearch"></a>
+                <h1 class="mui-title">采访搜索</h1>
+                <span class="mui-btn mui-btn-link mui-pull-right">搜索</span>
+            </header>
+            <div class="mui-content">
+                <!--按公司查找-->
+                <div class="searchByCompanyname">
+                    <div class="label_group selected_label">
+                        <h5 class="label_group_tit">按公司查找</h5>
+                        <input type="text" placeholder="按公司查找">
+                    </div>
+                </div>
+                <!--按公司查找 end-->
+
+                <!--已选标签-->
+                <div class="label_group selected_label">
+                    <h5 class="label_group_tit">选择标签结果</h5>
+                    <div class="selected_label_cell">
+                        <span>传媒</span>
+                        <span class="deleteLabel_btn mui-icon mui-icon-closeempty"></span>
+                    </div>
+                    <div class="selected_label_cell">
+                        <span>借壳</span>
+                        <span class="deleteLabel_btn mui-icon mui-icon-closeempty"></span>
+                    </div>
+                    <div class="selected_label_cell">
+                        <span>资产重组</span>
+                        <span class="deleteLabel_btn mui-icon mui-icon-closeempty"></span>
+                    </div>
+                </div>
+                <!--已选标签 end-->
+
+                <!--系统标签-->
+                <div class="label_group xt_label_group flex_label_gp">
+                    <h5 class="label_group_tit">系统标签</h5>
+                    <div class="hideSomeLabel">
+                        <ul class="xt_label_box clearfix">
+                            <li class="xt_label_cell actived">
+                                <span>传媒</span>
+                            </li>
+                            <li class="xt_label_cell actived">
+                                <span>借壳</span>
+                            </li>
+                            <li class="xt_label_cell actived">
+                                <span>资产重组</span>
+                            </li>
+                            <li class="xt_label_cell">
+                                <span>宏观经济</span>
+                            </li>
+                            <li class="xt_label_cell">
+                                <span>混改</span>
+                            </li>
+                            <li class="xt_label_cell">
+                                <span>人工智能</span>
+                            </li>
+                            <li class="xt_label_cell">
+                                <span>区域规划</span>
+                            </li>
+                            <li class="xt_label_cell">
+                                <span>新能源汽车</span>
+                            </li>
+                            <li class="xt_label_cell">
+                                <span>环境</span>
+                            </li>
+                            <li class="xt_label_cell">
+                                <span>房地产开发</span>
+                            </li>
+                            <li class="xt_label_cell">
+                                <span>新能源汽车</span>
+                            </li>
+                            <li class="xt_label_cell">
+                                <span>通用航空</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--更多-->
+                    <div class="more_label_btn">
+                        <span class="more_txt">更多 </span>
+                        <span class="mui-icon mui-icon-arrowdown"></span>
+                    </div>
+                </div>
+                <!--系统标签 end-->
+
+                <!--自定义标签-->
+                <div class="label_group zdy_label_group flex_label_gp">
+                    <h5 class="label_group_tit">自定义标签</h5>
+                    <div class="hideSomeLabel">
+                        <ul class="zdy_label_box clearfix">
+                            <li class="xt_label_cell">
+                                <span>自定义标签1</span>
+                            </li>
+                            <li class="xt_label_cell">
+                                <span>自定义标签2</span>
+                            </li>
+                            <li class="xt_label_cell">
+                                <span>自定义标签3</span>
+                            </li>
+                            <li class="xt_label_cell">
+                                <span>自定义标签4</span>
+                            </li>
+                            <li class="xt_label_cell">
+                                <span>自定义标签5</span>
+                            </li>
+                            <li class="xt_label_cell">
+                                <span>自定义标签6</span>
+                            </li>
+                            <li class="xt_label_cell">
+                                <span>自定义标签7</span>
+                            </li>
+
+                        </ul>
+                    </div>
+                    <!--更多-->
+                    <div class="more_label_btn">
+                        <span class="more_txt">更多 </span>
+                        <span class="mui-icon mui-icon-arrowdown"></span>
+                    </div>
+                </div>
+                <!--自定义标签 end-->
+            </div>
+
+        </div>
+        <!--采访搜索 end-->
+
+	</body>
+    <script src="js/mui.min.js"></script>
+    <script src="js/mui.zoom.js"></script>
+    <script src="js/mui.previewimage.js"></script>
+    <script src="js/app.js"></script>
+    <script>
+        mui.init({
+            swipeBack:true //启用右滑关闭功能
+        });
+        mui('body').on('shown', '.mui-popover', function(e) {
+            //console.log('shown', e.detail.id);//detail为当前popover元素
+        });
+        mui('body').on('hidden', '.mui-popover', function(e) {
+            //console.log('hidden', e.detail.id);//detail为当前popover元素
+        });
+        var info = document.getElementById("info");
+        mui('body').on('tap', '.mui-popover-action li>a', function() {
+            var a = this,
+                parent;
+            //根据点击按钮，反推当前是哪个actionsheet
+            for (parent = a.parentNode; parent != document.body; parent = parent.parentNode) {
+                if (parent.classList.contains('mui-popover-action')) {
+                    break;
+                }
+            }
+            //关闭actionsheet
+            mui('#' + parent.id).popover('toggle');
+     /*       info.innerHTML = "你刚点击了\"" + a.innerHTML + "\"按钮";*/
+        })
+    </script>
+
+    <!--采访搜索-->
+    <script>
+        (function ($) {
+            function fn(labelBox) {
+                var labelBox_ul = $(labelBox)[0];
+                var xt_label_box_h  = labelBox_ul.offsetHeight;
+                var more_label_btn = labelBox_ul.closest('.hideSomeLabel').nextElementSibling;
+                console.log(more_label_btn);
+                if(xt_label_box_h>72){
+                    labelBox_ul.closest('.hideSomeLabel').classList.add('actived');
+                    more_label_btn.style.display='block'
+                }else{
+                    more_label_btn.style.display='none'
+                }
+                more_label_btn.addEventListener('tap',function () {
+                    if(labelBox_ul.closest('.hideSomeLabel').classList.contains('actived')){
+                        more_label_btn.getElementsByClassName('more_txt')[0].innerHTML='收起';
+                        labelBox_ul.closest('.hideSomeLabel').classList.remove('actived')
+                    }else{
+                        labelBox_ul.closest('.hideSomeLabel').classList.add('actived');
+                        more_label_btn.getElementsByClassName('more_txt')[0].innerHTML='更多';
+                    }
+
+                })
+            };
+            fn('.xt_label_box ');
+            fn('.zdy_label_box ')
+
+
+
+        })(mui)
+    </script>
+
+    <script>
+        /*新增音频相关js*/
+
+        mui.previewImage();
+
+        /*播放音频*/
+        mui('body').on('tap','.audio-play .fa',function () {
+            if(this.classList.contains('fa-play')){
+                this.classList.remove('fa-play');
+                this.classList.add('fa-pause')
+            }else{
+                this.classList.add('fa-play');
+                this.classList.remove('fa-pause')
+            }
+        })
+
+        /*文字伸缩*/
+        mui('body').on('tap','.audio-txt',function () {
+            if(this.classList.contains('openbox')){
+                this.classList.remove('openbox')
+            }else{
+                this.classList.add('openbox')
+            }
+        })
+
+        /*img盒子宽度调节*/
+        var phoneW = document.documentElement.clientWidth;
+        var sonimg_w =  phoneW/3;
+        for(var i=0;i< mui('.interview-img').length;i++){
+            mui('.interview-img')[i].style.width = sonimg_w+'px';
+        }
+        var imgboxlen = mui('.innnerimgsbox').length;
+        for(var i=0;i<imgboxlen;i++){
+            var sonimglen =  mui('.innnerimgsbox ')[i].getElementsByTagName('img').length;
+            mui('.innnerimgsbox')[i].style.width=sonimg_w*sonimglen +'px';
+        }
+        new imgslide('#interviewimgbox1');
+        new imgslide('#interviewimgbox2');
+        new imgslide('#interviewimgbox3');
+        new imgslide('#interviewimgbox4');
+        function imgslide(id) {
+            this.leftdistance = 0;
+            this.currentindex = 0 ;
+            var _this = this;
+            mui('body').on('tap',id+' .left-slidebtn',function () {
+                var neib_imgbox = this.closest('.imgslide-control ').previousElementSibling;
+                if(_this.currentindex >0){
+                    _this.leftdistance+=sonimg_w;
+                    neib_imgbox.style.left = _this.leftdistance+"px";
+                    _this.currentindex--;
+                }else{
+                    mui.toast('这是第一张')
+                }
+            })
+            mui('body').on('tap',id+' .right-slidebtn',function () {
+
+                var neib_imgbox = this.closest('.imgslide-control ').previousElementSibling;
+                var img_len = this.closest('.imgslide-control ').previousElementSibling.getElementsByTagName('img').length;
+                if(_this.currentindex < img_len-3){
+                    _this.leftdistance-=sonimg_w;
+                    neib_imgbox.style.left = _this.leftdistance+"px";
+                    _this.currentindex++;
+                }else{
+                    mui.toast('这是最后一张')
+                }
+            })
+        }
+
+
+    </script>
+
+</html>

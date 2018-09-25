@@ -1,0 +1,1779 @@
+{
+  "investigation/dy.html": {
+    "resources": [
+      "js/mui.min.js",
+      "css/app.css",
+      "fonts/mui.ttf",
+      "css/mui.min.css",
+      "fonts/iconfont.ttf",
+      "investigation/gsdy.html",
+      "img/gu.png",
+      "img/ipo.png",
+      "img/bing.png",
+      "img/zheng.png"
+    ],
+    "refer": [
+      "investigation/gsdy.html"
+    ]
+  },
+  "investigation/gsdy.html": {
+    "resources": [
+      "investigation/dy.html",
+      "img/gu.png",
+      "img/ipo.png",
+      "img/bing.png",
+      "img/zheng.png",
+      "img/shi.png",
+      "js/mui.min.js",
+      "css/app.css",
+      "fonts/mui.ttf",
+      "css/mui.min.css"
+    ],
+    "refer": [
+      "investigation/dy.html"
+    ]
+  },
+  "investigation/on-markrt-list.html": {
+    "resources": [
+      "js/mui.min.js",
+      "css/app.css",
+      "fonts/mui.ttf",
+      "css/mui.min.css",
+      "fonts/iconfont.ttf"
+    ],
+    "refer": []
+  },
+  "interview/new-interview.html": {
+    "resources": [
+      "js/mui.imageViewer.js",
+      "js/mui.min.js",
+      "css/app.css",
+      "fonts/mui.ttf",
+      "css/mui.min.css",
+      "css/mui.imageviewer.css",
+      "js/arttmpl.js"
+    ],
+    "refer": []
+  },
+  "company/company-bg.html": {
+    "resources": [
+      "js/mui.min.js",
+      "css/app.css",
+      "fonts/mui.ttf",
+      "css/mui.min.css"
+    ],
+    "refer": []
+  },
+  "company/company-comtent.html": {
+    "resources": [
+      "js/mui.min.js",
+      "css/app.css",
+      "fonts/mui.ttf",
+      "css/mui.min.css",
+      "fonts/iconfont.ttf",
+      "img/comy-bg1.png"
+    ],
+    "refer": []
+  },
+  "company/company-gd.html": {
+    "resources": [
+      "js/mui.min.js",
+      "css/app.css",
+      "fonts/mui.ttf",
+      "css/mui.min.css"
+    ],
+    "refer": []
+  },
+  "company/company-gg.html": {
+    "resources": [
+      "js/mui.min.js",
+      "css/app.css",
+      "fonts/mui.ttf",
+      "css/mui.min.css"
+    ],
+    "refer": []
+  },
+  "company/company-gs.html": {
+    "resources": [
+      "js/mui.min.js",
+      "css/app.css",
+      "fonts/mui.ttf",
+      "css/mui.min.css"
+    ],
+    "refer": []
+  },
+  "company/company-zgs.html": {
+    "resources": [
+      "js/mui.min.js",
+      "css/app.css",
+      "fonts/mui.ttf",
+      "css/mui.min.css"
+    ],
+    "refer": []
+  },
+  "company/company.html": {
+    "resources": [
+      "img/bgbl.png",
+      "img/bgyl.png",
+      "js/mui.min.js",
+      "css/app.css",
+      "fonts/mui.ttf",
+      "css/mui.min.css"
+    ],
+    "refer": []
+  },
+  "company/hisc-search.html": {
+    "resources": [
+      "img/bgyl.png",
+      "css/app.css",
+      "fonts/mui.ttf",
+      "css/mui.min.css"
+    ],
+    "refer": []
+  },
+  "company/search-dets.html": {
+    "resources": [
+      "js/menudown.js",
+      "js/jquery1.10.2.min.js",
+      "img/down (1).png",
+      "css/app.css",
+      "fonts/mui.ttf",
+      "css/mui.min.css",
+      "css/menudown.css"
+    ],
+    "refer": []
+  },
+  "interview/interview.html": {
+    "resources": [
+      "img/shuijiao.jpg",
+      "css/app.css",
+      "fonts/mui.ttf",
+      "css/mui.min.css",
+      "img/yuantiao.jpg",
+      "img/cbd.jpg"
+    ],
+    "refer": []
+  },
+  "investigation/Shareholding-list.html": {
+    "resources": [
+      "css/app.css",
+      "fonts/mui.ttf",
+      "css/mui.min.css"
+    ],
+    "refer": []
+  },
+  "investigation/bing-list.html": {
+    "resources": [
+      "js/mui.min.js",
+      "css/app.css",
+      "fonts/mui.ttf",
+      "css/mui.min.css",
+      "fonts/iconfont.ttf"
+    ],
+    "refer": []
+  },
+  "investigation/ipo-list.html": {
+    "resources": [
+      "js/mui.min.js",
+      "css/app.css",
+      "fonts/mui.ttf",
+      "css/mui.min.css",
+      "fonts/iconfont.ttf"
+    ],
+    "refer": []
+  },
+  "investigation/on-markrt-list-zrz.html": {
+    "resources": [
+      "img/line04.gif",
+      "js/mui.min.js",
+      "css/app.css",
+      "fonts/mui.ttf",
+      "css/mui.min.css",
+      "fonts/iconfont.ttf",
+      "img/icon07.gif"
+    ],
+    "refer": []
+  },
+  "investigation/qz-list-zrz.html": {
+    "resources": [
+      "js/mui.min.js",
+      "css/app.css",
+      "fonts/mui.ttf",
+      "css/mui.min.css",
+      "fonts/iconfont.ttf"
+    ],
+    "refer": []
+  },
+  "user/Personal-Information.html": {
+    "resources": [
+      "css/feedback.css",
+      "js/mui.min.js",
+      "fonts/mui.ttf",
+      "css/set.css",
+      "css/mui.min.css",
+      "js/feedback.js",
+      "js/mui.view.js"
+    ],
+    "refer": []
+  },
+  "user/login.html": {
+    "resources": [
+      "js/mui.min.js",
+      "css/app.css",
+      "fonts/mui.ttf",
+      "css/mui.min.css",
+      "img/logo.png",
+      "img/comy-bg1.png"
+    ],
+    "refer": []
+  },
+  "user/reger.html": {
+    "resources": [
+      "js/mui.min.js",
+      "css/app.css",
+      "fonts/mui.ttf",
+      "css/mui.min.css",
+      "img/logo.png",
+      "img/comy-bg1.png"
+    ],
+    "refer": []
+  },
+  "user/setting.html": {
+    "resources": [
+      "js/mui.min.js",
+      "fonts/mui.ttf",
+      "css/set.css",
+      "css/mui.min.css",
+      "img/logo.png",
+      "js/feedback.js",
+      "js/mui.view.js"
+    ],
+    "refer": []
+  },
+  "investigation/dy1.html": {
+    "resources": [
+      "js/mui.min.js",
+      "css/app.css",
+      "fonts/mui.ttf",
+      "css/mui.min.css",
+      "fonts/iconfont.ttf",
+      "img/hu.png",
+      "img/ya.png",
+      "img/more.png",
+      "img/ipoo.png",
+      "img/bingg.png",
+      "img/zong.png"
+    ],
+    "refer": []
+  },
+  "investigation/gsgz.html": {
+    "resources": [
+      "js/mui.min.js",
+      "css/app.css",
+      "fonts/mui.ttf",
+      "css/mui.min.css"
+    ],
+    "refer": []
+  },
+  "investigation/guquanzhiya.html": {
+    "resources": [
+      "js/mui.min.js",
+      "css/app.css",
+      "fonts/mui.ttf",
+      "css/mui.min.css",
+      "fonts/iconfont.ttf"
+    ],
+    "refer": []
+  },
+  "investigation/xiangmu.html": {
+    "resources": [
+      "img/hu.png",
+      "img/ya.png",
+      "img/more.png",
+      "img/ipoo.png",
+      "img/bingg.png",
+      "js/mui.min.js",
+      "css/app.css",
+      "fonts/mui.ttf",
+      "css/mui.min.css",
+      "fonts/iconfont.ttf",
+      "img/zong.png"
+    ],
+    "refer": []
+  },
+  "xiangmu.html": {
+    "resources": [
+      "img/hu.png",
+      "img/ya.png",
+      "img/more.png",
+      "img/ipoo.png",
+      "img/bingg.png",
+      "js/mui.min.js",
+      "css/app.css",
+      "fonts/mui.ttf",
+      "css/mui.min.css",
+      "fonts/iconfont.ttf",
+      "img/zong.png",
+      "news-list.html",
+      "gzdc-list.html",
+      "guquanzhiya.html",
+      "gzdc.html",
+      "ipo-list.html",
+      "binggou-list.html",
+      "qz-list.html",
+      "bing.html",
+      "ipo.html",
+      "img/iocn (3).png",
+      "img/iocn (5).png",
+      "img/iocn (2).png",
+      "img/iocn (6).png",
+      "img/iocn (4).png",
+      "bing-ck.html",
+      "css/xiangmu.css",
+      "xiangmu-fabu.html",
+      "xiangmu-fk-xq.html",
+      "guquanzhiya-ywqq.html",
+      "login.html",
+      "xiangmu-fk.html",
+      "images/whiteicologo.png",
+      "images/navbcgimg.png",
+      "js/app.js"
+    ],
+    "refer": [
+      "news-list.html",
+      "company.html",
+      "gzdc-list.html",
+      "guquanzhiya.html",
+      "gzdc.html",
+      "ipo-list.html",
+      "binggou-list.html",
+      "qz-list.html",
+      "bing.html",
+      "ipo.html",
+      "bing-ck.html",
+      "myProject.html",
+      "xiangmu-fabu.html",
+      "xiangmu-fk-xq.html",
+      "guquanzhiya-ywqq.html",
+      "login.html",
+      "xiangmu-fk.html",
+      "projectApply.html",
+      "bgmf-list.html",
+      "gqzy-list.html",
+      "cybgjj-list.html",
+      "tdgdzcj-list.html",
+      "bgbuyf-list.html",
+      "gqjl-list.html",
+      "xdxm-list.html",
+      "zqxm-list.html",
+      "sharing12-21/gqzy-fenx.html",
+      "sharing12-21/tdgdzjc-fenx.html",
+      "calendar.html",
+      "tzlc-list.html",
+      "mobileCompany/company/companyDetails.html",
+      "sound-recording.html",
+      "dongcha/dongcha-index.html"
+    ]
+  },
+  "company.html": {
+    "resources": [
+      "img/bgbl.png",
+      "img/bgyl.png",
+      "js/mui.min.js",
+      "css/app.css",
+      "fonts/mui.ttf",
+      "css/mui.min.css",
+      "company-comtent.html",
+      "fonts/iconfont.ttf",
+      "hisc-search.html"
+    ],
+    "refer": [
+      "company-comtent.html",
+      "hisc-search.html",
+      "company/companyDetails.html"
+    ]
+  },
+  "tab-main.html": {
+    "resources": [
+      "js/mui.min.js",
+      "css/app.css",
+      "fonts/mui.ttf",
+      "css/mui.min.css",
+      "fonts/iconfont.ttf",
+      "xiangmu.html",
+      "news-list.html",
+      "images/navbcgimg.png",
+      "interview.html"
+    ],
+    "refer": [
+      "xiangmu.html",
+      "news-list.html",
+      "company.html",
+      "interview.html",
+      "setting.html",
+      "guide.html",
+      "login.html",
+      "personal.html"
+    ]
+  },
+  "news-list.html": {
+    "resources": [
+      "js/mui.min.js",
+      "css/app.css",
+      "fonts/mui.ttf",
+      "css/mui.min.css",
+      "fonts/iconfont.ttf",
+      "news-details.html",
+      "img/comy-bg.png",
+      "js/app.js"
+    ],
+    "refer": [
+      "news-details.html"
+    ]
+  },
+  "interview.html": {
+    "resources": [
+      "img/shuijiao.jpg",
+      "img/yuantiao.jpg",
+      "img/cbd.jpg",
+      "js/mui.min.js",
+      "css/app.css",
+      "fonts/mui.ttf",
+      "css/mui.min.css",
+      "new-interview.html",
+      "new-interview1.html"
+    ],
+    "refer": [
+      "new-interview1.html"
+    ]
+  },
+  "setting.html": {
+    "resources": [
+      "css/feedback.css",
+      "css/set.css",
+      "img/logo.png",
+      "js/feedback.js",
+      "js/mui.view.js",
+      "js/mui.min.js",
+      "css/app.css",
+      "fonts/mui.ttf",
+      "css/mui.min.css",
+      "login.html",
+      "Personal-Information.html",
+      "focus-list.html",
+      "changePassword.html",
+      "js/app.js"
+    ],
+    "refer": [
+      "login.html",
+      "Personal-Information.html",
+      "focus-list.html",
+      "changePassword.html",
+      "myCollection.html",
+      "myAddressList.html"
+    ]
+  },
+  "gzdc-list.html": {
+    "resources": [
+      "xiangmu.html",
+      "gzdc.html",
+      "fonts/iconfont.ttf",
+      "gzdc-list-ddqk.html",
+      "gzdc-list-xmqk.html",
+      "gzdc-list-rcjy.html",
+      "gzdc-list-xcp.html",
+      "gzdc-list-yjqk.html",
+      "gzdc-list-zrz.html",
+      "gzdc-list-czsg.html",
+      "gzdc-list-gdzj.html",
+      "gzdc-list-gqjl.html"
+    ],
+    "refer": [
+      "xiangmu.html",
+      "gzdc.html",
+      "gzdc-list-ddqk.html",
+      "gzdc-list-xmqk.html",
+      "gzdc-list-rcjy.html",
+      "gzdc-list-xcp.html",
+      "gzdc-list-yjqk.html",
+      "gzdc-list-zrz.html",
+      "gzdc-list-czsg.html",
+      "gzdc-list-gdzj.html",
+      "gzdc-list-gqjl.html"
+    ]
+  },
+  "guquanzhiya.html": {
+    "resources": [
+      "xiangmu.html",
+      "Shareholding-list.html",
+      "fenx.html",
+      "guquanzhiya-xz.html",
+      "js/mui.min.js",
+      "guquanzhiya-ck.html",
+      "css/mui.min.css"
+    ],
+    "refer": [
+      "xiangmu.html",
+      "Shareholding-list.html",
+      "guquanzhiya-xz.html",
+      "fenx.html",
+      "guquanzhiya-ck.html"
+    ]
+  },
+  "gzdc.html": {
+    "resources": [
+      "js/mui.min.js",
+      "css/app.css",
+      "fonts/mui.ttf",
+      "css/mui.min.css",
+      "xiangmu.html",
+      "gzdc-list.html",
+      "gzdc-list-xz.html",
+      "gzdc-list-bj.html",
+      "gzdc-list-ck.html"
+    ],
+    "refer": [
+      "xiangmu.html",
+      "gzdc-list.html",
+      "gzdc-list-bj.html",
+      "gzdc-list-ck.html",
+      "gzdc-list-xz.html"
+    ]
+  },
+  "gzdc-list-ddqk.html": {
+    "resources": [
+      "img/line04.gif",
+      "img/icon07.gif",
+      "gzdc-list.html",
+      "gzdc-list-xz.html",
+      "js/mui.min.js",
+      "css/app.css",
+      "fonts/mui.ttf",
+      "css/mui.min.css",
+      "gzdc-list-ck.html"
+    ],
+    "refer": [
+      "gzdc-list.html",
+      "gzdc-list-xz.html",
+      "gzdc-list-ck.html"
+    ]
+  },
+  "gzdc-list-xmqk.html": {
+    "resources": [
+      "gzdc-list.html",
+      "gzdc-list-xz.html",
+      "img/line04.gif",
+      "img/icon07.gif"
+    ],
+    "refer": [
+      "gzdc-list.html",
+      "gzdc-list-xz.html"
+    ]
+  },
+  "gzdc-list-rcjy.html": {
+    "resources": [
+      "gzdc-list.html",
+      "img/line04.gif",
+      "img/icon07.gif",
+      "gzdc-list-xz.html",
+      "js/mui.min.js",
+      "css/mui.min.css",
+      "gzdc-list-ck.html"
+    ],
+    "refer": [
+      "gzdc-list.html",
+      "gzdc-list-xz.html",
+      "gzdc-list-ck.html"
+    ]
+  },
+  "gzdc-list-xcp.html": {
+    "resources": [
+      "gzdc-list.html",
+      "gzdc-list-xz.html",
+      "gzdc-list-bj.html"
+    ],
+    "refer": [
+      "gzdc-list.html",
+      "gzdc-list-xz.html",
+      "gzdc-list-bj.html"
+    ]
+  },
+  "gzdc-list-yjqk.html": {
+    "resources": [
+      "gzdc-list.html",
+      "gzdc-list-xz.html",
+      "css/mui.min.css",
+      "gzdc-list-bj.html"
+    ],
+    "refer": [
+      "gzdc-list.html",
+      "gzdc-list-xz.html",
+      "gzdc-list-bj.html"
+    ]
+  },
+  "gzdc-list-zrz.html": {
+    "resources": [
+      "gzdc-list.html",
+      "gzdc-list-xz.html",
+      "img/line04.gif",
+      "img/icon07.gif",
+      "gzdc-list-bj.html"
+    ],
+    "refer": [
+      "gzdc-list.html",
+      "gzdc-list-xz.html",
+      "gzdc-list-bj.html"
+    ]
+  },
+  "gzdc-list-gqjl.html": {
+    "resources": [
+      "gzdc-list.html",
+      "gzdc-list-xz.html",
+      "gzdc-list-bj.html",
+      "css/mui.min.css"
+    ],
+    "refer": [
+      "gzdc-list.html",
+      "gzdc-list-xz.html",
+      "gzdc-list-bj.html"
+    ]
+  },
+  "gzdc-list-gdzj.html": {
+    "resources": [
+      "gzdc-list.html",
+      "gzdc-list-xz.html"
+    ],
+    "refer": [
+      "gzdc-list.html",
+      "gzdc-list-xz.html"
+    ]
+  },
+  "Shareholding-list.html": {
+    "resources": [
+      "css/app.css",
+      "guquanzhiya.html",
+      "fonts/mui.ttf",
+      "css/mui.min.css"
+    ],
+    "refer": [
+      "guquanzhiya.html"
+    ]
+  },
+  "bing.html": {
+    "resources": [
+      "fonts/iconfont.ttf",
+      "binggou-list.html",
+      "xiangmu.html",
+      "bing-zczl.html",
+      "bing-jtyw.html",
+      "bing-bz.html",
+      "js/mui.min.js",
+      "css/mui.min.css",
+      "bing-ck.html"
+    ],
+    "refer": [
+      "binggou-list.html",
+      "xiangmu.html",
+      "bing-zczl.html",
+      "bing-jtyw.html",
+      "bing-bz.html",
+      "bing-ck.html"
+    ]
+  },
+  "binggou-list.html": {
+    "resources": [
+      "bing.html",
+      "xiangmu.html",
+      "bing-ck.html",
+      "js/mui.min.js",
+      "css/app.css",
+      "fonts/mui.ttf",
+      "css/mui.min.css"
+    ],
+    "refer": [
+      "bing.html",
+      "xiangmu.html",
+      "bing-ck.html"
+    ]
+  },
+  "ipo-list.html": {
+    "resources": [
+      "ipo.html",
+      "js/mui.min.js",
+      "css/app.css",
+      "fonts/mui.ttf",
+      "css/mui.min.css",
+      "xiangmu.html",
+      "ipo-ck.html",
+      "js/app.js"
+    ],
+    "refer": [
+      "ipo.html",
+      "xiangmu.html",
+      "ipo-ck.html",
+      "ipo-ck1.html",
+      "ipo-bj1.html"
+    ]
+  },
+  "ipo.html": {
+    "resources": [
+      "js/mui.min.js",
+      "css/app.css",
+      "fonts/mui.ttf",
+      "css/mui.min.css",
+      "ipo-list.html",
+      "fonts/iconfont.ttf",
+      "ipo-bj.html"
+    ],
+    "refer": [
+      "ipo-list.html",
+      "ipo-bj.html"
+    ]
+  },
+  "qz-list-detals.html": {
+    "resources": [
+      "fonts/iconfont.ttf",
+      "qz-list.html"
+    ],
+    "refer": [
+      "qz-list.html"
+    ]
+  },
+  "qz-list.html": {
+    "resources": [
+      "qz-list-detals.html",
+      "xiangmu.html"
+    ],
+    "refer": [
+      "qz-list-detals.html",
+      "xiangmu.html"
+    ]
+  },
+  "new-interview.html": {
+    "resources": [
+      "css/mui.imageviewer.css",
+      "css/app.css",
+      "fonts/mui.ttf",
+      "css/mui.min.css",
+      "js/mui.imageViewer.js",
+      "js/mui.min.js",
+      "js/arttmpl.js",
+      "interview.html"
+    ],
+    "refer": []
+  },
+  "news-details.html": {
+    "resources": [
+      "news-list.html",
+      "js/mui.min.js",
+      "css/mui.min.css",
+      "fonts/mui-icons-extra.ttf",
+      "js/jquery.min.js",
+      "css/icons-extra.css",
+      "js/jquery-1.11.3.min.js"
+    ],
+    "refer": [
+      "news-list.html"
+    ]
+  },
+  "fenx.html": {
+    "resources": [
+      "css/app.css",
+      "img/fxbg.png",
+      "fonts/mui.ttf",
+      "css/mui.min.css",
+      "js/jquery.js",
+      "guquanzhiya.html"
+    ],
+    "refer": [
+      "guquanzhiya.html"
+    ]
+  },
+  "company-comtent.html": {
+    "resources": [
+      "img/basicInfor.png",
+      "js/mui.min.js",
+      "css/app.css",
+      "fonts/mui.ttf",
+      "css/mui.min.css",
+      "fonts/iconfont.ttf",
+      "img/comy-bg1.png",
+      "company-bg.html",
+      "company-gs.html",
+      "company-gd.html",
+      "company-gg.html",
+      "company-gszt.html",
+      "company-zgs.html",
+      "company-k.html",
+      "company.html"
+    ],
+    "refer": [
+      "company.html",
+      "company-gs.html",
+      "company-gd.html",
+      "company-gg.html",
+      "company-gszt.html",
+      "company-k.html",
+      "company-bg.html",
+      "company-zgs.html"
+    ]
+  },
+  "company-bg.html": {
+    "resources": [
+      "company-comtent.html",
+      "css/mui.min.css"
+    ],
+    "refer": [
+      "company-comtent.html"
+    ]
+  },
+  "company-k.html": {
+    "resources": [
+      "img/xiantu1.png",
+      "js/mui.min.js",
+      "fonts/mui.ttf",
+      "css/mui.min.css",
+      "company-comtent.html"
+    ],
+    "refer": [
+      "company-comtent.html"
+    ]
+  },
+  "company-gs.html": {
+    "resources": [
+      "company-comtent.html",
+      "css/mui.min.css"
+    ],
+    "refer": [
+      "company-comtent.html"
+    ]
+  },
+  "company-gd.html": {
+    "resources": [
+      "company-comtent.html",
+      "js/mui.min.js",
+      "css/mui.min.css"
+    ],
+    "refer": [
+      "company-comtent.html"
+    ]
+  },
+  "company-gszt.html": {
+    "resources": [
+      "img/line04.gif",
+      "company-comtent.html",
+      "img/icon07.gif"
+    ],
+    "refer": [
+      "company-comtent.html"
+    ]
+  },
+  "company-gg.html": {
+    "resources": [
+      "company-comtent.html"
+    ],
+    "refer": [
+      "company-comtent.html"
+    ]
+  },
+  "company-zgs.html": {
+    "resources": [
+      "company-comtent.html",
+      "css/mui.min.css"
+    ],
+    "refer": [
+      "company-comtent.html"
+    ]
+  },
+  "new-interview1.html": {
+    "resources": [
+      "js/mui.min.js",
+      "css/app.css",
+      "fonts/mui.ttf",
+      "css/mui.min.css",
+      "fonts/iconfont.ttf",
+      "css/mui.imageviewer.css",
+      "interview.html"
+    ],
+    "refer": [
+      "interview.html"
+    ]
+  },
+  "bing-ck.html": {
+    "resources": [
+      "binggou-list.html",
+      "bing-jtyw.html",
+      "css/mui.min.css",
+      "js/mui.min.js",
+      "bing-zczl.html",
+      "bing-bz.html",
+      "bing.html"
+    ],
+    "refer": [
+      "binggou-list.html",
+      "bing.html",
+      "bing-jtyw.html",
+      "bing-zczl.html",
+      "bing-bz.html"
+    ]
+  },
+  "tab-webview-main.html": {
+    "resources": [
+      "js/mui.min.js",
+      "fonts/mui.ttf",
+      "css/mui.min.css",
+      "xiangmu.html"
+    ],
+    "refer": [
+      "news-list.html",
+      "xiangmu.html",
+      "interview.html",
+      "company.html"
+    ]
+  },
+  "gzdc-list-xz.html": {
+    "resources": [
+      "gzdc-list-rcjy.html",
+      "gzdc-list-ddqk.html",
+      "gzdc.html",
+      "gzdc-list-xmqk.html",
+      "gzdc-list-zrz.html",
+      "gzdc-list-yjqk.html",
+      "gzdc-list-xcp.html",
+      "fonts/mui.ttf",
+      "fonts/iconfont.ttf",
+      "gzdc-list-czsg.html",
+      "gzdc-list-gqjl.html",
+      "gzdc-list-gdzj.html",
+      "js/mui.min.js",
+      "css/mui.min.css"
+    ],
+    "refer": [
+      "gzdc-list-rcjy.html",
+      "gzdc.html",
+      "gzdc-list-ddqk.html",
+      "gzdc-list-yjqk.html",
+      "gzdc-list-xmqk.html",
+      "gzdc-list-xcp.html",
+      "gzdc-list-zrz.html",
+      "gzdc-list-czsg.html",
+      "gzdc-list-gqjl.html",
+      "gzdc-list-gdzj.html"
+    ]
+  },
+  "login.html": {
+    "resources": [
+      "img/comy-bg1.png",
+      "xiangmu.html",
+      "js/mui.min.js",
+      "css/app.css",
+      "fonts/mui.ttf",
+      "css/mui.min.css",
+      "img/logo.png",
+      "css/xiangmu.css",
+      "personal.html"
+    ],
+    "refer": [
+      "xiangmu.html",
+      "tab-main.html",
+      "personal.html"
+    ]
+  },
+  "bing-zczl.html": {
+    "resources": [
+      "bing.html",
+      "js/mui.min.js",
+      "css/mui.min.css",
+      "img/line04.gif",
+      "img/icon07.gif",
+      "bing-ck.html"
+    ],
+    "refer": [
+      "bing.html",
+      "bing-ck.html"
+    ]
+  },
+  "bing-jtyw.html": {
+    "resources": [
+      "bing.html",
+      "img/line04.gif",
+      "img/icon07.gif",
+      "binggou-list.html",
+      "js/mui.min.js",
+      "css/mui.min.css",
+      "bing-ck.html"
+    ],
+    "refer": [
+      "bing.html",
+      "binggou-list.html",
+      "bing-ck.html"
+    ]
+  },
+  "bing-bz.html": {
+    "resources": [
+      "bing.html",
+      "bing-ck.html",
+      "css/mui.min.css",
+      "img/line04.gif",
+      "img/icon07.gif"
+    ],
+    "refer": [
+      "bing.html",
+      "bing-ck.html"
+    ]
+  },
+  "gzdc-list-bj.html": {
+    "resources": [
+      "gzdc.html",
+      "gzdc-list-ddqk.html",
+      "css/mui.min.css",
+      "gzdc-list-czsg.html",
+      "gzdc-list-zrz.html",
+      "gzdc-list-xcp.html",
+      "gzdc-list-yjqk.html",
+      "gzdc-list-gqjl.html",
+      "iconfont/iconfont.css"
+    ],
+    "refer": [
+      "gzdc.html",
+      "gzdc-list-ddqk.html",
+      "gzdc-list-czsg.html",
+      "gzdc-list-zrz.html",
+      "gzdc-list-xcp.html",
+      "gzdc-list-yjqk.html",
+      "gzdc-list-gqjl.html",
+      "gzdc-list-ddqk-bj.html"
+    ]
+  },
+  "gzdc-list-ck.html": {
+    "refer": [
+      "gzdc-list-ddqk.html",
+      "gzdc.html",
+      "gzdc-list-xmqk.html",
+      "gzdc-list-czsg.html",
+      "gzdc-list-zrz.html",
+      "gzdc-list-rcjy.html",
+      "gzdc-list-bj.html"
+    ],
+    "resources": [
+      "fonts/iconfont.ttf",
+      "gzdc.html",
+      "gzdc-list-ddqk.html",
+      "gzdc-list-xmqk.html",
+      "gzdc-list-czsg.html",
+      "gzdc-list-zrz.html",
+      "css/mui.min.css",
+      "gzdc-list-rcjy.html",
+      "iconfont/iconfont.css"
+    ]
+  },
+  "Personal-Information.html": {
+    "resources": [
+      "js/feedback.js",
+      "js/mui.view.js",
+      "setting.html",
+      "js/mui.min.js",
+      "css/mui.min.css",
+      "css/feedback.css",
+      "css/set.css",
+      "changePassword.html",
+      "iconfont/iconfont.css"
+    ],
+    "refer": [
+      "setting.html",
+      "changePassword.html"
+    ]
+  },
+  "guquanzhiya-xz.html": {
+    "resources": [
+      "js/mui.min.js",
+      "css/app.css",
+      "fonts/mui.ttf",
+      "css/mui.min.css",
+      "guquanzhiya.html"
+    ],
+    "refer": [
+      "guquanzhiya.html"
+    ]
+  },
+  "guquanzhiya-ck.html": {
+    "refer": [
+      "guquanzhiya-bj.html",
+      "guquanzhiya.html"
+    ],
+    "resources": [
+      "js/mui.min.js",
+      "guquanzhiya.html",
+      "guquanzhiya-bj.html",
+      "css/mui.min.css"
+    ]
+  },
+  "guquanzhiya-bj.html": {
+    "resources": [
+      "guquanzhiya.html",
+      "guquanzhiya-ck.html"
+    ],
+    "refer": [
+      "guquanzhiya.html",
+      "guquanzhiya-ck.html"
+    ]
+  },
+  "ipo-ck.html": {
+    "resources": [
+      "ipo-list.html",
+      "ipo-bj.html",
+      "js/mui.min.js",
+      "css/app.css",
+      "fonts/mui.ttf",
+      "css/mui.min.css"
+    ],
+    "refer": [
+      "ipo-list.html",
+      "ipo-bj.html"
+    ]
+  },
+  "ipo-bj.html": {
+    "refer": [
+      "ipo-ck.html",
+      "ipo-list.html",
+      "ipo.html"
+    ],
+    "resources": [
+      "ipo-list.html",
+      "ipo-ck.html",
+      "css/mui.min.css",
+      "ipo.html"
+    ]
+  },
+  "focus-list.html": {
+    "resources": [
+      "img/default.png",
+      "company-comtent.html",
+      "setting.html",
+      "js/mui.min.js",
+      "css/mui.min.css"
+    ],
+    "refer": [
+      "company-comtent.html",
+      "setting.html"
+    ]
+  },
+  "search-dets.html": {
+    "resources": [
+      "js/menudown.js",
+      "js/jquery1.10.2.min.js",
+      "img/down (1).png",
+      "css/menudown.css",
+      "company.html"
+    ],
+    "refer": [
+      "company.html"
+    ]
+  },
+  "hisc-search.html": {
+    "resources": [
+      "search-dets.html",
+      "js/mui.min.js",
+      "css/mui.min.css",
+      "company.html",
+      "company-comtent.html"
+    ],
+    "refer": [
+      "search-dets.html",
+      "company.html",
+      "company-comtent.html"
+    ]
+  },
+  "xiangmu-fk-xq.html": {
+    "resources": [
+      "js/jquery.js",
+      "js/mui.min.js",
+      "css/app.css",
+      "fonts/mui.ttf",
+      "css/mui.min.css",
+      "xiangmu.html",
+      "xiangmu-fk.html",
+      "ipo-ck1.html"
+    ],
+    "refer": [
+      "xiangmu.html",
+      "xiangmu-fk.html",
+      "ipo-ck1.html",
+      "ckyd.html",
+      "historyRecord.html"
+    ]
+  },
+  "guquanzhiya-ywqq.html": {
+    "resources": [
+      "guquanzhiya.html",
+      "css/mui.min.css"
+    ],
+    "refer": [
+      "guquanzhiya.html"
+    ]
+  },
+  "gzdc-list-czsg.html": {
+    "resources": [
+      "img/line04.gif",
+      "img/icon07.gif",
+      "css/xiangmu.css",
+      "js/mui.min.js",
+      "css/app.css",
+      "fonts/mui.ttf",
+      "css/mui.min.css",
+      "gzdc-list-xz.html",
+      "gzdc-list-bj.html"
+    ],
+    "refer": [
+      "gzdc-list-xz.html",
+      "gzdc-list-bj.html"
+    ]
+  },
+  "xiangmu-fabu.html": {
+    "resources": [
+      "css/mui.min.css",
+      "xiangmu.html",
+      "js/mui.min.js"
+    ],
+    "refer": [
+      "xiangmu.html",
+      "myProjectDetail.html",
+      "projectApply.html"
+    ]
+  },
+  "xiangmu-fk.html": {
+    "resources": [
+      "css/mui.min.css",
+      "xiangmu.html",
+      "xiangmu-fk-xq.html"
+    ],
+    "refer": [
+      "xiangmu.html",
+      "xiangmu-fk-xq.html"
+    ]
+  },
+  "myProject.html": {
+    "resources": [
+      "css/mui.min.css"
+    ],
+    "refer": [
+      "myProjectDetail.html"
+    ]
+  },
+  "ipo-ck1.html": {
+    "resources": [
+      "css/mui.min.css",
+      "xiangmu-fk-xq.html"
+    ],
+    "refer": [
+      "ipo-bj1.html",
+      "xiangmu-fk-xq.html",
+      "historyRecord.html"
+    ]
+  },
+  "ipo-bj1.html": {
+    "resources": [
+      "ipo-bj1.html",
+      "css/mui.min.css"
+    ],
+    "refer": [
+      "ipo-bj1.html"
+    ]
+  },
+  "changePassword.html": {
+    "resources": [
+      "css/mui.min.css",
+      "js/jquery-1.11.3.min.js",
+      "Personal-Information.html"
+    ],
+    "refer": [
+      "Personal-Information.html"
+    ]
+  },
+  "myCollection.html": {
+    "resources": [
+      "css/mui.min.css"
+    ],
+    "refer": [
+      "news-details.html"
+    ]
+  },
+  "myAddressList.html": {
+    "resources": [
+      "css/mui.min.css",
+      "css/mui.indexedlist.css",
+      "js/mui.indexedlist.js"
+    ],
+    "refer": []
+  },
+  "myProjectDetail.html": {
+    "refer": [
+      "ipo-ck1.html",
+      "news-details.html",
+      "ckyd.html"
+    ],
+    "resources": [
+      "css/mui.min.css"
+    ]
+  },
+  "projectApply.html": {
+    "resources": [
+      "css/mui.min.css"
+    ],
+    "refer": []
+  },
+  "historyRecord.html": {
+    "resources": [
+      "css/mui.min.css"
+    ],
+    "refer": []
+  },
+  "ckyd.html": {
+    "resources": [
+      "css/mui.min.css",
+      "layui.layim-v3.7.2/example/mobile.html"
+    ],
+    "refer": [
+      "layui.layim-v3.7.2/example/mobile.html"
+    ]
+  },
+  "personal.html": {
+    "resources": [
+      "css/feedback.css",
+      "css/set.css",
+      "img/logo.png",
+      "js/mui.view.js",
+      "css/mui.min.css",
+      "iconfont/iconfont.css",
+      "login.html"
+    ],
+    "refer": [
+      "Personal-Information.html",
+      "login.html",
+      "layui.layim-v3.7.2/example/mobile.html",
+      "myCollection.html",
+      "myAddressList.html",
+      "focus-list.html",
+      "changePassword.html",
+      "calendar/mymanuscript.html"
+    ]
+  },
+  "layui.layim-v3.7.2/example/mobile.html": {
+    "resources": [
+      "layui.layim-v3.7.2/dist/layui.js",
+      "layui.layim-v3.7.2/dist/css/layui.mobile.css",
+      "layui.layim-v3.7.2/dist/css/modules/layim/voice/default.mp3",
+      "layui.layim-v3.7.2/dist/font/iconfont.woff",
+      "layui.layim-v3.7.2/dist/css/modules/layim/mobile/layim.css",
+      "layui.layim-v3.7.2/dist/lay/modules/mobile.js",
+      "layui.layim-v3.7.2/dist/images/face/0.gif",
+      "layui.layim-v3.7.2/dist/images/face/22.gif",
+      "layui.layim-v3.7.2/dist/images/face/27.gif",
+      "layui.layim-v3.7.2/dist/images/face/20.gif",
+      "layui.layim-v3.7.2/dist/images/face/55.gif",
+      "layui.layim-v3.7.2/dist/images/face/15.gif",
+      "layui.layim-v3.7.2/dist/images/face/62.gif",
+      "layui.layim-v3.7.2/dist/images/face/28.gif",
+      "layui.layim-v3.7.2/dist/images/face/65.gif",
+      "layui.layim-v3.7.2/dist/images/face/2.gif",
+      "layui.layim-v3.7.2/dist/images/face/1.gif",
+      "layui.layim-v3.7.2/dist/images/face/25.gif",
+      "layui.layim-v3.7.2/dist/images/face/36.gif",
+      "layui.layim-v3.7.2/dist/images/face/37.gif",
+      "layui.layim-v3.7.2/dist/images/face/41.gif",
+      "layui.layim-v3.7.2/dist/images/face/3.gif",
+      "layui.layim-v3.7.2/dist/images/face/60.gif",
+      "layui.layim-v3.7.2/dist/images/face/24.gif",
+      "layui.layim-v3.7.2/dist/images/face/58.gif",
+      "layui.layim-v3.7.2/dist/images/face/49.gif",
+      "layui.layim-v3.7.2/dist/images/face/19.gif",
+      "layui.layim-v3.7.2/dist/images/face/23.gif",
+      "layui.layim-v3.7.2/dist/images/face/6.gif",
+      "layui.layim-v3.7.2/dist/images/face/7.gif",
+      "layui.layim-v3.7.2/dist/images/face/26.gif",
+      "layui.layim-v3.7.2/dist/images/face/50.gif",
+      "layui.layim-v3.7.2/dist/images/face/10.gif",
+      "layui.layim-v3.7.2/dist/images/face/16.gif",
+      "layui.layim-v3.7.2/dist/images/face/5.gif",
+      "layui.layim-v3.7.2/dist/images/face/45.gif",
+      "layui.layim-v3.7.2/dist/images/face/29.gif",
+      "layui.layim-v3.7.2/dist/images/face/31.gif",
+      "layui.layim-v3.7.2/dist/images/face/71.gif",
+      "layui.layim-v3.7.2/dist/images/face/61.gif",
+      "layui.layim-v3.7.2/dist/images/face/48.gif",
+      "layui.layim-v3.7.2/dist/images/face/40.gif",
+      "layui.layim-v3.7.2/dist/images/face/67.gif",
+      "layui.layim-v3.7.2/dist/images/face/13.gif",
+      "layui.layim-v3.7.2/dist/images/face/30.gif",
+      "layui.layim-v3.7.2/dist/images/face/21.gif",
+      "layui.layim-v3.7.2/dist/images/face/64.gif",
+      "layui.layim-v3.7.2/dist/images/face/51.gif",
+      "layui.layim-v3.7.2/dist/images/face/68.gif",
+      "layui.layim-v3.7.2/dist/images/face/9.gif",
+      "layui.layim-v3.7.2/dist/images/face/70.gif",
+      "layui.layim-v3.7.2/dist/images/face/35.gif",
+      "layui.layim-v3.7.2/dist/images/face/8.gif",
+      "layui.layim-v3.7.2/dist/images/face/4.gif",
+      "layui.layim-v3.7.2/dist/images/face/39.gif",
+      "layui.layim-v3.7.2/dist/images/face/53.gif",
+      "layui.layim-v3.7.2/dist/images/face/57.gif",
+      "layui.layim-v3.7.2/dist/images/face/18.gif",
+      "layui.layim-v3.7.2/dist/images/face/54.gif",
+      "layui.layim-v3.7.2/dist/images/face/66.gif",
+      "layui.layim-v3.7.2/dist/images/face/56.gif",
+      "layui.layim-v3.7.2/dist/images/face/12.gif",
+      "layui.layim-v3.7.2/dist/images/face/42.gif",
+      "layui.layim-v3.7.2/dist/images/face/43.gif",
+      "layui.layim-v3.7.2/dist/images/face/63.gif",
+      "layui.layim-v3.7.2/dist/images/face/14.gif",
+      "layui.layim-v3.7.2/dist/images/face/47.gif",
+      "layui.layim-v3.7.2/dist/images/face/32.gif",
+      "layui.layim-v3.7.2/dist/images/face/38.gif",
+      "layui.layim-v3.7.2/dist/images/face/11.gif",
+      "layui.layim-v3.7.2/dist/images/face/44.gif",
+      "layui.layim-v3.7.2/dist/images/face/59.gif",
+      "layui.layim-v3.7.2/dist/images/face/52.gif",
+      "layui.layim-v3.7.2/dist/images/face/17.gif",
+      "layui.layim-v3.7.2/dist/images/face/33.gif",
+      "layui.layim-v3.7.2/dist/images/face/69.gif",
+      "layui.layim-v3.7.2/dist/images/face/34.gif",
+      "layui.layim-v3.7.2/dist/images/face/46.gif",
+      "ckyd.html",
+      "newFriend.html",
+      "css/mui.css"
+    ],
+    "refer": [
+      "ckyd.html",
+      "newFriend.html"
+    ]
+  },
+  "gzdc-list-ddqk-bj.html": {
+    "resources": [
+      "js/mui.picker.min.js",
+      "css/mui.picker.min.css",
+      "css/mui.min.css"
+    ],
+    "refer": []
+  },
+  "guide.html": {
+    "resources": [
+      "images/shzqbsmallLogo.png"
+    ],
+    "refer": []
+  },
+  "newFriend.html": {
+    "resources": [
+      "css/mui.min.css",
+      "layui.layim-v3.7.2/example/mobile.html"
+    ],
+    "refer": [
+      "yzsq.html",
+      "layui.layim-v3.7.2/example/mobile.html"
+    ]
+  },
+  "company/companyDetails.html": {
+    "refer": [
+      "company/companyDynamic1.html",
+      "company/companyDynamic5.html",
+      "company/companyDynamic4.html",
+      "company/companyDynamic2.html",
+      "company/companyDynamic6.html",
+      "company/companyDynamic3.html",
+      "company/companyDynamic8.html",
+      "company/companyDynamic7.html",
+      "company/companySurvey1.html",
+      "company/companySurvey4.html",
+      "company/companyFinanceInfo2.html",
+      "company/companyFinanceInfo1.html",
+      "company/companyBaseInfo7.html",
+      "company/companyBaseInfo6.html",
+      "company/companyRiskInfo3.html",
+      "company/companyBaseInfo5.html",
+      "company/companyRiskInfo12.html",
+      "company/companyRiskInfo8.html",
+      "company/companyRiskInfo14.html",
+      "company/companyRiskInfo13.html",
+      "company/companyFten5.html",
+      "company/companyFten4.html",
+      "company/companyFten3.html",
+      "company/companyFten2.html",
+      "company/companyFten7.html",
+      "company/companyFten6.html",
+      "company/companyFten8.html",
+      "company/companyFten9.html",
+      "company/companyFten10.html",
+      "company/companyBaseInfo2.html",
+      "company/companyBaseInfo4.html",
+      "company/companyBaseInfo3.html",
+      "company/companyRiskInfo4.html",
+      "company/companySurvey2.html",
+      "company/companySurvey3.html",
+      "company/companyExecutive1.html",
+      "company/companyRiskInfo2.html",
+      "company/companyRiskInfo1.html",
+      "company/companyRiskInfo5.html",
+      "company/companyRiskInfo6.html",
+      "company/companyRiskInfo7.html",
+      "company/companyRiskInfo9.html"
+    ],
+    "resources": []
+  },
+  "company/companyBaseInfo7.html": {
+    "refer": [
+      "company/baseinfoInvestInfo.html"
+    ],
+    "resources": []
+  },
+  "company/baseinfoInvestInfo.html": {
+    "refer": [
+      "company/baseinfoInvestInfo1.html",
+      "company/baseinfoInvestInfo2.html",
+      "company/baseinfoInvestInfo3.html",
+      "company/baseinfoInvestInfo5.html"
+    ],
+    "resources": []
+  },
+  "company/companyBaseInfo5.html": {
+    "refer": [
+      "company/baseInfoCompanyIntroduce.html"
+    ],
+    "resources": []
+  },
+  "company/companyRiskInfo12.html": {
+    "refer": [
+      "company/investmentAbroadDetail.html"
+    ],
+    "resources": []
+  },
+  "company/companyFten10.html": {
+    "refer": [
+      "company/companySurvey2.html",
+      "company/companySurvey3.html",
+      "company/companySurvey4.html"
+    ],
+    "resources": []
+  },
+  "company/companyBaseInfo2.html": {
+    "refer": [
+      "company/baseInfoCompanyIntroduce.html"
+    ],
+    "resources": []
+  },
+  "company/companyExecutive1.html": {
+    "refer": [
+      "company/companyExecutiveResume.html"
+    ],
+    "resources": []
+  },
+  "bgmf-ck3.html": {
+    "refer": [
+      "bgmf-bj3.html",
+      "historyRecord.html"
+    ],
+    "resources": []
+  },
+  "bgmf-list.html": {
+    "refer": [
+      "bgmf-ck3.html"
+    ],
+    "resources": []
+  },
+  "company/companyDynamic3.html": {
+    "refer": [
+      "news-details.html"
+    ],
+    "resources": []
+  },
+  "calendar.html": {
+    "refer": [
+      "addNewSchedule.html",
+      "scheduleDetails.html"
+    ],
+    "resources": []
+  },
+  "addNewSchedule.html": {
+    "refer": [
+      "calendar.html"
+    ],
+    "resources": []
+  },
+  "scheduleDetails.html": {
+    "refer": [
+      "editSchedule.html",
+      "calendar.html"
+    ],
+    "resources": []
+  },
+  "bgbuyf-list.html": {
+    "refer": [
+      "bgbuyf-ck4.html"
+    ],
+    "resources": []
+  },
+  "xdxm-list.html": {
+    "refer": [
+      "xd-bj8.html"
+    ],
+    "resources": []
+  },
+  "gqzy-list.html": {
+    "refer": [
+      "gqzy-bj2.html"
+    ],
+    "resources": []
+  },
+  "gqjl-list.html": {
+    "refer": [
+      "gqjl-ck6.html"
+    ],
+    "resources": []
+  },
+  "mobileCompany/company/companyDetails.html": {
+    "refer": [
+      "mobileCompany/company/gdqk3.html",
+      "mobileCompany/company/companyDynamic4.html",
+      "mobileCompany/company/listedCompanyInfo6.html",
+      "mobileCompany/company/listedCompanyInfo5.html",
+      "mobileCompany/company/companyDynamic3.html",
+      "mobileCompany/company/companySurvey3.html",
+      "mobileCompany/company/companySurvey1.html",
+      "mobileCompany/company/listedCompanyInfo1.html",
+      "mobileCompany/company/companyDynamic2.html",
+      "mobileCompany/company/listedCompanyInfo3.html",
+      "mobileCompany/company/companyDynamic1.html",
+      "mobileCompany/company/listedCompanyInfo2.html",
+      "mobileCompany/company/companySurvey2.html",
+      "mobileCompany/company/listedCompanyInfo4.html",
+      "mobileCompany/company/companyRiskInfo10.html",
+      "mobileCompany/company/companyRiskInfo8.html",
+      "mobileCompany/company/companyRiskInfo2.html",
+      "mobileCompany/company/companyRiskInfo6.html",
+      "mobileCompany/company/companyRiskInfo1.html",
+      "mobileCompany/company/companyRiskInfo7.html",
+      "mobileCompany/company/companyRiskInfo4.html",
+      "mobileCompany/company/companyRiskInfo3.html"
+    ],
+    "resources": []
+  },
+  "mobileCompany/company/listedCompanyInfo6.html": {
+    "refer": [
+      "mobileCompany/company/industry3.html",
+      "mobileCompany/company/industry2.html",
+      "mobileCompany/company/industry1.html"
+    ],
+    "resources": []
+  },
+  "mobileCompany/company/listedCompanyInfo5.html": {
+    "refer": [
+      "mobileCompany/company/marketRzrq1.html",
+      "mobileCompany/company/marketRzrq3.html",
+      "mobileCompany/company/marketDzjy.html",
+      "mobileCompany/company/marketRzrq2.html",
+      "mobileCompany/company/marketLhb1.html",
+      "mobileCompany/company/marketLhb3.html"
+    ],
+    "resources": []
+  },
+  "mobileCompany/company/listedCompanyInfo1.html": {
+    "refer": [
+      "mobileCompany/company/gdqk1.html",
+      "mobileCompany/company/gdqk2.html",
+      "mobileCompany/company/gdqk3.html"
+    ],
+    "resources": []
+  },
+  "mobileCompany/company/listedCompanyInfo2.html": {
+    "refer": [
+      "mobileCompany/company/executiveInfoDetail.html"
+    ],
+    "resources": []
+  },
+  "mobileCompany/company/companyRiskInfo10.html": {
+    "refer": [
+      "mobileCompany/company/investmentAbroadDetail.html"
+    ],
+    "resources": []
+  },
+  "dongcha/dongcha-index.html": {
+    "refer": [
+      "dongcha/dc-search-company.html",
+      "dongcha/dc-relationship.html",
+      "dongcha/xmsx-zydq.html",
+      "dongcha/xmxs-xsjj.html",
+      "dongcha/xmxs-jcypl.html",
+      "dongcha/xmxs-zydq.html"
+    ],
+    "resources": []
+  },
+  "dongcha/dc-relationship.html": {
+    "refer": [
+      "dongcha/dc-cgx-search.html"
+    ],
+    "resources": []
+  },
+  "dongcha/dc-cgx-search.html": {
+    "refer": [
+      "dongcha/cgx-search-c-details.html"
+    ],
+    "resources": []
+  },
+  "dongcha/xmsx-zydq.html": {
+    "refer": [
+      "dongcha/dc-search-company.html"
+    ],
+    "resources": [
+      "iconfont/iconfont.css"
+    ]
+  },
+  "dongcha/dc-search-company.html": {
+    "refer": [
+      "dongcha/dc-company.html"
+    ],
+    "resources": []
+  },
+  "dongcha/dc-company/companyDynamic1.html": {
+    "refer": [
+      "dongcha/dc-company/news-details.html"
+    ],
+    "resources": []
+  },
+  "dongcha/dc-company.html": {
+    "refer": [
+      "dongcha/dc-company/companyDynamic1.html",
+      "dongcha/dc-company/companyDynamic5.html",
+      "dongcha/fnine/fnine-fhsz.html",
+      "dongcha/fnine/fnine-yjbx.html",
+      "dongcha/fnine/fnine-lhb.html",
+      "dongcha/fnine/fnine-ssylmztj.html",
+      "dongcha/fnine/fnine-hyfx.html",
+      "dongcha/fnine/fnine-gqzy.html",
+      "dongcha/fnine/fnine-dzjy.html",
+      "dongcha/fnine/fnine-rzrq.html",
+      "dongcha/dc-company/companyBaseInfo1.html",
+      "dongcha/dc-company/companyBaseInfo2.html",
+      "dongcha/dc-company/companyBaseInfo4.html",
+      "dongcha/dc-company/companyBaseInfo5.html",
+      "dongcha/dc-company/companyBaseInfo3.html",
+      "dongcha/dc-company/companyRiskInfo3.html",
+      "dongcha/dc-company/companyRiskInfo13.html",
+      "dongcha/dc-company/companyRiskInfo8.html",
+      "dongcha/dc-company/companyRiskInfo14.html",
+      "dongcha/dc-company/companyRiskInfo1.html",
+      "dongcha/dc-company/companyRiskInfo12.html",
+      "dongcha/dc-company/companyRiskInfo7.html"
+    ],
+    "resources": []
+  },
+  "dongcha/dc-company/companyBaseInfo4.html": {
+    "refer": [
+      "dongcha/dc-company/baseInfoCompanyIntroduce.html"
+    ],
+    "resources": []
+  },
+  "dongcha/dc-company/companyRiskInfo12.html": {
+    "refer": [
+      "dongcha/dc-company/investmentAbroadDetail.html"
+    ],
+    "resources": []
+  }
+}

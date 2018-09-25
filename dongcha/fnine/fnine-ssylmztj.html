@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en" class="bcWhite">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>上市以来募资统计</title>
+    <link href="../../css/mui.min.css" rel="stylesheet" />
+    <link href="../../iconfont/iconfont.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../dc-company/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link href="../../css/app.css" rel="stylesheet" />
+    <link href="../dc-company/css/dc-company.css" rel="stylesheet"/>
+    <script src="../dc-company/js/companyCommon.js"></script>
+    <script src="../../js/echarts.js"></script>
+    <style>
+        /*tab头固定*/
+        .mui-segmented-control {
+            position: fixed;
+            top: 44px;
+            left: 0;
+            z-index: 10;
+            background-color: #fff;
+        }
+        .mui-segmented-control.mui-segmented-control-inverted {
+            border-bottom:1px solid #f0f0f0;
+        }
+        .mui-control-content {
+            padding-top: 34px;
+        }
+        .mui-segmented-control .mui-control-item {
+            line-height: 34px;
+            height: 34px;
+        }
+        .mui-segmented-control.mui-segmented-control-inverted .mui-control-item {
+            color: #333;
+        }
+        .mui-segmented-control.mui-segmented-control-inverted .mui-control-item.mui-active {
+            border-bottom:0;
+            color: #333;
+            position: relative;
+        }
+        .mui-segmented-control.mui-segmented-control-inverted .mui-control-item.mui-active:after {
+            content: '';
+            position: absolute;
+            width: 40px;
+            height: 2px;
+            background-color: #0081ff;
+            bottom: 0;
+            left: 50%;
+            margin-left: -20px;
+        }
+    </style>
+</head>
+<body>
+<header class="mui-bar mui-bar-nav bcWhiteNav">
+    <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+    <h1 class="mui-title bc-white-inp" style="right: 46px;">上市以来募资统计</h1>
+</header>
+
+<div class="mui-content bcWhite">
+    <div id="segmentedControl" class="mui-segmented-control mui-segmented-control-inverted mui-segmented-control-primary">
+        <a class="noLink mui-control-item mui-active" href="#item1">上市以来募资统计</a>
+        <a class="noLink mui-control-item " href="#item2">增发</a>
+    </div>
+    <div id="item1" class="mui-control-content mui-active">
+        <div class="infobody clearfix fnine-info-cont mztj-con">
+            <div class="fl left-chart" id="mztjChart" style="width: 1.99rem;height: 2.30rem;"></div>
+            <div class="fr" style="width: 1.44rem;">
+                <!--直接融资-->
+                <div class="right-legend">
+                    <div class="right-legend-cell zjrz-legend">
+                        <div class="legend-hd ">
+                            <div class="clearfix">
+                                <span class="left-rect-icon icon-c1"></span>
+                                <span class="legend-txt">直接融资</span>
+                            </div>
+                            <p>1215234.04(万元)</p>
+                        </div>
+                        <ul class="legend-con">
+                            <li class="legend-con-cell">
+                                <div class="clearfix">
+                                    <span class="left-rect-icon icon-c2"></span>
+                                    <span class="legend-txt">
+                                                            <i class="fl">首发</i>
+                                                            <i class="fr">2.83%</i>
+                                                        </span>
+                                </div>
+                                <p>74700.00(万元)</p>
+                            </li>
+                            <li class="legend-con-cell">
+                                <div class="clearfix">
+                                    <span class="left-rect-icon icon-c3"></span>
+                                    <span class="legend-txt">
+                                                           <i class="fl">其他债券</i>
+                                                           <i class="fr">16.50%</i>
+                                                        </span>
+                                </div>
+                                <p>435000.00(万元)</p>
+                            </li>
+                            <li class="legend-con-cell">
+                                <div class="clearfix">
+                                    <span class="left-rect-icon icon-c4"></span>
+                                    <span class="legend-txt">
+                                                           <i class="fl">公开增发</i>
+                                                           <i class="fr">4.63%</i>
+                                                        </span>
+                                </div>
+                                <p>122094.60(万元)</p>
+                            </li>
+                            <li class="legend-con-cell">
+                                <div class="clearfix">
+                                    <span class="left-rect-icon icon-c5"></span>
+                                    <span class="legend-txt">
+                                                           <i class="fl">其他</i>
+                                                           <i class="fr">22.13%</i>
+                                                        </span>
+                                </div>
+                                <p>583439.44(万元)</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--间接融资-->
+                    <div class="right-legend-cell jjrz-legend">
+                        <div class="legend-hd">
+                            <div class="clearfix">
+                                <span class="left-rect-icon icon-c6"></span>
+                                <span class="legend-txt">间接融资</span>
+                            </div>
+                            <p>1420706.24(万元)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--直接融资历年明细-->
+        <div class="fnine-boxcell">
+            <div class="infoHead">
+                <span>上市以来募资统计</span>
+                <i class="fr mui-icon" style="width: 1.44rem;text-align: right;color: #000;">金额单位:万元CNY</i>
+            </div>
+            <div class="fixedcolumn-table clearfix">
+                <span class="mui-icon mui-icon-forward rightdir"></span>
+               <div class="left-col-table">
+                   <table class="">
+                       <tr><td><div class="tCell">公告日期</div></td></tr>
+                       <tr><td><div class="tCell">2016-01-09</div></td></tr>
+                       <tr><td><div class="tCell">2016-01-09</div></td></tr>
+                       <tr><td><div class="tCell">2016-01-09</div></td></tr>
+                       <tr><td><div class="tCell">2016-01-09</div></td></tr>
+                       <tr><td><div class="tCell">2016-01-09</div></td></tr>
+                       <tr><td><div class="tCell">2016-01-09</div></td></tr>
+                       <tr><td><div class="tCell">2016-01-09</div></td></tr>
+                       <tr><td><div class="tCell">2016-01-09</div></td></tr>
+                       <tr><td><div class="tCell">2016-01-09</div></td></tr>
+                       <tr><td><div class="tCell">2016-01-09</div></td></tr>
+                       <tr><td><div class="tCell">2016-01-09</div></td></tr>
+                       <tr><td><div class="tCell">2016-01-09</div></td></tr>
+                   </table>
+               </div>
+                <div class="right-con-table">
+                    <table>
+                        <tr>
+                            <td><div class="tCell">融资方式</div></td>
+                            <td><div class="tCell">年度</div></td>
+                            <td><div class="tCell">发行价</div></td>
+                            <td><div class="tCell">募资总额</div></td>
+                            <td><div class="tCell">募资净额</div></td>
+                        </tr>
+                        <tr>
+                            <td><div class="tCell">其他债券</div></td>
+                            <td><div class="tCell">2018年</div></td>
+                            <td><div class="tCell">98.9648</div></td>
+                            <td><div class="tCell">330000.00</div></td>
+                            <td><div class="tCell">330000.00</div></td>
+                        </tr>
+                        <tr>
+                            <td><div class="tCell">其他债券</div></td>
+                            <td><div class="tCell">2018年</div></td>
+                            <td><div class="tCell">98.9648</div></td>
+                            <td><div class="tCell">330000.00</div></td>
+                            <td><div class="tCell">330000.00</div></td>
+                        </tr>
+                        <tr>
+                            <td><div class="tCell">其他债券</div></td>
+                            <td><div class="tCell">2018年</div></td>
+                            <td><div class="tCell">98.9648</div></td>
+                            <td><div class="tCell">330000.00</div></td>
+                            <td><div class="tCell">330000.00</div></td>
+                        </tr>
+                        <tr>
+                            <td><div class="tCell">其他债券</div></td>
+                            <td><div class="tCell">2018年</div></td>
+                            <td><div class="tCell">98.9648</div></td>
+                            <td><div class="tCell">330000.00</div></td>
+                            <td><div class="tCell">330000.00</div></td>
+                        </tr>
+                        <tr>
+                            <td><div class="tCell">其他债券</div></td>
+                            <td><div class="tCell">2018年</div></td>
+                            <td><div class="tCell">98.9648</div></td>
+                            <td><div class="tCell">330000.00</div></td>
+                            <td><div class="tCell">330000.00</div></td>
+                        </tr>
+                        <tr>
+                            <td><div class="tCell">其他债券</div></td>
+                            <td><div class="tCell">2018年</div></td>
+                            <td><div class="tCell">98.9648</div></td>
+                            <td><div class="tCell">330000.00</div></td>
+                            <td><div class="tCell">330000.00</div></td>
+                        </tr>
+                        <tr>
+                            <td><div class="tCell">其他债券</div></td>
+                            <td><div class="tCell">2018年</div></td>
+                            <td><div class="tCell">98.9648</div></td>
+                            <td><div class="tCell">330000.00</div></td>
+                            <td><div class="tCell">330000.00</div></td>
+                        </tr>
+                        <tr>
+                            <td><div class="tCell">其他债券</div></td>
+                            <td><div class="tCell">2018年</div></td>
+                            <td><div class="tCell">98.9648</div></td>
+                            <td><div class="tCell">330000.00</div></td>
+                            <td><div class="tCell">330000.00</div></td>
+                        </tr>
+                        <tr>
+                            <td><div class="tCell">其他债券</div></td>
+                            <td><div class="tCell">2018年</div></td>
+                            <td><div class="tCell">98.9648</div></td>
+                            <td><div class="tCell">330000.00</div></td>
+                            <td><div class="tCell">330000.00</div></td>
+                        </tr>
+                        <tr>
+                            <td><div class="tCell">其他债券</div></td>
+                            <td><div class="tCell">2018年</div></td>
+                            <td><div class="tCell">98.9648</div></td>
+                            <td><div class="tCell">330000.00</div></td>
+                            <td><div class="tCell">330000.00</div></td>
+                        </tr>
+                        <tr>
+                            <td><div class="tCell">其他债券</div></td>
+                            <td><div class="tCell">2018年</div></td>
+                            <td><div class="tCell">98.9648</div></td>
+                            <td><div class="tCell">330000.00</div></td>
+                            <td><div class="tCell">330000.00</div></td>
+                        </tr>
+                        <tr>
+                            <td><div class="tCell">其他债券</div></td>
+                            <td><div class="tCell">2018年</div></td>
+                            <td><div class="tCell">98.9648</div></td>
+                            <td><div class="tCell">330000.00</div></td>
+                            <td><div class="tCell">330000.00</div></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div id="item2" class="mui-control-content ">
+        <!--时间范围-->
+        <div class="time-range">
+            <label for="">时间范围:</label>
+            <div class="right-filter-box">
+                <div class="hyfx-filter">
+                    <i class="right-arrow-ico"></i>
+                    <span class="hyfx-filter-cell">3年</span>
+                    <span class="hyfx-filter-cell">5年</span>
+                    <span class="hyfx-filter-cell">10年</span>
+                    <span class="hyfx-filter-cell">全部</span>
+                </div>
+            </div>
+        </div>
+        <!--时间范围 end-->
+        <!--增发表格-->
+        <div class="zf-table">
+            <table>
+                <tr>
+                    <td>预案日</td>
+                    <td>2015-03-27</td>
+                </tr>
+                <tr>
+                    <td>方案进度</td>
+                    <td>实施</td>
+                </tr>
+                <tr>
+                    <td>增发目的</td>
+                    <td>项目融资</td>
+                </tr>
+                <tr>
+                    <td>基本资料</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>增发类型</td>
+                    <td>定向</td>
+                </tr>
+                <tr>
+                    <td>发行价格</td>
+                    <td>21.29</td>
+                </tr>
+                <tr>
+                    <td>增发上市日收盘价</td>
+                    <td>25.90</td>
+                </tr>
+            </table>
+        </div>
+        <!--增发表格 end-->
+    </div>
+</div>
+
+<script src="../../js/mui.min.js"></script>
+<script src="../../js/app.js"></script>
+<script>
+    window.onload = function () {
+        /*时间范围-过滤下拉选择*/
+        mui('body').on('tap', '.hyfx-filter', function () {
+            this.classList.contains('actived') ? this.classList.remove('actived') : this.classList.add('actived');
+        });
+        mui('.hyfx-filter').on('tap', '.hyfx-filter-cell', function () {
+            mui('.hyfx-filter')[0].insertBefore(this, mui('.hyfx-filter span')[0]);
+        })
+        /*固定两个表格一行高度*/
+        var leftTrLen = mui('.left-col-table tr').length;
+        console.log('lefttrlen:' + leftTrLen);
+        for (var i = 0; i < leftTrLen; i++) {
+            var leftTrH = mui('.left-col-table tr')[i].offsetHeight;
+            var rightTrH = mui('.right-con-table tr')[i].offsetHeight;
+            if (leftTrH < rightTrH) {
+                mui('.left-col-table tr')[i].style.height = rightTrH + 'px';
+                mui('.right-con-table tr')[i].style.height = rightTrH + 'px'
+            } else if (leftTrH > rightTrH) {
+                mui('.left-col-table tr')[i].style.height = leftTrH + 'px';
+                mui('.right-con-table tr')[i].style.height = leftTrH + 'px'
+            }
+        }
+        /*echarts*/
+        var myChart7 = echarts.init(document.getElementById('mztjChart'));
+        option5 = {
+            color: ['#df98c0', '#0c9cd9', '#fccf17', '#68c0b0', '#f36d40'],
+
+            legend: {
+                show: false,
+                type: 'scroll',
+                orient: 'vertical',
+                right: 10,
+                top: 0,
+                data: ['首发', '其他债券', '公开增发', '其他', '间接融资'],
+                /*  formatter: function (name) {
+                  return echarts.format.truncateText(name, 140, '14px Microsoft Yahei', '…');
+              },*/
+                tooltip: {
+                    show: true
+                },
+                icon: 'rect',
+                itemWidth: 10,
+                itemHeight: 10
+            },
+            series: [
+                {
+                    name: '上市以来募资统计',
+                    type: 'pie',
+                    radius: ['50%', '80%'],
+                    center: ['50%', '50%'],
+                    avoidLabelOverlap: false,
+                    label: {
+                        normal: {
+                            show: false,
+                            position: 'center'
+                        },
+                        emphasis: {
+                            show: true,
+                            textStyle: {
+                                fontSize: '18',
+                                fontWeight: 'bold'
+                            }
+                        }
+                    },
+                    labelLine: {
+                        normal: {
+                            show: false
+                        }
+                    },
+                    data: [
+                        {value: 335, name: '首发'},
+                        {value: 310, name: '其他债券'},
+                        {value: 234, name: '公开增发'},
+                        {value: 135, name: '其他'},
+                        {value: 1548, name: '间接融资'}
+                    ]
+                }
+            ]
+        };
+        myChart7.setOption(option5);
+        /*echarts end*/
+    }
+</script>
+</body>
+</html>

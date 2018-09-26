@@ -1,0 +1,312 @@
+.grxx-cell {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    line-height: 42px;
+    background-color: #fff;
+    border:0;border-top: 1px solid #f6f6f6;z-index: 9
+}
+
+.grxx-box-list {
+    margin-bottom: 10px;
+}
+.grxx-cell:after {
+    right: 10px;
+    content: '\e583';
+    position: absolute;
+    font-family: Muiicons;
+    font-size: 18px;
+    line-height: 1;
+    top: 50%;
+    display: inline-block;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    text-decoration: none;
+    color: #bbb;
+    -webkit-font-smoothing: antialiased;
+}
+.gr-left-txt {
+    padding-left: 15px;
+    width: 130px;
+    margin-right: -130px;
+    line-height: 42px;
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 14px;
+}
+.gr-right-txt {
+    display: inline-block;
+    text-align: right;
+    vertical-align: middle;
+    width: 100%;
+    padding-left: 130px;
+    padding-right: 30px;
+    font-size:  12px;
+}
+.gr-right-txt .icon-user {
+    height: 45px;
+    color: #4886ff;
+    font-size: 45px;
+    /*line-height: 45px;*/
+}
+.personal-bt {
+    padding-bottom: 10px;
+}
+
+.gr-right-txt img {
+    width: 45px;
+    height: 45px;
+}
+.head-img-box {
+    display: inline-block;
+    text-align: center;
+    line-height: 45px;
+    height: 45px;
+    width: 45px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: #5084ef;
+}
+/**********弹框选择相关********/
+.select-box {
+    display: none;
+}
+.black-bc {
+    position: fixed;
+    background: rgba(0,0,0,.5);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 19;
+}
+.select-opt-box {
+    position: fixed;
+    top: 20px;
+    bottom: 20px;
+    left: 25px;
+    right: 25px;
+    background-color: #fff;
+    z-index: 20;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+}
+.select-opt-cell {
+    font-size: 16px;
+    position: relative;
+    padding: 15px;
+    padding-left: 50px;
+}
+.checkCircle {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    border:1px solid #999;
+    left: 20px;
+    top: 50%;
+    margin-top: -8px;
+}
+.select-opt-cell.actived .checkCircle{
+    border-color: #5084ef;
+}
+.select-opt-cell.actived .checkCircle:after {
+    content: '';
+    width: 8px;
+    height: 8px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    background-color: #5084ef;
+    position: absolute;
+    top: 50%;
+    margin-top: -4px;
+    left: 50%;
+    margin-left: -4px;
+}
+/**********弹框选择相关 end********/
+
+/*筛选框*/
+.blackbc {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,.6);
+    z-index: 90;
+}
+.sxk {
+    border-radius: 4px;
+    overflow: hidden;
+    background-color: #fff;
+    width: 288px;
+    position: absolute;
+    left: 50%;
+    margin-left: -144px;
+    top: 145px;
+    z-index: 91;
+}
+.prompt-popbox .sxk {
+    top: 50%;
+    margin-top: -90px;
+    -webkit-border-radius: 18px;
+    -moz-border-radius: 18px;
+    border-radius: 12px;
+}
+.sx-tit {
+    height: 48px;
+    line-height: 48px;
+    background-color: #eeeeee;
+    font-size: 16px;
+    color: #333;
+    text-align: center;
+}
+.cen-filter-box {
+    padding:0 8px;
+}
+.filter-opt-box {
+    padding: 14px 10px 3px 0;
+}
+.filter-opt-box:first-child {
+    border-bottom:1px solid #dadade;
+}
+.opt-left-lable {
+    width: 80px;
+    text-align: center;
+    font-size: 12px;
+    color: #333;
+    line-height: 16px;
+    margin-right: -80px;
+}
+.opt-right-box {
+    width: 100%;
+    padding-left: 80px;
+    overflow: hidden;
+}
+.djd-sx-opt {
+    float: left;
+    margin-right: 10px;
+    margin-bottom: 8px;
+    padding:0 10px 0 22px;
+    position: relative;
+    background-color: #cccccc;
+    color: #fff;
+    height: 24px;
+    line-height: 24px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    border-radius: 12px;
+}
+.djd-sx-opt.actived {
+    background-color: #6fa7f3;
+}
+.djd-sx-opt .iconfont {
+    font-size: 15px;
+    position: absolute;
+    height: 20px;
+    line-height: 20px;
+    left: 4px;
+    top: 50%;
+    margin-top: -10px;
+}
+.djd-sx-opt .opt-txt {
+    font-size: 12px;
+    line-height: 20px;
+}
+.sx-btns {
+    padding: 20px 22px;
+    overflow: hidden;
+}
+.sx-btns button{
+    float: right;
+    width: 112px;
+    height: 42px;
+    line-height: 42px;
+    background-color: #2b7de1;
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+    border: 0;
+    padding: 0;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+.sx-btns button:first-child {
+    float: left;
+    background-color: #dde4ec;
+    color: #333;
+}
+.add-new-group .sxk {
+    padding-bottom: 34px;
+}
+.add-new-group .cen-filter-box {
+    margin: 30px 0;
+}
+.add-new-group .newgrouptxt {
+    margin: 0;
+    border:1px solid #e9e9e9;
+    height: 42px;
+    line-height: 40px;
+    padding-left: 16px;
+}
+.add-new-group .sx-btns {
+    padding:0 22px;
+}
+/*筛选框 end*/
+.arrowright-box-cell .ar-link {
+    display: block;
+    position: relative;
+    background-color: #fff;
+    height: 42px;
+    font-size: 14px;
+    line-height: 3;
+    padding-left: 10px;
+    padding-right: 30px;
+}
+.inner-txt {
+    display: inline-block;
+    color: #333333;
+    font-size: 14px;
+    padding-left: 5px;
+}
+.lj-switch.mui-switch.mui-active {
+    background-color: #4886ff;
+    border-color: #4886ff;
+}
+.lj-switch.mui-switch {
+    width: 44px;
+    height: 22px;
+    border-radius: 22px;
+}
+.lj-switch.mui-switch-mini.mui-active .mui-switch-handle {
+    -webkit-transform: translate(23px,0);
+    transform: translate(23px,0);
+}
+.lj-switch.mui-switch .mui-switch-handle {
+    width: 20px;
+    height: 20px;
+    background: linear-gradient(to bottom,#ebebeb 0%,#ddd 100%);
+}
+.chairman_labels {
+    padding-top: 10px;
+    overflow: hidden;
+    padding-bottom: 4px;
+}
+.c_label_cell {
+    display: inline-block;
+    float: right;
+    margin:0 2px;
+    margin-bottom: 4px;
+    padding:0 10px;
+    height:24px;
+    line-height:22px;
+    border:1px solid #cccccc;
+    border-radius:24px;
+    font-size: 12px;
+    color: #666;
+}
